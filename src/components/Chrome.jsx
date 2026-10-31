@@ -4,11 +4,12 @@ import { href } from '../lib/catalog';
 export function Logo() {
   return <>
     <span className="logo-symbol" aria-hidden="true">
-      <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
-        <rect x="6" y="6" width="4" height="20" rx="1.5" fill="#38bdf8"/>
-        <path d="M10 9h8a5.5 5.5 0 0 1 0 11H10" stroke="#818cf8" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="m14 19 8.5 7" stroke="#34d399" strokeWidth="3.8" strokeLinecap="round"/>
-        <circle cx="23.5" cy="9" r="1.8" fill="#38bdf8"/>
+      <svg viewBox="0 0 128 128" width="28" height="28" fill="none">
+        <rect x="26" y="26" width="15" height="76" rx="7" fill="#38bdf8"/>
+        <path d="M41 34h33a20 20 0 0 1 0 40H41" stroke="#818cf8" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="m56 70 36 34" stroke="#34d399" strokeWidth="15" strokeLinecap="round"/>
+        <path d="m56 70 30-28" stroke="#38bdf8" strokeWidth="11" strokeLinecap="round" opacity="0.95"/>
+        <circle cx="33.5" cy="33.5" r="4.5" fill="#ffffff" opacity="0.95"/>
       </svg>
     </span>
     <span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span>

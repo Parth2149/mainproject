@@ -118,3 +118,4 @@ fs.writeFileSync('public/favicon.ico', ico);
 fs.writeFileSync('public/assets/favicon.ico', ico);
 
 console.log('SUCCESS: Generated all 3 logo concepts (SVG + 512x512 PNGs) and applied Concept 1 to all site favicons!');
+
