@@ -36,11 +36,9 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta name="twitter:image" content={canonical('/assets/og.png')} />
     <meta name="twitter:image:alt" content="RevKit — curated reverse engineering tools and GitHub repositories" />
     <link rel="icon" href={href('/favicon.ico')} sizes="32x32 48x48" />
-    <link rel="icon" href={href('/assets/favicon.svg')} type="image/svg+xml" />
     <link rel="icon" type="image/png" sizes="48x48" href={href('/assets/favicon-48x48.png')} />
     <link rel="apple-touch-icon" sizes="180x180" href={href('/assets/apple-touch-icon.png')} />
     <link rel="stylesheet" href={href('/assets/style.css')} />
-    <link rel="stylesheet" href={href('/assets/light.css')} />
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\u003c')} />}
   </head>
   <body>

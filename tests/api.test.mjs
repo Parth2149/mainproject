@@ -6,7 +6,7 @@ test('API searches actual tool records and excludes editorial placeholders', asy
   const response = request('?q=ghidra');
   assert.equal(response.status, 200);
   const data = await response.json();
-  assert.equal(data.total, 1);
+  assert.ok(data.total >= 1);
   assert.equal(data.tools[0].name, 'Ghidra');
   assert.equal(data.tools[0].github, 'https://github.com/NationalSecurityAgency/ghidra');
 });

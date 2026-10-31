@@ -10,7 +10,7 @@ export default function Directory({ category }) {
     <section className="hero">
       <span className="hero-badge"><span className="live-dot" aria-hidden="true"/>The 2026 Reverse Engineering Directory</span>
       <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Best Reverse Engineering Tools.<br/><span className="text-gradient">Decompilers, Debuggers &amp; Software.</span></>}</h1>
-      <p>{category ? categoryDescriptions[category] : <>The curated directory of reverse engineering tools, binary analysis software, and open-source GitHub repositories.<br className="desktop"/> Search and compare 40+ decompilers, debuggers, disassemblers, and instrumentation frameworks.</>}</p>
+      <p>{category ? categoryDescriptions[category] : <>The curated directory of reverse engineering tools, binary analysis software, and open-source GitHub repositories.<br className="desktop"/> Search and compare 100+ decompilers, debuggers, disassemblers, and instrumentation frameworks.</>}</p>
       <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? 1 : categories.length}</b> categories</span><span><b>100%</b> verified entries</span></div>
       <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers','Debuggers','Android','.NET','Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} <span aria-hidden="true">↗</span></a>)}</div>
     </section>
@@ -36,15 +36,15 @@ export default function Directory({ category }) {
       <div className="guide-grid">
         <div className="guide-card">
           <h3>Static Binary Analysis</h3>
-          <p>Inspect compiled code without executing it. Use decompilers and disassemblers like <strong>Ghidra</strong>, <strong>IDA Free</strong>, and <strong>Binary Ninja</strong> to recover control-flow graphs, identify cryptographic algorithms, and decompile machine code back into C/C++ pseudo-code across x86, x64, ARM, and MIPS architectures.</p>
+          <p>Inspect code without execution. Decompilers and disassemblers like <strong>Ghidra</strong>, <strong>IDA Free</strong>, and <strong>Binary Ninja</strong> recover control-flow graphs and generate readable C/C++ pseudo-code across x86, ARM, and MIPS architectures.</p>
         </div>
         <div className="guide-card">
           <h3>Dynamic Runtime Analysis</h3>
-          <p>Step through execution, inspect registers, trace API calls, and observe live memory states. Tools like <strong>x64dbg</strong>, <strong>pwndbg</strong>, and <strong>GEF</strong> provide granular control for vulnerability research, while <strong>Frida</strong> enables dynamic binary instrumentation and live function hooking.</p>
+          <p>Step through execution, inspect registers, and trace system calls. Tools like <strong>x64dbg</strong>, <strong>pwndbg</strong>, and <strong>GEF</strong> offer granular memory inspection, while <strong>Frida</strong> provides dynamic binary instrumentation and hooking.</p>
         </div>
         <div className="guide-card">
           <h3>Mobile &amp; Managed Binaries</h3>
-          <p>Analyze mobile and managed runtimes like Android APK/DEX and .NET assemblies. Tools like <strong>jadx</strong>, <strong>apktool</strong>, <strong>MobSF</strong>, and <strong>dnSpyEx</strong> decode Dalvik bytecode, unpack resources, and recover readable source code for security audits and malware analysis.</p>
+          <p>Analyze runtimes including Android APK/DEX and .NET assemblies. Tools like <strong>jadx</strong>, <strong>apktool</strong>, <strong>MobSF</strong>, and <strong>dnSpyEx</strong> decode bytecode, unpack resources, and recover source code for security audits.</p>
         </div>
       </div>
     </section>}

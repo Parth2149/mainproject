@@ -84,3 +84,4 @@ await Promise.all([
 ]);
 
 console.log('SUCCESS: Generated all 4 light-themed human-crafted logo sets (SVG & 512x512 PNG)!');
+

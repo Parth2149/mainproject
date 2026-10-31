@@ -55,3 +55,4 @@ await Promise.all([
 ]);
 
 console.log('SUCCESS: Generated 4 human-crafted flat minimalist logos!');
+

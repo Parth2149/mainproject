@@ -254,7 +254,7 @@ export function schemaFor(page) {
     });
   }
   let entries;
-  if (page.kind === 'directory') entries = (page.category ? tools.filter(tool => tool.category === page.category) : tools).map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
+  if (page.kind === 'directory') entries = (page.category ? tools.filter(tool => tool.category === page.category) : tools.slice(0, 5)).map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
   if (page.kind === 'categories') entries = categories.map(category => ({ name: category, url: canonical(`/category/${slug(category)}/`) }));
   if (page.kind === 'comparisons') entries = pairs.map(pair => ({ name: `${pair[0].name} vs ${pair[1].name}`, url: canonical(pairRoute(pair)) }));
   if (page.kind === 'comparison') webpage.about = page.pair.map(tool => ({ '@type': 'SoftwareApplication', name: tool.name, '@id': canonical(`/tools/${tool.slug}/`) + '#software' }));
