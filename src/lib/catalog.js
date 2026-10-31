@@ -11,6 +11,21 @@ export const categories = [...new Set(tools.map(tool => tool.category))];
 export const platforms = [...new Set(tools.flatMap(tool => tool.platforms))];
 export const licenses = [...new Set(tools.map(tool => tool.license))].sort();
 export const prices = [...new Set(tools.map(tool => tool.pricing))];
+
+export const categoryTitles = {
+  'Disassemblers & Decompilers': 'Best Decompilers & Disassemblers (2026)',
+  'Debuggers': 'Best Reverse Engineering Debuggers (2026)',
+  'Android': 'Best Android Reverse Engineering Tools (2026)',
+  '.NET': 'Best .NET Decompilers & RE Tools (2026)',
+  'Analysis Utilities': 'Best Binary Analysis Utilities (2026)',
+  'Binary Analysis Frameworks': 'Best Binary Analysis Frameworks (2026)',
+  'Firmware & Embedded': 'Best Firmware Reverse Engineering Tools (2026)',
+  'Network': 'Best Network Reverse Engineering Tools (2026)',
+  'Distros & Environments': 'Best Malware Analysis Distros & Labs (2026)',
+  'Java': 'Best Java Decompilers & RE Tools (2026)',
+  'Game RE': 'Best Game Reverse Engineering Tools (2026)',
+};
+
 export const categoryDescriptions = {
   'Disassemblers & Decompilers': 'Top decompilers and disassemblers (x86, x64, ARM, MIPS) for binary analysis, source code recovery, and reverse engineering.',
   'Debuggers': 'Best debuggers, dynamic analysis tools, and GDB extensions for stepping through binaries, memory inspection, and vulnerability research.',
@@ -25,6 +40,14 @@ export const categoryDescriptions = {
   'Game RE': 'Best game reverse engineering tools: memory scanners, runtime struct reconstruction, and process debugging for game binary research.',
 };
 export const metaDescription = text => text.length <= 160 ? text : text.slice(0,157).replace(/\s+\S*$/, '') + '…';
+
+export function toolTitle(tool) {
+  const baseName = `${tool.name} — Reverse Engineering Tool`;
+  if (baseName.length + 9 <= 60) return baseName;
+  const shortBase = `${tool.name} — RE Tool & Guide`;
+  if (shortBase.length + 9 <= 60) return shortBase;
+  return `${tool.name} — RE Software`;
+}
 
 export const defaultKeywords = 'reverse engineering tools, best decompilers, disassemblers, debuggers, binary analysis software, malware analysis, ghidra, ida pro, binary ninja, x64dbg, frida, apk decompiler, open source reverse engineering, static analysis, dynamic analysis';
 
@@ -102,52 +125,52 @@ export const pages = [
   {
     route: '/',
     kind: 'directory',
-    title: 'Best Reverse Engineering Tools, Software & Repositories (2026)',
+    title: 'Top Reverse Engineering Tools & Software (2026)',
     description: 'Explore the curated directory of reverse engineering tools, decompilers, debuggers, binary analysis frameworks, and open-source GitHub projects in 2026.'
   },
   {
     route: '/categories/',
     kind: 'categories',
-    title: 'Reverse Engineering Tools by Category — Complete Directory',
+    title: 'Reverse Engineering Tools by Category (2026)',
     description: 'Browse curated reverse engineering tools by category: Android, debuggers, decompilers, .NET, firmware, binary analysis frameworks, and game RE.'
   },
   ...categories.map(category => ({
     route: `/category/${slug(category)}/`,
     kind: 'directory',
     category,
-    title: `Best ${category} Tools for Reverse Engineering (2026)`,
+    title: categoryTitles[category] || `${category} Reverse Engineering Tools (2026)`,
     description: categoryDescriptions[category] || `Explore top ${category} reverse engineering tools, platforms, open source licenses, and GitHub repositories.`
   })),
   ...tools.map(tool => ({
     route: `/tools/${tool.slug}/`,
     kind: 'tool',
     tool,
-    title: `${tool.name} — Reverse Engineering Tool, Features & Alternatives`,
+    title: toolTitle(tool),
     description: metaDescription(tool.description)
   })),
   {
     route: '/compare/',
     kind: 'comparisons',
-    title: 'Compare Reverse Engineering Tools & Decompilers Side-by-Side',
+    title: 'Compare Reverse Engineering Tools (2026)',
     description: 'Compare reverse engineering software, decompilers, and debuggers by features, platforms, pricing, and licenses to pick the right tool for your workflow.'
   },
   ...pairs.map(pair => ({
     route: pairRoute(pair),
     kind: 'comparison',
     pair,
-    title: `${pair[0].name} vs ${pair[1].name} — Reverse Engineering Tools Comparison`,
+    title: `${pair[0].name} vs ${pair[1].name} — Tools Comparison`,
     description: metaDescription(`Compare ${pair[0].name} vs ${pair[1].name}: features, reverse engineering capabilities, platform support, pricing, and licenses.`)
   })),
   {
     route: '/submit/',
     kind: 'submit',
-    title: 'Submit a Reverse Engineering Tool or GitHub Repository',
+    title: 'Submit a Reverse Engineering Project (2026)',
     description: 'Submit an open-source or commercial reverse engineering tool to RevKit. Contribute via JSON and pull request to help the community.'
   },
   {
     route: '/about/',
     kind: 'about',
-    title: 'About RevKit — Curated Reverse Engineering Tools Directory',
+    title: 'About RevKit — Reverse Engineering Directory',
     description: 'Learn how RevKit curates reverse engineering tools, decompilers, debuggers, binary analysis software, and open-source GitHub repositories.'
   },
 ];
