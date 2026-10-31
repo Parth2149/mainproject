@@ -2,7 +2,17 @@ import React from 'react';
 import { href } from '../lib/catalog';
 
 export function Logo() {
-  return <><span className="logo-symbol" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 25 13 7h5l-8 18Z" fill="#34a8ed"/><path d="m14 25 8-18h5l-8 18Z" fill="#8663ed"/></svg></span><span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span></>;
+  return <>
+    <span className="logo-symbol" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+        <rect x="6" y="6" width="4" height="20" rx="1.5" fill="#38bdf8"/>
+        <path d="M10 9h8a5.5 5.5 0 0 1 0 11H10" stroke="#818cf8" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="m14 19 8.5 7" stroke="#34d399" strokeWidth="3.8" strokeLinecap="round"/>
+        <circle cx="23.5" cy="9" r="1.8" fill="#38bdf8"/>
+      </svg>
+    </span>
+    <span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span>
+  </>;
 }
 
 export function Header({ route }) {
