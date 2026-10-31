@@ -1,0 +1,5 @@
+{
+  "url": "https://revkit.online",
+  "repository": "https://github.com/Parth2149/mainproject",
+  "comparisons": [["ghidra", "ida-free"], ["ghidra", "binary-ninja"], ["jadx", "apktool"], ["pwndbg", "gef"]]
+}

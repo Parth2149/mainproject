@@ -1,0 +1,555 @@
+{
+  "site": "revkit.online",
+  "generated": "2026-10-31",
+  "tools": [
+    {
+      "name": "Ghidra",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://ghidra-sre.org",
+      "github": "https://github.com/NationalSecurityAgency/ghidra",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "NSA's open-source reverse engineering suite: disassembler, decompiler, debugger and scripting in Java/Python."
+    },
+    {
+      "name": "radare2",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://rada.re",
+      "github": "https://github.com/radareorg/radare2",
+      "license": "LGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The classic command-line reverse engineering framework: disassembly, analysis, debugging, binary patching."
+    },
+    {
+      "name": "rizin",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://rizin.re",
+      "github": "https://github.com/rizinorg/rizin",
+      "license": "LGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Modern fork of radare2 focused on a cleaner codebase, Cutter GUI integration and better analysis."
+    },
+    {
+      "name": "Cutter",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://cutter.re",
+      "github": "https://github.com/rizinorg/cutter",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The official GUI for radare2/rizin. Visual disassembly, decompilation, graph views, scripting console."
+    },
+    {
+      "name": "x64dbg",
+      "category": "Debuggers",
+      "url": "https://x64dbg.com",
+      "github": "https://github.com/x64dbg/x64dbg",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Open-source user-mode debugger for Windows x64/x32 with a huge plugin ecosystem."
+    },
+    {
+      "name": "IDA Free",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://hex-rays.com/ida-free/",
+      "github": "",
+      "license": "Proprietary",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The free edition of the industry-standard IDA disassembler; no decompiler, limited to non-commercial use."
+    },
+    {
+      "name": "Binary Ninja",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://binary.ninja",
+      "github": "",
+      "license": "Proprietary",
+      "pricing": "Paid",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Modern commercial RE platform loved for its fast analysis, ILs and excellent Python API."
+    },
+    {
+      "name": "Ghidra vs IDA",
+      "category": "Comparisons",
+      "url": "",
+      "github": "",
+      "license": "",
+      "pricing": "",
+      "platforms": [],
+      "description": "Comparison page seed: Ghidra (free, decompiler included) vs IDA Pro (industry standard, expensive)."
+    },
+    {
+      "name": "jadx",
+      "category": "Android",
+      "url": "https://github.com/skylot/jadx",
+      "github": "https://github.com/skylot/jadx",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decompile Android DEX/APK files back to Java source. The default first tool for Android RE."
+    },
+    {
+      "name": "apktool",
+      "category": "Android",
+      "url": "https://ibotpeaches.github.io/Apktool/",
+      "github": "https://github.com/iBotPeaches/Apktool",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decode and rebuild APK resources (smali + resources.arsc). Essential for Android modding."
+    },
+    {
+      "name": "Frida",
+      "category": "Android",
+      "url": "https://frida.re",
+      "github": "https://github.com/frida/frida",
+      "license": "wxWindows",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "description": "Dynamic instrumentation toolkit. Hook functions, trace calls, and patch apps at runtime on any major platform."
+    },
+    {
+      "name": "MobSF",
+      "category": "Android",
+      "url": "https://mobsf.github.io/Mobile-Security-Framework-MobSF/",
+      "github": "https://github.com/MobSF/Mobile-Security-Framework-MobSF",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Automated mobile app security scanner: static + dynamic analysis of Android/iOS binaries."
+    },
+    {
+      "name": "APKiD",
+      "category": "Android",
+      "url": "https://github.com/rednaga/APKiD",
+      "github": "https://github.com/rednaga/APKiD",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android"
+      ],
+      "description": "Identifies compilers, packers, obfuscators and protectors used in APKs \u2014 Android's answer to PEiD."
+    },
+    {
+      "name": "objection",
+      "category": "Android",
+      "url": "https://github.com/sensepost/objection",
+      "github": "https://github.com/sensepost/objection",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Runtime mobile exploration toolkit built on Frida: bypass SSL pinning, dump memory, explore apps without writing scripts."
+    },
+    {
+      "name": "BlackDex",
+      "category": "Android",
+      "url": "https://github.com/CodingGay/BlackDex",
+      "github": "https://github.com/CodingGay/BlackDex",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "description": "Unpack/dump DEX from apps protected by packers, running on the device itself."
+    },
+    {
+      "name": "unidbg",
+      "category": "Android",
+      "url": "https://github.com/zhkl0228/unidbg",
+      "github": "https://github.com/zhkl0228/unidbg",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Emulate Android native libraries on a PC without a real device; heavily used for unpacking and algorithm analysis."
+    },
+    {
+      "name": "dnSpyEx",
+      "category": ".NET",
+      "url": "https://github.com/dnSpyEx/dnSpyEx",
+      "github": "https://github.com/dnSpyEx/dnSpyEx",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Community-maintained fork of the legendary dnSpy: .NET debugger, decompiler and assembly editor in one."
+    },
+    {
+      "name": "ILSpy",
+      "category": ".NET",
+      "url": "https://github.com/icsharpcode/ILSpy",
+      "github": "https://github.com/icsharpcode/ILSpy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The standard open-source .NET decompiler with a cross-platform Avalonia UI."
+    },
+    {
+      "name": "de4dot",
+      "category": ".NET",
+      "url": "https://github.com/0xd4d/de4dot",
+      "github": "https://github.com/0xd4d/de4dot",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Deobfuscator for dozens of .NET obfuscators (archived repo, still widely used)."
+    },
+    {
+      "name": "Detect It Easy (DIE)",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/horsicq/Detect-It-Easy",
+      "github": "https://github.com/horsicq/Detect-It-Easy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Fast file type / compiler / packer identification with a signature-script system. Successor to PEiD."
+    },
+    {
+      "name": "UPX",
+      "category": "Analysis Utilities",
+      "url": "https://upx.github.io",
+      "github": "https://github.com/upx/upx",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The most common executable packer \u2014 and the first packer every reverser learns to unpack."
+    },
+    {
+      "name": "TrID",
+      "category": "Analysis Utilities",
+      "url": "https://mark0.net/soft-trid-e.html",
+      "github": "",
+      "license": "Freeware",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "File type identifier with thousands of definitions; useful when extensions lie."
+    },
+    {
+      "name": "ScyllaHide",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/NtQuery/ScyllaHide",
+      "github": "https://github.com/NtQuery/ScyllaHide",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Advanced anti-anti-debug plugin for x64dbg and other debuggers."
+    },
+    {
+      "name": "angr",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://angr.io",
+      "github": "https://github.com/angr/angr",
+      "license": "BSD-2-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Python framework for symbolic execution, concolic analysis and automated binary analysis research."
+    },
+    {
+      "name": "capstone",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://www.capstone-engine.org",
+      "github": "https://github.com/capstone-engine/capstone",
+      "license": "BSD-3-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "The disassembly engine behind most modern RE tools; multi-architecture, multi-language bindings."
+    },
+    {
+      "name": "LIEF",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://lief-project.github.io/",
+      "github": "https://github.com/lief-project/LIEF",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Library to parse and modify ELF, PE and Mach-O formats from Python/C++."
+    },
+    {
+      "name": "YARA",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://virustotal.github.io/yara/",
+      "github": "https://github.com/VirusTotal/yara",
+      "license": "BSD-3-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Pattern-matching tool for malware classification and triage; the standard in threat hunting."
+    },
+    {
+      "name": "binwalk",
+      "category": "Firmware & Embedded",
+      "url": "https://github.com/ReFirmLabs/binwalk",
+      "github": "https://github.com/ReFirmLabs/binwalk",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Firmware analysis and extraction: find embedded files and filesystems inside any binary blob."
+    },
+    {
+      "name": "FACT_core",
+      "category": "Firmware & Embedded",
+      "url": "https://fkie-cad.github.io/FACT_core/",
+      "github": "https://github.com/fkie-cad/FACT_core",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Full-scale firmware analysis framework: unpacks, compares and compares firmware images automatically."
+    },
+    {
+      "name": "emulating firmware: FirmAE",
+      "category": "Firmware & Embedded",
+      "url": "https://github.com/pr0v3rbs/FirmAE",
+      "github": "https://github.com/pr0v3rbs/FirmAE",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Automated emulation framework for running IoT firmware in a virtualized environment."
+    },
+    {
+      "name": "UEFITool",
+      "category": "Firmware & Embedded",
+      "url": "https://github.com/LongSoft/UEFITool",
+      "github": "https://github.com/LongSoft/UEFITool",
+      "license": "BSD-2-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Parse, extract and modify UEFI firmware images."
+    },
+    {
+      "name": "pwndbg",
+      "category": "Debuggers",
+      "url": "https://github.com/pwndbg/pwndbg",
+      "github": "https://github.com/pwndbg/pwndbg",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Feature-rich GDB plugin with context displays, heap analysis and exploit-dev helpers."
+    },
+    {
+      "name": "GEF",
+      "category": "Debuggers",
+      "url": "https://github.com/hugsy/gef",
+      "github": "https://github.com/hugsy/gef",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "GDB Enhanced Features: shellcode helpers, pattern search and exploit development commands."
+    },
+    {
+      "name": "mitmproxy",
+      "category": "Network",
+      "url": "https://mitmproxy.org",
+      "github": "https://github.com/mitmproxy/mitmproxy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Interactive HTTPS proxy for intercepting and modifying app traffic \u2014 key for mobile app RE."
+    },
+    {
+      "name": "FLARE VM",
+      "category": "Distros & Environments",
+      "url": "https://github.com/mandiant/flare-vm",
+      "github": "https://github.com/mandiant/flare-vm",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Mandiant's Windows-based malware analysis virtual machine: comes preloaded with all major RE tools."
+    },
+    {
+      "name": "REMnux",
+      "category": "Distros & Environments",
+      "url": "https://remnux.org",
+      "github": "https://github.com/REMnux/distro",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Linux distro for malware reverse engineering with hundreds of tools preinstalled."
+    },
+    {
+      "name": "Bytecode Viewer",
+      "category": "Java",
+      "url": "https://github.com/Konloch/bytecode-viewer",
+      "github": "https://github.com/Konloch/bytecode-viewer",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "All-in-one Java reverse engineering suite: decompile with multiple engines, edit bytecode, APK support."
+    },
+    {
+      "name": "dex2jar",
+      "category": "Android",
+      "url": "https://github.com/pxb1988/dex2jar",
+      "github": "https://github.com/pxb1988/dex2jar",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Convert Android DEX files to JAR so classic Java tools can read them."
+    },
+    {
+      "name": "Quark Engine",
+      "category": "Android",
+      "url": "https://github.com/quark-engine/quark-engine",
+      "github": "https://github.com/quark-engine/quark-engine",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Android malware analysis engine using Dalvik bytecode rules to score suspicious behavior."
+    },
+    {
+      "name": "Cheat Engine",
+      "category": "Game RE",
+      "url": "https://www.cheatengine.org",
+      "github": "https://github.com/cheat-engine/cheat-engine",
+      "license": "Proprietary",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "description": "Memory scanner and debugger \u2014 the classic entry point into game reverse engineering."
+    },
+    {
+      "name": "ReClassEx",
+      "category": "Game RE",
+      "url": "https://github.com/dude719/ReClassEx",
+      "github": "https://github.com/dude719/ReClassEx",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Live memory structure reconstruction tool for reverse engineered classes/structs."
+    }
+  ]
+}

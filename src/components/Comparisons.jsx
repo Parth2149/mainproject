@@ -1,0 +1,9 @@
+import React from 'react';
+import { pairs, pairRoute, href, seed } from '../lib/catalog';
+
+export default function Comparisons({ pair }) {
+  if (!pair) return <><section className="page-intro"><div className="eyebrow">SIDE BY SIDE</div><h1>Find your <span className="text-gradient">perfect fit.</span></h1><p className="lead">Compare the details that matter to your workflow.</p></section><div className="comparison-list">{pairs.map(([a,b]) => <a key={a.slug+b.slug} className="comparison-card" href={href(pairRoute([a,b]))}><span className="eyebrow">{a.category}</span><h2>{a.name} <span className="muted">vs</span> {b.name} ↗</h2><p>Features, platforms, pricing, and license.</p></a>)}</div></>;
+  const [a,b] = pair;
+  const rows = [['Category',a.category,b.category],['Pricing',a.pricing,b.pricing],['License',a.license,b.license],['Platforms',a.platforms.join(', '),b.platforms.join(', ')],['Capabilities',a.description,b.description]];
+  return <><section className="page-intro"><div className="eyebrow">THE COMPARISON</div><h1>{a.name} <span className="muted">vs</span><br/><span className="text-gradient">{b.name}</span></h1><p className="lead">Different tools. An informed choice.</p></section><div className="table-wrap"><table><caption className="sr-only">{a.name} and {b.name} comparison</caption><thead><tr><th scope="col">At a glance</th>{pair.map(tool => <th key={tool.slug} scope="col"><a href={href(`/tools/${tool.slug}/`)}>{tool.name} ↗</a></th>)}</tr></thead><tbody>{rows.map(([label,left,right]) => <tr key={label}><th scope="row">{label}</th><td>{left}</td><td>{right}</td></tr>)}</tbody></table></div><p className="small muted">Based on the {seed.generated} seed dataset. Verify current product terms and capabilities with the official projects.</p><div className="actions">{pair.map(tool => <a key={tool.slug} className="button secondary" href={href(`/tools/${tool.slug}/`)}>Explore {tool.name} ↗</a>)}</div></>;
+}

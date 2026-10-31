@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { pages } from '../lib/catalog';
+export function getStaticPaths() {
+  return pages.map(page => ({ params: { path: page.route === '/' ? undefined : page.route.replace(/^\/|\/$/g, '') }, props: { page } }));
+}
+const { page } = Astro.props;
+---
+<Layout page={page} />

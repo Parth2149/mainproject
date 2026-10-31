@@ -1,0 +1,51 @@
+---
+import { Header, Footer, Background } from '../components/Chrome.jsx';
+import Site from '../components/Site.jsx';
+import Breadcrumbs from '../components/Breadcrumbs.jsx';
+import { canonical, href, schemaFor, metaDescription } from '../lib/catalog';
+const { page } = Astro.props;
+const schema = schemaFor(page);
+const description = metaDescription(page.description);
+const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submit' ? 'submit.js' : null;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{page.title} | RevKit</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f8faff" />
+    <link rel="canonical" href={canonical(page.route)} />
+    <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={`${page.title} | RevKit`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical(page.route)} />
+    <meta property="og:site_name" content="RevKit" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={canonical('/assets/og.png')} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RevKit — curated reverse engineering tools and GitHub repositories" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={`${page.title} | RevKit`} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={canonical('/assets/og.png')} />
+    <meta name="twitter:image:alt" content="RevKit — curated reverse engineering tools and GitHub repositories" />
+    <link rel="icon" href={href('/assets/favicon.svg')} type="image/svg+xml" />
+    <link rel="stylesheet" href={href('/assets/style.css')} />
+    <link rel="stylesheet" href={href('/assets/light.css')} />
+    {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\u003c')} />}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <Background />
+    <div class="site-content">
+      <Header route={page.route} />
+      <main id="main" class="shell"><Breadcrumbs page={page} /><Site page={page} /></main>
+      <Footer />
+    </div>
+    {script && <script is:inline src={href(`/assets/${script}`)} defer />}
+  </body>
+</html>
