@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Left Slash: Deep Navy / Slate -->
+  <path d="M6 25 14 7h5L11 25Z" fill="#1e293b"/>
+  <!-- Right Slash: Electric Cobalt Blue -->
+  <path d="m15 25 8-18h5l-8 18Z" fill="#2563eb"/>
+</svg>

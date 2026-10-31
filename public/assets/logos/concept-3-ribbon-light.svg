@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Continuous Dynamic Flow -->
+  <path d="M18 48V16h16a9 9 0 0 1 0 18H18l18 14" stroke="#1e293b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Internal Reverse Indicator (Sky Blue to Mint) -->
+  <path d="m27 22-4 3 4 3" stroke="#0284c7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Terminal Node Dot (Electric Indigo) -->
+  <circle cx="36" cy="48" r="4.5" fill="#6366f1"/>
+</svg>

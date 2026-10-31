@@ -85,3 +85,4 @@ fs.writeFileSync('public/assets/logos/pure-reverse-engineering.svg', pureReSvg);
 
 await sharp(Buffer.from(pureReSvg)).resize(512, 512).png().toFile('public/assets/logos/pure-reverse-engineering.png');
 console.log('SUCCESS: Generated pure reverse engineering mark (SVG & 512x512 PNG)!');
+

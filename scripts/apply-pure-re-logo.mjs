@@ -50,3 +50,4 @@ fs.writeFileSync('public/favicon.ico', ico);
 fs.writeFileSync('public/assets/favicon.ico', ico);
 
 console.log('SUCCESS: Applied Pure Reverse Engineering mark to all site icons!');
+

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Left Bracket < -->
+  <path d="m10 10-5 6 5 6" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Reversing Slash (steep diagonal with directional head) -->
+  <path d="M19 8 13 24" stroke="#1e293b" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Right Bracket > -->
+  <path d="m22 10 5 6-5 6" stroke="#2563eb" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

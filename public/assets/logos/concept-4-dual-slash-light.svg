@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Left Slash: Cerulean Sky Blue -->
+  <path d="M14 48 29 16h9L23 48Z" fill="#0284c7"/>
+  
+  <!-- Right Slash: Vibrant Royal Indigo -->
+  <path d="m31 48 15-32h9L40 48Z" fill="#6366f1"/>
+</svg>
