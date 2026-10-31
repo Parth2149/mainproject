@@ -2,10 +2,11 @@
 import { Header, Footer, Background } from '../components/Chrome.jsx';
 import Site from '../components/Site.jsx';
 import Breadcrumbs from '../components/Breadcrumbs.jsx';
-import { canonical, href, schemaFor, metaDescription } from '../lib/catalog';
+import { canonical, href, schemaFor, metaDescription, keywordsFor } from '../lib/catalog';
 const { page } = Astro.props;
 const schema = schemaFor(page);
 const description = metaDescription(page.description);
+const keywords = keywordsFor(page);
 const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submit' ? 'submit.js' : null;
 ---
 <!doctype html>
@@ -15,6 +16,7 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{page.title} | RevKit</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
     <meta name="theme-color" content="#f8faff" />
     <link rel="canonical" href={canonical(page.route)} />
     <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
