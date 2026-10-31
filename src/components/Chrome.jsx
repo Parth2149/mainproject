@@ -5,11 +5,14 @@ export function Logo() {
   return <>
     <span className="logo-symbol" aria-hidden="true">
       <svg viewBox="0 0 128 128" width="28" height="28" fill="none">
-        <rect x="26" y="26" width="15" height="76" rx="7" fill="#38bdf8"/>
-        <path d="M41 34h33a20 20 0 0 1 0 40H41" stroke="#818cf8" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="m56 70 36 34" stroke="#34d399" strokeWidth="15" strokeLinecap="round"/>
-        <path d="m56 70 30-28" stroke="#38bdf8" strokeWidth="11" strokeLinecap="round" opacity="0.95"/>
-        <circle cx="33.5" cy="33.5" r="4.5" fill="#ffffff" opacity="0.95"/>
+        <rect x="26" y="26" width="14" height="20" rx="4" fill="#38bdf8"/>
+        <rect x="26" y="50" width="14" height="26" rx="4" fill="#38bdf8"/>
+        <rect x="26" y="80" width="14" height="22" rx="4" fill="#38bdf8"/>
+        <path d="M40 33h35a18 18 0 0 1 0 36H40" stroke="#8b5cf6" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="m54 69 36 33" stroke="#34d399" strokeWidth="14" strokeLinecap="round"/>
+        <path d="M82 82l-14-3 3 14" stroke="#ffffff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="m58 45-6 6 6 6" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" opacity="0.9"/>
+        <circle cx="95" cy="51" r="5" fill="#38bdf8"/>
       </svg>
     </span>
     <span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span>

@@ -51,3 +51,4 @@ fs.writeFileSync('public/favicon.ico', ico);
 fs.writeFileSync('public/assets/favicon.ico', ico);
 
 console.log('SUCCESS: Applied master logo to all site favicons and icons!');
+

@@ -82,3 +82,4 @@ await sharp(Buffer.from(svgMasterRK)).resize(512, 512).png().toFile('public/asse
 await sharp(Buffer.from(svgPrismCore)).resize(512, 512).png().toFile('public/assets/logos/master-concept-prism.png');
 
 console.log('SUCCESS: Master logo concepts created!');
+
