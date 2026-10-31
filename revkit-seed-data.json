@@ -3,6 +3,287 @@
   "generated": "2026-10-31",
   "tools": [
     {
+      "name": "JPEXS Flash Decompiler",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://github.com/jindrapetrik/jpexs-decompiler",
+      "github": "https://github.com/jindrapetrik/jpexs-decompiler",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Adobe Flash SWF decompiler and editor to inspect ActionScript 1/2/3 and extract.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "pdf-parser",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/DidierStevens/DidierStevensSuite",
+      "github": "https://github.com/DidierStevens/DidierStevensSuite",
+      "license": "Public Domain",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Deconstruct and reverse engineer Adobe PDF document streams, scripts, and.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "peepdf",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/jesparza/peepdf",
+      "github": "https://github.com/jesparza/peepdf",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Interactive Python tool for reverse engineering, inspect, and analyze malicious.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "RABCDAsm",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://github.com/CyberShadow/RABCDAsm",
+      "github": "https://github.com/CyberShadow/RABCDAsm",
+      "license": "BSL-1.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "ActionScript Bytecode disassembler and assembler for Adobe Flash and AIR AVM2.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "psd-tools",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/psd-tools/psd-tools",
+      "github": "https://github.com/psd-tools/psd-tools",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Python library for reverse engineering and unpack Adobe Photoshop PSD and PSB layer.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "Cerbero Suite",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://cerbero.io/",
+      "license": "Commercial",
+      "pricing": "Commercial",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Advanced RE suite for Adobe Acrobat PDF parsing, XFA forms, fonts, and shellcode.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "PDF Stream Dumper",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/dzzie/pdfstreamdumper",
+      "github": "https://github.com/dzzie/pdfstreamdumper",
+      "license": "Freeware",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Analysis GUI for inspecting malicious Adobe PDF files, stream decompression, and JS.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "PDFResurrect",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/enferex/pdfresurrect",
+      "github": "https://github.com/enferex/pdfresurrect",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Digital forensics tool for reverse engineering incremental updates and extract.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "Origami",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/gdelugre/origami",
+      "github": "https://github.com/gdelugre/origami",
+      "license": "LGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Ruby framework and interactive shell for reverse engineering, deobfuscate, dissect,.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "qpdf",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/qpdf/qpdf",
+      "github": "https://github.com/qpdf/qpdf",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "C++ structural transformation tool to linearize, decompress object streams, and.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "mutool",
+      "category": "Analysis Utilities",
+      "url": "https://mupdf.com/",
+      "github": "https://github.com/ArtifexSoftware/mupdf",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "High-speed command-line suite from MuPDF to clean, sanitize xref tables, decompress.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "fonttools",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/fonttools/fonttools",
+      "github": "https://github.com/fonttools/fonttools",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Python library and TTX engine to decompile, reverse engineer, and inspect Type 1,.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "Rembg",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://github.com/danielgatis/rembg",
+      "github": "https://github.com/danielgatis/rembg",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "AI background removal engine using ONNX neural models to replace Canva Pro."
+    },
+    {
+      "name": "Upscayl",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://upscayl.org",
+      "github": "https://github.com/upscayl/upscayl",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Free and AI image upscaler and enhancer powered by Vulkan NCNN to replace Canva."
+    },
+    {
+      "name": "IOPaint",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://github.com/Sanster/IOPaint",
+      "github": "https://github.com/Sanster/IOPaint",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Image inpainting and object removal suite using LaMa neural models to replace Canva."
+    },
+    {
+      "name": "Remotion",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://remotion.dev",
+      "github": "https://github.com/remotion-dev/remotion",
+      "license": "Custom",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "React video creation and animation engine replacing Canva video templates and."
+    },
+    {
+      "name": "Potrace",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://potrace.sourceforge.net/",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Vector tracing utility converting raster images and logos into smooth SVG vectors."
+    },
+    {
+      "name": "Fabric.js",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://fabricjs.com/",
+      "github": "https://github.com/fabricjs/fabric.js",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "HTML5 canvas object library and SVG parser for modern web design and graphics."
+    },
+    {
+      "name": "Penpot",
+      "category": "Analysis Utilities",
+      "tag": "Canva Replacement",
+      "url": "https://penpot.app",
+      "github": "https://github.com/penpot/penpot",
+      "license": "MPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "web-based vector design and prototyping platform built on open standards as a Canva."
+    },
+    {
       "name": "Androguard",
       "category": "Android",
       "url": "https://github.com/androguard/androguard",
@@ -28,7 +309,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Python framework for symbolic execution, concolic analysis and automated binary analysis research."
+      "description": "Python framework for symbolic execution, concolic analysis and automated binary."
     },
     {
       "name": "APKiD",
@@ -43,7 +324,7 @@
         "macOS",
         "Android"
       ],
-      "description": "Identifies compilers, packers, obfuscators and protectors used in APKs — Android's answer to PEiD."
+      "description": "Identifies compilers, packers, obfuscators and protectors used in APKs — Android's."
     },
     {
       "name": "apktool",
@@ -57,7 +338,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Decode and rebuild APK resources (smali + resources.arsc). Essential for Android modding."
+      "description": "Decode and rebuild APK resources (smali + resources.arsc). Essential for Android."
     },
     {
       "name": "AsmSpy",
@@ -96,7 +377,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Modern commercial RE platform loved for its fast analysis, ILs and excellent Python API."
+      "description": "Modern commercial RE platform loved for its fast analysis, ILs and excellent Python."
     },
     {
       "name": "binwalk",
@@ -110,7 +391,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Firmware analysis and extraction: find embedded files and filesystems inside any binary blob."
+      "description": "Firmware analysis and extraction: find embedded files and filesystems inside any."
     },
     {
       "name": "BlackDex",
@@ -135,7 +416,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Industry-standard intercepting proxy and security tool for HTTP/HTTPS reverse engineering."
+      "description": "Industry-standard intercepting proxy and security tool for HTTP/HTTPS reverse."
     },
     {
       "name": "Bytecode Viewer",
@@ -149,7 +430,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "All-in-one Java reverse engineering suite: decompile with multiple engines, edit bytecode, APK support."
+      "description": "All-in-one Java reverse engineering suite: decompile with multiple engines, edit."
     },
     {
       "name": "capstone",
@@ -163,7 +444,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The disassembly engine behind most modern RE tools; multi-architecture, multi-language bindings."
+      "description": "The disassembly engine behind most modern RE tools; multi-architecture,."
     },
     {
       "name": "CFF Explorer",
@@ -201,7 +482,7 @@
         "macOS",
         "Linux"
       ],
-      "description": "HTTP monitor and reverse proxy for recording all network traffic between app and server."
+      "description": "HTTP monitor and reverse proxy for recording all network traffic between app and."
     },
     {
       "name": "Cheat Engine",
@@ -240,7 +521,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The official GUI for radare2/rizin. Visual disassembly, decompilation, graph views, scripting console."
+      "description": "The official GUI for radare2/rizin. Visual disassembly, decompilation, graph views,."
     },
     {
       "name": "de4dot",
@@ -266,7 +547,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Fast file type / compiler / packer identification with a signature-script system. Successor to PEiD."
+      "description": "Fast file type / compiler / packer identification with a signature-script system.."
     },
     {
       "name": "dex2jar",
@@ -305,7 +586,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Community-maintained fork of the legendary dnSpy: .NET debugger, decompiler and assembly editor in one."
+      "description": "Community-maintained fork of the legendary dnSpy: .NET debugger, decompiler and."
     },
     {
       "name": "dotPeek",
@@ -389,7 +670,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Full-scale firmware analysis framework: unpacks, compares and compares firmware images automatically."
+      "description": "Full-scale firmware analysis framework: unpacks, compares and compares firmware."
     },
     {
       "name": "Fernflower",
@@ -428,7 +709,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Script that searches extracted firmware file systems for credentials and sensitive data."
+      "description": "Script that searches extracted firmware file systems for credentials and sensitive."
     },
     {
       "name": "FLARE VM",
@@ -440,7 +721,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Mandiant's Windows-based malware analysis virtual machine: comes preloaded with all major RE tools."
+      "description": "Mandiant's Windows-based malware analysis virtual machine: comes preloaded with all."
     },
     {
       "name": "FLOSS",
@@ -454,7 +735,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Mandiant tool that automatically extracts and decodes obfuscated strings from malware."
+      "description": "Mandiant tool that automatically extracts and decodes obfuscated strings from."
     },
     {
       "name": "Frida",
@@ -470,7 +751,7 @@
         "Android",
         "iOS"
       ],
-      "description": "Dynamic instrumentation toolkit. Hook functions, trace calls, and patch apps at runtime on any major platform."
+      "description": "Dynamic instrumentation toolkit. Hook functions, trace calls, and patch apps at."
     },
     {
       "name": "GDA",
@@ -482,7 +763,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Fast C++ based Android decompiler and malware analysis suite without Java dependencies."
+      "description": "Fast C++ based Android decompiler and malware analysis suite without Java."
     },
     {
       "name": "GDB",
@@ -495,7 +776,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "The GNU Project Debugger: standard tool for tracing and debugging native machine code."
+      "description": "The GNU Project Debugger: standard tool for tracing and debugging native machine."
     },
     {
       "name": "GEF",
@@ -507,7 +788,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "GDB Enhanced Features: shellcode helpers, pattern search and exploit development commands."
+      "description": "GDB Enhanced Features: shellcode helpers, pattern search and exploit development."
     },
     {
       "name": "Ghidra",
@@ -521,7 +802,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "NSA's open-source reverse engineering suite: disassembler, decompiler, debugger and scripting in Java/Python."
+      "description": "NSA's reverse engineering suite: disassembler, decompiler, debugger and scripting."
     },
     {
       "name": "Ghidra Firmware Toolkit",
@@ -535,7 +816,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Firmware analysis scripts and loaders extending Ghidra for embedded binary reverse engineering."
+      "description": "Firmware analysis scripts and loaders extending Ghidra for embedded binary reverse."
     },
     {
       "name": "Hopper Disassembler",
@@ -547,7 +828,7 @@
         "macOS",
         "Linux"
       ],
-      "description": "Fast reverse engineering tool and decompiler for 32/64-bit Mach-O, ELF, and PE binaries."
+      "description": "Fast reverse engineering tool and decompiler for 32/64-bit Mach-O, ELF, and PE."
     },
     {
       "name": "House",
@@ -575,7 +856,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The free edition of the industry-standard IDA disassembler; no decompiler, limited to non-commercial use."
+      "description": "The free edition of the industry-standard IDA disassembler; no decompiler, limited."
     },
     {
       "name": "IDA Pro",
@@ -588,7 +869,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Industry-standard multi-processor disassembler and Hex-Rays decompiler for binary analysis."
+      "description": "Industry-standard multi-processor disassembler and Hex-Rays decompiler for binary."
     },
     {
       "name": "ILSpy",
@@ -629,7 +910,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Decompile Android DEX/APK files back to Java source. The default first tool for Android RE."
+      "description": "Decompile Android DEX/APK files back to Java source. The default first tool for."
     },
     {
       "name": "JD-GUI",
@@ -681,7 +962,7 @@
         "Windows",
         "macOS"
       ],
-      "description": "The leading cybersecurity and reverse engineering distribution with hundreds of tools."
+      "description": "The leading cybersecurity and reverse engineering distribution with hundreds of."
     },
     {
       "name": "Keystone Engine",
@@ -748,7 +1029,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Modular interactive disassembler framework designed for speed and multi-architecture analysis."
+      "description": "Modular interactive disassembler framework designed for speed and."
     },
     {
       "name": "MemProcFS",
@@ -761,7 +1042,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Virtual file system that mounts physical memory dumps as searchable files and folders."
+      "description": "Virtual file system that mounts physical memory dumps as searchable files and."
     },
     {
       "name": "mitmproxy",
@@ -775,7 +1056,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Interactive HTTPS proxy for intercepting and modifying app traffic — key for mobile app RE."
+      "description": "Interactive HTTPS proxy for intercepting and modifying app traffic — key for mobile."
     },
     {
       "name": "MobSF",
@@ -789,7 +1070,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Automated mobile app security scanner: static + dynamic analysis of Android/iOS binaries."
+      "description": "Automated mobile app security scanner: static + dynamic analysis of Android/iOS."
     },
     {
       "name": "objection",
@@ -803,7 +1084,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Runtime mobile exploration toolkit built on Frida: bypass SSL pinning, dump memory, explore apps without writing scripts."
+      "description": "Runtime mobile exploration toolkit built on Frida: bypass SSL pinning, dump memory,."
     },
     {
       "name": "OFRAK",
@@ -816,7 +1097,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open Firmware Reverse Analysis Konsole for unpacking, analyzing, and repacking firmware."
+      "description": "Open Firmware Reverse Analysis Konsole for unpacking, analyzing, and repacking."
     },
     {
       "name": "OllyDbg",
@@ -852,7 +1133,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Python Exploit Development Assistance plugin for GDB with enhanced disassembly displays."
+      "description": "Python Exploit Development Assistance plugin for GDB with enhanced disassembly."
     },
     {
       "name": "PEStudio",
@@ -863,7 +1144,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Static executable file investigator that spots suspicious anomalies without execution."
+      "description": "Static executable file investigator that spots suspicious anomalies without."
     },
     {
       "name": "Process Explorer",
@@ -897,7 +1178,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Microsoft Sysinternals tool monitoring real-time file system, Registry, and process activity."
+      "description": "Microsoft Sysinternals tool monitoring real-time file system, Registry, and process."
     },
     {
       "name": "Procyon",
@@ -951,7 +1232,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Android malware analysis engine using Dalvik bytecode rules to score suspicious behavior."
+      "description": "Android malware analysis engine using Dalvik bytecode rules to score suspicious."
     },
     {
       "name": "radare2",
@@ -965,7 +1246,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The classic command-line reverse engineering framework: disassembly, analysis, debugging, binary patching."
+      "description": "The classic command-line reverse engineering framework: disassembly, analysis,."
     },
     {
       "name": "ReClassEx",
@@ -1030,7 +1311,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Modern fork of radare2 focused on a cleaner codebase, Cutter GUI integration and better analysis."
+      "description": "Modern fork of radare2 focused on a cleaner codebase, Cutter GUI integration and."
     },
     {
       "name": "Routersploit",
@@ -1147,7 +1428,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Dynamic binary analysis framework providing symbolic execution and taint analysis engines."
+      "description": "Dynamic binary analysis framework providing symbolic execution and taint analysis."
     },
     {
       "name": "UEFITool",
@@ -1189,7 +1470,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Emulate Android native libraries on a PC without a real device; heavily used for unpacking and algorithm analysis."
+      "description": "Emulate Android native libraries on a PC without a real device; heavily used for."
     },
     {
       "name": "UPX",
@@ -1203,7 +1484,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The most common executable packer — and the first packer every reverser learns to unpack."
+      "description": "The most common executable packer — and the first packer every reverser learns to."
     },
     {
       "name": "Volatility",
@@ -1217,7 +1498,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "World-leading memory forensics framework for extracting processes, sockets, and injected code."
+      "description": "World-leading memory forensics framework for extracting processes, sockets, and."
     },
     {
       "name": "Voltron",
@@ -1309,7 +1590,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Pattern-matching tool for malware classification and triage; the standard in threat hunting."
+      "description": "Pattern-matching tool for malware classification and triage; the standard in threat."
     },
     {
       "name": "Ghidra vs IDA",
@@ -1319,7 +1600,7 @@
       "license": "",
       "pricing": "",
       "platforms": [],
-      "description": "Comparison page seed: Ghidra (free, decompiler included) vs IDA Pro (industry standard, expensive)."
+      "description": "Comparison page seed: Ghidra (free, decompiler included) vs IDA Pro (industry."
     }
   ]
 }

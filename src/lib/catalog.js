@@ -42,18 +42,57 @@ export const categoryDescriptions = {
 export const metaDescription = text => text.length <= 160 ? text : text.slice(0,157).replace(/\s+\S*$/, '') + '…';
 
 export function toolTitle(tool) {
-  const baseName = `${tool.name} — Reverse Engineering Tool`;
-  if (baseName.length + 9 <= 60) return baseName;
-  const shortBase = `${tool.name} — RE Tool & Guide`;
-  if (shortBase.length + 9 <= 60) return shortBase;
+  const candidates = [];
+  if (tool.tag === 'Adobe Replacement') {
+    candidates.push(
+      `${tool.name} — Free Adobe Alternative & RE`,
+      `${tool.name} — Adobe Alternative & RE Tool`,
+      `${tool.name} — Adobe RE & Alternative`,
+      `${tool.name} — Adobe Alternative`,
+      `${tool.name} — Adobe RE Tool`
+    );
+  } else if (tool.tag === 'Canva Replacement') {
+    candidates.push(
+      `${tool.name} — Free Canva Alternative & RE`,
+      `${tool.name} — Canva Alternative & RE Tool`,
+      `${tool.name} — Canva Alternative & Tool`,
+      `${tool.name} — Free Canva Alternative`,
+      `${tool.name} — Canva Alternative`
+    );
+  } else {
+    candidates.push(
+      `${tool.name} — Reverse Engineering Tool & Alternative`,
+      `${tool.name} — RE Tool & Free Alternative`,
+      `${tool.name} — RE Tool & Alternative`,
+      `${tool.name} — Reverse Engineering Tool`,
+      `${tool.name} — RE Software`
+    );
+  }
+  for (const c of candidates) {
+    if (c.length + 9 <= 60) return c;
+  }
   return `${tool.name} — RE Software`;
+}
+
+export function toolPageDescription(tool) {
+  let prefix = '';
+  if (tool.tag === 'Adobe Replacement') {
+    prefix = `Free Adobe alternative & RE tool: ${tool.name}. `;
+  } else if (tool.tag === 'Canva Replacement') {
+    prefix = `Free Canva alternative & RE tool: ${tool.name}. `;
+  } else {
+    prefix = `${tool.name} RE tool & alternative: `;
+  }
+  return metaDescription(prefix + tool.description);
 }
 
 export const defaultKeywords = 'reverse engineering tools, best decompilers, disassemblers, debuggers, binary analysis software, malware analysis, ghidra, ida pro, binary ninja, x64dbg, frida, apk decompiler, open source reverse engineering, static analysis, dynamic analysis';
 
 export function keywordsFor(page) {
   if (page.kind === 'tool' && page.tool) {
-    return `${page.tool.name}, ${page.tool.name} reverse engineering, ${page.tool.name} download, ${page.tool.name} alternatives, ${page.tool.category.toLowerCase()} tools, ${page.tool.platforms.join(', ').toLowerCase()} reverse engineering, ${page.tool.license}`;
+    const t = page.tool;
+    const tagKws = t.tag ? `, ${t.tag.toLowerCase()}, ${t.tag.toLowerCase().replace(' replacement', '')} alternative, free ${t.tag.toLowerCase().replace(' replacement', '')} replacement` : '';
+    return `${t.name}, ${t.name} alternative, ${t.name} reverse engineering, ${t.name} open source, ${t.category.toLowerCase()} tools, ${t.platforms.join(', ').toLowerCase()} reverse engineering, ${t.license}${tagKws}`;
   }
   if (page.category) {
     const map = {
@@ -79,20 +118,8 @@ export function keywordsFor(page) {
 
 export const homepageFaqs = [
   {
-    question: 'What are the best reverse engineering tools in 2026?',
-    answer: 'The top reverse engineering tools include Ghidra (NSA open-source decompiler suite), IDA Free and Binary Ninja (binary disassembly and decompilation), x64dbg and GDB with pwndbg/GEF (dynamic debugging), Frida (dynamic binary instrumentation), and jadx (Android APK/DEX decompilation).'
-  },
-  {
-    question: 'What is the difference between a decompiler and a disassembler?',
-    answer: 'A disassembler translates compiled machine code (binary opcodes) into human-readable assembly instructions (like x86, x64, or ARM). A decompiler goes a step further by reconstructing high-level source code (such as C/C++ pseudo-code, Java, or C#) from the assembly or bytecode.'
-  },
-  {
-    question: 'Which reverse engineering tools are free and open source on GitHub?',
-    answer: 'Popular free and open-source tools include Ghidra (Apache-2.0), radare2 (LGPL-3.0), rizin and Cutter (LGPL-3.0), x64dbg (GPL-3.0), jadx (Apache-2.0), apktool (Apache-2.0), Frida (wxWindows), pwndbg and GEF (MIT), and binwalk (MIT).'
-  },
-  {
-    question: 'What tools are best for Android reverse engineering and mobile malware analysis?',
-    answer: 'For Android APK and DEX analysis, jadx decompiles APKs to Java source, apktool decodes resources and smali code, Frida provides real-time function hooking, and MobSF offers automated static and dynamic security analysis.'
+    question: 'Best reverse engineering tools & alternatives in 2026?',
+    answer: 'Ghidra, IDA Free, and Binary Ninja for decompilation; x64dbg and Frida for debugging; and open-source Adobe/Canva alternatives like JPEXS, Rembg, and Penpot.'
   }
 ];
 
@@ -146,7 +173,7 @@ export const pages = [
     kind: 'tool',
     tool,
     title: toolTitle(tool),
-    description: metaDescription(tool.description)
+    description: toolPageDescription(tool)
   })),
   {
     route: '/compare/',
@@ -221,8 +248,10 @@ export function schemaFor(page) {
       '@type': 'SoftwareApplication',
       '@id': url + '#software',
       name: tool.name,
-      description: tool.description,
+      description: page.description,
       applicationCategory: 'DeveloperApplication, SecurityApplication',
+      applicationSubCategory: tool.tag ? `${tool.tag} · Open Source Alternative` : `${tool.category} Software`,
+      keywords: tool.tag ? `${tool.name}, ${tool.tag}, alternative, reverse engineering, open source` : `${tool.name}, reverse engineering tool, alternative, ${tool.category}`,
       operatingSystem: tool.platforms.join(', '),
       license: tool.license,
       url: tool.url || url,
@@ -254,7 +283,7 @@ export function schemaFor(page) {
     });
   }
   let entries;
-  if (page.kind === 'directory') entries = (page.category ? tools.filter(tool => tool.category === page.category) : tools.slice(0, 5)).map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
+  if (page.kind === 'directory') entries = (page.category ? tools.filter(tool => tool.category === page.category) : tools.slice(0, 1)).map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
   if (page.kind === 'categories') entries = categories.map(category => ({ name: category, url: canonical(`/category/${slug(category)}/`) }));
   if (page.kind === 'comparisons') entries = pairs.map(pair => ({ name: `${pair[0].name} vs ${pair[1].name}`, url: canonical(pairRoute(pair)) }));
   if (page.kind === 'comparison') webpage.about = page.pair.map(tool => ({ '@type': 'SoftwareApplication', name: tool.name, '@id': canonical(`/tools/${tool.slug}/`) + '#software' }));

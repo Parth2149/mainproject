@@ -2,14 +2,18 @@ import React from 'react';
 import { href } from '../lib/catalog';
 
 export function Badges({ tool }) {
-  return <div className="badges"><span className={`price ${tool.pricing === 'Free' ? 'free' : ''}`}>{tool.pricing}</span>{tool.platforms.map(platform => <span key={platform}>{platform}</span>)}</div>;
+  return <div className="badges">{tool.tag && <span className={tool.tag.startsWith('Canva') ? 'canva-tag' : 'adobe-tag'}>{tool.tag}</span>}<span className={tool.pricing === 'Free' ? 'free' : 'paid'}>{tool.pricing}</span><span className="platform">{tool.platforms.length === 3 ? 'Win · Linux · Mac' : tool.platforms.join(' · ')}</span></div>;
 }
 
 export default function ToolCard({ tool }) {
   return <article className="tool-card" data-category={tool.category} data-platforms={tool.platforms.join('|')} data-pricing={tool.pricing} data-license={tool.license}>
-    <div className="card-top"><span className={`tool-mark mark-${tool.categorySlug}`}>{tool.name.slice(0,2).toUpperCase()}</span><span className="license">{tool.license}</span></div>
-    <a className="tool-title" href={href(`/tools/${tool.slug}/`)}>{tool.name} ↗</a>
-    <a className="category-label" href={href(`/category/${tool.categorySlug}/`)}>{tool.category}</a>
-    <p>{tool.description}</p><Badges tool={tool}/>
+    <div className="card-top">
+      <img src={href(`/assets/tools/${tool.slug}.png`)} alt=""/>
+      <span className="license">{tool.license}</span>
+    </div>
+    <a className="tool-title" href={href(`/tools/${tool.slug}/`)}>{tool.name}</a>
+    <span className="category-label">{tool.category}</span>
+    <p>{tool.description}</p>
+    <Badges tool={tool}/>
   </article>;
 }

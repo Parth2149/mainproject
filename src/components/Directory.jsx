@@ -8,51 +8,40 @@ export default function Directory({ category }) {
   const list = category ? tools.filter(tool => tool.category === category) : tools;
   return <>
     <section className="hero">
-      <span className="hero-badge"><span className="live-dot" aria-hidden="true"/>The 2026 Reverse Engineering Directory</span>
       <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Best Reverse Engineering Tools.<br/><span className="text-gradient">Decompilers, Debuggers &amp; Software.</span></>}</h1>
-      <p>{category ? categoryDescriptions[category] : <>The curated directory of reverse engineering tools, binary analysis software, and open-source GitHub repositories.<br className="desktop"/> Search and compare 100+ decompilers, debuggers, disassemblers, and instrumentation frameworks.</>}</p>
+      <p>{category ? categoryDescriptions[category] : <>Curated directory of reverse engineering tools, decompilers, and open-source software.<br className="desktop"/> Search and compare 100+ binary analysis tools.</>}</p>
       <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? 1 : categories.length}</b> categories</span><span><b>100%</b> verified entries</span></div>
-      <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers','Debuggers','Android','.NET','Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} <span aria-hidden="true">↗</span></a>)}</div>
+      <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
     </section>
     <section aria-label="Tool directory" className="directory">
-      <div className="directory-bar"><div><span className="eyebrow">THE DIRECTORY</span><h2>{category ? `Explore ${category} tools` : 'Build your reverse engineering toolkit'}</h2></div><span className="directory-note"><span className="live-dot"/>{list.length} tools, thoughtfully curated</span></div>
-      <form className="filters" role="search" id="filters"><label className="search"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span className="sr-only">Search tools</span><input name="q" id="search" type="search" placeholder="Search decompilers, debuggers, tools, or GitHub repos…" autoComplete="off"/><kbd aria-hidden="true">/</kbd></label>
+      <div className="directory-bar"><div><span className="eyebrow">THE DIRECTORY</span><h2>{category ? `Explore ${category} tools` : 'Build your reverse engineering toolkit'}</h2></div><span className="directory-note"><span className="live-dot" />{list.length} tools, thoughtfully curated</span></div>
+      <form className="filters" role="search" id="filters"><label className="search"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg><span className="sr-only">Search tools</span><input name="q" id="search" type="search" placeholder="Search decompilers, debuggers, or tools…" autoComplete="off" /><kbd aria-hidden="true">/</kbd></label>
         <div className="filter-row"><label>Category<select name="category" aria-label="Category" defaultValue=""><option value="">All categories</option>{options(categories)}</select></label><label>Platform<select name="platform" aria-label="Platform" defaultValue=""><option value="">All platforms</option>{options(platforms)}</select></label><label>Pricing<select name="pricing" aria-label="Pricing" defaultValue=""><option value="">Free & paid</option>{options(prices)}</select></label><label>License<select name="license" aria-label="License" defaultValue=""><option value="">All licenses</option>{options(licenses)}</select></label><button type="reset" className="reset">Reset filters ↺</button></div>
       </form>
-      <div className="results-bar"><p id="result-count" role="status" aria-live="polite">{list.length} tools to explore</p><span className="mono muted">Decompile. Disassemble. Debug. Understand.</span></div>
-      <div className="tool-grid" id="tool-grid">{list.map(tool => <ToolCard key={tool.slug} tool={tool}/>)}</div>
+      <div className="results-bar"><p id="result-count" role="status" aria-live="polite">{list.length} tools to explore</p></div>
+      <div className="tool-grid" id="tool-grid">{list.map(tool => <ToolCard key={tool.slug} tool={tool} />)}</div>
       <div id="empty" className="empty" hidden><h3>No matching tools</h3><p>Try another search or reset your filters.</p><button id="empty-reset" className="button">Reset filters</button></div>
       <noscript><p>All tools are listed above. Enable JavaScript to use search and filters.</p></noscript>
-      <p className="dataset-note">Collection updated {seed.generated}. Check official project documentation for current requirements.</p>
+      <p className="dataset-note">Collection updated {seed.generated}. Check official documentation for details.</p>
     </section>
-    {!category && <section className="category-overview" aria-labelledby="category-heading"><div className="directory-bar"><div><span className="eyebrow">FIND YOUR WORKFLOW</span><h2 id="category-heading">Reverse engineering tools by category</h2></div><a className="text-link" href={href('/categories/')}>Browse all categories ↗</a></div><div className="category-chips">{categories.map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name}<span>{tools.filter(tool => tool.category === name).length}</span></a>)}</div></section>}
+    {!category && <section className="category-overview" aria-labelledby="category-heading"><div className="directory-bar"><div><span className="eyebrow">WORKFLOWS</span><h2 id="category-heading">Tools by category</h2></div><a className="text-link" href={href('/categories/')}>Browse all categories ↗</a></div><div className="category-chips">{categories.map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name}</a>)}</div></section>}
     {!category && <section className="seo-guide" aria-labelledby="guide-heading">
       <div className="directory-bar">
         <div>
-          <span className="eyebrow">ESSENTIAL KNOWLEDGE</span>
-          <h2 id="guide-heading">The Complete Guide to Reverse Engineering Tools &amp; Workflows</h2>
+          <span className="eyebrow">OVERVIEW</span>
+          <h2 id="guide-heading">Reverse Engineering Workflows</h2>
         </div>
       </div>
-      <div className="guide-grid">
-        <div className="guide-card">
-          <h3>Static Binary Analysis</h3>
-          <p>Inspect code without execution. Decompilers and disassemblers like <strong>Ghidra</strong>, <strong>IDA Free</strong>, and <strong>Binary Ninja</strong> recover control-flow graphs and generate readable C/C++ pseudo-code across x86, ARM, and MIPS architectures.</p>
-        </div>
-        <div className="guide-card">
-          <h3>Dynamic Runtime Analysis</h3>
-          <p>Step through execution, inspect registers, and trace system calls. Tools like <strong>x64dbg</strong>, <strong>pwndbg</strong>, and <strong>GEF</strong> offer granular memory inspection, while <strong>Frida</strong> provides dynamic binary instrumentation and hooking.</p>
-        </div>
-        <div className="guide-card">
-          <h3>Mobile &amp; Managed Binaries</h3>
-          <p>Analyze runtimes including Android APK/DEX and .NET assemblies. Tools like <strong>jadx</strong>, <strong>apktool</strong>, <strong>MobSF</strong>, and <strong>dnSpyEx</strong> decode bytecode, unpack resources, and recover source code for security audits.</p>
-        </div>
+      <div className="guide-card single">
+        <h3>Reverse Engineering Methodologies</h3>
+        <p>Static analysis with tools like <strong>Ghidra</strong> recovers control-flow graphs without execution. Dynamic debugging with <strong>x64dbg</strong> and <strong>Frida</strong> provides live memory inspection and API instrumentation.</p>
       </div>
     </section>}
     {!category && <section className="faq-section" aria-labelledby="faq-heading">
       <div className="directory-bar">
         <div>
-          <span className="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
-          <h2 id="faq-heading">Frequently Asked Questions About Reverse Engineering Tools</h2>
+          <span className="eyebrow">FAQ</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
         </div>
       </div>
       <div className="faq-grid">

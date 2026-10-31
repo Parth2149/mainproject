@@ -623,3 +623,4 @@ seed.tools = [...actualTools, ...comparisons];
 fs.writeFileSync('revkit-seed-data.json', JSON.stringify(seed, null, 2) + '\n');
 console.log('Final tools count (excluding comparisons):', actualTools.length);
 console.log('Updated revkit-seed-data.json!');
+
