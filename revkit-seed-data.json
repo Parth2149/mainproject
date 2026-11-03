@@ -14,7 +14,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Adobe Flash SWF decompiler and editor to inspect ActionScript 1/2/3 and extract.",
+      "description": "Decompiles & edits Flash SWF files, animations, sprites, and ActionScript.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Flash / Animate"
     },
@@ -30,7 +30,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Deconstruct and reverse engineer Adobe PDF document streams, scripts, and.",
+      "description": "Parses, extracts & analyzes raw data streams, scripts & hidden objects in PDFs.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Pro"
     },
@@ -46,7 +46,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Interactive Python tool for reverse engineering, inspect, and analyze malicious.",
+      "description": "Analyzes PDF files to detect, decrypt, and inspect malicious exploit payloads.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Pro"
     },
@@ -62,7 +62,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "ActionScript Bytecode disassembler and assembler for Adobe Flash and AIR AVM2.",
+      "description": "Disassembles and assembles ActionScript Bytecode (ABC) from Flash and AIR apps.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Flash / AIR SDK"
     },
@@ -78,7 +78,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Python library for reverse engineering and unpack Adobe Photoshop PSD and PSB layer.",
+      "description": "Extracts, parses & unpacks layers, masks, and metadata from Adobe Photoshop PSDs.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Photoshop PSD Parser"
     },
@@ -93,7 +93,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Advanced RE suite for Adobe Acrobat PDF parsing, XFA forms, fonts, and shellcode.",
+      "description": "Parses PDF documents, XFA forms, fonts, and embedded binary shellcode.",
       "tag": "Adobe Replacement",
       "replaces": "Hex-Rays / Acrobat RE"
     },
@@ -107,7 +107,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Analysis GUI for inspecting malicious Adobe PDF files, stream decompression, and JS.",
+      "description": "Decompresses, inspects, and analyzes hidden streams and JavaScript inside PDFs.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Pro"
     },
@@ -123,7 +123,7 @@
         "Windows",
         "macOS"
       ],
-      "description": "Digital forensics tool for reverse engineering incremental updates and extract.",
+      "description": "Extracts previous revision history and overwritten data from edited PDF files.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Forensics"
     },
@@ -139,7 +139,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "Ruby framework and interactive shell for reverse engineering, deobfuscate, dissect,.",
+      "description": "Dissects, modifies, and deobfuscates PDF document structures and streams.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Security"
     },
@@ -155,7 +155,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "C++ structural transformation tool to linearize, decompress object streams, and.",
+      "description": "Crops, linearizes, splits, merges, and decrypts PDF document object structures.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat Distiller"
     },
@@ -171,7 +171,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "High-speed command-line suite from MuPDF to clean, sanitize xref tables, decompress.",
+      "description": "Crops, sanitizes xref tables, extracts fonts, and converts PDF documents.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat CLI SDK"
     },
@@ -187,7 +187,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Python library and TTX engine to decompile, reverse engineer, and inspect Type 1,.",
+      "description": "Decompiles, modifies, and converts OpenType, TrueType, and Type 1 font files.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Type Manager"
     },
@@ -204,7 +204,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "AI background removal engine using ONNX neural models to replace Canva Pro.",
+      "description": "Removes backgrounds from photos and graphic assets automatically with neural AI.",
       "replaces": "Canva Pro / remove.bg"
     },
     {
@@ -220,7 +220,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "Free and AI image upscaler and enhancer powered by Vulkan NCNN to replace Canva.",
+      "description": "Upscales and sharpens low-resolution images up to 4x using AI neural models.",
       "replaces": "Topaz Gigapixel AI"
     },
     {
@@ -236,7 +236,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Image inpainting and object removal suite using LaMa neural models to replace Canva.",
+      "description": "Erases unwanted objects, watermarks & blemishes from photos with AI inpainting.",
       "replaces": "Canva Magic Eraser"
     },
     {
@@ -252,7 +252,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "React video creation and animation engine replacing Canva video templates and.",
+      "description": "Programs, renders & animates video templates and motion graphics using React.",
       "replaces": "Adobe Premiere / After Effects"
     },
     {
@@ -267,7 +267,7 @@
         "Windows",
         "macOS"
       ],
-      "description": "Vector tracing utility converting raster images and logos into smooth SVG vectors.",
+      "description": "Traces bitmap images and raster logos into smooth, scalable SVG vector curves.",
       "replaces": "Adobe Illustrator Live Trace"
     },
     {
@@ -283,7 +283,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "HTML5 canvas object library and SVG parser for modern web design and graphics.",
+      "description": "Builds interactive HTML5 canvas graphic editors, SVG rendering, and canvas apps.",
       "replaces": "Canva Design Engine"
     },
     {
@@ -299,7 +299,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source Figma alternative for collaborative UI/UX design and prototyping using SVG and CSS Grid.",
+      "description": "Designs vector UI/UX interfaces and interactive web prototypes collaboratively.",
       "replaces": "Figma / Adobe XD"
     },
     {
@@ -314,7 +314,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Python framework for reverse engineering and analyzing Android DEX and APK formats.",
+      "description": "Analyzes, decompiles & maps APK architectures and DEX bytecode in Python.",
       "replaces": "JEB Android Decompiler"
     },
     {
@@ -329,7 +329,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Python framework for symbolic execution, concolic analysis and automated binary.",
+      "description": "Executes symbolic analysis, path exploration, and automated binary constraint solving.",
       "replaces": "S2E / Binary Symbolic Analyzers"
     },
     {
@@ -345,7 +345,7 @@
         "macOS",
         "Android"
       ],
-      "description": "Identifies compilers, packers, obfuscators and protectors used in APKs — Android's.",
+      "description": "Detects compilers, packers, protectors, and obfuscators applied to Android APKs.",
       "replaces": "PEiD for Android"
     },
     {
@@ -360,7 +360,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Decode and rebuild APK resources (smali + resources.arsc). Essential for Android.",
+      "description": "Decodes, disassembles, edits Smali, and rebuilds Android APK package resources.",
       "replaces": "JEB Decompiler / Android Studio"
     },
     {
@@ -373,7 +373,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Command-line tool for viewing assembly references and resolving conflicting versions.",
+      "description": "Scans .NET assemblies to detect conflicting references and dependency mismatch.",
       "replaces": ".NET Reflector Assembly Viewer"
     },
     {
@@ -387,7 +387,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Carnegie Mellon binary analysis platform for machine code program analysis.",
+      "description": "Lifts machine code to intermediate representations for formal binary analysis.",
       "replaces": "Commercial Binary Analysis Platforms"
     },
     {
@@ -402,7 +402,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Modern commercial RE platform loved for its fast analysis, ILs and excellent Python.",
+      "description": "Disassembles and decompiles binaries using high-performance intermediate language.",
       "replaces": "IDA Pro"
     },
     {
@@ -417,7 +417,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Firmware analysis and extraction: find embedded files and filesystems inside any.",
+      "description": "Scans, carves & extracts embedded file systems and kernels from router firmware.",
       "replaces": "Firmware Analysis Toolkit (FAT)"
     },
     {
@@ -430,7 +430,7 @@
       "platforms": [
         "Android"
       ],
-      "description": "Unpack/dump DEX from apps protected by packers, running on the device itself.",
+      "description": "Dumps unpacked DEX files from protected Android apps directly in runtime memory.",
       "replaces": "Commercial Android Unpackers"
     },
     {
@@ -444,7 +444,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Industry-standard intercepting proxy and security tool for HTTP/HTTPS reverse.",
+      "description": "Intercepts, replays, scans, and audits HTTP/HTTPS web application traffic.",
       "replaces": "Fiddler / Charles Proxy"
     },
     {
@@ -459,7 +459,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "All-in-one Java reverse engineering suite: decompile with multiple engines, edit.",
+      "description": "Decompiles, searches, edits, and debugs Java class files across multiple engines.",
       "replaces": "JEB Java / JAD Decompiler"
     },
     {
@@ -474,7 +474,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The disassembly engine behind most modern RE tools; multi-architecture,.",
+      "description": "Disassembles binary machine instructions across x86, ARM, MIPS, and RISC-V.",
       "replaces": "BeaEngine / libdasm"
     },
     {
@@ -486,7 +486,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "PE editor designed for editing headers, section tables, and import address tables.",
+      "description": "Edits PE headers, section headers, and Import/Export Address Tables in executables.",
       "replaces": "PE Explorer / LordPE"
     },
     {
@@ -501,7 +501,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Modern Java decompiler supporting modern Java language features and sealed classes.",
+      "description": "Decompiles modern Java class files and language features into clean Java source.",
       "replaces": "JAD / JD-GUI Decompiler"
     },
     {
@@ -515,7 +515,7 @@
         "macOS",
         "Linux"
       ],
-      "description": "HTTP monitor and reverse proxy for recording all network traffic between app and.",
+      "description": "Records, throttles, and monitors HTTP/HTTPS network traffic between apps & web.",
       "replaces": "Fiddler / Burp Suite"
     },
     {
@@ -530,7 +530,7 @@
         "macOS",
         "Android"
       ],
-      "description": "Memory scanner and debugger — the classic entry point into game reverse engineering.",
+      "description": "Scans runtime memory addresses, edits variables, and debugs game executables.",
       "replaces": "ArtMoney / Memory Hackers"
     },
     {
@@ -542,7 +542,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Memory scanner and reverse engineering toolkit for game binary research.",
+      "description": "Scans, freezes, and modifies memory pointers and structures for game research.",
       "replaces": "Cheat Engine Memory Scanner"
     },
     {
@@ -557,7 +557,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The official GUI for radare2/rizin. Visual disassembly, decompilation, graph views,.",
+      "description": "Visual GUI for Radare2/Rizin that displays interactive disassembly and graph flows.",
       "replaces": "IDA Pro / Binary Ninja"
     },
     {
@@ -570,7 +570,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Deobfuscator for dozens of .NET obfuscators (archived repo, still widely used).",
+      "description": "Deobfuscates, cleans, and restores .NET assemblies packed by ConfuserEx & protectors.",
       "replaces": ".NET Deobfuscator (ConfuserEx)"
     },
     {
@@ -585,7 +585,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Fast file type / compiler / packer identification with a signature-script system..",
+      "description": "Identifies file formats, PE compilers, packers, and crypters via signatures.",
       "replaces": "PEiD / ProtectionID"
     },
     {
@@ -600,7 +600,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Convert Android DEX files to JAR so classic Java tools can read them.",
+      "description": "Converts Android DEX bytecode files into standard JAR archives for Java analysis.",
       "replaces": "Commercial DEX Converters"
     },
     {
@@ -614,7 +614,7 @@
         "Android",
         "Linux"
       ],
-      "description": "Fast and effective Android DEX dumper for unpacked and packed APK binaries.",
+      "description": "Dumps hidden and dynamic DEX bytecode from packed Android applications.",
       "replaces": "Android Memory Dumpers"
     },
     {
@@ -627,7 +627,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Community-maintained fork of the legendary dnSpy: .NET debugger, decompiler and.",
+      "description": "Decompiles, debugs, and edits compiled .NET assemblies and C# source on the fly.",
       "replaces": ".NET Reflector / dotPeek"
     },
     {
@@ -639,7 +639,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Free standalone .NET decompiler and assembly browser based on ReSharper.",
+      "description": "Decompiles .NET assemblies and generates equivalent C# code from executable DLLs.",
       "replaces": ".NET Reflector"
     },
     {
@@ -653,7 +653,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Runtime code manipulation system for dynamic binary instrumentation and profiling.",
+      "description": "Instruments binary code dynamically at runtime for profiling and vulnerability research.",
       "replaces": "Intel PIN DBI Framework"
     },
     {
@@ -666,7 +666,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Cross-platform Qt-based binary debugger designed for x86 and x64 Linux applications.",
+      "description": "Debugs x86 and x64 Linux applications with registers, memory view, and breakpoints.",
       "replaces": "OllyDbg on Linux"
     },
     {
@@ -679,7 +679,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Automated firmware security analysis and vulnerability testing environment for IoT.",
+      "description": "Analyzes IoT firmware images automatically to discover vulnerabilities and credentials.",
       "replaces": "Commercial IoT Firmware Scanners"
     },
     {
@@ -692,7 +692,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Automated emulation framework for running IoT firmware in a virtualized environment.",
+      "description": "Emulates Linux IoT firmware images automatically in virtual execution environments.",
       "replaces": "Physical Hardware Testbeds"
     },
     {
@@ -705,7 +705,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Dump protected .NET modules directly from process memory to disk.",
+      "description": "Dumps hidden .NET modules and encrypted DLLs directly from running processes.",
       "replaces": "MegaDumper / Process Dumpers"
     },
     {
@@ -718,7 +718,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Full-scale firmware analysis framework: unpacks, compares and compares firmware.",
+      "description": "Extracts, compares, and audits firmware filesystems and dependencies in parallel.",
       "replaces": "Commercial Firmware Scanners"
     },
     {
@@ -733,7 +733,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Analytical Java decompiler engine integrated into IntelliJ IDEA.",
+      "description": "Decompiles Java bytecode into readable, structured Java source code.",
       "replaces": "JAD Java Decompiler"
     },
     {
@@ -747,7 +747,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Web debugging proxy for logging and intercepting HTTP and HTTPS application traffic.",
+      "description": "Captures, inspects, and modifies web traffic and API calls across desktop & mobile.",
       "replaces": "Charles Proxy"
     },
     {
@@ -760,7 +760,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Script that searches extracted firmware file systems for credentials and sensitive.",
+      "description": "Scans extracted firmware directories to discover hardcoded passwords and private keys.",
       "replaces": "Manual Firmware Auditing"
     },
     {
@@ -773,7 +773,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Mandiant's Windows-based malware analysis virtual machine: comes preloaded with all.",
+      "description": "Configures a Windows malware analysis workstation loaded with reverse engineering tools.",
       "replaces": "Manual Malware Analysis VMs"
     },
     {
@@ -788,7 +788,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Mandiant tool that automatically extracts and decodes obfuscated strings from.",
+      "description": "Extracts obfuscated and encrypted strings automatically from malware binaries.",
       "replaces": "Strings / Manual Hex Extraction"
     },
     {
@@ -805,7 +805,7 @@
         "Android",
         "iOS"
       ],
-      "description": "Dynamic instrumentation toolkit. Hook functions, trace calls, and patch apps at.",
+      "description": "Injects custom JavaScript hooks into native apps on Windows, Linux, macOS, and mobile.",
       "replaces": "Substrate / Cydia Substrate"
     },
     {
@@ -818,7 +818,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Fast C++ based Android decompiler and malware analysis suite without Java.",
+      "description": "Decompiles and audits Android APK files rapidly in C++ with malware analysis tools.",
       "replaces": "JEB Android / JADX Decompiler"
     },
     {
@@ -832,7 +832,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "The GNU Project Debugger: standard tool for tracing and debugging native machine.",
+      "description": "Debugs Unix and Linux native binaries at machine-instruction and source level.",
       "replaces": "Commercial Unix Debuggers"
     },
     {
@@ -845,7 +845,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "GDB Enhanced Features: shellcode helpers, pattern search and exploit development.",
+      "description": "Extends GDB with multi-architecture visual context, heap views, and exploit helper commands.",
       "replaces": "Vanilla GDB CLI"
     },
     {
@@ -860,7 +860,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "NSA's reverse engineering suite: disassembler, decompiler, debugger and scripting.",
+      "description": "Decompiles and analyzes binary executables into C/C++ source code with NSA toolchain.",
       "replaces": "IDA Pro"
     },
     {
@@ -875,7 +875,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Firmware analysis scripts and loaders extending Ghidra for embedded binary reverse.",
+      "description": "Loads, maps, and analyzes raw embedded firmware ROMs inside Ghidra.",
       "replaces": "Manual Ghidra ROM Loaders"
     },
     {
@@ -888,7 +888,7 @@
         "macOS",
         "Linux"
       ],
-      "description": "Fast reverse engineering tool and decompiler for 32/64-bit Mach-O, ELF, and PE.",
+      "description": "Disassembles, decompiles, and debugs Mach-O and ELF executables on macOS.",
       "replaces": "IDA Pro on macOS"
     },
     {
@@ -903,7 +903,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Runtime mobile application security assessment toolkit powered by Frida.",
+      "description": "Inspects, maps, and visualizes heap chunks and memory allocators dynamically.",
       "replaces": "Manual Heap Analysis Scripts"
     },
     {
@@ -918,7 +918,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The free edition of the industry-standard IDA disassembler; no decompiler, limited.",
+      "description": "Disassembles and navigates x86/x64 binaries with interactive graph views for free.",
       "replaces": "IDA Pro (Free Alternative)"
     },
     {
@@ -932,7 +932,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Industry-standard multi-processor disassembler and Hex-Rays decompiler for binary.",
+      "description": "Disassembles and analyzes multi-architecture machine code binaries interactively.",
       "replaces": "Commercial Disassemblers"
     },
     {
@@ -947,7 +947,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The standard open-source .NET decompiler with a cross-platform Avalonia UI.",
+      "description": "Decompiles .NET assemblies and PDB debug symbols into readable C# source code.",
       "replaces": ".NET Reflector"
     },
     {
@@ -961,7 +961,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Intel dynamic binary instrumentation tool for creating program analysis utilities.",
+      "description": "Instruments native machine instructions dynamically for execution tracing & profiling.",
       "replaces": "DynamoRIO / Valgrind"
     },
     {
@@ -976,7 +976,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Decompile Android DEX/APK files back to Java source. The default first tool for.",
+      "description": "Decompiles Android APK and DEX bytecode directly into structured Java source files.",
       "replaces": "JEB Decompiler"
     },
     {
@@ -991,7 +991,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Fast standalone graphical utility that displays Java source code from .class files.",
+      "description": "Displays and navigates decompiled Java source code from JAR files in a fast GUI.",
       "replaces": "JAD Java Decompiler"
     },
     {
@@ -1005,7 +1005,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Professional interactive decompiler for Android APKs, Dalvik DEX, and native code.",
+      "description": "Decompiles and reconstructs Android Dalvik and native machine architectures.",
       "replaces": "IDA Pro (Android/Java)"
     },
     {
@@ -1018,7 +1018,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Open-source .NET decompilation engine created by Telerik.",
+      "description": "Browses and decompiles .NET assembly DLLs into C# source code.",
       "replaces": ".NET Reflector"
     },
     {
@@ -1032,7 +1032,7 @@
         "Windows",
         "macOS"
       ],
-      "description": "The leading cybersecurity and reverse engineering distribution with hundreds of.",
+      "description": "Provides an OS loaded with security auditing, penetration testing & RE utilities.",
       "replaces": "Commercial Pentest Distros"
     },
     {
@@ -1047,7 +1047,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Multi-architecture assembler framework supporting x86, ARM, MIPS, and PowerPC.",
+      "description": "Assembles human assembly instructions into raw binary machine code opcodes.",
       "replaces": "NASM / Yasm Assembler Engines"
     },
     {
@@ -1062,7 +1062,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Library to parse and modify ELF, PE and Mach-O formats from Python/C++.",
+      "description": "Parses, modifies, and injects code into PE, ELF, and Mach-O binary formats.",
       "replaces": "Custom Executable Format Parsers"
     },
     {
@@ -1076,7 +1076,7 @@
         "Linux",
         "Windows"
       ],
-      "description": "High-performance debugger built as a set of reusable LLVM libraries.",
+      "description": "Debugs native C, C++, and Swift applications with Clang/LLVM integration.",
       "replaces": "GDB / macOS Xcode Debugger"
     },
     {
@@ -1090,7 +1090,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Symbolic execution tool for analysis of native binaries and smart contracts.",
+      "description": "Explores binary execution paths and generates exploits through symbolic execution.",
       "replaces": "Commercial Symbolic Engines"
     },
     {
@@ -1104,7 +1104,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Modular interactive disassembler framework designed for speed and.",
+      "description": "Automates dynamic Frida instrumentation and API monitoring on Android applications.",
       "replaces": "Manual Frida Scripting"
     },
     {
@@ -1118,7 +1118,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Virtual file system that mounts physical memory dumps as searchable files and.",
+      "description": "Mounts physical memory dumps as virtual filesystems to inspect processes & drivers.",
       "replaces": "Physical Memory Dump Tools"
     },
     {
@@ -1133,7 +1133,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Interactive HTTPS proxy for intercepting and modifying app traffic — key for mobile.",
+      "description": "Intercepts, modifies, and scripts HTTP/HTTPS traffic through an interactive terminal.",
       "replaces": "Charles Proxy / Fiddler"
     },
     {
@@ -1148,7 +1148,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Automated mobile app security scanner: static + dynamic analysis of Android/iOS.",
+      "description": "Performs automated static and dynamic security assessments on Android & iOS apps.",
       "replaces": "Commercial Mobile Pentest Suites"
     },
     {
@@ -1163,7 +1163,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Runtime mobile exploration toolkit built on Frida: bypass SSL pinning, dump memory,.",
+      "description": "Bypasses SSL pinning and explores mobile app security without jailbreaking.",
       "replaces": "Manual Frida Instrumentation"
     },
     {
@@ -1177,7 +1177,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open Firmware Reverse Analysis Konsole for unpacking, analyzing, and repacking.",
+      "description": "Unpacks, modifies, analyzes, and repackages binary firmware blobs programmatically.",
       "replaces": "Firmware Extraction Suites"
     },
     {
@@ -1189,7 +1189,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Classic 32-bit assembler level analyzing debugger for Microsoft Windows.",
+      "description": "Traces, disassembles, and debugs 32-bit Windows PE executables at assembly level.",
       "replaces": "WinDbg / SoftICE"
     },
     {
@@ -1203,7 +1203,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Fast and intuitive PE header visualizer and section viewer for malware triaging.",
+      "description": "Inspects and navigates PE file headers, imports, exports, and section tables.",
       "replaces": "CFF Explorer / PE Explorer"
     },
     {
@@ -1216,7 +1216,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Python Exploit Development Assistance plugin for GDB with enhanced disassembly.",
+      "description": "Enhances GDB with colorized memory displays, register views, and exploit primitives.",
       "replaces": "Vanilla GDB CLI"
     },
     {
@@ -1228,7 +1228,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Static executable file investigator that spots suspicious anomalies without.",
+      "description": "Detects suspicious indicators, API imports, and anomalies in Windows PE binaries.",
       "replaces": "CFF Explorer / PEiD"
     },
     {
@@ -1240,7 +1240,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Advanced task manager showing active DLL handles, memory strings, and process trees.",
+      "description": "Monitors running Windows processes, handles, DLLs, and hardware usage in depth.",
       "replaces": "Windows Task Manager"
     },
     {
@@ -1253,7 +1253,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Powerful multi-purpose process manager, memory viewer, and DLL inspector for Windows.",
+      "description": "Inspects system services, terminates locked processes, and edits memory strings.",
       "replaces": "Process Explorer / Task Manager"
     },
     {
@@ -1265,7 +1265,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Microsoft Sysinternals tool monitoring real-time file system, Registry, and process.",
+      "description": "Monitors real-time Windows filesystem, registry, and thread activities live.",
       "replaces": "Filemon / Regmon"
     },
     {
@@ -1280,7 +1280,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Java decompiler suite optimized for Java 8 lambdas and method references.",
+      "description": "Decompiles complex Java 8+ features including lambdas, enums, and switch strings.",
       "replaces": "JAD Java Decompiler"
     },
     {
@@ -1293,7 +1293,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Feature-rich GDB plugin with context displays, heap analysis and exploit-dev helpers.",
+      "description": "Supercharges GDB for exploit development, heap layout inspection, and crash triage.",
       "replaces": "Vanilla GDB CLI"
     },
     {
@@ -1308,7 +1308,7 @@
         "Windows",
         "macOS"
       ],
-      "description": "Advanced cross-platform and cross-architecture binary emulation framework.",
+      "description": "Emulates multi-OS and multi-architecture binaries with full kernel API emulation.",
       "replaces": "Unicorn CLI / Emulators"
     },
     {
@@ -1323,7 +1323,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Android malware analysis engine using Dalvik bytecode rules to score suspicious.",
+      "description": "Scores and analyzes malicious behavior patterns and vulnerabilities in Android apps.",
       "replaces": "Commercial Android Scanners"
     },
     {
@@ -1338,7 +1338,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The classic command-line reverse engineering framework: disassembly, analysis,.",
+      "description": "Disassembles, debugs, patches, and scripts machine binaries from command line.",
       "replaces": "IDA Pro"
     },
     {
@@ -1351,7 +1351,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Live memory structure reconstruction tool for reverse engineered classes/structs.",
+      "description": "Maps, reconstructs, and visualizes live memory data structures in game processes.",
       "replaces": "Commercial Data Structure Reversers"
     },
     {
@@ -1365,7 +1365,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Reverse engineering framework for binary disassembly and automated code auditing.",
+      "description": "Applies automated binary patches, decompilation scripts, and analysis to Ghidra.",
       "replaces": "Manual Ghidra Patching"
     },
     {
@@ -1378,7 +1378,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Linux distro for malware reverse engineering with hundreds of tools preinstalled.",
+      "description": "Provides a Linux toolkit configured for malware triage, forensics, and decoding.",
       "replaces": "FLARE VM for Linux"
     },
     {
@@ -1393,7 +1393,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "LLVM-based open-source machine code decompiler for PE, ELF, and raw binaries.",
+      "description": "Decompiles machine code binaries into high-level C code with signature matching.",
       "replaces": "Hex-Rays Decompiler"
     },
     {
@@ -1408,7 +1408,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Modern fork of radare2 focused on a cleaner codebase, Cutter GUI integration and.",
+      "description": "Disassembles, patches, and analyzes machine binaries with a clean, stable RE engine.",
       "replaces": "IDA Pro / Radare2"
     },
     {
@@ -1423,7 +1423,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "Open-source exploitation framework dedicated to embedded devices and router firmware.",
+      "description": "Tests embedded hardware and wireless router firmware for known exploits.",
       "replaces": "Commercial Router Auditing Tools"
     },
     {
@@ -1436,7 +1436,7 @@
       "platforms": [
         "Linux"
       ],
-      "description": "Patched unsquashfs tool designed to extract non-standard vendor SquashFS images.",
+      "description": "Unpacks and extracts non-standard vendor SquashFS file system images.",
       "replaces": "Standard SquashFS Tools"
     },
     {
@@ -1451,7 +1451,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Display and control Android devices over USB for live dynamic reverse engineering.",
+      "description": "Mirrors and controls Android phone screens on desktop with zero latency over USB.",
       "replaces": "Vysor / Commercial Screen Mirrors"
     },
     {
@@ -1464,7 +1464,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Dedicated process memory dumper and Import Address Table (IAT) reconstructor.",
+      "description": "Dumps running process memory and rebuilds broken Import Address Tables (IAT).",
       "replaces": "LordPE / Import Table Rebuilders"
     },
     {
@@ -1477,7 +1477,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Advanced anti-anti-debug plugin for x64dbg and other debuggers.",
+      "description": "Hides debugger hooks and bypasses anti-debugging protections in Windows software.",
       "replaces": "TitanHide / Anti-Anti-Debug"
     },
     {
@@ -1491,7 +1491,7 @@
         "Windows",
         "Linux"
       ],
-      "description": "Native C/C++ decompiler supporting x86, x64, and ARM machine code.",
+      "description": "Decompiles machine code instructions into structured C/C++ source code.",
       "replaces": "Hex-Rays C++ Decompiler"
     },
     {
@@ -1504,7 +1504,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Powerful command-line packet analyzer for capturing and inspecting network protocols.",
+      "description": "Captures, filters, and analyzes raw network packets and protocol headers from CLI.",
       "replaces": "Commercial Packet Capturers"
     },
     {
@@ -1519,7 +1519,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "File type identifier with thousands of definitions; useful when extensions lie.",
+      "description": "Identifies actual file types and formats using an extensive binary signature library.",
       "replaces": "File / DROID Signature Matchers"
     },
     {
@@ -1534,7 +1534,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Dynamic binary analysis framework providing symbolic execution and taint analysis.",
+      "description": "Tracks tainted variables and performs dynamic symbolic execution on machine code.",
       "replaces": "Commercial DSE Engines"
     },
     {
@@ -1549,7 +1549,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Parse, extract and modify UEFI firmware images.",
+      "description": "Parses, extracts, edits, and replaces modules inside motherboard UEFI BIOS ROMs.",
       "replaces": "AMI / Insyde BIOS Editors"
     },
     {
@@ -1564,7 +1564,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Lightweight multi-architecture CPU emulator framework based on QEMU.",
+      "description": "Emulates CPU instructions for ARM, x86, MIPS, and SPARC in lightweight sandbox.",
       "replaces": "QEMU CPU Emulators"
     },
     {
@@ -1579,7 +1579,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Emulate Android native libraries on a PC without a real device; heavily used for.",
+      "description": "Emulates Android and iOS native shared libraries (.so) on a PC without devices.",
       "replaces": "Native Android Emulators"
     },
     {
@@ -1594,7 +1594,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The most common executable packer — and the first packer every reverser learns to.",
+      "description": "Compresses and unpacks executable files to reduce size without sacrificing runtime.",
       "replaces": "ASPack / PECompact"
     },
     {
@@ -1609,7 +1609,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "World-leading memory forensics framework for extracting processes, sockets, and.",
+      "description": "Extracts process lists, passwords, and network sockets from memory dumps.",
       "replaces": "Rekall Memory Forensics"
     },
     {
@@ -1624,7 +1624,7 @@
         "macOS",
         "Windows"
       ],
-      "description": "Hackable UI debugger extension for GDB, LLDB, WinDbg, and VDB.",
+      "description": "Provides a modular visual dashboard and UI overlays for GDB, LLDB, and WinDbg.",
       "replaces": "Standard GDB/LLDB UI Viewers"
     },
     {
@@ -1639,7 +1639,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Convert WebAssembly binary modules into readable C source code and headers.",
+      "description": "Converts WebAssembly binary bytecode modules into compilable C source files.",
       "replaces": "Manual WebAssembly Parsers"
     },
     {
@@ -1651,7 +1651,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Microsoft's multi-purpose user-mode and kernel-mode debugger for Windows internals.",
+      "description": "Debugs Windows user-mode applications, kernel drivers, and system crash dumps.",
       "replaces": "Visual Studio Native Debugger"
     },
     {
@@ -1665,7 +1665,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "The world's foremost network protocol analyzer for deep packet inspection.",
+      "description": "Captures, decodes, and inspects network packets across hundreds of protocols.",
       "replaces": "OmniPeek / Network Monitor"
     },
     {
@@ -1678,7 +1678,7 @@
       "platforms": [
         "Windows"
       ],
-      "description": "Open-source user-mode debugger for Windows x64/x32 with a huge plugin ecosystem.",
+      "description": "Steps through, sets breakpoints, and patches 32/64-bit Windows PE applications.",
       "replaces": "OllyDbg"
     },
     {
@@ -1693,7 +1693,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Cross-platform PE file parser and header viewer built with Qt.",
+      "description": "Displays and verifies PE headers, sections, and certificates across platforms.",
       "replaces": "PEiD / CFF Explorer"
     },
     {
@@ -1708,7 +1708,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Pattern-matching tool for malware classification and triage; the standard in threat.",
+      "description": "Scans files and memory for malware signatures, text patterns, and hex byte rules.",
       "replaces": "Commercial Antivirus Signature Engines"
     },
     {
@@ -1719,7 +1719,7 @@
       "license": "",
       "pricing": "",
       "platforms": [],
-      "description": "Comparison page seed: Ghidra (free, decompiler included) vs IDA Pro (industry."
+      "description": "Compares Ghidra against IDA Pro on decompilation, pricing, and plugin ecosystems."
     },
     {
       "name": "ArtCraft",
@@ -1733,7 +1733,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source Rust creative engine and AI studio providing clean-room alternatives to Adobe Creative Cloud apps.",
+      "description": "Creates digital artwork, vector graphics, and image composites with open-source tools.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Creative Cloud"
     },
@@ -1749,7 +1749,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe Photoshop alternative built in Rust with layers, non-destructive masks, and adjustment layers.",
+      "description": "Edits raster photos with non-destructive layers, masking, and adjustment tools.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Photoshop"
     },
@@ -1765,7 +1765,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe Illustrator alternative built in Rust for precision vector illustration, bezier paths, and SVG.",
+      "description": "Illustrates precision vector artwork, typography, and bezier path SVG designs.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Illustrator"
     },
@@ -1781,7 +1781,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe Premiere Pro alternative built in Rust offering multi-track non-linear video editing and rendering.",
+      "description": "Edits multi-track video timelines, audio clips, and exports rendered video files.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Premiere Pro"
     },
@@ -1797,7 +1797,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe Lightroom alternative built in Rust for non-destructive RAW photo development and color grading.",
+      "description": "Processes, color grades, and develops RAW camera photographs non-destructively.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Lightroom"
     },
@@ -1813,7 +1813,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe Acrobat Pro alternative built in Rust for viewing, annotating, and managing PDF document streams.",
+      "description": "Crops, annotates, merges, and converts PDF document pages and form streams.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe Acrobat DC"
     },
@@ -1829,7 +1829,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe After Effects alternative built in Rust for motion graphics, visual effects, and keyframe composition.",
+      "description": "Composes motion graphic animations, visual effects, and keyframe transitions.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe After Effects"
     },
@@ -1845,7 +1845,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Adobe InDesign alternative built in Rust for multi-page document layout, typography, and publishing.",
+      "description": "Lays out multi-page print publications, brochures, typography, and digital books.",
       "tag": "Adobe Replacement",
       "replaces": "Adobe InDesign"
     },
@@ -1861,7 +1861,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Self-hostable open-source Canva alternative for graphics, social posts, and presentations.",
+      "description": "Creates social media banners, marketing graphics, and presentation slide decks.",
       "tag": "Canva Replacement",
       "replaces": "Canva Suite"
     },
@@ -1877,7 +1877,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Free open-source Canva clone and web canvas editor for social graphics and banners.",
+      "description": "Generates graphic banners, flyers, and social media posts on a drag-and-drop canvas.",
       "tag": "Canva Replacement",
       "replaces": "Canva Pro"
     },
@@ -1893,7 +1893,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source graphic design editor for generating marketing assets and quote cards.",
+      "description": "Renders promotional quote cards, marketing graphics, and vector banner assets.",
       "tag": "Canva Replacement",
       "replaces": "Canva Graphics"
     },
@@ -1909,7 +1909,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Lightweight open-source API development ecosystem and reverse engineering alternative to Postman.",
+      "description": "Tests, debugs, and sends REST, GraphQL, WebSocket, and MQTT API requests in browser.",
       "tag": "Postman Replacement",
       "replaces": "Postman"
     },
@@ -1925,7 +1925,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Git-native, offline-first open-source API client and reverse engineering alternative to Postman.",
+      "description": "Tests APIs locally and saves requests as plain text files in version-controlled Git repos.",
       "tag": "Postman Replacement",
       "replaces": "Postman"
     },
@@ -1942,7 +1942,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "High-performance self-hosted Google Photos alternative with facial recognition, CLIP search, and mobile sync.",
+      "description": "Backs up, organizes, and searches mobile photos with local AI facial recognition.",
       "replaces": "Google Photos / Apple iCloud"
     },
     {
@@ -1958,7 +1958,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Local-first Notion alternative built with Flutter and Rust for notes, wikis, and customizable databases.",
+      "description": "Builds personal wikis, markdown notes, kanban boards, and offline databases.",
       "replaces": "Notion"
     },
     {
@@ -1974,7 +1974,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source Loom alternative for instant screen recording, shareable links, and self-hosted video storage.",
+      "description": "Records screen captures, webcam video, and generates instant shareable video links.",
       "replaces": "Loom"
     },
     {
@@ -1990,7 +1990,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source Calendly alternative for automated event scheduling, team bookings, and calendar sync.",
+      "description": "Schedules meetings, syncs calendar availability, and coordinates team bookings.",
       "replaces": "Calendly"
     },
     {
@@ -2006,7 +2006,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Self-hosted customer engagement platform and Intercom alternative with live-chat and omnichannel inboxes.",
+      "description": "Manages live website visitor chat, support tickets, and multi-channel messaging inboxes.",
       "replaces": "Intercom / Zendesk"
     },
     {
@@ -2022,7 +2022,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source project management platform and Jira alternative with interactive Gantt charts and agile boards.",
+      "description": "Organizes project tasks, milestone timelines, and interactive Gantt charts.",
       "replaces": "Jira / Asana"
     },
     {
@@ -2038,7 +2038,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Local-first offline voice dictation utility powered by Whisper for system-wide speech-to-text without telemetry.",
+      "description": "Dictates voice to text accurately and privately across all desktop applications.",
       "replaces": "Wispr Flow / Superwhisper"
     },
     {
@@ -2054,7 +2054,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Open-source ElevenLabs alternative for multilingual text-to-speech, zero-shot voice cloning, and audio synthesis.",
+      "description": "Clones voices and synthesizes expressive AI speech in multiple languages.",
       "replaces": "ElevenLabs"
     },
     {
@@ -2070,7 +2070,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "Self-hosted SEO research, rank tracking, and site auditing suite with a Model Context Protocol (MCP) server.",
+      "description": "Audits website search health, tracks keyword rankings, and monitors backlinks.",
       "replaces": "Ahrefs / Semrush"
     }
   ]
