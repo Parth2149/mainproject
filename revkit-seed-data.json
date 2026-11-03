@@ -1721,6 +1721,81 @@
       ],
       "description": "Free open-source Adobe InDesign alternative built in Rust for multi-page document layout, typography, and publishing.",
       "tag": "Adobe Replacement"
+    },
+    {
+      "name": "Doory",
+      "category": "Software",
+      "url": "https://github.com/shaongitbd/doory",
+      "github": "https://github.com/shaongitbd/doory",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Self-hostable open-source Canva alternative for graphics, social posts, and presentations.",
+      "tag": "Canva Replacement"
+    },
+    {
+      "name": "Polotno Studio",
+      "category": "Software",
+      "url": "https://studio.polotno.com",
+      "github": "https://github.com/lavrton/polotno-studio",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Canva clone and web canvas editor for social graphics and banners.",
+      "tag": "Canva Replacement"
+    },
+    {
+      "name": "OpenDesign",
+      "category": "Software",
+      "url": "https://github.com/clawnify/OpenDesign",
+      "github": "https://github.com/clawnify/OpenDesign",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source graphic design editor for generating marketing assets and quote cards.",
+      "tag": "Canva Replacement"
+    },
+    {
+      "name": "Hoppscotch",
+      "category": "Network",
+      "url": "https://hoppscotch.io",
+      "github": "https://github.com/hoppscotch/hoppscotch",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Lightweight open-source API development ecosystem and reverse engineering alternative to Postman.",
+      "tag": "Postman Replacement"
+    },
+    {
+      "name": "Bruno",
+      "category": "Network",
+      "url": "https://www.usebruno.com",
+      "github": "https://github.com/usebruno/bruno",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Git-native, offline-first open-source API client and reverse engineering alternative to Postman.",
+      "tag": "Postman Replacement"
     }
   ]
 }

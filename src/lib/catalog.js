@@ -61,6 +61,13 @@ export function toolTitle(tool) {
       `${tool.name} — Free Canva Alternative`,
       `${tool.name} — Canva Alternative`
     );
+  } else if (tool.tag === 'Postman Replacement') {
+    candidates.push(
+      `${tool.name} — Free Postman Alternative & RE`,
+      `${tool.name} — Postman Alternative & Tool`,
+      `${tool.name} — Free Postman Alternative`,
+      `${tool.name} — Postman Alternative`
+    );
   } else {
     candidates.push(
       `${tool.name} — Reverse Engineering Tool & Alternative`,
@@ -82,6 +89,8 @@ export function toolPageDescription(tool) {
     prefix = `Free Adobe alternative & RE tool: ${tool.name}. `;
   } else if (tool.tag === 'Canva Replacement') {
     prefix = `Free Canva alternative & RE tool: ${tool.name}. `;
+  } else if (tool.tag === 'Postman Replacement') {
+    prefix = `Free Postman alternative & RE tool: ${tool.name}. `;
   } else {
     prefix = `${tool.name} RE tool & alternative: `;
   }
