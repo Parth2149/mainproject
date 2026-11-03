@@ -1304,3 +1304,4 @@ console.log('Total verified new tools to append:', uniqueNewTools.length);
 seed.tools.push(...uniqueNewTools);
 fs.writeFileSync(seedPath, JSON.stringify(seed, null, 2), 'utf-8');
 console.log('Total tools in revkit-seed-data.json now:', seed.tools.length);
+

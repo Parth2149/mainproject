@@ -3,6 +3,1391 @@
   "generated": "2026-10-31",
   "tools": [
     {
+      "name": "Ghidra",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://ghidra-sre.org",
+      "github": "https://github.com/NationalSecurityAgency/ghidra",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decompiles and analyzes binary executables into C/C++ source code with NSA toolchain.",
+      "replaces": "IDA Pro"
+    },
+    {
+      "name": "Wireshark",
+      "category": "Network",
+      "url": "https://www.wireshark.org",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Captures, decodes, and inspects network packets across hundreds of protocols.",
+      "replaces": "OmniPeek / Network Monitor"
+    },
+    {
+      "name": "Blender",
+      "category": "Software",
+      "url": "https://www.blender.org",
+      "github": "https://github.com/blender/blender",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Models, sculpts, animates, simulates, renders, and composites full 3D pipelines.",
+      "tag": "Maya Replacement",
+      "replaces": "Autodesk Maya / 3ds Max / Cinema 4D"
+    },
+    {
+      "name": "GIMP",
+      "category": "Software",
+      "url": "https://www.gimp.org",
+      "github": "https://github.com/GNOME/gimp",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Edits raster photos with layers, masks, filters, color curves, and extensible scripts.",
+      "tag": "Photoshop Replacement",
+      "replaces": "Adobe Photoshop"
+    },
+    {
+      "name": "x64dbg",
+      "category": "Debuggers",
+      "url": "https://x64dbg.com",
+      "github": "https://github.com/x64dbg/x64dbg",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Steps through, sets breakpoints, and patches 32/64-bit Windows PE applications.",
+      "replaces": "OllyDbg"
+    },
+    {
+      "name": "Bitwarden",
+      "category": "Software",
+      "url": "https://bitwarden.com",
+      "github": "https://github.com/bitwarden/clients",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "description": "Stores passwords, passkeys, and card credentials in an encrypted vault.",
+      "tag": "1Password Replacement",
+      "replaces": "1Password / LastPass"
+    },
+    {
+      "name": "Frida",
+      "category": "Android",
+      "url": "https://frida.re",
+      "github": "https://github.com/frida/frida",
+      "license": "wxWindows",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "description": "Injects custom JavaScript hooks into native apps on Windows, Linux, macOS, and mobile.",
+      "replaces": "Substrate / Cydia Substrate"
+    },
+    {
+      "name": "7-Zip",
+      "category": "Analysis Utilities",
+      "url": "https://www.7-zip.org",
+      "github": "https://github.com/ip7z/7zip",
+      "license": "LGPL-2.1",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Packs and extracts 7z, RAR, ZIP, TAR, and ISO archives with LZMA compression.",
+      "tag": "WinRAR Replacement",
+      "replaces": "WinRAR"
+    },
+    {
+      "name": "Ollama",
+      "category": "Software",
+      "url": "https://ollama.com",
+      "github": "https://github.com/ollama/ollama",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "description": "Runs Llama 3, DeepSeek, and Mistral large language models locally on GPU or CPU.",
+      "tag": "ChatGPT Replacement",
+      "replaces": "ChatGPT Plus / Claude Pro"
+    },
+    {
+      "name": "LibreOffice",
+      "category": "Software",
+      "url": "https://www.libreoffice.org",
+      "github": "https://github.com/LibreOffice/core",
+      "license": "MPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Edits documents, spreadsheets, and presentations with full Microsoft Office support.",
+      "tag": "Office Replacement",
+      "replaces": "Microsoft 365 (Word/Excel/PPT)"
+    },
+    {
+      "name": "Audacity",
+      "category": "Software",
+      "url": "https://www.audacityteam.org",
+      "github": "https://github.com/audacity/audacity",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Records live audio, edits waveforms, removes background noise, and applies effects.",
+      "tag": "Audition Replacement",
+      "replaces": "Adobe Audition"
+    },
+    {
+      "name": "Inkscape",
+      "category": "Software",
+      "url": "https://inkscape.org",
+      "github": "https://github.com/inkscape/inkscape",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Illustrates scalable vector graphics with Bézier paths, typography, and SVG export.",
+      "tag": "Illustrator Replacement",
+      "replaces": "Adobe Illustrator / CorelDRAW"
+    },
+    {
+      "name": "jadx",
+      "category": "Android",
+      "url": "https://github.com/skylot/jadx",
+      "github": "https://github.com/skylot/jadx",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decompiles Android APK and DEX bytecode directly into structured Java source files.",
+      "replaces": "JEB Decompiler"
+    },
+    {
+      "name": "Kdenlive",
+      "category": "Software",
+      "url": "https://kdenlive.org",
+      "github": "https://github.com/KDE/kdenlive",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Edits multi-track audio and video with color grading, effects, and GPU acceleration.",
+      "tag": "Premiere Replacement",
+      "replaces": "Adobe Premiere Pro"
+    },
+    {
+      "name": "DaVinci Resolve",
+      "category": "Software",
+      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
+      "github": "https://github.com/blackmagic-design/davinci-resolve",
+      "license": "Freeware",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Edits 8K video timelines with Hollywood-grade color grading, audio mixing, and Fairlight.",
+      "tag": "Premiere Replacement",
+      "replaces": "Adobe Premiere Pro / Final Cut"
+    },
+    {
+      "name": "Burp Suite",
+      "category": "Network",
+      "url": "https://portswigger.net/burp",
+      "license": "Proprietary",
+      "pricing": "Freemium",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Intercepts, replays, scans, and audits HTTP/HTTPS web application traffic.",
+      "replaces": "Fiddler / Charles Proxy"
+    },
+    {
+      "name": "IDA Free",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://hex-rays.com/ida-free/",
+      "github": "",
+      "license": "Proprietary",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Disassembles and navigates x86/x64 binaries with interactive graph views for free.",
+      "replaces": "IDA Pro (Free Alternative)"
+    },
+    {
+      "name": "radare2",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://rada.re",
+      "github": "https://github.com/radareorg/radare2",
+      "license": "LGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Disassembles, debugs, patches, and scripts machine binaries from command line.",
+      "replaces": "IDA Pro"
+    },
+    {
+      "name": "Cutter",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://cutter.re",
+      "github": "https://github.com/rizinorg/cutter",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Visual GUI for Radare2/Rizin that displays interactive disassembly and graph flows.",
+      "replaces": "IDA Pro / Binary Ninja"
+    },
+    {
+      "name": "Penpot",
+      "category": "Software",
+      "tag": "Figma Replacement",
+      "url": "https://penpot.app",
+      "github": "https://github.com/penpot/penpot",
+      "license": "MPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Designs vector UI/UX interfaces and interactive web prototypes collaboratively.",
+      "replaces": "Figma / Adobe XD"
+    },
+    {
+      "name": "Hoppscotch",
+      "category": "Network",
+      "url": "https://hoppscotch.io",
+      "github": "https://github.com/hoppscotch/hoppscotch",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Tests, debugs, and sends REST, GraphQL, WebSocket, and MQTT API requests in browser.",
+      "tag": "Postman Replacement",
+      "replaces": "Postman"
+    },
+    {
+      "name": "Bruno",
+      "category": "Network",
+      "url": "https://www.usebruno.com",
+      "github": "https://github.com/usebruno/bruno",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Tests APIs locally and saves requests as plain text files in version-controlled Git repos.",
+      "tag": "Postman Replacement",
+      "replaces": "Postman"
+    },
+    {
+      "name": "RustDesk",
+      "category": "Software",
+      "url": "https://rustdesk.com",
+      "github": "https://github.com/rustdesk/rustdesk",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "description": "Controls desktop computers remotely with peer-to-peer encryption and relays.",
+      "tag": "TeamViewer Replacement",
+      "replaces": "TeamViewer / AnyDesk"
+    },
+    {
+      "name": "Tailscale",
+      "category": "Network",
+      "url": "https://tailscale.com",
+      "github": "https://github.com/tailscale/tailscale",
+      "license": "BSD-3-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "description": "Builds encrypted WireGuard mesh networks to access remote devices securely.",
+      "tag": "VPN Replacement",
+      "replaces": "ExpressVPN / NordVPN"
+    },
+    {
+      "name": "WireGuard",
+      "category": "Network",
+      "url": "https://www.wireguard.com",
+      "github": "https://github.com/WireGuard/wireguard-tools",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "description": "Encrypts network communication using modern high-speed kernel cryptography.",
+      "tag": "VPN Replacement",
+      "replaces": "OpenVPN Commercial / NordVPN"
+    },
+    {
+      "name": "Obsidian",
+      "category": "Software",
+      "url": "https://obsidian.md",
+      "github": "https://github.com/obsidianmd/obsidian-releases",
+      "license": "Freeware",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "description": "Connects thoughts and knowledge in plain-text markdown files via bi-directional links.",
+      "tag": "Evernote Replacement",
+      "replaces": "Evernote / Roam Research"
+    },
+    {
+      "name": "AppFlowy",
+      "category": "Software",
+      "tag": "Notion Replacement",
+      "url": "https://appflowy.io",
+      "github": "https://github.com/AppFlowy-IO/AppFlowy",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Builds personal wikis, markdown notes, kanban boards, and offline databases.",
+      "replaces": "Notion"
+    },
+    {
+      "name": "Immich",
+      "category": "Software",
+      "tag": "Google Photos Replacement",
+      "url": "https://immich.app",
+      "github": "https://github.com/immich-app/immich",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Backs up, organizes, and searches mobile photos with local AI facial recognition.",
+      "replaces": "Google Photos / Apple iCloud"
+    },
+    {
+      "name": "Nextcloud Hub",
+      "category": "Software",
+      "url": "https://nextcloud.com",
+      "github": "https://github.com/nextcloud/server",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Hosts private cloud files, collaborative office docs, calendar, contacts, and chat.",
+      "tag": "Google Workspace Replacement",
+      "replaces": "Google Workspace / Office 365"
+    },
+    {
+      "name": "dnSpyEx",
+      "category": ".NET",
+      "url": "https://github.com/dnSpyEx/dnSpyEx",
+      "github": "https://github.com/dnSpyEx/dnSpyEx",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Decompiles, debugs, and edits compiled .NET assemblies and C# source on the fly.",
+      "replaces": ".NET Reflector / dotPeek"
+    },
+    {
+      "name": "ILSpy",
+      "category": ".NET",
+      "url": "https://github.com/icsharpcode/ILSpy",
+      "github": "https://github.com/icsharpcode/ILSpy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decompiles .NET assemblies and PDB debug symbols into readable C# source code.",
+      "replaces": ".NET Reflector"
+    },
+    {
+      "name": "apktool",
+      "category": "Android",
+      "url": "https://ibotpeaches.github.io/Apktool/",
+      "github": "https://github.com/iBotPeaches/Apktool",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decodes, disassembles, edits Smali, and rebuilds Android APK package resources.",
+      "replaces": "JEB Decompiler / Android Studio"
+    },
+    {
+      "name": "Binary Ninja",
+      "category": "Disassemblers & Decompilers",
+      "url": "https://binary.ninja",
+      "github": "",
+      "license": "Proprietary",
+      "pricing": "Paid",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Disassembles and decompiles binaries using high-performance intermediate language.",
+      "replaces": "IDA Pro"
+    },
+    {
+      "name": "Krita",
+      "category": "Software",
+      "url": "https://krita.org",
+      "github": "https://github.com/KDE/krita",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Creates digital paintings, concept art, comics, and illustrations with brush engines.",
+      "tag": "Photoshop Replacement",
+      "replaces": "Adobe Photoshop / Painter"
+    },
+    {
+      "name": "Photopea",
+      "category": "Software",
+      "url": "https://www.photopea.com",
+      "github": "https://github.com/photopea/photopea",
+      "license": "Commercial",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Edits PSD, XCF, Sketch, and RAW files directly in the browser with full layer support.",
+      "tag": "Photoshop Replacement",
+      "replaces": "Adobe Photoshop"
+    },
+    {
+      "name": "BleachBit",
+      "category": "Analysis Utilities",
+      "url": "https://www.bleachbit.org",
+      "github": "https://github.com/bleachbit/bleachbit",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "Frees disk cache, deletes temporary clutter, and shreds files to protect privacy.",
+      "tag": "CCleaner Replacement",
+      "replaces": "CCleaner / CleanMyMac"
+    },
+    {
+      "name": "Ventoy",
+      "category": "Analysis Utilities",
+      "url": "https://www.ventoy.net",
+      "github": "https://github.com/ventoy/Ventoy",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "Creates multi-boot USB flash drives by directly copying ISO, WIM, and IMG files.",
+      "tag": "Rufus Replacement",
+      "replaces": "BalenaEtcher / Rufus"
+    },
+    {
+      "name": "n8n",
+      "category": "Software",
+      "url": "https://n8n.io",
+      "github": "https://github.com/n8n-io/n8n",
+      "license": "Sustainable Use License",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Automates workflows across 400+ services with node-based logic and custom JavaScript.",
+      "tag": "Zapier Replacement",
+      "replaces": "Zapier / Make.com"
+    },
+    {
+      "name": "Metabase",
+      "category": "Software",
+      "url": "https://www.metabase.com",
+      "github": "https://github.com/metabase/metabase",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Queries databases with visual builders or SQL and creates shareable business charts.",
+      "tag": "Tableau Replacement",
+      "replaces": "Tableau / PowerBI Pro"
+    },
+    {
+      "name": "Uptime Kuma",
+      "category": "Software",
+      "url": "https://uptime.kuma.pet",
+      "github": "https://github.com/louislam/uptime-kuma",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Monitors HTTP, ping, DNS, and SSL uptime with incident alerts and status pages.",
+      "tag": "Statuspage Replacement",
+      "replaces": "Statuspage.io / Better Stack"
+    },
+    {
+      "name": "Cap",
+      "category": "Software",
+      "tag": "Loom Replacement",
+      "url": "https://cap.so",
+      "github": "https://github.com/CapSoftware/Cap",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Records screen captures, webcam video, and generates instant shareable video links.",
+      "replaces": "Loom"
+    },
+    {
+      "name": "Cal.com",
+      "category": "Software",
+      "tag": "Calendly Replacement",
+      "url": "https://cal.com",
+      "github": "https://github.com/calcom/cal.com",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Schedules meetings, syncs calendar availability, and coordinates team bookings.",
+      "replaces": "Calendly"
+    },
+    {
+      "name": "Chatwoot",
+      "category": "Software",
+      "tag": "Intercom Replacement",
+      "url": "https://www.chatwoot.com",
+      "github": "https://github.com/chatwoot/chatwoot",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Manages live website visitor chat, support tickets, and multi-channel messaging inboxes.",
+      "replaces": "Intercom / Zendesk"
+    },
+    {
+      "name": "OpenProject",
+      "category": "Software",
+      "tag": "Jira Replacement",
+      "url": "https://www.openproject.org",
+      "github": "https://github.com/opf/openproject",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Organizes project tasks, milestone timelines, and interactive Gantt charts.",
+      "replaces": "Jira / Asana"
+    },
+    {
+      "name": "Cheat Engine",
+      "category": "Game RE",
+      "url": "https://www.cheatengine.org",
+      "github": "https://github.com/cheat-engine/cheat-engine",
+      "license": "Proprietary",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Android"
+      ],
+      "description": "Scans runtime memory addresses, edits variables, and debugs game executables.",
+      "replaces": "ArtMoney / Memory Hackers"
+    },
+    {
+      "name": "Process Hacker",
+      "category": "Analysis Utilities",
+      "url": "https://system-informer.com",
+      "github": "https://github.com/winsiderss/systeminformer",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Inspects system services, terminates locked processes, and edits memory strings.",
+      "replaces": "Process Explorer / Task Manager"
+    },
+    {
+      "name": "Procmon",
+      "category": "Analysis Utilities",
+      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
+      "license": "Proprietary",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Monitors real-time Windows filesystem, registry, and thread activities live.",
+      "replaces": "Filemon / Regmon"
+    },
+    {
+      "name": "PE-bear",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/hasherezade/pe-bear",
+      "github": "https://github.com/hasherezade/pe-bear",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "Inspects and navigates PE file headers, imports, exports, and section tables.",
+      "replaces": "CFF Explorer / PE Explorer"
+    },
+    {
+      "name": "angr",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://angr.io",
+      "github": "https://github.com/angr/angr",
+      "license": "BSD-2-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Executes symbolic analysis, path exploration, and automated binary constraint solving.",
+      "replaces": "S2E / Binary Symbolic Analyzers"
+    },
+    {
+      "name": "Detect It Easy (DIE)",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/horsicq/Detect-It-Easy",
+      "github": "https://github.com/horsicq/Detect-It-Easy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Identifies file formats, PE compilers, packers, and crypters via signatures.",
+      "replaces": "PEiD / ProtectionID"
+    },
+    {
+      "name": "Bytecode Viewer",
+      "category": "Java",
+      "url": "https://github.com/Konloch/bytecode-viewer",
+      "github": "https://github.com/Konloch/bytecode-viewer",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Decompiles, searches, edits, and debugs Java class files across multiple engines.",
+      "replaces": "JEB Java / JAD Decompiler"
+    },
+    {
+      "name": "mitmproxy",
+      "category": "Network",
+      "url": "https://mitmproxy.org",
+      "github": "https://github.com/mitmproxy/mitmproxy",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Intercepts, modifies, and scripts HTTP/HTTPS traffic through an interactive terminal.",
+      "replaces": "Charles Proxy / Fiddler"
+    },
+    {
+      "name": "Charles Proxy",
+      "category": "Network",
+      "url": "https://www.charlesproxy.com",
+      "license": "Proprietary",
+      "pricing": "Paid",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Records, throttles, and monitors HTTP/HTTPS network traffic between apps & web.",
+      "replaces": "Fiddler / Burp Suite"
+    },
+    {
+      "name": "de4dot",
+      "category": ".NET",
+      "url": "https://github.com/0xd4d/de4dot",
+      "github": "https://github.com/0xd4d/de4dot",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Deobfuscates, cleans, and restores .NET assemblies packed by ConfuserEx & protectors.",
+      "replaces": ".NET Deobfuscator (ConfuserEx)"
+    },
+    {
+      "name": "dex2jar",
+      "category": "Android",
+      "url": "https://github.com/pxb1988/dex2jar",
+      "github": "https://github.com/pxb1988/dex2jar",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Converts Android DEX bytecode files into standard JAR archives for Java analysis.",
+      "replaces": "Commercial DEX Converters"
+    },
+    {
+      "name": "Fiddler",
+      "category": "Network",
+      "url": "https://www.telerik.com/fiddler",
+      "license": "Proprietary",
+      "pricing": "Freemium",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Captures, inspects, and modifies web traffic and API calls across desktop & mobile.",
+      "replaces": "Charles Proxy"
+    },
+    {
+      "name": "binwalk",
+      "category": "Firmware & Embedded",
+      "url": "https://github.com/ReFirmLabs/binwalk",
+      "github": "https://github.com/ReFirmLabs/binwalk",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Scans, carves & extracts embedded file systems and kernels from router firmware.",
+      "replaces": "Firmware Analysis Toolkit (FAT)"
+    },
+    {
+      "name": "GDB",
+      "category": "Debuggers",
+      "url": "https://www.sourceware.org/gdb/",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Debugs Unix and Linux native binaries at machine-instruction and source level.",
+      "replaces": "Commercial Unix Debuggers"
+    },
+    {
+      "name": "pwndbg",
+      "category": "Debuggers",
+      "url": "https://github.com/pwndbg/pwndbg",
+      "github": "https://github.com/pwndbg/pwndbg",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Supercharges GDB for exploit development, heap layout inspection, and crash triage.",
+      "replaces": "Vanilla GDB CLI"
+    },
+    {
+      "name": "GEF",
+      "category": "Debuggers",
+      "url": "https://github.com/hugsy/gef",
+      "github": "https://github.com/hugsy/gef",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Extends GDB with multi-architecture visual context, heap views, and exploit helper commands.",
+      "replaces": "Vanilla GDB CLI"
+    },
+    {
+      "name": "OnlyOffice",
+      "category": "Software",
+      "url": "https://www.onlyoffice.com",
+      "github": "https://github.com/ONLYOFFICE/DesktopEditors",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Edits DOCX, XLSX, and PPTX documents collaboratively with formatting parity.",
+      "tag": "Office Replacement",
+      "replaces": "Microsoft Office 365"
+    },
+    {
+      "name": "Shotcut",
+      "category": "Software",
+      "url": "https://shotcut.org",
+      "github": "https://github.com/mltframework/shotcut",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Composes multi-format 4K timelines with audio filters, transitions, and speed ramping.",
+      "tag": "Premiere Replacement",
+      "replaces": "Adobe Premiere Pro"
+    },
+    {
+      "name": "LMMS",
+      "category": "Software",
+      "url": "https://lmms.io",
+      "github": "https://github.com/LMMS/lmms",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Sequences beats, synthesizes melodies, edits MIDI piano roll, and hosts VST plugins.",
+      "tag": "FL Studio Replacement",
+      "replaces": "FL Studio / Ableton Live"
+    },
+    {
+      "name": "Darktable",
+      "category": "Software",
+      "url": "https://www.darktable.org",
+      "github": "https://github.com/darktable-org/darktable",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Develops non-destructive RAW photos with color grading, tone mapping, and lens fixes.",
+      "tag": "Lightroom Replacement",
+      "replaces": "Adobe Lightroom"
+    },
+    {
+      "name": "RawTherapee",
+      "category": "Software",
+      "url": "https://rawtherapee.com",
+      "github": "https://github.com/Beep6581/RawTherapee",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Processes high-dynamic-range RAW camera files with demosaicing and color profiling.",
+      "tag": "Lightroom Replacement",
+      "replaces": "Adobe Lightroom"
+    },
+    {
+      "name": "PDF24 Creator",
+      "category": "Software",
+      "url": "https://www.pdf24.org",
+      "github": "https://github.com/GEEKYGIZMO/PDF24",
+      "license": "Freeware",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Merges, splits, compresses, converts, signs, and extracts text via OCR offline.",
+      "tag": "Acrobat Replacement",
+      "replaces": "Adobe Acrobat DC"
+    },
+    {
+      "name": "Stirling-PDF",
+      "category": "Software",
+      "url": "https://stirlingpdf.io",
+      "github": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Hosts a full-featured web suite for splitting, merging, converting, and editing PDFs.",
+      "tag": "Acrobat Replacement",
+      "replaces": "Adobe Acrobat Pro"
+    },
+    {
+      "name": "Excalidraw",
+      "category": "Software",
+      "url": "https://excalidraw.com",
+      "github": "https://github.com/excalidraw/excalidraw",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Sketches hand-drawn styled architecture diagrams and wireframes collaboratively.",
+      "tag": "Miro Replacement",
+      "replaces": "Miro / Mural"
+    },
+    {
+      "name": "tldraw",
+      "category": "Software",
+      "url": "https://tldraw.com",
+      "github": "https://github.com/tldraw/tldraw",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Draws infinite canvas diagrams, flowcharts, schematics, and sticky notes.",
+      "tag": "Miro Replacement",
+      "replaces": "Miro / Figma Jam"
+    },
+    {
+      "name": "LanguageTool",
+      "category": "Software",
+      "url": "https://languagetool.org",
+      "github": "https://github.com/languagetool-org/languagetool",
+      "license": "LGPL-2.1",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Checks spelling, grammar, style, and punctuation across 30+ languages locally.",
+      "tag": "Grammarly Replacement",
+      "replaces": "Grammarly Premium"
+    },
+    {
+      "name": "Documenso",
+      "category": "Software",
+      "url": "https://documenso.com",
+      "github": "https://github.com/documenso/documenso",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Signs digital PDF documents with cryptographic verification and audit log history.",
+      "tag": "DocuSign Replacement",
+      "replaces": "DocuSign / Adobe Sign"
+    },
+    {
+      "name": "Mattermost",
+      "category": "Software",
+      "url": "https://mattermost.com",
+      "github": "https://github.com/mattermost/mattermost",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows",
+        "Android",
+        "iOS"
+      ],
+      "description": "Coordinates secure developer teams with channel chat, playbooks, and file sharing.",
+      "tag": "Slack Replacement",
+      "replaces": "Slack Pro"
+    },
+    {
+      "name": "Zulip",
+      "category": "Software",
+      "url": "https://zulip.com",
+      "github": "https://github.com/zulip/zulip",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS",
+        "Android",
+        "iOS"
+      ],
+      "description": "Organizes asynchronous team discussions into organized topic threads within streams.",
+      "tag": "Slack Replacement",
+      "replaces": "Slack / Teams"
+    },
+    {
+      "name": "Jitsi Meet",
+      "category": "Software",
+      "url": "https://meet.jit.si",
+      "github": "https://github.com/jitsi/jitsi-meet",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "description": "Hosts encrypted video conferences with screen sharing and chat without accounts.",
+      "tag": "Zoom Replacement",
+      "replaces": "Zoom Pro"
+    },
+    {
+      "name": "Revolt.chat",
+      "category": "Software",
+      "url": "https://revolt.chat",
+      "github": "https://github.com/revoltchat/revolt",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "Chats with voice channels, markdown text, bots, custom emoji, and role permissions.",
+      "tag": "Discord Replacement",
+      "replaces": "Discord Nitro"
+    },
+    {
+      "name": "Syncthing",
+      "category": "Software",
+      "url": "https://syncthing.net",
+      "github": "https://github.com/syncthing/syncthing",
+      "license": "MPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "description": "Synchronizes files continuously across devices over encrypted peer-to-peer networks.",
+      "tag": "Resilio Replacement",
+      "replaces": "Resilio / BitTorrent Sync"
+    },
+    {
+      "name": "Umami",
+      "category": "Software",
+      "url": "https://umami.is",
+      "github": "https://github.com/umami-software/umami",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Collects privacy-friendly, cookie-less website visitor analytics without tracking.",
+      "tag": "Google Analytics Replacement",
+      "replaces": "Google Analytics 360"
+    },
+    {
+      "name": "Plausible Analytics",
+      "category": "Software",
+      "url": "https://plausible.io",
+      "github": "https://github.com/plausible/analytics",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Visualizes lightweight web analytics compliant with GDPR, CCPA, and PECR.",
+      "tag": "Google Analytics Replacement",
+      "replaces": "Google Analytics"
+    },
+    {
+      "name": "KeePassXC",
+      "category": "Software",
+      "url": "https://keepassxc.org",
+      "github": "https://github.com/keepassxreboot/keepassxc",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Manages encrypted password databases locally without third-party cloud servers.",
+      "tag": "1Password Replacement",
+      "replaces": "1Password / LastPass"
+    },
+    {
+      "name": "Vaultwarden",
+      "category": "Software",
+      "url": "https://github.com/dani-garcia/vaultwarden",
+      "github": "https://github.com/dani-garcia/vaultwarden",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Lightweight Rust server implementation of the Bitwarden password management API.",
+      "tag": "1Password Replacement",
+      "replaces": "1Password / Dashlane"
+    },
+    {
+      "name": "Portmaster",
+      "category": "Analysis Utilities",
+      "url": "https://safing.io/portmaster/",
+      "github": "https://github.com/safing/portmaster",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "description": "Monitors all outbound application connections, blocks trackers, and encrypts DNS.",
+      "tag": "Little Snitch Replacement",
+      "replaces": "Little Snitch / GlassWire"
+    },
+    {
+      "name": "Wazuh",
+      "category": "Analysis Utilities",
+      "url": "https://wazuh.com",
+      "github": "https://github.com/wazuh/wazuh",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Monitors endpoints for security intrusions, compliance vulnerabilities, and file changes.",
+      "tag": "CrowdStrike Replacement",
+      "replaces": "CrowdStrike / SentinelOne"
+    },
+    {
+      "name": "OpenVAS",
+      "category": "Analysis Utilities",
+      "url": "https://www.openvas.org",
+      "github": "https://github.com/greenbone/openvas-scanner",
+      "license": "GPL-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Scans corporate networks and endpoints for over 100,000 known vulnerabilities.",
+      "tag": "Nessus Replacement",
+      "replaces": "Nessus Professional"
+    },
+    {
+      "name": "Aegis Authenticator",
+      "category": "Software",
+      "url": "https://getaegis.app",
+      "github": "https://github.com/beemdevelopment/Aegis",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Android"
+      ],
+      "description": "Stores TOTP and HOTP two-factor authentication tokens in an encrypted vault.",
+      "tag": "Authy Replacement",
+      "replaces": "Authy / Duo"
+    },
+    {
+      "name": "PeaZip",
+      "category": "Analysis Utilities",
+      "url": "https://peazip.github.io",
+      "github": "https://github.com/peazip/PeaZip",
+      "license": "LGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Compresses and extracts 200+ archive formats with encryption and file checks.",
+      "tag": "WinRAR Replacement",
+      "replaces": "WinRAR"
+    },
+    {
+      "name": "ComfyUI",
+      "category": "Software",
+      "url": "https://comfyanonymous.github.io/ComfyUI_examples/",
+      "github": "https://github.com/comfyanonymous/ComfyUI",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Generates AI images via node-based modular workflows for Stable Diffusion and SDXL.",
+      "tag": "Midjourney Replacement",
+      "replaces": "Midjourney / DALL-E 3"
+    },
+    {
+      "name": "Stable Diffusion WebUI",
+      "category": "Software",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "github": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Generates and in-paints AI images locally with ControlNet and custom LoRA models.",
+      "tag": "Midjourney Replacement",
+      "replaces": "Midjourney"
+    },
+    {
+      "name": "Open WebUI",
+      "category": "Software",
+      "url": "https://openwebui.com",
+      "github": "https://github.com/open-webui/open-webui",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Self-hosts a responsive chat UI for local Ollama and OpenAI-compatible models.",
+      "tag": "ChatGPT Replacement",
+      "replaces": "ChatGPT Plus"
+    },
+    {
+      "name": "Apache Superset",
+      "category": "Software",
+      "url": "https://superset.apache.org",
+      "github": "https://github.com/apache/superset",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Explores enterprise data warehouses with interactive SQL lab and real-time dashboards.",
+      "tag": "Tableau Replacement",
+      "replaces": "Tableau"
+    },
+    {
       "name": "JPEXS Flash Decompiler",
       "category": "Disassemblers & Decompilers",
       "url": "https://github.com/jindrapetrik/jpexs-decompiler",
@@ -287,22 +1672,6 @@
       "replaces": "Canva Design Engine"
     },
     {
-      "name": "Penpot",
-      "category": "Software",
-      "tag": "Figma Replacement",
-      "url": "https://penpot.app",
-      "github": "https://github.com/penpot/penpot",
-      "license": "MPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Designs vector UI/UX interfaces and interactive web prototypes collaboratively.",
-      "replaces": "Figma / Adobe XD"
-    },
-    {
       "name": "Androguard",
       "category": "Android",
       "url": "https://github.com/androguard/androguard",
@@ -316,21 +1685,6 @@
       ],
       "description": "Analyzes, decompiles & maps APK architectures and DEX bytecode in Python.",
       "replaces": "JEB Android Decompiler"
-    },
-    {
-      "name": "angr",
-      "category": "Binary Analysis Frameworks",
-      "url": "https://angr.io",
-      "github": "https://github.com/angr/angr",
-      "license": "BSD-2-Clause",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Executes symbolic analysis, path exploration, and automated binary constraint solving.",
-      "replaces": "S2E / Binary Symbolic Analyzers"
     },
     {
       "name": "APKiD",
@@ -347,21 +1701,6 @@
       ],
       "description": "Detects compilers, packers, protectors, and obfuscators applied to Android APKs.",
       "replaces": "PEiD for Android"
-    },
-    {
-      "name": "apktool",
-      "category": "Android",
-      "url": "https://ibotpeaches.github.io/Apktool/",
-      "github": "https://github.com/iBotPeaches/Apktool",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Decodes, disassembles, edits Smali, and rebuilds Android APK package resources.",
-      "replaces": "JEB Decompiler / Android Studio"
     },
     {
       "name": "AsmSpy",
@@ -391,36 +1730,6 @@
       "replaces": "Commercial Binary Analysis Platforms"
     },
     {
-      "name": "Binary Ninja",
-      "category": "Disassemblers & Decompilers",
-      "url": "https://binary.ninja",
-      "github": "",
-      "license": "Proprietary",
-      "pricing": "Paid",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Disassembles and decompiles binaries using high-performance intermediate language.",
-      "replaces": "IDA Pro"
-    },
-    {
-      "name": "binwalk",
-      "category": "Firmware & Embedded",
-      "url": "https://github.com/ReFirmLabs/binwalk",
-      "github": "https://github.com/ReFirmLabs/binwalk",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Scans, carves & extracts embedded file systems and kernels from router firmware.",
-      "replaces": "Firmware Analysis Toolkit (FAT)"
-    },
-    {
       "name": "BlackDex",
       "category": "Android",
       "url": "https://github.com/CodingGay/BlackDex",
@@ -432,35 +1741,6 @@
       ],
       "description": "Dumps unpacked DEX files from protected Android apps directly in runtime memory.",
       "replaces": "Commercial Android Unpackers"
-    },
-    {
-      "name": "Burp Suite",
-      "category": "Network",
-      "url": "https://portswigger.net/burp",
-      "license": "Proprietary",
-      "pricing": "Freemium",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Intercepts, replays, scans, and audits HTTP/HTTPS web application traffic.",
-      "replaces": "Fiddler / Charles Proxy"
-    },
-    {
-      "name": "Bytecode Viewer",
-      "category": "Java",
-      "url": "https://github.com/Konloch/bytecode-viewer",
-      "github": "https://github.com/Konloch/bytecode-viewer",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Decompiles, searches, edits, and debugs Java class files across multiple engines.",
-      "replaces": "JEB Java / JAD Decompiler"
     },
     {
       "name": "capstone",
@@ -505,35 +1785,6 @@
       "replaces": "JAD / JD-GUI Decompiler"
     },
     {
-      "name": "Charles Proxy",
-      "category": "Network",
-      "url": "https://www.charlesproxy.com",
-      "license": "Proprietary",
-      "pricing": "Paid",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Records, throttles, and monitors HTTP/HTTPS network traffic between apps & web.",
-      "replaces": "Fiddler / Burp Suite"
-    },
-    {
-      "name": "Cheat Engine",
-      "category": "Game RE",
-      "url": "https://www.cheatengine.org",
-      "github": "https://github.com/cheat-engine/cheat-engine",
-      "license": "Proprietary",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Android"
-      ],
-      "description": "Scans runtime memory addresses, edits variables, and debugs game executables.",
-      "replaces": "ArtMoney / Memory Hackers"
-    },
-    {
       "name": "CrySearch",
       "category": "Game RE",
       "url": "https://www.crysearch.nl",
@@ -544,64 +1795,6 @@
       ],
       "description": "Scans, freezes, and modifies memory pointers and structures for game research.",
       "replaces": "Cheat Engine Memory Scanner"
-    },
-    {
-      "name": "Cutter",
-      "category": "Disassemblers & Decompilers",
-      "url": "https://cutter.re",
-      "github": "https://github.com/rizinorg/cutter",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Visual GUI for Radare2/Rizin that displays interactive disassembly and graph flows.",
-      "replaces": "IDA Pro / Binary Ninja"
-    },
-    {
-      "name": "de4dot",
-      "category": ".NET",
-      "url": "https://github.com/0xd4d/de4dot",
-      "github": "https://github.com/0xd4d/de4dot",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Deobfuscates, cleans, and restores .NET assemblies packed by ConfuserEx & protectors.",
-      "replaces": ".NET Deobfuscator (ConfuserEx)"
-    },
-    {
-      "name": "Detect It Easy (DIE)",
-      "category": "Analysis Utilities",
-      "url": "https://github.com/horsicq/Detect-It-Easy",
-      "github": "https://github.com/horsicq/Detect-It-Easy",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Identifies file formats, PE compilers, packers, and crypters via signatures.",
-      "replaces": "PEiD / ProtectionID"
-    },
-    {
-      "name": "dex2jar",
-      "category": "Android",
-      "url": "https://github.com/pxb1988/dex2jar",
-      "github": "https://github.com/pxb1988/dex2jar",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Converts Android DEX bytecode files into standard JAR archives for Java analysis.",
-      "replaces": "Commercial DEX Converters"
     },
     {
       "name": "DexDump",
@@ -616,19 +1809,6 @@
       ],
       "description": "Dumps hidden and dynamic DEX bytecode from packed Android applications.",
       "replaces": "Android Memory Dumpers"
-    },
-    {
-      "name": "dnSpyEx",
-      "category": ".NET",
-      "url": "https://github.com/dnSpyEx/dnSpyEx",
-      "github": "https://github.com/dnSpyEx/dnSpyEx",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Decompiles, debugs, and edits compiled .NET assemblies and C# source on the fly.",
-      "replaces": ".NET Reflector / dotPeek"
     },
     {
       "name": "dotPeek",
@@ -737,20 +1917,6 @@
       "replaces": "JAD Java Decompiler"
     },
     {
-      "name": "Fiddler",
-      "category": "Network",
-      "url": "https://www.telerik.com/fiddler",
-      "license": "Proprietary",
-      "pricing": "Freemium",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Captures, inspects, and modifies web traffic and API calls across desktop & mobile.",
-      "replaces": "Charles Proxy"
-    },
-    {
       "name": "Firmwalker",
       "category": "Firmware & Embedded",
       "url": "https://github.com/craigz22/firmwalker",
@@ -792,23 +1958,6 @@
       "replaces": "Strings / Manual Hex Extraction"
     },
     {
-      "name": "Frida",
-      "category": "Android",
-      "url": "https://frida.re",
-      "github": "https://github.com/frida/frida",
-      "license": "wxWindows",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS",
-        "Android",
-        "iOS"
-      ],
-      "description": "Injects custom JavaScript hooks into native apps on Windows, Linux, macOS, and mobile.",
-      "replaces": "Substrate / Cydia Substrate"
-    },
-    {
       "name": "GDA",
       "category": "Android",
       "url": "https://github.com/charles2gan/GDA-android-reversing-Tool",
@@ -820,48 +1969,6 @@
       ],
       "description": "Decompiles and audits Android APK files rapidly in C++ with malware analysis tools.",
       "replaces": "JEB Android / JADX Decompiler"
-    },
-    {
-      "name": "GDB",
-      "category": "Debuggers",
-      "url": "https://www.sourceware.org/gdb/",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Debugs Unix and Linux native binaries at machine-instruction and source level.",
-      "replaces": "Commercial Unix Debuggers"
-    },
-    {
-      "name": "GEF",
-      "category": "Debuggers",
-      "url": "https://github.com/hugsy/gef",
-      "github": "https://github.com/hugsy/gef",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Extends GDB with multi-architecture visual context, heap views, and exploit helper commands.",
-      "replaces": "Vanilla GDB CLI"
-    },
-    {
-      "name": "Ghidra",
-      "category": "Disassemblers & Decompilers",
-      "url": "https://ghidra-sre.org",
-      "github": "https://github.com/NationalSecurityAgency/ghidra",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Decompiles and analyzes binary executables into C/C++ source code with NSA toolchain.",
-      "replaces": "IDA Pro"
     },
     {
       "name": "Ghidra Firmware Toolkit",
@@ -907,21 +2014,6 @@
       "replaces": "Manual Heap Analysis Scripts"
     },
     {
-      "name": "IDA Free",
-      "category": "Disassemblers & Decompilers",
-      "url": "https://hex-rays.com/ida-free/",
-      "github": "",
-      "license": "Proprietary",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Disassembles and navigates x86/x64 binaries with interactive graph views for free.",
-      "replaces": "IDA Pro (Free Alternative)"
-    },
-    {
       "name": "IDA Pro",
       "category": "Disassemblers & Decompilers",
       "url": "https://hex-rays.com/ida-pro/",
@@ -936,21 +2028,6 @@
       "replaces": "Commercial Disassemblers"
     },
     {
-      "name": "ILSpy",
-      "category": ".NET",
-      "url": "https://github.com/icsharpcode/ILSpy",
-      "github": "https://github.com/icsharpcode/ILSpy",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Decompiles .NET assemblies and PDB debug symbols into readable C# source code.",
-      "replaces": ".NET Reflector"
-    },
-    {
       "name": "Intel PIN",
       "category": "Binary Analysis Frameworks",
       "url": "https://www.intel.com/content/www/us/en/developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html",
@@ -963,21 +2040,6 @@
       ],
       "description": "Instruments native machine instructions dynamically for execution tracing & profiling.",
       "replaces": "DynamoRIO / Valgrind"
-    },
-    {
-      "name": "jadx",
-      "category": "Android",
-      "url": "https://github.com/skylot/jadx",
-      "github": "https://github.com/skylot/jadx",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Decompiles Android APK and DEX bytecode directly into structured Java source files.",
-      "replaces": "JEB Decompiler"
     },
     {
       "name": "JD-GUI",
@@ -1122,21 +2184,6 @@
       "replaces": "Physical Memory Dump Tools"
     },
     {
-      "name": "mitmproxy",
-      "category": "Network",
-      "url": "https://mitmproxy.org",
-      "github": "https://github.com/mitmproxy/mitmproxy",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Intercepts, modifies, and scripts HTTP/HTTPS traffic through an interactive terminal.",
-      "replaces": "Charles Proxy / Fiddler"
-    },
-    {
       "name": "MobSF",
       "category": "Android",
       "url": "https://mobsf.github.io/Mobile-Security-Framework-MobSF/",
@@ -1193,20 +2240,6 @@
       "replaces": "WinDbg / SoftICE"
     },
     {
-      "name": "PE-bear",
-      "category": "Analysis Utilities",
-      "url": "https://github.com/hasherezade/pe-bear",
-      "github": "https://github.com/hasherezade/pe-bear",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Inspects and navigates PE file headers, imports, exports, and section tables.",
-      "replaces": "CFF Explorer / PE Explorer"
-    },
-    {
       "name": "PEDA",
       "category": "Debuggers",
       "url": "https://github.com/longld/peda",
@@ -1244,31 +2277,6 @@
       "replaces": "Windows Task Manager"
     },
     {
-      "name": "Process Hacker",
-      "category": "Analysis Utilities",
-      "url": "https://system-informer.com",
-      "github": "https://github.com/winsiderss/systeminformer",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Inspects system services, terminates locked processes, and edits memory strings.",
-      "replaces": "Process Explorer / Task Manager"
-    },
-    {
-      "name": "Procmon",
-      "category": "Analysis Utilities",
-      "url": "https://learn.microsoft.com/en-us/sysinternals/downloads/procmon",
-      "license": "Proprietary",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Monitors real-time Windows filesystem, registry, and thread activities live.",
-      "replaces": "Filemon / Regmon"
-    },
-    {
       "name": "Procyon",
       "category": "Java",
       "url": "https://github.com/mstrobel/procyon",
@@ -1282,19 +2290,6 @@
       ],
       "description": "Decompiles complex Java 8+ features including lambdas, enums, and switch strings.",
       "replaces": "JAD Java Decompiler"
-    },
-    {
-      "name": "pwndbg",
-      "category": "Debuggers",
-      "url": "https://github.com/pwndbg/pwndbg",
-      "github": "https://github.com/pwndbg/pwndbg",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Supercharges GDB for exploit development, heap layout inspection, and crash triage.",
-      "replaces": "Vanilla GDB CLI"
     },
     {
       "name": "Qiling",
@@ -1325,21 +2320,6 @@
       ],
       "description": "Scores and analyzes malicious behavior patterns and vulnerabilities in Android apps.",
       "replaces": "Commercial Android Scanners"
-    },
-    {
-      "name": "radare2",
-      "category": "Disassemblers & Decompilers",
-      "url": "https://rada.re",
-      "github": "https://github.com/radareorg/radare2",
-      "license": "LGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Disassembles, debugs, patches, and scripts machine binaries from command line.",
-      "replaces": "IDA Pro"
     },
     {
       "name": "ReClassEx",
@@ -1655,33 +2635,6 @@
       "replaces": "Visual Studio Native Debugger"
     },
     {
-      "name": "Wireshark",
-      "category": "Network",
-      "url": "https://www.wireshark.org",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Captures, decodes, and inspects network packets across hundreds of protocols.",
-      "replaces": "OmniPeek / Network Monitor"
-    },
-    {
-      "name": "x64dbg",
-      "category": "Debuggers",
-      "url": "https://x64dbg.com",
-      "github": "https://github.com/x64dbg/x64dbg",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Steps through, sets breakpoints, and patches 32/64-bit Windows PE applications.",
-      "replaces": "OllyDbg"
-    },
-    {
       "name": "XPEViewer",
       "category": "Analysis Utilities",
       "url": "https://github.com/horsicq/XPEViewer",
@@ -1710,16 +2663,6 @@
       ],
       "description": "Scans files and memory for malware signatures, text patterns, and hex byte rules.",
       "replaces": "Commercial Antivirus Signature Engines"
-    },
-    {
-      "name": "Ghidra vs IDA",
-      "category": "Comparisons",
-      "url": "",
-      "github": "",
-      "license": "",
-      "pricing": "",
-      "platforms": [],
-      "description": "Compares Ghidra against IDA Pro on decompilation, pricing, and plugin ecosystems."
     },
     {
       "name": "ArtCraft",
@@ -1898,134 +2841,6 @@
       "replaces": "Canva Graphics"
     },
     {
-      "name": "Hoppscotch",
-      "category": "Network",
-      "url": "https://hoppscotch.io",
-      "github": "https://github.com/hoppscotch/hoppscotch",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Tests, debugs, and sends REST, GraphQL, WebSocket, and MQTT API requests in browser.",
-      "tag": "Postman Replacement",
-      "replaces": "Postman"
-    },
-    {
-      "name": "Bruno",
-      "category": "Network",
-      "url": "https://www.usebruno.com",
-      "github": "https://github.com/usebruno/bruno",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Tests APIs locally and saves requests as plain text files in version-controlled Git repos.",
-      "tag": "Postman Replacement",
-      "replaces": "Postman"
-    },
-    {
-      "name": "Immich",
-      "category": "Software",
-      "tag": "Google Photos Replacement",
-      "url": "https://immich.app",
-      "github": "https://github.com/immich-app/immich",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Backs up, organizes, and searches mobile photos with local AI facial recognition.",
-      "replaces": "Google Photos / Apple iCloud"
-    },
-    {
-      "name": "AppFlowy",
-      "category": "Software",
-      "tag": "Notion Replacement",
-      "url": "https://appflowy.io",
-      "github": "https://github.com/AppFlowy-IO/AppFlowy",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Builds personal wikis, markdown notes, kanban boards, and offline databases.",
-      "replaces": "Notion"
-    },
-    {
-      "name": "Cap",
-      "category": "Software",
-      "tag": "Loom Replacement",
-      "url": "https://cap.so",
-      "github": "https://github.com/CapSoftware/Cap",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Records screen captures, webcam video, and generates instant shareable video links.",
-      "replaces": "Loom"
-    },
-    {
-      "name": "Cal.com",
-      "category": "Software",
-      "tag": "Calendly Replacement",
-      "url": "https://cal.com",
-      "github": "https://github.com/calcom/cal.com",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Schedules meetings, syncs calendar availability, and coordinates team bookings.",
-      "replaces": "Calendly"
-    },
-    {
-      "name": "Chatwoot",
-      "category": "Software",
-      "tag": "Intercom Replacement",
-      "url": "https://www.chatwoot.com",
-      "github": "https://github.com/chatwoot/chatwoot",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Manages live website visitor chat, support tickets, and multi-channel messaging inboxes.",
-      "replaces": "Intercom / Zendesk"
-    },
-    {
-      "name": "OpenProject",
-      "category": "Software",
-      "tag": "Jira Replacement",
-      "url": "https://www.openproject.org",
-      "github": "https://github.com/opf/openproject",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Organizes project tasks, milestone timelines, and interactive Gantt charts.",
-      "replaces": "Jira / Asana"
-    },
-    {
       "name": "OpenWhisper",
       "category": "Software",
       "tag": "Wispr Flow Replacement",
@@ -2074,70 +2889,6 @@
       "replaces": "Ahrefs / Semrush"
     },
     {
-      "name": "GIMP",
-      "category": "Software",
-      "url": "https://www.gimp.org",
-      "github": "https://github.com/GNOME/gimp",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Edits raster photos with layers, masks, filters, color curves, and extensible scripts.",
-      "tag": "Photoshop Replacement",
-      "replaces": "Adobe Photoshop"
-    },
-    {
-      "name": "Krita",
-      "category": "Software",
-      "url": "https://krita.org",
-      "github": "https://github.com/KDE/krita",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Creates digital paintings, concept art, comics, and illustrations with brush engines.",
-      "tag": "Photoshop Replacement",
-      "replaces": "Adobe Photoshop / Painter"
-    },
-    {
-      "name": "Photopea",
-      "category": "Software",
-      "url": "https://www.photopea.com",
-      "github": "https://github.com/photopea/photopea",
-      "license": "Commercial",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Edits PSD, XCF, Sketch, and RAW files directly in the browser with full layer support.",
-      "tag": "Photoshop Replacement",
-      "replaces": "Adobe Photoshop"
-    },
-    {
-      "name": "Inkscape",
-      "category": "Software",
-      "url": "https://inkscape.org",
-      "github": "https://github.com/inkscape/inkscape",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Illustrates scalable vector graphics with Bézier paths, typography, and SVG export.",
-      "tag": "Illustrator Replacement",
-      "replaces": "Adobe Illustrator / CorelDRAW"
-    },
-    {
       "name": "Scribus",
       "category": "Software",
       "url": "https://www.scribus.net",
@@ -2152,38 +2903,6 @@
       "description": "Publishes layouts for books, magazines, brochures, and CMYK print-ready PDF files.",
       "tag": "InDesign Replacement",
       "replaces": "Adobe InDesign"
-    },
-    {
-      "name": "Darktable",
-      "category": "Software",
-      "url": "https://www.darktable.org",
-      "github": "https://github.com/darktable-org/darktable",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Develops non-destructive RAW photos with color grading, tone mapping, and lens fixes.",
-      "tag": "Lightroom Replacement",
-      "replaces": "Adobe Lightroom"
-    },
-    {
-      "name": "RawTherapee",
-      "category": "Software",
-      "url": "https://rawtherapee.com",
-      "github": "https://github.com/Beep6581/RawTherapee",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Processes high-dynamic-range RAW camera files with demosaicing and color profiling.",
-      "tag": "Lightroom Replacement",
-      "replaces": "Adobe Lightroom"
     },
     {
       "name": "ArmorPaint",
@@ -2218,36 +2937,6 @@
       "replaces": "Sketch / Figma"
     },
     {
-      "name": "PDF24 Creator",
-      "category": "Software",
-      "url": "https://www.pdf24.org",
-      "github": "https://github.com/GEEKYGIZMO/PDF24",
-      "license": "Freeware",
-      "pricing": "Free",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Merges, splits, compresses, converts, signs, and extracts text via OCR offline.",
-      "tag": "Acrobat Replacement",
-      "replaces": "Adobe Acrobat DC"
-    },
-    {
-      "name": "Stirling-PDF",
-      "category": "Software",
-      "url": "https://stirlingpdf.io",
-      "github": "https://github.com/Stirling-Tools/Stirling-PDF",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Hosts a full-featured web suite for splitting, merging, converting, and editing PDFs.",
-      "tag": "Acrobat Replacement",
-      "replaces": "Adobe Acrobat Pro"
-    },
-    {
       "name": "Boxy SVG",
       "category": "Software",
       "url": "https://boxy-svg.com",
@@ -2280,54 +2969,6 @@
       "replaces": "Pixelmator Pro / Paint.NET"
     },
     {
-      "name": "Kdenlive",
-      "category": "Software",
-      "url": "https://kdenlive.org",
-      "github": "https://github.com/KDE/kdenlive",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Edits multi-track audio and video with color grading, effects, and GPU acceleration.",
-      "tag": "Premiere Replacement",
-      "replaces": "Adobe Premiere Pro"
-    },
-    {
-      "name": "Shotcut",
-      "category": "Software",
-      "url": "https://shotcut.org",
-      "github": "https://github.com/mltframework/shotcut",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Composes multi-format 4K timelines with audio filters, transitions, and speed ramping.",
-      "tag": "Premiere Replacement",
-      "replaces": "Adobe Premiere Pro"
-    },
-    {
-      "name": "DaVinci Resolve",
-      "category": "Software",
-      "url": "https://www.blackmagicdesign.com/products/davinciresolve",
-      "github": "https://github.com/blackmagic-design/davinci-resolve",
-      "license": "Freeware",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Edits 8K video timelines with Hollywood-grade color grading, audio mixing, and Fairlight.",
-      "tag": "Premiere Replacement",
-      "replaces": "Adobe Premiere Pro / Final Cut"
-    },
-    {
       "name": "Natron",
       "category": "Software",
       "url": "https://natrongithub.github.io",
@@ -2342,22 +2983,6 @@
       "description": "Composites node-based visual effects, rotoscoping, 2D tracking, and keying for video.",
       "tag": "After Effects Replacement",
       "replaces": "Adobe After Effects"
-    },
-    {
-      "name": "Blender",
-      "category": "Software",
-      "url": "https://www.blender.org",
-      "github": "https://github.com/blender/blender",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Models, sculpts, animates, simulates, renders, and composites full 3D pipelines.",
-      "tag": "Maya Replacement",
-      "replaces": "Autodesk Maya / 3ds Max / Cinema 4D"
     },
     {
       "name": "Olive Video Editor",
@@ -2486,22 +3111,6 @@
       "replaces": "Adobe After Effects / Lottie"
     },
     {
-      "name": "LMMS",
-      "category": "Software",
-      "url": "https://lmms.io",
-      "github": "https://github.com/LMMS/lmms",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Sequences beats, synthesizes melodies, edits MIDI piano roll, and hosts VST plugins.",
-      "tag": "FL Studio Replacement",
-      "replaces": "FL Studio / Ableton Live"
-    },
-    {
       "name": "Ardour",
       "category": "Software",
       "url": "https://ardour.org",
@@ -2516,22 +3125,6 @@
       "description": "Records multi-channel studio audio, edits waveforms, and mixes master tracks.",
       "tag": "Logic Pro Replacement",
       "replaces": "Logic Pro / Pro Tools"
-    },
-    {
-      "name": "Audacity",
-      "category": "Software",
-      "url": "https://www.audacityteam.org",
-      "github": "https://github.com/audacity/audacity",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Records live audio, edits waveforms, removes background noise, and applies effects.",
-      "tag": "Audition Replacement",
-      "replaces": "Adobe Audition"
     },
     {
       "name": "Tenacity",
@@ -2642,54 +3235,6 @@
       "replaces": "Shazam / SoundHound"
     },
     {
-      "name": "LibreOffice",
-      "category": "Software",
-      "url": "https://www.libreoffice.org",
-      "github": "https://github.com/LibreOffice/core",
-      "license": "MPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Edits documents, spreadsheets, and presentations with full Microsoft Office support.",
-      "tag": "Office Replacement",
-      "replaces": "Microsoft 365 (Word/Excel/PPT)"
-    },
-    {
-      "name": "OnlyOffice",
-      "category": "Software",
-      "url": "https://www.onlyoffice.com",
-      "github": "https://github.com/ONLYOFFICE/DesktopEditors",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Edits DOCX, XLSX, and PPTX documents collaboratively with formatting parity.",
-      "tag": "Office Replacement",
-      "replaces": "Microsoft Office 365"
-    },
-    {
-      "name": "Nextcloud Hub",
-      "category": "Software",
-      "url": "https://nextcloud.com",
-      "github": "https://github.com/nextcloud/server",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Hosts private cloud files, collaborative office docs, calendar, contacts, and chat.",
-      "tag": "Google Workspace Replacement",
-      "replaces": "Google Workspace / Office 365"
-    },
-    {
       "name": "Anytype",
       "category": "Software",
       "url": "https://anytype.io",
@@ -2740,24 +3285,6 @@
       "description": "Captures markdown notes, todo lists, and web clips with end-to-end synchronization.",
       "tag": "Evernote Replacement",
       "replaces": "Evernote Personal"
-    },
-    {
-      "name": "Obsidian",
-      "category": "Software",
-      "url": "https://obsidian.md",
-      "github": "https://github.com/obsidianmd/obsidian-releases",
-      "license": "Freeware",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android",
-        "iOS"
-      ],
-      "description": "Connects thoughts and knowledge in plain-text markdown files via bi-directional links.",
-      "tag": "Evernote Replacement",
-      "replaces": "Evernote / Roam Research"
     },
     {
       "name": "NocoDB",
@@ -2888,141 +3415,6 @@
       "replaces": "Typeform"
     },
     {
-      "name": "Excalidraw",
-      "category": "Software",
-      "url": "https://excalidraw.com",
-      "github": "https://github.com/excalidraw/excalidraw",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Sketches hand-drawn styled architecture diagrams and wireframes collaboratively.",
-      "tag": "Miro Replacement",
-      "replaces": "Miro / Mural"
-    },
-    {
-      "name": "tldraw",
-      "category": "Software",
-      "url": "https://tldraw.com",
-      "github": "https://github.com/tldraw/tldraw",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Draws infinite canvas diagrams, flowcharts, schematics, and sticky notes.",
-      "tag": "Miro Replacement",
-      "replaces": "Miro / Figma Jam"
-    },
-    {
-      "name": "LanguageTool",
-      "category": "Software",
-      "url": "https://languagetool.org",
-      "github": "https://github.com/languagetool-org/languagetool",
-      "license": "LGPL-2.1",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Checks spelling, grammar, style, and punctuation across 30+ languages locally.",
-      "tag": "Grammarly Replacement",
-      "replaces": "Grammarly Premium"
-    },
-    {
-      "name": "Documenso",
-      "category": "Software",
-      "url": "https://documenso.com",
-      "github": "https://github.com/documenso/documenso",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Signs digital PDF documents with cryptographic verification and audit log history.",
-      "tag": "DocuSign Replacement",
-      "replaces": "DocuSign / Adobe Sign"
-    },
-    {
-      "name": "Mattermost",
-      "category": "Software",
-      "url": "https://mattermost.com",
-      "github": "https://github.com/mattermost/mattermost",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows",
-        "Android",
-        "iOS"
-      ],
-      "description": "Coordinates secure developer teams with channel chat, playbooks, and file sharing.",
-      "tag": "Slack Replacement",
-      "replaces": "Slack Pro"
-    },
-    {
-      "name": "Zulip",
-      "category": "Software",
-      "url": "https://zulip.com",
-      "github": "https://github.com/zulip/zulip",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS",
-        "Android",
-        "iOS"
-      ],
-      "description": "Organizes asynchronous team discussions into organized topic threads within streams.",
-      "tag": "Slack Replacement",
-      "replaces": "Slack / Teams"
-    },
-    {
-      "name": "Jitsi Meet",
-      "category": "Software",
-      "url": "https://meet.jit.si",
-      "github": "https://github.com/jitsi/jitsi-meet",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android",
-        "iOS"
-      ],
-      "description": "Hosts encrypted video conferences with screen sharing and chat without accounts.",
-      "tag": "Zoom Replacement",
-      "replaces": "Zoom Pro"
-    },
-    {
-      "name": "Revolt.chat",
-      "category": "Software",
-      "url": "https://revolt.chat",
-      "github": "https://github.com/revoltchat/revolt",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android"
-      ],
-      "description": "Chats with voice channels, markdown text, bots, custom emoji, and role permissions.",
-      "tag": "Discord Replacement",
-      "replaces": "Discord Nitro"
-    },
-    {
       "name": "Matrix Element",
       "category": "Software",
       "url": "https://element.io",
@@ -3103,22 +3495,6 @@
       "description": "Manages shared customer support email inboxes with collision prevention and notes.",
       "tag": "Help Scout Replacement",
       "replaces": "Help Scout / Zendesk"
-    },
-    {
-      "name": "Uptime Kuma",
-      "category": "Software",
-      "url": "https://uptime.kuma.pet",
-      "github": "https://github.com/louislam/uptime-kuma",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Monitors HTTP, ping, DNS, and SSL uptime with incident alerts and status pages.",
-      "tag": "Statuspage Replacement",
-      "replaces": "Statuspage.io / Better Stack"
     },
     {
       "name": "Nextcloud Files",
@@ -3219,55 +3595,6 @@
       "replaces": "Backblaze / Acronis"
     },
     {
-      "name": "Syncthing",
-      "category": "Software",
-      "url": "https://syncthing.net",
-      "github": "https://github.com/syncthing/syncthing",
-      "license": "MPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android"
-      ],
-      "description": "Synchronizes files continuously across devices over encrypted peer-to-peer networks.",
-      "tag": "Resilio Replacement",
-      "replaces": "Resilio / BitTorrent Sync"
-    },
-    {
-      "name": "Umami",
-      "category": "Software",
-      "url": "https://umami.is",
-      "github": "https://github.com/umami-software/umami",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Collects privacy-friendly, cookie-less website visitor analytics without tracking.",
-      "tag": "Google Analytics Replacement",
-      "replaces": "Google Analytics 360"
-    },
-    {
-      "name": "Plausible Analytics",
-      "category": "Software",
-      "url": "https://plausible.io",
-      "github": "https://github.com/plausible/analytics",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Visualizes lightweight web analytics compliant with GDPR, CCPA, and PECR.",
-      "tag": "Google Analytics Replacement",
-      "replaces": "Google Analytics"
-    },
-    {
       "name": "Wallabag",
       "category": "Software",
       "url": "https://wallabag.org",
@@ -3304,92 +3631,6 @@
       "replaces": "Pocket"
     },
     {
-      "name": "Bitwarden",
-      "category": "Software",
-      "url": "https://bitwarden.com",
-      "github": "https://github.com/bitwarden/clients",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android",
-        "iOS"
-      ],
-      "description": "Stores passwords, passkeys, and card credentials in an encrypted vault.",
-      "tag": "1Password Replacement",
-      "replaces": "1Password / LastPass"
-    },
-    {
-      "name": "Vaultwarden",
-      "category": "Software",
-      "url": "https://github.com/dani-garcia/vaultwarden",
-      "github": "https://github.com/dani-garcia/vaultwarden",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Lightweight Rust server implementation of the Bitwarden password management API.",
-      "tag": "1Password Replacement",
-      "replaces": "1Password / Dashlane"
-    },
-    {
-      "name": "KeePassXC",
-      "category": "Software",
-      "url": "https://keepassxc.org",
-      "github": "https://github.com/keepassxreboot/keepassxc",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Manages encrypted password databases locally without third-party cloud servers.",
-      "tag": "1Password Replacement",
-      "replaces": "1Password / LastPass"
-    },
-    {
-      "name": "Tailscale",
-      "category": "Network",
-      "url": "https://tailscale.com",
-      "github": "https://github.com/tailscale/tailscale",
-      "license": "BSD-3-Clause",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android",
-        "iOS"
-      ],
-      "description": "Builds encrypted WireGuard mesh networks to access remote devices securely.",
-      "tag": "VPN Replacement",
-      "replaces": "ExpressVPN / NordVPN"
-    },
-    {
-      "name": "WireGuard",
-      "category": "Network",
-      "url": "https://www.wireguard.com",
-      "github": "https://github.com/WireGuard/wireguard-tools",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS",
-        "Android",
-        "iOS"
-      ],
-      "description": "Encrypts network communication using modern high-speed kernel cryptography.",
-      "tag": "VPN Replacement",
-      "replaces": "OpenVPN Commercial / NordVPN"
-    },
-    {
       "name": "IVRE",
       "category": "Analysis Utilities",
       "url": "https://ivre.rocks",
@@ -3406,20 +3647,6 @@
       "replaces": "Shodan Enterprise"
     },
     {
-      "name": "OpenVAS",
-      "category": "Analysis Utilities",
-      "url": "https://www.openvas.org",
-      "github": "https://github.com/greenbone/openvas-scanner",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Scans corporate networks and endpoints for over 100,000 known vulnerabilities.",
-      "tag": "Nessus Replacement",
-      "replaces": "Nessus Professional"
-    },
-    {
       "name": "Assemblyline",
       "category": "Analysis Utilities",
       "url": "https://cyber.gc.ca/en/tools-services/assemblyline",
@@ -3434,21 +3661,6 @@
       "replaces": "VirusTotal Enterprise"
     },
     {
-      "name": "Portmaster",
-      "category": "Analysis Utilities",
-      "url": "https://safing.io/portmaster/",
-      "github": "https://github.com/safing/portmaster",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Monitors all outbound application connections, blocks trackers, and encrypts DNS.",
-      "tag": "Little Snitch Replacement",
-      "replaces": "Little Snitch / GlassWire"
-    },
-    {
       "name": "LuLu",
       "category": "Analysis Utilities",
       "url": "https://objective-see.org/products/lulu.html",
@@ -3461,36 +3673,6 @@
       "description": "Blocks unauthorized outgoing network connections and alerts users on macOS.",
       "tag": "Little Snitch Replacement",
       "replaces": "Little Snitch"
-    },
-    {
-      "name": "Wazuh",
-      "category": "Analysis Utilities",
-      "url": "https://wazuh.com",
-      "github": "https://github.com/wazuh/wazuh",
-      "license": "GPL-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Monitors endpoints for security intrusions, compliance vulnerabilities, and file changes.",
-      "tag": "CrowdStrike Replacement",
-      "replaces": "CrowdStrike / SentinelOne"
-    },
-    {
-      "name": "Aegis Authenticator",
-      "category": "Software",
-      "url": "https://getaegis.app",
-      "github": "https://github.com/beemdevelopment/Aegis",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Android"
-      ],
-      "description": "Stores TOTP and HOTP two-factor authentication tokens in an encrypted vault.",
-      "tag": "Authy Replacement",
-      "replaces": "Authy / Duo"
     },
     {
       "name": "Ente Auth",
@@ -3511,53 +3693,6 @@
       "replaces": "Authy"
     },
     {
-      "name": "7-Zip",
-      "category": "Analysis Utilities",
-      "url": "https://www.7-zip.org",
-      "github": "https://github.com/ip7z/7zip",
-      "license": "LGPL-2.1",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Packs and extracts 7z, RAR, ZIP, TAR, and ISO archives with LZMA compression.",
-      "tag": "WinRAR Replacement",
-      "replaces": "WinRAR"
-    },
-    {
-      "name": "PeaZip",
-      "category": "Analysis Utilities",
-      "url": "https://peazip.github.io",
-      "github": "https://github.com/peazip/PeaZip",
-      "license": "LGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Compresses and extracts 200+ archive formats with encryption and file checks.",
-      "tag": "WinRAR Replacement",
-      "replaces": "WinRAR"
-    },
-    {
-      "name": "BleachBit",
-      "category": "Analysis Utilities",
-      "url": "https://www.bleachbit.org",
-      "github": "https://github.com/bleachbit/bleachbit",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Frees disk cache, deletes temporary clutter, and shreds files to protect privacy.",
-      "tag": "CCleaner Replacement",
-      "replaces": "CCleaner / CleanMyMac"
-    },
-    {
       "name": "OnyX",
       "category": "Analysis Utilities",
       "url": "https://www.titanium-software.fr/en/onyx.html",
@@ -3570,24 +3705,6 @@
       "description": "Cleans macOS caches, checks disk structure, and configures hidden system parameters.",
       "tag": "CleanMyMac Replacement",
       "replaces": "CleanMyMac X"
-    },
-    {
-      "name": "RustDesk",
-      "category": "Software",
-      "url": "https://rustdesk.com",
-      "github": "https://github.com/rustdesk/rustdesk",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS",
-        "Android",
-        "iOS"
-      ],
-      "description": "Controls desktop computers remotely with peer-to-peer encryption and relays.",
-      "tag": "TeamViewer Replacement",
-      "replaces": "TeamViewer / AnyDesk"
     },
     {
       "name": "TestDisk & PhotoRec",
@@ -3606,117 +3723,6 @@
       "replaces": "Disk Drill / EaseUS"
     },
     {
-      "name": "Ventoy",
-      "category": "Analysis Utilities",
-      "url": "https://www.ventoy.net",
-      "github": "https://github.com/ventoy/Ventoy",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Creates multi-boot USB flash drives by directly copying ISO, WIM, and IMG files.",
-      "tag": "Rufus Replacement",
-      "replaces": "BalenaEtcher / Rufus"
-    },
-    {
-      "name": "ComfyUI",
-      "category": "Software",
-      "url": "https://comfyanonymous.github.io/ComfyUI_examples/",
-      "github": "https://github.com/comfyanonymous/ComfyUI",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Generates AI images via node-based modular workflows for Stable Diffusion and SDXL.",
-      "tag": "Midjourney Replacement",
-      "replaces": "Midjourney / DALL-E 3"
-    },
-    {
-      "name": "Stable Diffusion WebUI",
-      "category": "Software",
-      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "github": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Generates and in-paints AI images locally with ControlNet and custom LoRA models.",
-      "tag": "Midjourney Replacement",
-      "replaces": "Midjourney"
-    },
-    {
-      "name": "Ollama",
-      "category": "Software",
-      "url": "https://ollama.com",
-      "github": "https://github.com/ollama/ollama",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "macOS",
-        "Linux",
-        "Windows"
-      ],
-      "description": "Runs Llama 3, DeepSeek, and Mistral large language models locally on GPU or CPU.",
-      "tag": "ChatGPT Replacement",
-      "replaces": "ChatGPT Plus / Claude Pro"
-    },
-    {
-      "name": "Open WebUI",
-      "category": "Software",
-      "url": "https://openwebui.com",
-      "github": "https://github.com/open-webui/open-webui",
-      "license": "MIT",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Self-hosts a responsive chat UI for local Ollama and OpenAI-compatible models.",
-      "tag": "ChatGPT Replacement",
-      "replaces": "ChatGPT Plus"
-    },
-    {
-      "name": "Metabase",
-      "category": "Software",
-      "url": "https://www.metabase.com",
-      "github": "https://github.com/metabase/metabase",
-      "license": "AGPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Queries databases with visual builders or SQL and creates shareable business charts.",
-      "tag": "Tableau Replacement",
-      "replaces": "Tableau / PowerBI Pro"
-    },
-    {
-      "name": "Apache Superset",
-      "category": "Software",
-      "url": "https://superset.apache.org",
-      "github": "https://github.com/apache/superset",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Explores enterprise data warehouses with interactive SQL lab and real-time dashboards.",
-      "tag": "Tableau Replacement",
-      "replaces": "Tableau"
-    },
-    {
       "name": "Postiz",
       "category": "Software",
       "url": "https://postiz.com",
@@ -3733,22 +3739,6 @@
       "replaces": "Hootsuite / Buffer Pro"
     },
     {
-      "name": "n8n",
-      "category": "Software",
-      "url": "https://n8n.io",
-      "github": "https://github.com/n8n-io/n8n",
-      "license": "Sustainable Use License",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Automates workflows across 400+ services with node-based logic and custom JavaScript.",
-      "tag": "Zapier Replacement",
-      "replaces": "Zapier / Make.com"
-    },
-    {
       "name": "Activepieces",
       "category": "Software",
       "url": "https://www.activepieces.com",
@@ -3763,6 +3753,16 @@
       "description": "Connects web apps and automates internal workflows with visual no-code pieces.",
       "tag": "Zapier Replacement",
       "replaces": "Zapier"
+    },
+    {
+      "name": "Ghidra vs IDA",
+      "category": "Comparisons",
+      "url": "",
+      "github": "",
+      "license": "",
+      "pricing": "",
+      "platforms": [],
+      "description": "Compares Ghidra against IDA Pro on decompilation, pricing, and plugin ecosystems."
     }
   ]
 }
