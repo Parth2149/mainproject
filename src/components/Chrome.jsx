@@ -24,8 +24,6 @@ export function Footer() {
 
 export function Background() {
   return <div className="ambient-background" aria-hidden="true">
-    <div className="ambient-glow glow-blue"/>
-    <div className="ambient-glow glow-purple"/>
     <div className="ambient-grid"/>
   </div>;
 }
