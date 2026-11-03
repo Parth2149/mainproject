@@ -103,3 +103,8 @@ Remove-Item Env:BASE_PATH
 ```
 
 For the custom domain, use an empty base path and canonical origin `https://revkit.online`, then rebuild. See [GitHub custom domain instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) for current DNS values.
+
+
+### Reading-focused interface
+
+The full directory displays complete tool descriptions with a 130KB uncompressed HTML/CSS/script/favicon budget; other pages retain a 100KB budget. Product logos are lazy-loaded with explicit dimensions. The interface uses warm white surfaces, plum text, and lavender accents, with three, two, and one-column layouts across screen sizes.

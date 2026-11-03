@@ -8,8 +8,10 @@ export default function ToolDetail({ tool }) {
   const isPostman = tool.tag === 'Postman Replacement';
   const targetName = tool.tag ? tool.tag.replace(' Replacement', '') : '';
 
-  const altTitle = tool.tag ? `${targetName} Alternative & Open Source Profile` : 'Reverse Engineering & Security Analysis';
-  const altSummary = tool.tag
+  const altTitle = tool.replaces ? `${tool.replaces} Alternative & Open Source Profile` : (tool.tag ? `${targetName} Alternative & Open Source Profile` : 'Reverse Engineering & Security Analysis');
+  const altSummary = tool.replaces
+    ? `${tool.name} is a high-performance open-source alternative replacing proprietary ${tool.replaces}. It delivers transparent inspection, local execution, and unrestricted workflow control with zero subscriptions.`
+    : tool.tag
     ? isAdobe
       ? `${tool.name} is a high-performance open-source alternative to proprietary Adobe software. It enables binary parsing, native file format reverse engineering, and professional asset creation with zero subscriptions.`
       : isCanva
@@ -29,6 +31,7 @@ export default function ToolDetail({ tool }) {
             <h1>{tool.name}</h1>
           </div>
         </div>
+        {tool.replaces && <div className="card-replaces detail-replaces">{tool.replaces}</div>}
         <p className="lead">{tool.description}</p>
         <Badges tool={tool}/>
         <div className="actions">

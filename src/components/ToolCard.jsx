@@ -7,7 +7,7 @@ export function Badges({ tool }) {
 }
 
 export default function ToolCard({ tool }) {
-  const desc = tool.description.length > 48 ? tool.description.slice(0, 45).trimEnd() + '…' : tool.description;
+  const desc = tool.description.length > 70 ? tool.description.slice(0, 67).trimEnd() + '…' : tool.description;
   return <article className="tool-card" data-c={tool.category} data-p={tool.platforms.length === 3 ? '*' : tool.platforms.join('|')} data-pr={tool.pricing} data-l={tool.license}>
     <div className="c-top">
       <img src={href(`/assets/tools/${tool.slug}.png`)} alt=""/>
@@ -15,6 +15,7 @@ export default function ToolCard({ tool }) {
     </div>
     <a className="t-title" href={href(`/tools/${tool.slug}/`)}>{tool.name}</a>
     <span className="cat-lbl">{tool.category}</span>
+    {tool.replaces && <div className="card-replaces">{tool.replaces}</div>}
     <p>{desc}</p>
     <Badges tool={tool}/>
   </article>;
