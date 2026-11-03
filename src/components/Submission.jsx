@@ -97,26 +97,6 @@ export default function Submission() {
           <div id="submit-status" role="status" aria-live="polite" />
           <noscript>Please enable JavaScript to submit this form or email us directly at parthghoghari00@gmail.com.</noscript>
         </form>
-
-        <aside className="metadata">
-          <h2>How contributions work</h2>
-          <ol className="steps">
-            <li><strong>Fill out the form:</strong> Enter the project links, license, and what it does.</li>
-            <li><strong>Send contribution:</strong> Click Send Contribution to email the details directly to our maintainer.</li>
-            <li><strong>Verification &amp; Publication:</strong> We review the project for security, catalog it, and publish it live within 24–48 hours.</li>
-          </ol>
-
-          <div className="submit-email-box">
-            <span className="email-lbl">Direct Submissions &amp; Contact</span>
-            <a className="email-link" href="mailto:parthghoghari00@gmail.com?subject=RevKit%20Tool%20Submission">
-              parthghoghari00@gmail.com ↗
-            </a>
-          </div>
-
-          <p className="small muted">
-            Every submission is reviewed against our curated directory criteria. We verify open-source repositories, platform support, and binary integrity before listing.
-          </p>
-        </aside>
       </div>
     </>
   );
