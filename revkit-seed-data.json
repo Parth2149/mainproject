@@ -1601,6 +1601,126 @@
       "pricing": "",
       "platforms": [],
       "description": "Comparison page seed: Ghidra (free, decompiler included) vs IDA Pro (industry."
+    },
+    {
+      "name": "ArtCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/artcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source Rust creative engine and AI studio providing clean-room alternatives to Adobe Creative Cloud apps.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "PhotoCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/photocraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe Photoshop alternative built in Rust with layers, non-destructive masks, and adjustment layers.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "VectorCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/vectorcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe Illustrator alternative built in Rust for precision vector illustration, bezier paths, and SVG.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "FilmCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/filmcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe Premiere Pro alternative built in Rust offering multi-track non-linear video editing and rendering.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "LightCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/lightcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe Lightroom alternative built in Rust for non-destructive RAW photo development and color grading.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "PdfCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/pdfcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe Acrobat Pro alternative built in Rust for viewing, annotating, and managing PDF document streams.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "EffectCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/effectcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe After Effects alternative built in Rust for motion graphics, visual effects, and keyframe composition.",
+      "tag": "Adobe Replacement"
+    },
+    {
+      "name": "DesignCraft",
+      "category": "Software",
+      "url": "https://getartcraft.com",
+      "github": "https://github.com/storytold/designcraft",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Free open-source Adobe InDesign alternative built in Rust for multi-page document layout, typography, and publishing.",
+      "tag": "Adobe Replacement"
     }
   ]
 }

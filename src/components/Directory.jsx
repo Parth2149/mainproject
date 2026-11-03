@@ -11,7 +11,7 @@ export default function Directory({ category }) {
       <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Best Reverse Engineering Tools.<br/><span className="text-gradient">Decompilers, Debuggers &amp; Software.</span></>}</h1>
       <p>{category ? categoryDescriptions[category] : <>Curated directory of reverse engineering tools, decompilers, and open-source software.<br className="desktop"/> Search and compare 100+ binary analysis tools.</>}</p>
       <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? 1 : categories.length}</b> categories</span><span><b>100%</b> verified entries</span></div>
-      <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
+      <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Software', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
     </section>
     <section aria-label="Tool directory" className="directory">
       <div className="directory-bar"><div><span className="eyebrow">THE DIRECTORY</span><h2>{category ? `Explore ${category} tools` : 'Build your reverse engineering toolkit'}</h2></div><span className="directory-note"><span className="live-dot" />{list.length} tools, thoughtfully curated</span></div>

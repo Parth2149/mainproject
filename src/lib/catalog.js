@@ -24,6 +24,7 @@ export const categoryTitles = {
   'Distros & Environments': 'Best Malware Analysis Distros & Labs (2026)',
   'Java': 'Best Java Decompilers & RE Tools (2026)',
   'Game RE': 'Best Game Reverse Engineering Tools (2026)',
+  'Software': 'Best Creative Software & Adobe Alternatives (2026)',
 };
 
 export const categoryDescriptions = {
@@ -38,6 +39,7 @@ export const categoryDescriptions = {
   'Distros & Environments': 'Dedicated reverse engineering and malware analysis operating systems, virtual appliances, and cybersecurity lab environments.',
   'Java': 'Top Java reverse engineering tools: bytecode decompilers, class viewers, and analysis suites for compiled JAR and JVM applications.',
   'Game RE': 'Best game reverse engineering tools: memory scanners, runtime struct reconstruction, and process debugging for game binary research.',
+  'Software': 'Top open-source creative software, desktop suites, and clean-room Adobe Creative Cloud alternatives built in Rust.',
 };
 export const metaDescription = text => text.length <= 160 ? text : text.slice(0,157).replace(/\s+\S*$/, '') + '…';
 
@@ -106,7 +108,8 @@ export function keywordsFor(page) {
       'Network': 'network reverse engineering, mitmproxy, traffic inspection, api reverse engineering, packet capture, http proxy',
       'Distros & Environments': 'malware analysis distro, flare vm, remnux, reverse engineering lab, security virtual machine',
       'Java': 'java reverse engineering, bytecode viewer, dex2jar, java decompiler, jar inspection, jvm bytecode',
-      'Game RE': 'game reverse engineering, cheat engine, reclassex, memory scanner, pointer scanner, game structure reconstruction'
+      'Game RE': 'game reverse engineering, cheat engine, reclassex, memory scanner, pointer scanner, game structure reconstruction',
+      'Software': 'creative software, open source software, free adobe alternatives, artcraft, photocraft, vectorcraft, filmcraft, lightcraft, rust software, creative cloud alternative'
     };
     return map[page.category] || `${page.category.toLowerCase()} reverse engineering tools, binary analysis, security research`;
   }

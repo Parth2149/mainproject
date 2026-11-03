@@ -6,13 +6,13 @@ export function Badges({ tool }) {
 }
 
 export default function ToolCard({ tool }) {
-  return <article className="tool-card" data-category={tool.category} data-platforms={tool.platforms.join('|')} data-pricing={tool.pricing} data-license={tool.license}>
+  return <article className="tool-card" data-c={tool.category} data-p={tool.platforms.join('|')} data-pr={tool.pricing} data-l={tool.license}>
     <div className="card-top">
       <img src={href(`/assets/tools/${tool.slug}.png`)} alt=""/>
       <span className="license">{tool.license}</span>
     </div>
     <a className="tool-title" href={href(`/tools/${tool.slug}/`)}>{tool.name}</a>
-    <span className="category-label">{tool.category}</span>
+    <span className="cat-lbl">{tool.category}</span>
     <p>{tool.description}</p>
     <Badges tool={tool}/>
   </article>;
