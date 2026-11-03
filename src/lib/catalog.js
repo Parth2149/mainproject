@@ -230,7 +230,7 @@ export function schemaFor(page) {
   const websiteId = canonical('/') + '#website';
   const publisherId = canonical('/') + '#organization';
   const graph = [
-    { '@type': 'Organization', '@id': publisherId, name: 'RevKit', url: canonical('/') },
+    { '@type': 'Organization', '@id': publisherId, name: 'RevKit', url: canonical('/'), logo: canonical('/icon-512.png') },
     { '@type': 'WebSite', '@id': websiteId, name: 'RevKit', url: canonical('/'), description: 'A curated directory of reverse engineering software, decompilers, debuggers, and GitHub repositories.', publisher: { '@id': publisherId }, inLanguage: 'en' },
   ];
   const crumbs = breadcrumbsFor(page);

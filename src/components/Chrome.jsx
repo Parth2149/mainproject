@@ -4,15 +4,10 @@ import { href } from '../lib/catalog';
 export function Logo() {
   return <>
     <span className="logo-symbol" aria-hidden="true">
-      <svg viewBox="0 0 128 128" width="28" height="28" fill="none">
-        <rect x="26" y="26" width="14" height="20" rx="4" fill="#38bdf8"/>
-        <rect x="26" y="50" width="14" height="26" rx="4" fill="#38bdf8"/>
-        <rect x="26" y="80" width="14" height="22" rx="4" fill="#38bdf8"/>
-        <path d="M40 33h35a18 18 0 0 1 0 36H40" stroke="#8b5cf6" strokeWidth="14" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="m54 69 36 33" stroke="#34d399" strokeWidth="14" strokeLinecap="round"/>
-        <path d="M82 82l-14-3 3 14" stroke="#ffffff" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="m58 45-6 6 6 6" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" opacity="0.9"/>
-        <circle cx="95" cy="51" r="5" fill="#38bdf8"/>
+      <svg viewBox="0 0 64 64" width="28" height="28" fill="none">
+        <rect x="2" y="2" width="60" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" strokeWidth="2"/>
+        <path d="M14 48 29 16h9L23 48Z" fill="#0284c7"/>
+        <path d="m31 48 15-32h9L40 48Z" fill="#6366f1"/>
       </svg>
     </span>
     <span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span>
