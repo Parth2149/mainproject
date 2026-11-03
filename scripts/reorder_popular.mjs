@@ -139,3 +139,4 @@ console.log('Reordered tools successfully! Top 12 tools on homepage will be:');
 nonComparisons.slice(0, 12).forEach((t, i) => {
   console.log(`${i + 1}. ${t.name} (${t.category}) -> replaces: ${t.replaces}`);
 });
+
