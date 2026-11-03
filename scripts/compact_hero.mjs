@@ -118,3 +118,4 @@ if (!css.includes('COMPACT ABOVE-THE-FOLD LAYOUT')) {
 } else {
   console.log('Compact CSS already present');
 }
+
