@@ -20,3 +20,4 @@ if (!content.includes('GTM-TXZQLP2R')) {
 } else {
   console.log('GTM tag already present.');
 }
+
