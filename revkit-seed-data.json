@@ -270,8 +270,8 @@
     },
     {
       "name": "Penpot",
-      "category": "Analysis Utilities",
-      "tag": "Canva Replacement",
+      "category": "Software",
+      "tag": "Figma Replacement",
       "url": "https://penpot.app",
       "github": "https://github.com/penpot/penpot",
       "license": "MPL-2.0",
@@ -281,7 +281,7 @@
         "Linux",
         "macOS"
       ],
-      "description": "web-based vector design and prototyping platform built on open standards as a Canva."
+      "description": "Open-source Figma alternative for collaborative UI/UX design and prototyping using SVG and CSS Grid."
     },
     {
       "name": "Androguard",
@@ -1796,6 +1796,141 @@
       ],
       "description": "Git-native, offline-first open-source API client and reverse engineering alternative to Postman.",
       "tag": "Postman Replacement"
+    },
+    {
+      "name": "Immich",
+      "category": "Software",
+      "tag": "Google Photos Replacement",
+      "url": "https://immich.app",
+      "github": "https://github.com/immich-app/immich",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "High-performance self-hosted Google Photos alternative with facial recognition, CLIP search, and mobile sync."
+    },
+    {
+      "name": "AppFlowy",
+      "category": "Software",
+      "tag": "Notion Replacement",
+      "url": "https://appflowy.io",
+      "github": "https://github.com/AppFlowy-IO/AppFlowy",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Local-first Notion alternative built with Flutter and Rust for notes, wikis, and customizable databases."
+    },
+    {
+      "name": "Cap",
+      "category": "Software",
+      "tag": "Loom Replacement",
+      "url": "https://cap.so",
+      "github": "https://github.com/CapSoftware/Cap",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source Loom alternative for instant screen recording, shareable links, and self-hosted video storage."
+    },
+    {
+      "name": "Cal.com",
+      "category": "Software",
+      "tag": "Calendly Replacement",
+      "url": "https://cal.com",
+      "github": "https://github.com/calcom/cal.com",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source Calendly alternative for automated event scheduling, team bookings, and calendar sync."
+    },
+    {
+      "name": "Chatwoot",
+      "category": "Software",
+      "tag": "Intercom Replacement",
+      "url": "https://www.chatwoot.com",
+      "github": "https://github.com/chatwoot/chatwoot",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Self-hosted customer engagement platform and Intercom alternative with live-chat and omnichannel inboxes."
+    },
+    {
+      "name": "OpenProject",
+      "category": "Software",
+      "tag": "Jira Replacement",
+      "url": "https://www.openproject.org",
+      "github": "https://github.com/opf/openproject",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source project management platform and Jira alternative with interactive Gantt charts and agile boards."
+    },
+    {
+      "name": "OpenWhisper",
+      "category": "Software",
+      "tag": "Wispr Flow Replacement",
+      "url": "https://github.com/OpenWhispr/openwhispr",
+      "github": "https://github.com/OpenWhispr/openwhispr",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Local-first offline voice dictation utility powered by Whisper for system-wide speech-to-text without telemetry."
+    },
+    {
+      "name": "Chatterbox",
+      "category": "Software",
+      "tag": "ElevenLabs Replacement",
+      "url": "https://github.com/ResembleAI/chatterbox",
+      "github": "https://github.com/ResembleAI/chatterbox",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source ElevenLabs alternative for multilingual text-to-speech, zero-shot voice cloning, and audio synthesis."
+    },
+    {
+      "name": "OpenSEO",
+      "category": "Software",
+      "tag": "Ahrefs Replacement",
+      "url": "https://github.com/every-app/open-seo",
+      "github": "https://github.com/every-app/open-seo",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Self-hosted SEO research, rank tracking, and site auditing suite with a Model Context Protocol (MCP) server."
     }
   ]
 }

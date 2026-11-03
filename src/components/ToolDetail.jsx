@@ -6,14 +6,17 @@ export default function ToolDetail({ tool }) {
   const isAdobe = tool.tag === 'Adobe Replacement';
   const isCanva = tool.tag === 'Canva Replacement';
   const isPostman = tool.tag === 'Postman Replacement';
+  const targetName = tool.tag ? tool.tag.replace(' Replacement', '') : '';
 
-  const altTitle = tool.tag ? `${tool.tag.replace(' Replacement', '')} Alternative & RE Profile` : 'Reverse Engineering & Security Analysis';
-  const altSummary = isAdobe
-    ? `${tool.name} is a high-performance open-source alternative to proprietary Adobe software. It enables binary parsing, native file format reverse engineering, and professional asset creation with zero subscriptions.`
-    : isCanva
-    ? `${tool.name} is a free, self-hostable alternative to Canva Pro graphic tools, executing design composition, rendering, and asset manipulation locally with complete privacy.`
-    : isPostman
-    ? `${tool.name} is a fast, Git-native open-source API development and reverse engineering alternative to Postman, offering multi-protocol traffic inspection, request replay, and offline collections.`
+  const altTitle = tool.tag ? `${targetName} Alternative & Open Source Profile` : 'Reverse Engineering & Security Analysis';
+  const altSummary = tool.tag
+    ? isAdobe
+      ? `${tool.name} is a high-performance open-source alternative to proprietary Adobe software. It enables binary parsing, native file format reverse engineering, and professional asset creation with zero subscriptions.`
+      : isCanva
+      ? `${tool.name} is a free, self-hostable alternative to Canva graphic tools, executing design composition, rendering, and asset manipulation locally with complete privacy.`
+      : isPostman
+      ? `${tool.name} is a fast, Git-native open-source API development and reverse engineering alternative to Postman, offering multi-protocol traffic inspection, request replay, and offline collections.`
+      : `${tool.name} is a top-tier open-source alternative to proprietary ${targetName} software, delivering complete data ownership, local-first control, and zero subscription costs.`
     : `${tool.name} is a proven open-source standard for ${tool.category.toLowerCase()}, vulnerability research, and binary reverse engineering.`;
 
   return <>
@@ -61,6 +64,7 @@ export default function ToolDetail({ tool }) {
             {isAdobe && <li>Engineered for clean-room reverse engineering and native compatibility with standard document workflows.</li>}
             {isCanva && <li>Drag-and-drop canvas layout, rich layer manipulation, and vector/raster export pipelines.</li>}
             {isPostman && <li>Multi-protocol request testing (REST, GraphQL, WebSockets) with Git-friendly local directory storage.</li>}
+            {tool.tag && !isAdobe && !isCanva && !isPostman && <li>Direct open-source alternative to {targetName} with full data sovereignty and zero cloud lock-in.</li>}
             <li>Native cross-platform execution on {tool.platforms.join(', ')}.</li>
             <li>Fully verifiable open-source codebase licensed under {tool.license}.</li>
           </ul>
