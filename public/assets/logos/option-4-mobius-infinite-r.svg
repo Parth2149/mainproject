@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#481541" />
+      <stop offset="100%" stop-color="#240720" />
+    </linearGradient>
+    <linearGradient id="gold4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDA66" />
+      <stop offset="50%" stop-color="#EAAA00" />
+      <stop offset="100%" stop-color="#B87D00" />
+    </linearGradient>
+    <linearGradient id="silver4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#D0C4DF" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg4)" stroke="#EAAA00" stroke-width="1.5" stroke-opacity="0.4" />
+  
+  <!-- Fluid Interlocking Infinite Ribbon forming 'R' -->
+  <!-- Left Spine -->
+  <path d="M17 48 V16" stroke="url(#silver4)" stroke-width="6.5" stroke-linecap="round" />
+  
+  <!-- Reverse Loop (Counter-Clockwise Flow) -->
+  <path d="M17 16 C28 16 38 18 43 23 C48 28 46 35 38 37 C30 39 23 37 17 37" stroke="url(#silver4)" stroke-width="6" stroke-linecap="round" />
+  
+  <!-- Golden Reverse Arrow Kick cutting forward -->
+  <path d="M29 35 L44 48" stroke="url(#gold4)" stroke-width="6.5" stroke-linecap="round" />
+  <polygon points="44,48 45,41 38,47" fill="url(#gold4)" />
+  
+  <!-- Reverse Cycle Arrowhead on top loop -->
+  <polygon points="26,11 26,20 18,16" fill="url(#gold4)" />
+</svg>

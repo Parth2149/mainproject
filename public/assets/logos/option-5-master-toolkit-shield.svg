@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#461440" />
+      <stop offset="100%" stop-color="#240822" />
+    </linearGradient>
+    <linearGradient id="gold5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="50%" stop-color="#EAAA00" />
+      <stop offset="100%" stop-color="#C28700" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg5)" stroke="#EAAA00" stroke-width="1.5" stroke-opacity="0.4" />
+  
+  <!-- The Security Crest Outline -->
+  <path d="M32 14 L48 20 V33 C48 42 41 49 32 52 C23 49 16 42 16 33 V20 Z" stroke="#FFFFFF" stroke-width="2.5" stroke-linejoin="round" fill="#320C2D" />
+  
+  <!-- Precision Caliper & Key Tool Inside Crest -->
+  <!-- Digital Caliper Jaw Left -->
+  <path d="M24 23 V37 L29 34 V26 Z" fill="url(#gold5)" />
+  <!-- Digital Caliper Jaw Right -->
+  <path d="M40 23 V37 L35 34 V26 Z" fill="url(#gold5)" />
+  <!-- Central Precision Vernier / Decompiler Dial -->
+  <circle cx="32" cy="30" r="4.5" fill="#FFFFFF" />
+  <circle cx="32" cy="30" r="2" fill="#3A0F34" />
+  <path d="M32 35 V44" stroke="url(#gold5)" stroke-width="3" stroke-linecap="round" />
+</svg>

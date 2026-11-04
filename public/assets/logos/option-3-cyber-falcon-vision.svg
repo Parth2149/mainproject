@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" fill="none">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A1642" />
+      <stop offset="100%" stop-color="#250721" />
+    </linearGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082" />
+      <stop offset="60%" stop-color="#EAAA00" />
+      <stop offset="100%" stop-color="#BD8300" />
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg3)" stroke="#EAAA00" stroke-width="1.5" stroke-opacity="0.4" />
+  
+  <!-- Geometric Wings & Crest -->
+  <path d="M12 26 L32 14 L52 26 L42 36 L32 30 L22 36 Z" fill="#FFFFFF" fill-opacity="0.95" />
+  <path d="M18 32 L32 24 L46 32 L38 42 L32 37 L26 42 Z" fill="#DDD3EB" fill-opacity="0.8" />
+  
+  <!-- Falcon Beak & Golden Core Eye -->
+  <polygon points="32,32 36,41 28,41" fill="url(#gold3)" />
+  <polygon points="32,41 35,49 29,49" fill="url(#gold3)" />
+  
+  <!-- Laser Eyes -->
+  <circle cx="28" cy="28" r="2" fill="url(#gold3)" />
+  <circle cx="36" cy="28" r="2" fill="url(#gold3)" />
+</svg>
