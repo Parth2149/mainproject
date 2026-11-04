@@ -38,6 +38,44 @@ export default function ToolDetail({ tool }) {
           <h3>{altTitle}</h3>
           <p>{altSummary}</p>
         </div>
+        {brand && (
+          <div className="tool-section">
+            <h2>{tool.name} vs {brand} — Quick Comparison</h2>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Comparison Factor</th>
+                    <th>{tool.name} (Open Source)</th>
+                    <th>{brand} (Commercial)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Cost &amp; Pricing</strong></td>
+                    <td>{tool.pricing === 'Free' ? '100% Free' : tool.pricing} ({tool.license})</td>
+                    <td>Paid Subscription / Per-Seat Fees</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Data Privacy &amp; Hosting</strong></td>
+                    <td>100% Local ({tool.platforms.join(', ')})</td>
+                    <td>Cloud Hosted / Proprietary Servers</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Source Code &amp; Auditing</strong></td>
+                    <td>Fully Auditable on GitHub</td>
+                    <td>Closed Proprietary Black Box</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Reverse Engineering</strong></td>
+                    <td>Unrestricted protocol &amp; format inspection</td>
+                    <td>Strict Vendor Lock-in &amp; API Limits</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
         <div className="tool-section">
           <h2>Technical highlights &amp; architecture</h2>
           <div className="highlights-grid">

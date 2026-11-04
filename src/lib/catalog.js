@@ -286,6 +286,39 @@ export function schemaFor(page) {
       };
     }
     graph.push(software);
+    if (brand) {
+      graph.push({
+        '@type': 'FAQPage',
+        '@id': url + '#faq',
+        isPartOf: { '@id': websiteId },
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: `What is the best free open-source replacement for ${brand}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `${tool.name} is a top free, open-source replacement for ${brand}. It runs natively on ${tool.platforms.join(', ')} under the ${tool.license} license, offering zero-cost usage without proprietary subscriptions or cloud lock-in.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: `Can ${tool.name} completely replace ${brand}?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Yes. ${tool.name} provides direct functional equivalence to ${brand}, replacing proprietary cloud subscriptions with auditable local software, offline execution, and full protocol reverse engineering.`
+            }
+          },
+          {
+            '@type': 'Question',
+            name: `How does ${tool.name} compare to ${brand} in privacy and pricing?`,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: `Unlike ${brand}, which requires recurring monthly fees and cloud processing, ${tool.name} is ${tool.pricing === 'Free' ? '100% free' : tool.pricing} and executes locally on your device with zero data tracking.`
+            }
+          }
+        ]
+      });
+    }
   }
   if (page.route === '/') {
     graph.push({
