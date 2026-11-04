@@ -478,3 +478,105 @@ html, body {
   color: #3A0F34;
   transform: translateY(-1px);
 }
+
+/* Enhanced Comparison Hub & Detail Styles */
+.comparison-card {
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  background: #D5C8E6;
+  border: 1.5px solid #C9B8DB;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(58, 15, 52, 0.05);
+  transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  text-decoration: none;
+}
+.comparison-card:hover {
+  transform: translateY(-2px);
+  border-color: #3A0F34;
+  box-shadow: 0 8px 24px rgba(58, 15, 52, 0.12);
+}
+.comparison-card h2 {
+  font-size: 19px;
+  margin: 6px 0 10px;
+  color: #3A0F34;
+}
+.comparison-card h2 .muted {
+  color: #8c7188;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 4px;
+}
+.comparison-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4A2244;
+  margin: 0 0 14px;
+  flex-grow: 1;
+}
+.comparison-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: auto;
+}
+.comparison-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #E8DEF5;
+  color: #3A0F34;
+  border: 1px solid #C9B8DB;
+}
+.comparison-pill.gold {
+  background: #fff8e6;
+  color: #3A0F34;
+  border-color: #EAAA00;
+}
+.comparison-verdict {
+  margin: 40px 0 30px;
+  background: #D5C8E6;
+  border: 1.5px solid #3A0F34;
+  border-radius: 14px;
+  padding: 26px;
+  box-shadow: 0 4px 16px rgba(58, 15, 52, 0.06);
+}
+.comparison-verdict h3 {
+  font-size: 18px;
+  color: #3A0F34;
+  margin: 0 0 16px;
+  letter-spacing: -0.3px;
+}
+.verdict-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.verdict-card {
+  background: #ffffff;
+  border: 1.5px solid #C9B8DB;
+  border-left: 4px solid #3A0F34;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(58, 15, 52, 0.04);
+}
+.verdict-card h4 {
+  font-size: 15px;
+  color: #3A0F34;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+.verdict-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4A2244;
+  margin: 0;
+}
+@media (max-width: 800px) {
+  .verdict-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
