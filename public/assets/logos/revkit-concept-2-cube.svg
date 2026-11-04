@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="q-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#481441" />
+      <stop offset="100%" stop-color="#260822" />
+    </linearGradient>
+    <linearGradient id="q-white" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#DDD3EB" />
+    </linearGradient>
+    <linearGradient id="q-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFDA66" />
+      <stop offset="70%" stop-color="#EAAA00" />
+      <stop offset="100%" stop-color="#BA8100" />
+    </linearGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#q-bg)" stroke="#EAAA00" stroke-width="1.5" stroke-opacity="0.4" />
+  <rect x="3.5" y="3.5" width="57" height="57" rx="14.5" stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.15" />
+
+  <!-- Isometric Decompiler Cube / Hex Core -->
+  <g transform="translate(0, 0)">
+    <!-- Top Facet (Deconstruction Plane) -->
+    <path d="M32 14 L47 22.5 L32 31 L17 22.5 Z" fill="url(#q-white)" fill-opacity="0.95" />
+    <!-- Left Facet (Reverse Analysis) -->
+    <path d="M17 25.5 L30 33 L30 49 L17 41.5 Z" fill="url(#q-white)" fill-opacity="0.75" />
+    <!-- Right Facet (Golden Reconstruction / Kit) -->
+    <path d="M34 33 L47 25.5 L47 41.5 L34 49 Z" fill="url(#q-gold)" />
+    <!-- Center Core Spark -->
+    <circle cx="32" cy="32" r="3" fill="#FFFFFF" />
+  </g>
+</svg>

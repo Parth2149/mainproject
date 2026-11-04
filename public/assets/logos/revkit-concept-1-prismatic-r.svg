@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <defs>
+    <linearGradient id="rk-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A1844" />
+      <stop offset="60%" stop-color="#3A0F34" />
+      <stop offset="100%" stop-color="#260822" />
+    </linearGradient>
+    <linearGradient id="rk-stem" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E5DBEE" />
+    </linearGradient>
+    <linearGradient id="rk-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD452" />
+      <stop offset="60%" stop-color="#EAAA00" />
+      <stop offset="100%" stop-color="#C28700" />
+    </linearGradient>
+    <filter id="rk-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Container Badge -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#rk-bg)" stroke="#EAAA00" stroke-width="1.5" stroke-opacity="0.4" />
+  <rect x="3.5" y="3.5" width="57" height="57" rx="14.5" stroke="#FFFFFF" stroke-width="0.75" stroke-opacity="0.15" />
+
+  <!-- Monogram Mark -->
+  <g filter="url(#rk-shadow)">
+    <!-- Vertical Pillar -->
+    <rect x="16" y="16" width="7" height="32" rx="3.5" fill="url(#rk-stem)" />
+
+    <!-- Loop of the R -->
+    <path d="M22 16 H35 C41.6 16 46 20.4 46 26 C46 31.6 41.6 36 35 36 H22" fill="none" stroke="url(#rk-stem)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Golden Dynamic Kick / Reverse Key -->
+    <path d="M30 33.5 L43.5 47" stroke="url(#rk-gold)" stroke-width="6.5" stroke-linecap="round" />
+
+    <!-- Focal Reverse Node -->
+    <circle cx="32" cy="26" r="3.2" fill="url(#rk-gold)" />
+    <circle cx="32" cy="26" r="1.3" fill="#3A0F34" />
+  </g>
+</svg>

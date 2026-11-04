@@ -4,10 +4,30 @@ import { href } from '../lib/catalog';
 export function Logo() {
   return <>
     <span className="logo-symbol" aria-hidden="true">
-      <svg viewBox="0 0 64 64" width="28" height="28" fill="none">
-        <rect x="2" y="2" width="60" height="60" rx="16" fill="#ffffff" stroke="#e2e8f0" strokeWidth="2"/>
-        <path d="M14 48 29 16h9L23 48Z" fill="#0284c7"/>
-        <path d="m31 48 15-32h9L40 48Z" fill="#6366f1"/>
+      <svg viewBox="0 0 64 64" width="30" height="30" fill="none">
+        <defs>
+          <linearGradient id="rk-hdr-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#4A1844" />
+            <stop offset="60%" stopColor="#3A0F34" />
+            <stop offset="100%" stopColor="#260822" />
+          </linearGradient>
+          <linearGradient id="rk-hdr-stem" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stopColor="#FFFFFF" />
+            <stop offset="100%" stopColor="#E5DBEE" />
+          </linearGradient>
+          <linearGradient id="rk-hdr-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#FFD452" />
+            <stop offset="60%" stopColor="#EAAA00" />
+            <stop offset="100%" stopColor="#C28700" />
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#rk-hdr-bg)" stroke="#EAAA00" strokeWidth="1.5" strokeOpacity="0.5" />
+        <rect x="3.5" y="3.5" width="57" height="57" rx="14.5" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.18" />
+        <rect x="16" y="16" width="7" height="32" rx="3.5" fill="url(#rk-hdr-stem)" />
+        <path d="M22 16 H35 C41.6 16 46 20.4 46 26 C46 31.6 41.6 36 35 36 H22" fill="none" stroke="url(#rk-hdr-stem)" strokeWidth="6.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M30 33.5 L43.5 47" stroke="url(#rk-hdr-gold)" strokeWidth="6.5" strokeLinecap="round" />
+        <circle cx="32" cy="26" r="3.2" fill="url(#rk-hdr-gold)" />
+        <circle cx="32" cy="26" r="1.3" fill="#3A0F34" />
       </svg>
     </span>
     <span>Rev<span className="brand-kit">Kit</span><span className="brand-domain">.online</span></span>
