@@ -40,7 +40,8 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <link rel="icon" type="image/png" sizes="48x48" href={href('/icon-48.png')} />
     <link rel="icon" type="image/png" sizes="96x96" href={href('/icon-96.png')} />
     <link rel="icon" type="image/png" sizes="192x192" href={href('/icon-192.png')} />
-    <link rel="apple-touch-icon" href={href('/apple-touch-icon.png')} />
+    <link rel="apple-touch-icon" sizes="180x180" href={href('/apple-touch-icon.png')} />
+    <link rel="icon" sizes="any" href={href('/favicon.ico')} />
     <link rel="shortcut icon" href={href('/favicon.ico')} />
     <link rel="stylesheet" href={href('/assets/style.css?v=16')} />
     {schema && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\u003c')} />}
