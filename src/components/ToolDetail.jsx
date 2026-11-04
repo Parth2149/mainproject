@@ -1,25 +1,20 @@
 import React from 'react';
-import { alternatives, href, seed } from '../lib/catalog';
+import { alternatives, href, seed, getTargetBrand } from '../lib/catalog';
 import ToolCard, { Badges } from './ToolCard';
 
 export default function ToolDetail({ tool }) {
-  const isAdobe = tool.tag === 'Adobe Replacement';
-  const isCanva = tool.tag === 'Canva Replacement';
-  const isPostman = tool.tag === 'Postman Replacement';
-  const targetName = tool.tag ? tool.tag.replace(' Replacement', '') : '';
+  const brand = getTargetBrand(tool);
+  const isAdobe = brand === 'Adobe' || tool.tag === 'Adobe Replacement';
+  const isCanva = brand === 'Canva' || tool.tag === 'Canva Replacement';
+  const isPostman = brand === 'Postman' || tool.tag === 'Postman Replacement';
 
-  const altTitle = tool.replaces ? `${tool.replaces} Alternative & Open Source Profile` : (tool.tag ? `${targetName} Alternative & Open Source Profile` : 'Reverse Engineering & Security Analysis');
-  const altSummary = tool.replaces
-    ? `${tool.name} is a high-performance open-source alternative replacing proprietary ${tool.replaces}. It delivers transparent inspection, local execution, and unrestricted workflow control with zero subscriptions.`
-    : tool.tag
-    ? isAdobe
-      ? `${tool.name} is a high-performance open-source alternative to proprietary Adobe software. It enables binary parsing, native file format reverse engineering, and professional asset creation with zero subscriptions.`
-      : isCanva
-      ? `${tool.name} is a free, self-hostable alternative to Canva graphic tools, executing design composition, rendering, and asset manipulation locally with complete privacy.`
-      : isPostman
-      ? `${tool.name} is a fast, Git-native open-source API development and reverse engineering alternative to Postman, offering multi-protocol traffic inspection, request replay, and offline collections.`
-      : `${tool.name} is a top-tier open-source alternative to proprietary ${targetName} software, delivering complete data ownership, local-first control, and zero subscription costs.`
-    : `${tool.name} is a proven open-source standard for ${tool.category.toLowerCase()}, vulnerability research, and binary reverse engineering.`;
+  const altTitle = brand
+    ? `Free ${brand} Replacement & Open-Source RE Profile`
+    : `${tool.category} Security & Reverse Engineering Profile`;
+
+  const altSummary = brand
+    ? `${tool.name} is a high-performance open-source alternative designed to replace proprietary ${tool.replaces || brand}. It delivers transparent code inspection, native protocol reverse engineering, offline execution, and unrestricted workflow control with zero subscriptions.`
+    : `${tool.name} is a proven open-source standard for ${tool.category.toLowerCase()}, vulnerability research, protocol inspection, and binary reverse engineering.`;
 
   return <>
     <section className="detail">
@@ -39,7 +34,7 @@ export default function ToolDetail({ tool }) {
           {tool.github && <a className="button secondary" href={tool.github} target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>}
         </div>
         <div className="alt-highlight">
-          <div className="alt-highlight-badge">{tool.tag || 'Verified Tool'}</div>
+          <div className="alt-highlight-badge">{tool.tag || (brand ? `${brand} Replacement` : 'Verified Tool')}</div>
           <h3>{altTitle}</h3>
           <p>{altSummary}</p>
         </div>
@@ -64,10 +59,10 @@ export default function ToolDetail({ tool }) {
           <h2>Features &amp; capabilities</h2>
           <ul className="feature-list">
             <li>{tool.description}</li>
+            {brand && <li>Direct open-source replacement for {tool.replaces || brand} with full data sovereignty and zero vendor lock-in.</li>}
             {isAdobe && <li>Engineered for clean-room reverse engineering and native compatibility with standard document workflows.</li>}
             {isCanva && <li>Drag-and-drop canvas layout, rich layer manipulation, and vector/raster export pipelines.</li>}
             {isPostman && <li>Multi-protocol request testing (REST, GraphQL, WebSockets) with Git-friendly local directory storage.</li>}
-            {tool.tag && !isAdobe && !isCanva && !isPostman && <li>Direct open-source alternative to {targetName} with full data sovereignty and zero cloud lock-in.</li>}
             <li>Native cross-platform execution on {tool.platforms.join(', ')}.</li>
             <li>Fully verifiable open-source codebase licensed under {tool.license}.</li>
           </ul>
@@ -79,9 +74,15 @@ export default function ToolDetail({ tool }) {
               <h3>Is {tool.name} completely free and open source?</h3>
               <p>Yes. {tool.name} is {tool.pricing === 'Free' ? 'completely free to use' : tool.pricing} and published under the open-source {tool.license} license. Source code and releases can be reviewed on GitHub.</p>
             </article>
+            {brand && (
+              <article className="faq-card">
+                <h3>Can {tool.name} replace proprietary {brand}?</h3>
+                <p>Yes. {tool.name} is an active open-source replacement for {tool.replaces || brand}. It eliminates monthly subscriptions, vendor lock-in, and cloud restrictions by running natively on {tool.platforms.join(', ')}.</p>
+              </article>
+            )}
             <article className="faq-card">
-              <h3>How does {tool.name} serve as a reverse engineering tool or alternative?</h3>
-              <p>{tool.tag ? `${tool.name} was created to replace costly closed-source ${tool.tag.replace(' Replacement', '')} subscriptions with transparent, local-first open-source tooling.` : `${tool.name} provides specialized ${tool.category.toLowerCase()} analysis capabilities, enabling security researchers to disassemble, debug, and inspect application logic.`}</p>
+              <h3>How does {tool.name} support reverse engineering and analysis?</h3>
+              <p>{tool.name} provides complete architectural transparency, empowering engineers to inspect source code, debug workflows, reverse engineer proprietary formats, and customize tooling without black-box restrictions.</p>
             </article>
           </div>
         </div>

@@ -218,3 +218,4 @@ for (const tool of seed.tools) {
   }
 }
 console.log(`Generated ${generatedCount} new PNG brand icons in ${outDir}. Total icons: ${existingIcons.size}`);
+

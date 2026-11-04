@@ -43,40 +43,38 @@ export const categoryDescriptions = {
 };
 export const metaDescription = text => text.length <= 160 ? text : text.slice(0,157).replace(/\s+\S*$/, '') + '…';
 
+export function getTargetBrand(tool) {
+  if (tool.tag && tool.tag.endsWith(' Replacement')) {
+    return tool.tag.replace(' Replacement', '').trim();
+  }
+  if (!tool.replaces) return null;
+  let brand = tool.replaces.split('/')[0].split('(')[0].trim();
+  brand = brand.replace(/ Conversational$/, '').replace(/ \(.*\)$/, '').trim();
+  return brand;
+}
+
 export function toolTitle(tool) {
+  const brand = getTargetBrand(tool);
   const candidates = [];
-  if (tool.tag === 'Adobe Replacement') {
+  if (brand) {
     candidates.push(
-      `${tool.name} — Free Adobe Alternative & RE`,
-      `${tool.name} — Adobe Alternative & RE Tool`,
-      `${tool.name} — Adobe RE & Alternative`,
-      `${tool.name} — Adobe Alternative`,
-      `${tool.name} — Adobe RE Tool`
-    );
-  } else if (tool.tag === 'Canva Replacement') {
-    candidates.push(
-      `${tool.name} — Free Canva Alternative & RE`,
-      `${tool.name} — Canva Alternative & RE Tool`,
-      `${tool.name} — Canva Alternative & Tool`,
-      `${tool.name} — Free Canva Alternative`,
-      `${tool.name} — Canva Alternative`
-    );
-  } else if (tool.tag === 'Postman Replacement') {
-    candidates.push(
-      `${tool.name} — Free Postman Alternative & RE`,
-      `${tool.name} — Postman Alternative & Tool`,
-      `${tool.name} — Free Postman Alternative`,
-      `${tool.name} — Postman Alternative`
-    );
-  } else {
-    candidates.push(
-      `${tool.name} — Reverse Engineering Tool & Alternative`,
-      `${tool.name} — RE Tool & Free Alternative`,
-      `${tool.name} — RE Tool & Alternative`,
-      `${tool.name} — Reverse Engineering Tool`,
-      `${tool.name} — RE Software`
+      `${tool.name} — Free ${brand} Replacement & RE`,
+      `${tool.name} — ${brand} Replacement & RE Tool`,
+      `${tool.name} — Free ${brand} Replacement`,
+      `${tool.name} — ${brand} Replacement & Tool`,
+      `${tool.name} — Free ${brand} Alternative`,
+      `${tool.name} — ${brand} Alternative & RE`,
+      `${tool.name} — ${brand} Replacement`,
+      `${tool.name} — ${brand} Alternative`
     );
   }
+  candidates.push(
+    `${tool.name} — Reverse Engineering Tool & Alternative`,
+    `${tool.name} — RE Tool & Free Alternative`,
+    `${tool.name} — RE Tool & Alternative`,
+    `${tool.name} — Reverse Engineering Tool`,
+    `${tool.name} — RE Software`
+  );
   for (const c of candidates) {
     if (c.length + 9 <= 60) return c;
   }
@@ -84,13 +82,13 @@ export function toolTitle(tool) {
 }
 
 export function toolPageDescription(tool) {
+  const brand = getTargetBrand(tool);
   let prefix = '';
-  if (tool.tag === 'Adobe Replacement') {
-    prefix = `Free Adobe alternative & RE tool: ${tool.name}. `;
-  } else if (tool.tag === 'Canva Replacement') {
-    prefix = `Free Canva alternative & RE tool: ${tool.name}. `;
-  } else if (tool.tag === 'Postman Replacement') {
-    prefix = `Free Postman alternative & RE tool: ${tool.name}. `;
+  if (brand) {
+    prefix = `Free ${brand} replacement & open-source RE alternative. ${tool.name}: `;
+    if (prefix.length > 70) {
+      prefix = `Free ${brand} replacement: ${tool.name} — `;
+    }
   } else {
     prefix = `${tool.name} RE tool & alternative: `;
   }
@@ -102,8 +100,10 @@ export const defaultKeywords = 'reverse engineering tools, best decompilers, dis
 export function keywordsFor(page) {
   if (page.kind === 'tool' && page.tool) {
     const t = page.tool;
-    const tagKws = t.tag ? `, ${t.tag.toLowerCase()}, ${t.tag.toLowerCase().replace(' replacement', '')} alternative, free ${t.tag.toLowerCase().replace(' replacement', '')} replacement` : '';
-    return `${t.name}, ${t.name} alternative, ${t.name} reverse engineering, ${t.name} open source, ${t.category.toLowerCase()} tools, ${t.platforms.join(', ').toLowerCase()} reverse engineering, ${t.license}${tagKws}`;
+    const brand = getTargetBrand(t);
+    const brandKws = brand ? `, ${brand.toLowerCase()} replacement, ${brand.toLowerCase()} alternative, reverse engineering ${brand.toLowerCase()}, reverse engineering of ${brand.toLowerCase()}, free ${brand.toLowerCase()} replacement, open source ${brand.toLowerCase()}` : '';
+    const tagKws = t.tag ? `, ${t.tag.toLowerCase()}` : '';
+    return `${t.name}, ${t.name} alternative, ${t.name} reverse engineering, ${t.name} open source, ${t.category.toLowerCase()} tools, ${t.platforms.join(', ').toLowerCase()} reverse engineering, ${t.license}${brandKws}${tagKws}`;
   }
   if (page.category) {
     const map = {
@@ -255,6 +255,7 @@ export function schemaFor(page) {
   }
   if (page.kind === 'tool') {
     const tool = page.tool;
+    const brand = getTargetBrand(tool);
     webpage.mainEntity = { '@id': url + '#software' };
     const software = {
       '@type': 'SoftwareApplication',
@@ -262,14 +263,21 @@ export function schemaFor(page) {
       name: tool.name,
       description: page.description,
       applicationCategory: 'DeveloperApplication, SecurityApplication',
-      applicationSubCategory: tool.tag ? `${tool.tag} · Open Source Alternative` : `${tool.category} Software`,
-      keywords: tool.tag ? `${tool.name}, ${tool.tag}, alternative, reverse engineering, open source` : `${tool.name}, reverse engineering tool, alternative, ${tool.category}`,
+      applicationSubCategory: brand ? `${brand} Replacement · Open Source Alternative` : `${tool.category} Software`,
+      keywords: brand ? `${tool.name}, ${brand} replacement, ${brand} alternative, reverse engineering ${brand}, open source alternative, ${tool.category}` : `${tool.name}, reverse engineering tool, alternative, ${tool.category}`,
       operatingSystem: tool.platforms.join(', '),
       license: tool.license,
       url: tool.url || url,
       mainEntityOfPage: { '@id': url + '#webpage' },
       ...(tool.github ? { sameAs: tool.github } : {})
     };
+    if (brand) {
+      software.isSimilarTo = {
+        '@type': 'SoftwareApplication',
+        name: brand,
+        description: `Commercial proprietary software replaced by open-source ${tool.name}`
+      };
+    }
     if (tool.pricing === 'Free') {
       software.offers = {
         '@type': 'Offer',
