@@ -1,9 +1,10 @@
 import React from 'react';
-import { alternatives, href, seed, getTargetBrand } from '../lib/catalog';
+import { alternatives, href, seed, getTargetBrand, getQuickStartSteps } from '../lib/catalog';
 import ToolCard, { Badges } from './ToolCard';
 
 export default function ToolDetail({ tool }) {
   const brand = getTargetBrand(tool);
+  const steps = getQuickStartSteps(tool);
   const isAdobe = brand === 'Adobe' || tool.tag === 'Adobe Replacement';
   const isCanva = brand === 'Canva' || tool.tag === 'Canva Replacement';
   const isPostman = brand === 'Postman' || tool.tag === 'Postman Replacement';
@@ -125,16 +126,39 @@ export default function ToolDetail({ tool }) {
           </div>
         </div>
       </div>
-      <aside className="metadata">
-        <span className="eyebrow">TOOL AT A GLANCE</span>
-        <dl>
-          <dt>License</dt><dd>{tool.license}</dd>
-          <dt>Pricing</dt><dd>{tool.pricing}</dd>
-          <dt>Platforms</dt><dd>{tool.platforms.join(', ')}</dd>
-          <dt>Repository</dt><dd>{tool.github ? <a href={tool.github} target="_blank" rel="noopener noreferrer">{new URL(tool.github).pathname.slice(1)} ↗</a> : 'Not listed'}</dd>
-          <dt>Dataset date</dt><dd>{seed.generated}</dd>
-        </dl>
-        <p className="small muted">Open source allows direct inspection, customization, and local execution. Review license terms for deployment.</p>
+      <aside className="detail-sidebar">
+        <div className="metadata">
+          <span className="eyebrow">TOOL AT A GLANCE</span>
+          <dl>
+            <dt>License</dt><dd>{tool.license}</dd>
+            <dt>Pricing</dt><dd>{tool.pricing}</dd>
+            <dt>Platforms</dt><dd>{tool.platforms.join(', ')}</dd>
+            <dt>Repository</dt><dd>{tool.github ? <a href={tool.github} target="_blank" rel="noopener noreferrer">{new URL(tool.github).pathname.slice(1)} ↗</a> : 'Not listed'}</dd>
+            <dt>Dataset date</dt><dd>{seed.generated}</dd>
+          </dl>
+          <p className="small muted">Open source allows direct inspection, customization, and local execution. Review license terms for deployment.</p>
+        </div>
+        <div className="quickstart-box">
+          <span className="eyebrow">QUICK START GUIDE</span>
+          <h3 className="quickstart-title">How to Install &amp; Run {tool.name}</h3>
+          <ol className="quickstart-steps">
+            {steps.map(s => (
+              <li key={s.step} className="quickstart-step">
+                <div className="step-header">
+                  <span className="step-badge">{s.step}</span>
+                  <span className="step-name">{s.title}</span>
+                </div>
+                <p className="step-desc">{s.text}</p>
+              </li>
+            ))}
+          </ol>
+          {tool.github && (
+            <a className="quickstart-link" href={tool.github} target="_blank" rel="noopener noreferrer">
+              <span>View repo &amp; releases</span>
+              <span>↗</span>
+            </a>
+          )}
+        </div>
       </aside>
     </section>
     <section className="alternatives">

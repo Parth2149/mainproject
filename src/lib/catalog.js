@@ -53,6 +53,58 @@ export function getTargetBrand(tool) {
   return brand;
 }
 
+export function getQuickStartSteps(tool) {
+  const brand = getTargetBrand(tool);
+  const repoName = tool.github ? new URL(tool.github).pathname.slice(1) : null;
+  const platStr = tool.platforms.length === 3 ? 'Windows, macOS, Linux' : tool.platforms.join(' / ');
+  const cat = tool.category;
+  const name = tool.name;
+
+  if (cat === 'Disassemblers & Decompilers' || cat === 'Java' || cat === '.NET' || cat === 'Analysis Utilities' || cat === 'Binary Analysis Frameworks') {
+    const prereq = (cat === 'Java' || name.toLowerCase().includes('ghidra')) ? 'Java JDK 17+ or 21+' : cat === '.NET' ? '.NET 8/9 Runtime' : 'Standard 64-bit OS';
+    return [
+      { step: '1', title: 'Download Release Archive', text: repoName ? `Go to the GitHub repository (${repoName}) releases section and download the latest zip/tarball for ${platStr}.` : `Download the latest verified standalone package from the official project page for ${platStr}.` },
+      { step: '2', title: 'Verify Prerequisites & Extract', text: `Extract the archive into your security lab or workspace directory. Ensure ${prereq} is installed.` },
+      { step: '3', title: 'Launch Standalone Binary', text: `Execute the main runner (${name} executable or launch script) with no cloud registration or telemetry.` },
+      { step: '4', title: 'Import Target & Decompile', text: `Open or drag-and-drop your target binary, APK, or DLL to start automated analysis, disassembly, and C/C++ decompilation.` }
+    ];
+  }
+
+  if (cat === 'Debuggers' || cat === 'Android' || cat === 'Game RE') {
+    return [
+      { step: '1', title: 'Get Verified Build', text: repoName ? `Download the latest binary release from GitHub (${repoName}) or your package manager.` : `Obtain the official installer for ${platStr}.` },
+      { step: '2', title: 'Unpack & Configure Drivers', text: `Extract to your portable tools folder. Ensure debugging permissions and kernel-level drivers (if needed) are active.` },
+      { step: '3', title: 'Attach or Launch Process', text: `Open ${name} and either attach to an active process PID or spawn a new target under debugger supervision.` },
+      { step: '4', title: 'Set Breakpoints & Inspect Memory', text: `Step through assembly instructions, examine register states, and inspect runtime memory structures with zero limits.` }
+    ];
+  }
+
+  if (cat === 'Audio' || (tool.description && (tool.description.toLowerCase().includes('speech') || tool.description.toLowerCase().includes('model') || tool.description.toLowerCase().includes('voice') || tool.description.toLowerCase().includes('llm')))) {
+    return [
+      { step: '1', title: 'Access Repo & Releases', text: repoName ? `Visit the official GitHub repository (${repoName}) to clone the source or download pre-trained checkpoints.` : `Visit the official site to download the pre-compiled installer.` },
+      { step: '2', title: 'Environment Setup', text: `Set up an isolated environment (e.g. Python virtualenv or Docker) and install dependencies (pip install -r requirements.txt).` },
+      { step: '3', title: 'Start Local Server or UI', text: `Launch the local inference server or web UI. It runs 100% locally on localhost with zero data sent to external servers.` },
+      { step: '4', title: 'Synthesize & Replace ' + (brand || 'Proprietary Cloud'), text: `Generate audio, clone voices, or run inference completely offline with zero API fees or character limits.` }
+    ];
+  }
+
+  if (cat === 'Creative' || cat === 'Productivity' || cat === 'Business & CRM' || (tool.tag && tool.tag.includes('Replacement'))) {
+    return [
+      { step: '1', title: 'Download Installer / Image', text: repoName ? `Download the native installer for ${platStr} or pull the self-hosted container from ${repoName}.` : `Download the installer directly from the official website for ${platStr}.` },
+      { step: '2', title: 'Quick Local Installation', text: `Run the setup wizard or launch the portable package. No compulsory cloud account or billing credentials needed.` },
+      { step: '3', title: 'Open Local Workspace', text: `Launch ${name} and select your local storage folder. Import your existing projects, templates, or files seamlessly.` },
+      { step: '4', title: 'Work with Full Data Sovereignty', text: `Enjoy unrestricted workflow speed, offline file handling, and export your work with zero subscription lock-in.` }
+    ];
+  }
+
+  return [
+    { step: '1', title: 'Obtain Official Package', text: repoName ? `Download the release binary or clone the repository from GitHub (${repoName}).` : `Download the official installer for ${platStr}.` },
+    { step: '2', title: 'Local Installation', text: `Extract the portable files or complete the standard installation on ${platStr} without telemetry.` },
+    { step: '3', title: 'Launch Application', text: `Launch ${name} natively to initialize your offline preferences and local data store.` },
+    { step: '4', title: 'Operate with Zero Lock-in', text: `Execute your workflows freely, inspect internal formats, and replace costly proprietary ${brand || 'tools'} effortlessly.` }
+  ];
+}
+
 export function toolTitle(tool) {
   const brand = getTargetBrand(tool);
   const candidates = [];
@@ -319,6 +371,19 @@ export function schemaFor(page) {
         ]
       });
     }
+    const steps = getQuickStartSteps(tool);
+    graph.push({
+      '@type': 'HowTo',
+      '@id': url + '#howto',
+      name: `How to Install and Run ${tool.name}`,
+      description: `Step-by-step setup and operational guide for ${tool.name}.`,
+      step: steps.map((s, idx) => ({
+        '@type': 'HowToStep',
+        position: idx + 1,
+        name: s.title,
+        text: s.text
+      }))
+    });
   }
   if (page.route === '/') {
     graph.push({
