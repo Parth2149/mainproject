@@ -366,7 +366,7 @@ html, body {
   .nav {
     display: flex !important;
     flex-direction: column !important;
-    align-items: stretch !important;
+    align-items: center !important;
     height: auto !important;
     min-height: 52px !important;
     padding: 8px 0 6px !important;
@@ -375,10 +375,13 @@ html, body {
   .nav .brand {
     display: flex !important;
     align-items: center !important;
-    font-size: 19px !important;
+    justify-content: center !important;
+    font-size: 20px !important;
     font-weight: 800 !important;
     gap: 8px !important;
     text-decoration: none !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
   .nav .brand .brand-logo-img {
     width: 28px !important;
