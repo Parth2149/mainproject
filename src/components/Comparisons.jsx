@@ -79,6 +79,11 @@ export default function Comparisons({ pair }) {
         </p>
       </section>
 
+      <div className="table-header-row">
+        <h2>Side-by-Side Comparison</h2>
+        <span className="table-swipe-pill">← Swipe to compare →</span>
+      </div>
+
       <div className="table-wrap">
         <table>
           <caption className="sr-only">{a.name} and {b.name} comparison</caption>

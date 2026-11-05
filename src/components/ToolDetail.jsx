@@ -41,7 +41,10 @@ export default function ToolDetail({ tool }) {
         </div>
         {brand && (
           <div className="tool-section">
-            <h2>{tool.name} vs {brand} — Quick Comparison</h2>
+            <div className="table-header-row">
+              <h2>{tool.name} vs {brand} — Quick Comparison</h2>
+              <span className="table-swipe-pill">← Swipe to compare →</span>
+            </div>
             <div className="table-wrap">
               <table>
                 <thead>
