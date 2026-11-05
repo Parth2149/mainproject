@@ -11,7 +11,7 @@ export default function Directory({ category }) {
       <div className="hero-kicker">A curious mind deserves a great toolkit</div>
       <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Your next discovery starts<br/><span className="text-gradient">with the right tool.</span></>}</h1>
       <p>{category ? categoryDescriptions[category] : <>Reverse engineering tools, thoughtfully brought together. Discover decompilers, debuggers, and software worth exploring.</>}</p>
-      <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? 1 : categories.length}</b> categories</span><span><b>One place.</b> More possibilities.</span></div>
+      <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? '1 of 12' : categories.length}</b> categories</span><span><b>One place.</b> More possibilities.</span></div>
       <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Software', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
     </section>
     <section aria-label="Tool directory" className="directory">

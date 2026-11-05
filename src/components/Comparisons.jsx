@@ -29,7 +29,7 @@ export default function Comparisons({ pair }) {
                 {a.name} <span className="muted">vs</span> {b.name} ↗
               </h2>
               <p>
-                Compare {a.name} and {b.name}: architecture, platform support ({a.platforms.slice(0, 2).join('/')} vs {b.platforms.slice(0, 2).join('/')}), open licensing, and workflow capabilities.
+                Compare {a.name} and {b.name}: features, platform support, and open licensing.
               </p>
               <div className="comparison-meta-row">
                 <span className="comparison-pill">{a.license}</span>

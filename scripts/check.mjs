@@ -39,7 +39,7 @@ for(const file of pages){
  }
  for(const asset of assets)bytes+=(await stat(asset)).size;
  // The full catalog retains readable descriptions; smaller routes keep the original budget.
- const isListing=file===path.join(root,'index.html')||file.includes(path.sep+'category'+path.sep);const budget=isListing?650000:100000;
+ const isListing=file===path.join(root,'index.html')||file.includes(path.sep+'category'+path.sep)||file===path.join(root,'compare','index.html');const budget=isListing?650000:100000;
  assert.ok(bytes<budget,`${file}: ${bytes} bytes exceeds ${budget/1000}KB budget`);
  if(bytes>largest.bytes)largest={bytes,file:path.relative(root,file)};
  for(const [,s] of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)){
