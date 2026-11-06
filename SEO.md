@@ -77,9 +77,17 @@ Search engine crawlers receive a rich `@graph` schema structure:
 
 - **Zero Client Hydration Overhead:** Built with Astro + React at build time. Clean static HTML is served immediately to search crawlers without client-side JavaScript execution lag.
 - **Strict Budget:** All pages stay within the cold-load 100KB budget (HTML + CSS + JS + favicon), achieving near-perfect 100/100 Core Web Vitals (LCP, FID, CLS).
-- **Crawlability:**
-  - Automated `sitemap.xml` listing all canonical pages.
-  - `robots.txt` granting access to all crawlers with explicit sitemap directive.
+- **Crawlability & AI Suggestions (GEO - Generative Engine Optimization):**
+  - Automated `sitemap.xml` listing all 1,113 canonical pages.
+  - `robots.txt` granting full open access to all web search crawlers (`User-agent: *`) plus dedicated open access directives for Tier-1 AI suggestion engines:
+    - **OpenAI:** `GPTBot`, `OAI-SearchBot` (SearchGPT / ChatGPT live search citations), `ChatGPT-User`
+    - **Perplexity AI:** `PerplexityBot` (Perplexity answer citations and tool recommendations)
+    - **Anthropic:** `ClaudeBot`, `anthropic-ai` (Claude knowledge graph and technical citations)
+    - **Google:** `Google-Extended` (Gemini & AI Overviews grounding)
+    - **Apple:** `Applebot-Extended` (Apple Intelligence, Siri & Safari smart suggestions)
+    - **Meta:** `Meta-ExternalAgent`, `Meta-ExternalFetcher` (Meta AI search suggestions)
+    - **Enterprise AI:** `Cohere-ai`, `Amazonbot`
+  - Explicit canonical sitemap directive: `https://revkit.online/sitemap.xml`
   - True HTTP 404 response with `noindex` for nonexistent paths.
 
 ---
