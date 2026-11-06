@@ -15726,6 +15726,126 @@
       "github": "https://github.com/cheat-engine/cheat-engine",
       "replaces": "Wemod",
       "tag": "Remote Debugger"
+    },
+    {
+      "name": "Crawlee",
+      "category": "Network",
+      "url": "https://crawlee.dev",
+      "github": "https://github.com/apify/crawlee",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Full-stack web scraping and browser automation library in TypeScript and Python by Apify.",
+      "replaces": "Apify / ScrapingBee"
+    },
+    {
+      "name": "Scrapy",
+      "category": "Network",
+      "url": "https://scrapy.org",
+      "github": "https://github.com/scrapy/scrapy",
+      "license": "BSD-3-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Fast, high-level screen scraping and web crawling framework for structured data extraction.",
+      "replaces": "Apify / Bright Data"
+    },
+    {
+      "name": "SeleniumBase",
+      "category": "Network",
+      "url": "https://seleniumbase.io",
+      "github": "https://github.com/seleniumbase/SeleniumBase",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Python web automation framework with UC Mode to bypass anti-bot and CAPTCHA detection.",
+      "replaces": "Cloudflare Bot Management / DataDome"
+    },
+    {
+      "name": "curl-impersonate",
+      "category": "Network",
+      "url": "https://github.com/lwthiker/curl-impersonate",
+      "github": "https://github.com/lwthiker/curl-impersonate",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Special build of curl that impersonates browser TLS and HTTP/2 handshakes to evade bot detection.",
+      "replaces": "Akamai Bot Manager / Cloudflare TLS Fingerprinting"
+    },
+    {
+      "name": "Playwright",
+      "category": "Network",
+      "url": "https://playwright.dev",
+      "github": "https://github.com/microsoft/playwright",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Cross-browser automation framework for Chromium, Firefox, and WebKit across platforms.",
+      "replaces": "BrowserStack / Sauce Labs"
+    },
+    {
+      "name": "Colly",
+      "category": "Network",
+      "url": "https://go-colly.org",
+      "github": "https://github.com/gocolly/colly",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Lightning-fast, elegant scraping and crawler framework for Go developers.",
+      "replaces": "Octoparse / ParseHub"
+    },
+    {
+      "name": "curl_cffi",
+      "category": "Network",
+      "url": "https://curl-cffi.readthedocs.io",
+      "github": "https://github.com/yifeikong/curl_cffi",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Python binding for curl-impersonate to make requests that match real browser TLS fingerprints.",
+      "replaces": "Cloudflare Turnstile / DataDome"
+    },
+    {
+      "name": "Whistle",
+      "category": "Network",
+      "url": "https://wproxy.org/whistle",
+      "github": "https://github.com/avwo/whistle",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Cross-platform web debugging proxy to capture, inspect, and mock HTTP/HTTPS and WebSocket traffic.",
+      "replaces": "Charles Proxy / Proxyman"
     }
   ]
 }

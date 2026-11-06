@@ -257,6 +257,18 @@
     [
       "styletts-2",
       "f5-tts"
+    ],
+    [
+      "crawlee",
+      "scrapy"
+    ],
+    [
+      "seleniumbase",
+      "playwright"
+    ],
+    [
+      "colly",
+      "scrapy"
     ]
   ]
 }
