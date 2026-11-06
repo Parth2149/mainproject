@@ -15846,6 +15846,158 @@
       ],
       "description": "Cross-platform web debugging proxy to capture, inspect, and mock HTTP/HTTPS and WebSocket traffic.",
       "replaces": "Charles Proxy / Proxyman"
+    },
+    {
+      "name": "Zed",
+      "category": "Software",
+      "url": "https://zed.dev",
+      "github": "https://github.com/zed-industries/zed",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "description": "High-performance multiplayer code editor written in Rust with GPU-accelerated rendering.",
+      "replaces": "Sublime Text / Cursor"
+    },
+    {
+      "name": "Ghostty",
+      "category": "Software",
+      "url": "https://ghostty.org",
+      "github": "https://github.com/ghostty-org/ghostty",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "description": "Fast, feature-rich, and native terminal emulator written in Zig that uses platform-native UI.",
+      "replaces": "Warp / iTerm2 / MobaXterm"
+    },
+    {
+      "name": "Plane",
+      "category": "Software",
+      "url": "https://plane.so",
+      "github": "https://github.com/makeplane/plane",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Open-source project management platform to track issues, epics, cycles, and product roadmaps.",
+      "replaces": "Jira Software / Linear"
+    },
+    {
+      "name": "Podman Desktop",
+      "category": "Software",
+      "url": "https://podman-desktop.io",
+      "github": "https://github.com/containers/podman-desktop",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "description": "Open-source GUI to manage containers, Kubernetes pods, and images with daemonless Podman.",
+      "replaces": "Docker Desktop Business"
+    },
+    {
+      "name": "frp",
+      "category": "Network",
+      "url": "https://github.com/fatedier/frp",
+      "github": "https://github.com/fatedier/frp",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Fast reverse proxy that exposes local servers behind a NAT or firewall to the public Internet.",
+      "replaces": "Ngrok / Cloudflare Tunnel"
+    },
+    {
+      "name": "Havoc",
+      "category": "Network",
+      "url": "https://havocframework.com",
+      "github": "https://github.com/HavocFramework/Havoc",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Modern, malleable post-exploitation command and control (C2) framework for adversary simulation.",
+      "replaces": "Cobalt Strike / Core Impact"
+    },
+    {
+      "name": "Zitadel",
+      "category": "Software",
+      "url": "https://zitadel.com",
+      "github": "https://github.com/zitadel/zitadel",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Cloud-native identity and access management system with multi-tenancy, passkeys, and RBAC.",
+      "replaces": "Auth0 / Okta"
+    },
+    {
+      "name": "Appsmith",
+      "category": "Software",
+      "url": "https://appsmith.com",
+      "github": "https://github.com/appsmithorg/appsmith",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Low-code application platform to build internal admin panels, CRUD dashboards, and workflows.",
+      "replaces": "Retool / Microsoft PowerApps"
+    },
+    {
+      "name": "Element",
+      "category": "Software",
+      "url": "https://element.io",
+      "github": "https://github.com/element-hq/element-web",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "description": "Secure, decentralized collaboration client powered by the Matrix communications protocol.",
+      "replaces": "Slack / Microsoft Teams"
+    },
+    {
+      "name": "Rathole",
+      "category": "Network",
+      "url": "https://github.com/rapiz1/rathole",
+      "github": "https://github.com/rapiz1/rathole",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "High-performance secure NAT traversal and reverse proxy tool written in Rust with minimal memory usage.",
+      "replaces": "Ngrok"
     }
   ]
 }

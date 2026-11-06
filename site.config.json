@@ -269,6 +269,26 @@
     [
       "colly",
       "scrapy"
+    ],
+    [
+      "plane",
+      "taiga"
+    ],
+    [
+      "havoc",
+      "sliver"
+    ],
+    [
+      "frp",
+      "rathole"
+    ],
+    [
+      "element",
+      "mattermost"
+    ],
+    [
+      "zed",
+      "ghostty"
     ]
   ]
 }
