@@ -81,33 +81,54 @@ export default function Comparisons({ pair }) {
 
       <div className="table-header-row">
         <h2>Side-by-Side Comparison</h2>
-        <span className="table-swipe-pill">← Swipe to compare →</span>
       </div>
 
-      <div className="table-wrap">
-        <table>
-          <caption className="sr-only">{a.name} and {b.name} comparison</caption>
-          <thead>
-            <tr>
-              <th scope="col" style={{ width: '22%' }}>Dimension</th>
-              <th scope="col" style={{ width: '39%' }}>
-                <a href={href(`/tools/${a.slug}/`)}>{a.name} ↗</a>
-              </th>
-              <th scope="col" style={{ width: '39%' }}>
-                <a href={href(`/tools/${b.slug}/`)}>{b.name} ↗</a>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map(([label, left, right]) => (
-              <tr key={label}>
-                <th scope="row">{label}</th>
-                <td>{left}</td>
-                <td>{right}</td>
+      {/* Desktop Table View */}
+      <div className="comparison-table-desktop">
+        <div className="table-wrap">
+          <table>
+            <caption className="sr-only">{a.name} and {b.name} comparison</caption>
+            <thead>
+              <tr>
+                <th scope="col" style={{ width: '22%' }}>Dimension</th>
+                <th scope="col" style={{ width: '39%' }}>
+                  <a href={href(`/tools/${a.slug}/`)}>{a.name} ↗</a>
+                </th>
+                <th scope="col" style={{ width: '39%' }}>
+                  <a href={href(`/tools/${b.slug}/`)}>{b.name} ↗</a>
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {rows.map(([label, left, right]) => (
+                <tr key={label}>
+                  <th scope="row">{label}</th>
+                  <td>{left}</td>
+                  <td>{right}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Mobile Fitted Comparison Cards (100% Fit, Zero Cut-off) */}
+      <div className="comparison-cards-mobile">
+        {rows.map(([label, left, right]) => (
+          <div className="spec-card" key={label}>
+            <div className="spec-card-factor">{label}</div>
+            <div className="spec-card-rows">
+              <div className="spec-card-row spec-row-tool">
+                <span className="spec-lbl"><a href={href(`/tools/${a.slug}/`)}>{a.name} ↗</a></span>
+                <span className="spec-val">{left}</span>
+              </div>
+              <div className="spec-card-row spec-row-brand">
+                <span className="spec-lbl"><a href={href(`/tools/${b.slug}/`)}>{b.name} ↗</a></span>
+                <span className="spec-val">{right}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="comparison-verdict">

@@ -43,40 +43,102 @@ export default function ToolDetail({ tool }) {
           <div className="tool-section">
             <div className="table-header-row">
               <h2>{tool.name} vs {brand} — Quick Comparison</h2>
-              <span className="table-swipe-pill">← Swipe to compare →</span>
             </div>
-            <div className="table-wrap">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Comparison Factor</th>
-                    <th>{tool.name} (Open Source)</th>
-                    <th>{brand} (Commercial)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><strong>Cost &amp; Pricing</strong></td>
-                    <td>{tool.pricing === 'Free' ? '100% Free' : tool.pricing} ({tool.license})</td>
-                    <td>Paid Subscription / Per-Seat Fees</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Data Privacy &amp; Hosting</strong></td>
-                    <td>100% Local ({tool.platforms.join(', ')})</td>
-                    <td>Cloud Hosted / Proprietary Servers</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Source Code &amp; Auditing</strong></td>
-                    <td>Fully Auditable on GitHub</td>
-                    <td>Closed Proprietary Black Box</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Reverse Engineering</strong></td>
-                    <td>Unrestricted protocol &amp; format inspection</td>
-                    <td>Strict Vendor Lock-in &amp; API Limits</td>
-                  </tr>
-                </tbody>
-              </table>
+
+            {/* Desktop Full Table View */}
+            <div className="comparison-table-desktop">
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Comparison Factor</th>
+                      <th>{tool.name} (Open Source)</th>
+                      <th>{brand} (Commercial)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Cost &amp; Pricing</strong></td>
+                      <td>{tool.pricing === 'Free' ? '100% Free' : tool.pricing} ({tool.license})</td>
+                      <td>Paid Subscription / Per-Seat Fees</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Data Privacy &amp; Hosting</strong></td>
+                      <td>100% Local ({tool.platforms.join(', ')})</td>
+                      <td>Cloud Hosted / Proprietary Servers</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Source Code &amp; Auditing</strong></td>
+                      <td>Fully Auditable on GitHub</td>
+                      <td>Closed Proprietary Black Box</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Reverse Engineering</strong></td>
+                      <td>Unrestricted protocol &amp; format inspection</td>
+                      <td>Strict Vendor Lock-in &amp; API Limits</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Mobile Fitted Comparison Cards (100% Fit, Zero Cut-off) */}
+            <div className="comparison-cards-mobile">
+              <div className="spec-card">
+                <div className="spec-card-factor">Cost &amp; Pricing</div>
+                <div className="spec-card-rows">
+                  <div className="spec-card-row spec-row-tool">
+                    <span className="spec-lbl">{tool.name}</span>
+                    <span className="spec-val">{tool.pricing === 'Free' ? '100% Free' : tool.pricing} ({tool.license})</span>
+                  </div>
+                  <div className="spec-card-row spec-row-brand">
+                    <span className="spec-lbl">{brand}</span>
+                    <span className="spec-val">Paid Subscription / Per-Seat</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="spec-card">
+                <div className="spec-card-factor">Data Privacy &amp; Hosting</div>
+                <div className="spec-card-rows">
+                  <div className="spec-card-row spec-row-tool">
+                    <span className="spec-lbl">{tool.name}</span>
+                    <span className="spec-val">100% Local ({tool.platforms.join(', ')})</span>
+                  </div>
+                  <div className="spec-card-row spec-row-brand">
+                    <span className="spec-lbl">{brand}</span>
+                    <span className="spec-val">Cloud Hosted / Remote Servers</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="spec-card">
+                <div className="spec-card-factor">Source Code &amp; Auditing</div>
+                <div className="spec-card-rows">
+                  <div className="spec-card-row spec-row-tool">
+                    <span className="spec-lbl">{tool.name}</span>
+                    <span className="spec-val">Fully Auditable on GitHub</span>
+                  </div>
+                  <div className="spec-card-row spec-row-brand">
+                    <span className="spec-lbl">{brand}</span>
+                    <span className="spec-val">Closed Proprietary Black Box</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="spec-card">
+                <div className="spec-card-factor">Reverse Engineering</div>
+                <div className="spec-card-rows">
+                  <div className="spec-card-row spec-row-tool">
+                    <span className="spec-lbl">{tool.name}</span>
+                    <span className="spec-val">Unrestricted format inspection</span>
+                  </div>
+                  <div className="spec-card-row spec-row-brand">
+                    <span className="spec-lbl">{brand}</span>
+                    <span className="spec-val">Strict Vendor Lock-in</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}
