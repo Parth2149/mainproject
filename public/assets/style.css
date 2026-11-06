@@ -339,6 +339,122 @@ html, body {
   color: #4A2244;
   margin: 0;
 }
+
+/* About Page */
+.about-page {
+  padding-bottom: 70px;
+}
+.about-stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 32px 0 10px;
+}
+.about-stat-item {
+  background: #ffffff;
+  border: 1.5px solid #C9B8DB;
+  border-radius: 12px;
+  padding: 18px 16px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(58, 15, 52, 0.04);
+}
+.about-stat-number {
+  display: block;
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 850;
+  color: #3A0F34;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.about-stat-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 750;
+  color: #6B4D66;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.about-section {
+  margin: 45px 0;
+}
+.about-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 16px;
+}
+.about-pillar-card {
+  background: #ffffff;
+  border: 1.5px solid #C9B8DB;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(58, 15, 52, 0.04);
+}
+.pillar-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.pillar-badge {
+  background: #3A0F34;
+  color: #EAAA00;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+.about-pillar-card h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 750;
+  color: #3A0F34;
+  letter-spacing: -0.3px;
+}
+.about-pillar-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4A2244;
+}
+.about-disciplines-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+.about-discipline-item {
+  background: rgba(213, 200, 230, 0.35);
+  border: 1px solid #C9B8DB;
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+.about-discipline-item strong {
+  display: block;
+  font-size: 14px;
+  color: #3A0F34;
+  margin-bottom: 6px;
+}
+.about-discipline-item p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #4A2244;
+}
+.about-trust-box {
+  background: #ffffff;
+  border: 1.5px solid #C9B8DB;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 16px rgba(58, 15, 52, 0.04);
+}
+.about-trust-box .prose {
+  max-width: 100%;
+  padding-bottom: 0;
+}
+
 /* ==========================================================================
    MASTER ULTRA-POLISHED MOBILE STYLESHEET (max-width: 640px)
    Placed at the end of stylesheet for absolute cascade authority
@@ -794,6 +910,36 @@ html, body {
     width: 100% !important;
     text-align: center !important;
     justify-content: center !important;
+  }
+
+  /* About Page Mobile */
+  .about-stats-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    margin: 20px 0 6px !important;
+  }
+  .about-stat-item {
+    padding: 12px 10px !important;
+  }
+  .about-stat-number {
+    font-size: 24px !important;
+  }
+  .about-pillars-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .about-pillar-card {
+    padding: 16px !important;
+  }
+  .about-disciplines-list {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .about-discipline-item {
+    padding: 14px 16px !important;
+  }
+  .about-trust-box {
+    padding: 18px 14px !important;
   }
 
   /* Footer */
