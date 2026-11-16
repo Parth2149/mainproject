@@ -23,6 +23,7 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{page.title} | RevKit</title>
     <meta name="description" content={description} />
+    {keywords && <meta name="keywords" content={keywords} />}
     <link rel="canonical" href={canonical(page.route)} />
     <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
     <meta property="og:type" content="website" />

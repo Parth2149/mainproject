@@ -147,7 +147,7 @@ export function toolPageDescription(tool) {
   return metaDescription(prefix + tool.description);
 }
 
-export const defaultKeywords = 'reverse engineering tools, best decompilers, disassemblers, debuggers, binary analysis software, malware analysis, ghidra, ida pro, binary ninja, x64dbg, frida, apk decompiler, open source reverse engineering, static analysis, dynamic analysis';
+export const defaultKeywords = 'reverse engineering tools, best decompilers, disassemblers, debuggers, binary analysis software, malware analysis, eBPF tracing, AI video generation, open source tools, ghidra, ida pro, binary ninja, x64dbg, frida, bpftrace, shortgpt, apk decompiler, static analysis, dynamic analysis';
 
 export function keywordsFor(page) {
   if (page.kind === 'tool' && page.tool) {
@@ -163,14 +163,14 @@ export function keywordsFor(page) {
       'Debuggers': 'reverse engineering debuggers, x64dbg, pwndbg, gef, gdb plugins, dynamic binary analysis, memory debugger, exploit development',
       'Android': 'android reverse engineering, apk decompiler, dex decompiler, jadx, apktool, frida android, mobsf, android malware analysis, smali',
       '.NET': 'dotnet decompiler, c# decompiler, dnspyex, ilspy, de4dot, dotnet deobfuscator, managed assembly editor, pe decompiler',
-      'Analysis Utilities': 'packer detector, detect it easy, die, upx unpacker, trid file identifier, scyllahide, pe analysis tools',
+      'Analysis Utilities': 'packer detector, detect it easy, die, upx unpacker, trid file identifier, scyllahide, bpftrace, bcc ebpf, kernel tracing, pe analysis tools, dynamic binary tracing',
       'Binary Analysis Frameworks': 'binary analysis frameworks, angr, capstone engine, lief pe elf, yara rules, symbolic execution, disassembly library',
       'Firmware & Embedded': 'firmware reverse engineering, binwalk, uefitool, firmae, rom extractor, iot firmware analysis, embedded security',
       'Network': 'network reverse engineering, mitmproxy, traffic inspection, api reverse engineering, packet capture, http proxy',
       'Distros & Environments': 'malware analysis distro, flare vm, remnux, reverse engineering lab, security virtual machine',
       'Java': 'java reverse engineering, bytecode viewer, dex2jar, java decompiler, jar inspection, jvm bytecode',
       'Game RE': 'game reverse engineering, cheat engine, reclassex, memory scanner, pointer scanner, game structure reconstruction',
-      'Software': 'creative software, open source software, free adobe alternatives, artcraft, photocraft, vectorcraft, filmcraft, lightcraft, rust software, creative cloud alternative'
+      'Software': 'creative software, open source software, ai video generation, shortgpt, wan-video, ltx-video, cogvideox, free adobe alternatives, artcraft, photocraft, vectorcraft, filmcraft, lightcraft, rust software, creative cloud alternative'
     };
     return map[page.category] || `${page.category.toLowerCase()} reverse engineering tools, binary analysis, security research`;
   }

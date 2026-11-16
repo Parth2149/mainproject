@@ -293,6 +293,18 @@
     [
       "shortgpt",
       "kdenlive"
+    ],
+    [
+      "wan-video",
+      "cogvideox"
+    ],
+    [
+      "ltx-video",
+      "wan-video"
+    ],
+    [
+      "bpftrace",
+      "volatility"
     ]
   ]
 }

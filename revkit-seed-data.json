@@ -1,6 +1,6 @@
 {
   "site": "revkit.online",
-  "generated": "2026-10-31",
+  "generated": "2026-11-16",
   "tools": [
     {
       "name": "Ghidra",
@@ -16014,6 +16014,66 @@
       ],
       "description": "High-performance secure NAT traversal and reverse proxy tool written in Rust with minimal memory usage.",
       "replaces": "Ngrok"
+    },
+    {
+      "name": "Wan-Video",
+      "category": "Software",
+      "url": "https://github.com/Wan-Video/Wan2.1",
+      "github": "https://github.com/Wan-Video/Wan2.1",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Advanced open-source video generative model delivering cinematic 720p text-to-video, image-to-video, and visual motion synthesis.",
+      "tag": "Runway Gen-3 Replacement",
+      "replaces": "Runway Gen-3 / Kling / Higgsfield"
+    },
+    {
+      "name": "LTX-Video",
+      "category": "Software",
+      "url": "https://github.com/Lightricks/LTX-Video",
+      "github": "https://github.com/Lightricks/LTX-Video",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows",
+        "macOS"
+      ],
+      "description": "Real-time open-source video latent diffusion model generating high-resolution video clips at high frame rates.",
+      "tag": "Luma Dream Machine Replacement",
+      "replaces": "Luma Dream Machine / Higgsfield"
+    },
+    {
+      "name": "bpftrace",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/bpftrace/bpftrace",
+      "github": "https://github.com/bpftrace/bpftrace",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "High-level tracing language and dynamic instrumentation tool for Linux eBPF kernel inspection and performance analysis.",
+      "tag": "DTrace Replacement",
+      "replaces": "DTrace / SystemTap"
+    },
+    {
+      "name": "BCC",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/iovisor/bcc",
+      "github": "https://github.com/iovisor/bcc",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Toolkit for creating efficient kernel tracing and manipulation programs using extended BPF (eBPF) with Python and Lua bindings.",
+      "tag": "Kernel Tracing Suite",
+      "replaces": "SystemTap / LTTng"
     }
   ]
 }
