@@ -223,6 +223,22 @@
       "replaces": "Adobe Premiere Pro"
     },
     {
+      "name": "ShortGPT",
+      "category": "Software",
+      "url": "https://github.com/RayVentura/ShortGPT",
+      "github": "https://github.com/RayVentura/ShortGPT",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Automates short-form video creation, AI voiceover, editing, face tracking, and dynamic captions from YouTube links.",
+      "tag": "Kixy Replacement",
+      "replaces": "Kixy.ai / Opus Clip"
+    },
+    {
       "name": "DaVinci Resolve",
       "category": "Software",
       "url": "https://www.blackmagicdesign.com/products/davinciresolve",
