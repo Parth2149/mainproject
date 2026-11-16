@@ -25,7 +25,9 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta name="description" content={description} />
     {keywords && <meta name="keywords" content={keywords} />}
     <link rel="canonical" href={canonical(page.route)} />
-    <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
+    <link rel="alternate" hreflang="x-default" href={canonical(page.route)} />
+    <link rel="alternate" hreflang="en" href={canonical(page.route)} />
+    <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={`${page.title} | RevKit`} />
     <meta property="og:description" content={description} />

@@ -9,14 +9,14 @@ export default function Directory({ category }) {
   return <>
     <section className="hero">
       <div className="hero-kicker">A curious mind deserves a great toolkit</div>
-      <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Your next discovery starts<br/><span className="text-gradient">with the right tool.</span></>}</h1>
-      <p>{category ? categoryDescriptions[category] : <>Reverse engineering tools, thoughtfully brought together. Discover decompilers, debuggers, and software worth exploring.</>}</p>
+      <h1>{category ? <>{category}<br/><span className="text-gradient">Tools &amp; Decompilers.</span></> : <>Reverse Engineering Tools &amp; <br/><span className="text-gradient">Open Source Alternatives.</span></>}</h1>
+      <p>{category ? categoryDescriptions[category] : <>Explore the curated directory of reverse engineering tools, open source alternatives, free decompilers, debuggers, and GitHub software in 2026.</>}</p>
       <div className="hero-stats"><span><b>{list.length}</b> curated tools</span><span><b>{category ? `1 of ${categories.length}` : categories.length}</b> {category ? 'category' : 'categories'}</span><span><b>One place.</b> More possibilities.</span></div>
       <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Software', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
     </section>
     <section aria-label="Tool directory" className="directory">
       <div className="directory-bar"><div><span className="eyebrow">THE DIRECTORY</span><h2>{category ? `Explore ${category} tools` : 'Find something worth exploring'}</h2></div><span className="directory-note"><span className="live-dot" />{list.length} tools, thoughtfully curated</span></div>
-      <form className="filters" role="search" id="filters"><label className="search"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg><span className="sr-only">Search tools</span><input name="q" id="search" type="search" placeholder="Search decompilers, debuggers, or tools…" autoComplete="off" /></label>
+      <form className="filters" role="search" id="filters"><label className="search"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><path d="m16 16 5 5" /></svg><span className="sr-only">Search tools</span><input name="q" id="search" type="search" placeholder="Search decompilers, debuggers, packet sniffers, or tools…" autoComplete="off" /></label>
         <div className="filter-row"><label>Category<select name="category" aria-label="Category" defaultValue=""><option value="">All categories</option>{options(categories)}</select></label><label>Platform<select name="platform" aria-label="Platform" defaultValue=""><option value="">All platforms</option>{options(platforms)}</select></label><label>Pricing<select name="pricing" aria-label="Pricing" defaultValue=""><option value="">Free & paid</option>{options(prices)}</select></label><label>License<select name="license" aria-label="License" defaultValue=""><option value="">All licenses</option>{options(licenses)}</select></label><button type="reset" className="reset">Reset filters ↺</button></div>
       </form>
       <div className="results-bar"><p id="result-count" role="status" aria-live="polite">{list.length} tools to explore</p></div>
@@ -35,7 +35,7 @@ export default function Directory({ category }) {
       </div>
       <div className="guide-card single">
         <h3>Reverse Engineering Methodologies</h3>
-        <p>Static analysis with tools like <strong>Ghidra</strong> recovers control-flow graphs without execution. Dynamic debugging with <strong>x64dbg</strong> and <strong>Frida</strong> provides live memory inspection and API instrumentation.</p>
+        <p>Static analysis with tools like <strong>Ghidra</strong>, <strong>JADX</strong>, and <strong>Radare2</strong> recovers source code and control-flow graphs without execution. Dynamic debugging with <strong>x64dbg</strong>, <strong>WinDbg</strong>, and <strong>Frida</strong> provides live memory inspection and API hooking, while modern workflows leverage AI reverse engineering and MCP server integrations.</p>
       </div>
     </section>}
     {!category && <section className="faq-section" aria-labelledby="faq-heading">
