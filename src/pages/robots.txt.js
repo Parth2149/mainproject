@@ -49,6 +49,10 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
+# LLM Direct Answer & Citation Documents
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 Sitemap: ${canonical('/sitemap.xml')}
 `;
 

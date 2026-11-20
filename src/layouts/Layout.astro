@@ -12,13 +12,14 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TXZQLP2R"></script>
+    <!-- Google Tag Manager / Analytics Tracking Engine -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     </script>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TXZQLP2R"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{page.title} | RevKit</title>
@@ -27,6 +28,12 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <link rel="canonical" href={canonical(page.route)} />
     <link rel="alternate" hreflang="x-default" href={canonical(page.route)} />
     <link rel="alternate" hreflang="en" href={canonical(page.route)} />
+    <!-- Global 196 Countries Reach & Geotargeting -->
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="target" content="all" />
+    <link rel="help" type="text/plain" href={href('/llms.txt')} title="LLM Context for AI Search Engines" />
     <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={`${page.title} | RevKit`} />
@@ -34,6 +41,18 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta property="og:url" content={canonical(page.route)} />
     <meta property="og:image" content={canonical('/assets/og.png')} />
     <meta property="og:image:alt" content="RevKit — curated reverse engineering tools and GitHub repositories" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="hi_IN" />
+    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale:alternate" content="ar_SA" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={`${page.title} | RevKit`} />
     <meta name="twitter:description" content={description} />

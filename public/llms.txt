@@ -1,0 +1,41 @@
+# RevKit.online
+
+> RevKit (https://revkit.online) is a curated, open-access directory and comparison engine for reverse engineering tools, binary analysis utilities, decompilers, debuggers, and malware research environments.
+
+## Core Categories
+
+- [Disassemblers & Decompilers](https://revkit.online/category/disassemblers-decompilers/): Decompilers and disassemblers for x86, ARM, MIPS, and WebAssembly binaries (Ghidra, IDA Free, Binary Ninja, Cutter, Medusa).
+- [Debuggers](https://revkit.online/category/debuggers/): Dynamic binary analysis, breakpoints, register inspection, and memory tracing (x64dbg, GDB, WinDbg, ScyllaHide, OllyDbg).
+- [Android Reverse Engineering](https://revkit.online/category/android/): Dalvik bytecode analysis, APK extraction, dynamic instrumentation (JADX, APKTool, Frida, MobSF).
+- [.NET Decompilers](https://revkit.online/category/dotnet/): C#/.NET managed assembly decompilers and deobfuscators (dnSpyEx, ILSpy, de4dot).
+- [Binary Analysis Frameworks](https://revkit.online/category/binary-analysis-frameworks/): Symbolic execution, intermediate representation (IR), and concolic testing (Radare2, Angr, Capstone, Triton, Slither, Mythril).
+- [Analysis Utilities](https://revkit.online/category/analysis-utilities/): Capability detection, memory inspection, file unpacking, and PE/ELF headers (capa, PE-sieve, Detect It Easy, UPX, 7-Zip, DWARF Explorer).
+- [Firmware & Embedded](https://revkit.online/category/firmware-embedded/): IoT ROM extraction, emulation, and UEFI inspection (Binwalk, UEFITool, FirmAE).
+- [Network Reverse Engineering](https://revkit.online/category/network/): Packet sniffing, protocol decoding, and API reverse engineering (Wireshark, Burp Suite, mitmproxy).
+- [Distros & Environments](https://revkit.online/category/distros-environments/): Turnkey security operating systems and automated sandboxes (FLARE VM, REMnux, CAPE Sandbox, Volatility 3).
+- [Java Bytecode](https://revkit.online/category/java/): Java decompiler utilities and class file inspectors (Bytecode Viewer, CFR, Procyon).
+- [Game Reverse Engineering](https://revkit.online/category/game-re/): Runtime memory scanners and struct reconstruction (Cheat Engine, ReClass.NET).
+
+## Essential Tools & Alternatives
+
+- **Ghidra**: Open-source software reverse engineering suite developed by the NSA. Decompiles x86, ARM, MIPS to C. Best free alternative to IDA Pro. (https://revkit.online/tools/ghidra/)
+- **x64dbg**: Open-source x64/x32 debugger for Windows malware analysis and software debugging. (https://revkit.online/tools/x64dbg/)
+- **JADX**: DEX to Java decompiler with GUI and command-line interfaces for Android APKs. (https://revkit.online/tools/jadx/)
+- **Wireshark**: World's foremost network protocol analyzer and packet sniffer. (https://revkit.online/tools/wireshark/)
+- **capa**: Automated capability identification engine by Mandiant that tells you what an executable can do. (https://revkit.online/tools/capa/)
+- **PE-sieve**: Scans running Windows processes to detect and dump in-memory malware, hooks, and shellcode. (https://revkit.online/tools/pe-sieve/)
+- **Slither**: Static analysis and automated vulnerability scanner for Solidity and EVM smart contracts. (https://revkit.online/tools/slither/)
+- **Volatility 3**: Advanced memory forensics framework for extracting artifacts from RAM captures. (https://revkit.online/tools/volatility-3/)
+- **CAPE Sandbox**: Automated malware analysis sandbox with dynamic unpacking and config extraction. (https://revkit.online/tools/cape-sandbox/)
+
+## Popular Head-to-Head Comparisons
+
+- [Ghidra vs IDA Free](https://revkit.online/compare/ghidra-vs-ida-free/)
+- [Ghidra vs Binary Ninja](https://revkit.online/compare/ghidra-vs-binary-ninja/)
+- [JADX vs APKTool](https://revkit.online/compare/jadx-vs-apktool/)
+- [pwndbg vs GEF](https://revkit.online/compare/pwndbg-vs-gef/)
+- [Wireshark vs Burp Suite](https://revkit.online/compare/wireshark-vs-burp-suite/)
+
+## Complete Index
+For the full catalog of 1,000+ open-source tools with licenses, platforms, and repository links, see:
+- https://revkit.online/llms-full.txt

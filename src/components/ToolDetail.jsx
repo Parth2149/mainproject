@@ -59,6 +59,9 @@ export default function ToolDetail({ tool }) {
             <div className="download-cta-details">
               <strong>{tool.name} ({tool.pricing})</strong>
               <span>License: {tool.license} · Architecture: {platforms} · Offline Privacy Guaranteed</span>
+              <span style={{ display: 'block', fontSize: '11px', color: '#6B4D66', marginTop: '4px' }}>
+                Global 196-Country Access · Zero Telemetry · Free from Geoblocking
+              </span>
             </div>
             <div className="download-cta-actions">
               {tool.url && <a className="button" href={tool.url} target="_blank" rel="noopener noreferrer">Download Official ↗</a>}

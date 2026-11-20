@@ -16074,6 +16074,121 @@
       "description": "Toolkit for creating efficient kernel tracing and manipulation programs using extended BPF (eBPF) with Python and Lua bindings.",
       "tag": "Kernel Tracing Suite",
       "replaces": "SystemTap / LTTng"
+    },
+    {
+      "name": "capa",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/mandiant/capa",
+      "github": "https://github.com/mandiant/capa",
+      "license": "Apache-2.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Automatically identifies capabilities in executable files using community-contributed rules.",
+      "replaces": "PE Explorer"
+    },
+    {
+      "name": "PE-sieve",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/hasherezade/pe-sieve",
+      "github": "https://github.com/hasherezade/pe-sieve",
+      "license": "BSD-2-Clause",
+      "pricing": "Free",
+      "platforms": [
+        "Windows"
+      ],
+      "description": "Scans Windows processes to locate, extract, and de-obfuscate hidden malware, hooks, and payloads.",
+      "replaces": "Process Hacker"
+    },
+    {
+      "name": "Slither",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://github.com/crytic/slither",
+      "github": "https://github.com/crytic/slither",
+      "license": "AGPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Static analysis and vulnerability scanner for Solidity smart contract bytecode and AST.",
+      "replaces": "MythX"
+    },
+    {
+      "name": "Mythril",
+      "category": "Binary Analysis Frameworks",
+      "url": "https://github.com/Consensys/mythril",
+      "github": "https://github.com/Consensys/mythril",
+      "license": "MIT",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "macOS",
+        "Windows"
+      ],
+      "description": "Security analysis tool for EVM bytecode using concolic analysis and taint analysis.",
+      "replaces": "Slither"
+    },
+    {
+      "name": "FirmAE",
+      "category": "Firmware & Embedded",
+      "url": "https://github.com/pr0v3rbs/FirmAE",
+      "github": "https://github.com/pr0v3rbs/FirmAE",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux"
+      ],
+      "description": "Large-scale automated firmware emulation framework for dynamic analysis of IoT device images.",
+      "replaces": "Firmadyne"
+    },
+    {
+      "name": "CAPE Sandbox",
+      "category": "Distros & Environments",
+      "url": "https://capesandbox.com",
+      "github": "https://github.com/kevoreilly/CAPEv2",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows"
+      ],
+      "description": "Automated malware analysis sandbox featuring dynamic unpacking, payload and config extraction.",
+      "replaces": "Cuckoo Sandbox"
+    },
+    {
+      "name": "Volatility 3",
+      "category": "Distros & Environments",
+      "url": "https://www.volatilityfoundation.org",
+      "github": "https://github.com/volatilityfoundation/volatility3",
+      "license": "VFL-1.0",
+      "pricing": "Free",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "macOS"
+      ],
+      "description": "Advanced memory forensics framework for extracting artifacts and malware from volatile RAM.",
+      "replaces": "Rekall"
+    },
+    {
+      "name": "DWARF Explorer",
+      "category": "Analysis Utilities",
+      "url": "https://github.com/sektioneins/dwarfexplorer",
+      "github": "https://github.com/sektioneins/dwarfexplorer",
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "description": "GUI application to inspect, search, and reconstruct types and structs from DWARF debug information.",
+      "replaces": "pahole"
     }
   ]
 }
