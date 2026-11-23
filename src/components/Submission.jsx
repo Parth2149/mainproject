@@ -48,7 +48,7 @@ export default function Submission() {
       }}>
         <a
           className="button"
-          href="https://github.com/Parth2149/mainproject/issues/new?title=%5BNew+Tool+Submission%5D+&body=Tool+Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
+          href="https://github.com/Parth2149/revkit-submissions/issues/new?title=%5BNew+Tool+Submission%5D+&body=Tool+Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -56,7 +56,7 @@ export default function Submission() {
         </a>
         <a
           className="button secondary"
-          href="mailto:parthghoghari00@gmail.com?subject=RevKit%20Tool%20Submission&body=Tool%20Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
+          href="mailto:submit@revkit.online?subject=RevKit%20Tool%20Submission&body=Tool%20Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
         >
           Email Submission Directly ✉
         </a>
@@ -66,7 +66,7 @@ export default function Submission() {
         <form
           id="submit-tool"
           className="submission"
-          action="mailto:parthghoghari00@gmail.com"
+          action="mailto:submit@revkit.online"
           method="GET"
           encType="text/plain"
           aria-label="Tool submission form"
@@ -152,7 +152,7 @@ export default function Submission() {
           <div id="submit-status" role="status" aria-live="polite" />
           <noscript>
             <p style={{ marginTop: '12px', fontSize: '13px' }}>
-              Please enable JavaScript or send submissions directly via email to <strong>parthghoghari00@gmail.com</strong>.
+              Please enable JavaScript or send submissions directly via email to <strong>submit@revkit.online</strong>.
             </p>
           </noscript>
         </form>

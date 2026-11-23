@@ -8,5 +8,12 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   integrations: [react()],
-  build: { assets: '_astro' },
+  build: {
+    assets: '_astro'
+  },
+  vite: {
+    build: {
+      sourcemap: false
+    }
+  }
 });

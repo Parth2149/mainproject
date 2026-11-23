@@ -46,7 +46,12 @@ export default function ToolDetail({ tool }) {
         <div className="tool-title-row">
           <img className="tool-hero-logo" src={href(`/assets/tools/${tool.slug}.png`)} alt={`${tool.name} logo`} width="52" height="52" />
           <div>
-            <div className="eyebrow">{tool.category}{tool.stars ? ` · ★ ${tool.stars.toLocaleString()} STARS` : ''}</div>
+            <div className="eyebrow">
+              {tool.category}
+              {tool.stars ? ` · ★ ${tool.stars.toLocaleString()} STARS` : ''}
+              {tool.stars && tool.status ? ` · ${tool.status.toUpperCase()}` : ''}
+              {tool.stars && tool.lastCommitFormatted ? ` · UPDATED ${tool.lastCommitFormatted.toUpperCase()}` : ''}
+            </div>
             <h1>{h1Title}</h1>
           </div>
         </div>
@@ -331,6 +336,10 @@ export default function ToolDetail({ tool }) {
             <dt>Platforms</dt><dd>{platforms}</dd>
             {tool.stars ? <>
               <dt>GitHub Stars</dt><dd style={{ color: '#EAAA00', fontWeight: 700 }}>★ {tool.stars.toLocaleString()}</dd>
+              <dt>Status</dt><dd><span className="comparison-pill gold">{tool.status || 'Active'}</span></dd>
+              {tool.lastCommitFormatted && <>
+                <dt>Last Commit</dt><dd>{tool.lastCommitFormatted}</dd>
+              </>}
             </> : null}
             <dt>Repository</dt><dd>{tool.github ? <a href={tool.github} target="_blank" rel="noopener noreferrer">{new URL(tool.github).pathname.slice(1)} ↗</a> : 'Not listed'}</dd>
             <dt>Dataset date</dt><dd>{seed.generated}</dd>

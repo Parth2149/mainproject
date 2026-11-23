@@ -18,6 +18,17 @@ const CLOSED_SOURCE_OR_FREEWARE = new Set([
 ]);
 const CLOSED_LICENSES = new Set(['Proprietary', 'Freeware', 'Commercial', 'Closed Source']);
 
+// Helper for proper indefinite article with licenses
+export function withArticle(license) {
+  if (!license) return 'an open-source';
+  const lower = license.toLowerCase().trim();
+  const vowelSounds = ['a', 'e', 'i', 'o', 'u', 'mit', 'mpl', 'agpl', 'lgpl', 'epl', 'apache'];
+  const firstWord = lower.split(/[^a-z0-9]/)[0];
+  const startsWithVowel = vowelSounds.some(prefix => lower.startsWith(prefix) || firstWord === prefix);
+  const article = startsWithVowel ? 'an' : 'a';
+  return `${article} ${license}`;
+}
+
 export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').map(tool => {
   const toolSlug = slug(tool.name);
   const isClosed = CLOSED_SOURCE_OR_FREEWARE.has(toolSlug) || CLOSED_LICENSES.has(tool.license) || tool.pricing === 'Paid';
@@ -36,6 +47,15 @@ export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').
   }
   const metrics = repoKey && metricsCache[repoKey] && !metricsCache[repoKey].synthetic ? metricsCache[repoKey] : null;
   const realStars = metrics && typeof metrics.stars === 'number' && metrics.stars > 0 ? metrics.stars : null;
+  const lastCommitDate = metrics?.lastCommit || metrics?.last_commit_date || null;
+  let lastCommitFormatted = null;
+  if (lastCommitDate) {
+    try {
+      const d = new Date(lastCommitDate);
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      lastCommitFormatted = `${months[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
+    } catch (e) {}
+  }
 
   // Determine CLI and MCP capabilities based on category and tool traits
   const isCliNative = ['Debuggers', 'Analysis Utilities', 'Binary Analysis Frameworks', 'Firmware & Embedded', 'Network'].includes(tool.category) ||
@@ -47,8 +67,9 @@ export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').
     slug: toolSlug,
     categorySlug: slug(tool.category),
     stars: realStars,
-    status: metrics?.status || (isClosed ? 'Stable' : 'Active'),
-    lastCommit: metrics?.lastCommit || null,
+    status: metrics?.status || metrics?.maintenance_status || (isClosed ? 'Stable' : 'Active'),
+    lastCommit: lastCommitDate,
+    lastCommitFormatted,
     release: metrics?.latestRelease || null,
     has_cli: tool.has_cli ?? isCliNative,
     has_mcp: tool.has_mcp ?? hasMcpNative
@@ -850,7 +871,7 @@ export function schemaFor(page) {
       },
       image: canonical('/icon-512.png'),
       sameAs: [
-        'https://github.com/Parth2149/mainproject'
+        'https://github.com/Parth2149/revkit-submissions'
       ]
     },
     {
@@ -916,6 +937,7 @@ export function schemaFor(page) {
       license: tool.license,
       url: tool.url || url,
       softwareVersion: tool.release || '2026.1',
+      dateModified: tool.lastCommit || '2026-11-23',
       mainEntityOfPage: { '@id': url + '#webpage' },
       ...(tool.github ? { sameAs: tool.github, codeRepository: tool.github } : {}),
       ...(tool.stars ? {
@@ -1006,7 +1028,7 @@ export function schemaFor(page) {
           name: `What are the key differences between ${toolA.name} and ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `${toolA.name} — ${toolA.description.replace(/\.$/, '')}. Ideal if you prefer a ${toolA.license} license on ${toolA.platforms.join(', ')}. In comparison, ${toolB.name} — ${toolB.description.replace(/\.$/, '')}. Ideal if you prefer a ${toolB.license} license on ${toolB.platforms.join(', ')}.`
+            text: `${toolA.name} — ${toolA.description.replace(/\.$/, '')}. Ideal if you prefer ${withArticle(toolA.license)} license on ${toolA.platforms.join(', ')}. In comparison, ${toolB.name} — ${toolB.description.replace(/\.$/, '')}. Ideal if you prefer ${withArticle(toolB.license)} license on ${toolB.platforms.join(', ')}.`
           }
         },
         {
@@ -1014,7 +1036,7 @@ export function schemaFor(page) {
           name: `Which tool is better: ${toolA.name} or ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Choose ${toolA.name} if you prefer ${toolA.license} licensing and native support for ${toolA.platforms.join(', ')}. Choose ${toolB.name} if you require ${toolB.license} licensing on ${toolB.platforms.join(', ')}.`
+            text: `Choose ${toolA.name} if you prefer ${withArticle(toolA.license)} license and native support for ${toolA.platforms.join(', ')}. Choose ${toolB.name} if you require ${withArticle(toolB.license)} license on ${toolB.platforms.join(', ')}.`
           }
         },
         {

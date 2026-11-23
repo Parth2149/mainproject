@@ -59,15 +59,15 @@ if (form) {
       'Submitted via RevKit.online Tool Directory'
     ].filter(Boolean).join('\n');
 
-    const mailtoUrl = `mailto:parthghoghari00@gmail.com?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
+    const mailtoUrl = `mailto:submit@revkit.online?subject=${subject}&body=${encodeURIComponent(bodyLines)}`;
 
     status.innerHTML = `
       <div class="submit-success">
         <div class="success-header">✉ Opening your email client to send contribution...</div>
-        <p>If your email app does not open automatically, click the button below to send your submission directly to <strong>parthghoghari00@gmail.com</strong>:</p>
+        <p>If your email app does not open automatically, click the button below to send your submission directly to <strong>submit@revkit.online</strong>:</p>
         <div class="email-fallback">
           <a class="button" href="${mailtoUrl}">Open Email App ↗</a>
-          <a class="button secondary" href="mailto:parthghoghari00@gmail.com?subject=${subject}">Email parthghoghari00@gmail.com directly</a>
+          <a class="button secondary" href="mailto:submit@revkit.online?subject=${subject}">Email submit@revkit.online directly</a>
         </div>
       </div>
     `;

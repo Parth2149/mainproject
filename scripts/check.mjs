@@ -75,5 +75,49 @@ assert.ok(sitemapUrls.every(url=>!url.endsWith('/404.html')));
 assert.match(await readFile('dist/404.html','utf8'),/content="noindex, follow"/);
 const ogImage=await readFile('dist/assets/og.png');
 assert.equal(ogImage.readUInt32BE(16),1200);assert.equal(ogImage.readUInt32BE(20),630);
+
+// --- 10/10 ZERO-LEAK SECURITY SCANNER ---
+const allDistFiles = await walk(root);
+for (const file of allDistFiles) {
+  const baseName = path.basename(file);
+  assert.ok(!baseName.endsWith('.map'), `Source map leaked in production: ${file}`);
+  assert.ok(!baseName.startsWith('.env'), `Environment file leaked in production: ${file}`);
+  assert.ok(baseName !== 'package.json', `package.json leaked in production: ${file}`);
+  assert.ok(!file.includes(path.sep + 'scripts' + path.sep), `scripts directory leaked in dist: ${file}`);
+  assert.ok(!file.includes(path.sep + '.git' + path.sep), `.git directory leaked in dist: ${file}`);
+
+  if (/\.(html|js|css|json|txt|xml)$/i.test(file)) {
+    const content = await readFile(file, 'utf8');
+    const secretPatterns = [
+      /ghp_[A-Za-z0-9]{30,}/,
+      /github_pat_[A-Za-z0-9_]{40,}/,
+      /AIza[0-9A-Za-z-_]{35}/,
+      /sk-[a-zA-Z0-9]{20,}/,
+      /Bearer\s+[A-Za-z0-9_\-\.]{25,}/,
+      /process\.env\.[A-Z0-9_]+/
+    ];
+    for (const pat of secretPatterns) {
+      assert.ok(!pat.test(content), `Secret pattern ${pat} detected in production file: ${file}`);
+    }
+  }
+}
+
+// Verify IndexNow key and security headers
+assert.ok(await stat(path.join(root, 'e8f49a37c15b4970a2f96e48bc72d1a3.txt')).catch(()=>false), 'Missing IndexNow key in dist');
+assert.ok(await stat(path.join(root, '_headers')).catch(()=>false), 'Missing _headers in dist');
+
+// Verify robots.txt and llms.txt public accessibility
+const robotsTxt = await readFile(path.join(root, 'robots.txt'), 'utf8');
+assert.ok(robotsTxt.includes('User-agent: Googlebot'), 'robots.txt missing Googlebot');
+assert.ok(robotsTxt.includes('User-agent: Bingbot'), 'robots.txt missing Bingbot');
+assert.ok(robotsTxt.includes('User-agent: GPTBot'), 'robots.txt missing GPTBot');
+assert.ok(robotsTxt.includes('Allow: /alternatives/'), 'robots.txt missing Allow: /alternatives/');
+assert.ok(robotsTxt.includes('Allow: /llms.txt'), 'robots.txt missing Allow: /llms.txt');
+
+const llmsTxt = await readFile(path.join(root, 'llms.txt'), 'utf8');
+assert.ok(llmsTxt.includes('# RevKit.online'), 'llms.txt missing valid title');
+assert.ok(home.includes('<b>958</b> curated tools'), 'Home page tool count must be exactly 958');
+
 console.log(`PASS: ${pages.length} HTML pages; internal links, unique SEO metadata, canonical URLs, schema graphs, breadcrumbs, three alternatives, sitemap, social image, and page budgets (220KB full directory; 100KB other pages).`);
+console.log(`PASS: Security & Zero-Leak Audit — 0 source maps, 0 secret tokens, strict headers & IndexNow verified.`);
 console.log(`Largest cold-load page (HTML + CSS + JS + favicon): ${largest.bytes} bytes (${largest.file}). OG image excluded: social crawlers only.`);

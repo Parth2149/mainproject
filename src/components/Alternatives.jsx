@@ -1,6 +1,7 @@
 import React from 'react';
 import { href, alternativeHubs } from '../lib/catalog';
 import ToolCard from './ToolCard';
+import SavingsCalculator from './SavingsCalculator';
 
 export default function Alternatives({ target }) {
   if (!target) {
@@ -18,6 +19,8 @@ export default function Alternatives({ target }) {
             Eliminate recurring subscription fees. Browse {list.length}+ proprietary tools and switch to transparent, verified open-source and self-hosted alternatives with complete data ownership.
           </p>
         </section>
+
+        <SavingsCalculator defaultSelected={['adobe', 'idapro', 'postman', 'notion', '1password']} />
 
         <div className="category-grid" style={{ marginBottom: '60px' }}>
           {list.map(hub => (

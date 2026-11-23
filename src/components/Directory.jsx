@@ -1,6 +1,7 @@
 import React from 'react';
 import { tools, categories, platforms, prices, licenses, seed, slug, href, categoryDescriptions, homepageFaqs } from '../lib/catalog';
 import ToolCard from './ToolCard';
+import SavingsCalculator from './SavingsCalculator';
 
 const options = values => values.map(value => <option key={value} value={value}>{value}</option>);
 
@@ -28,36 +29,7 @@ export default function Directory({ category }) {
       <div className="hero-category-links" aria-label="Popular categories">{['Disassemblers & Decompilers', 'Debuggers', 'Android', '.NET', 'Software', 'Binary Analysis Frameworks'].map(name => <a key={name} href={href(`/category/${slug(name)}/`)}>{name} ↗</a>)}</div>
     </section>
 
-    {isSoftware && (
-      <section className="savings-banner" style={{
-        background: '#D5C8E6',
-        border: '1.5px solid #3A0F34',
-        borderRadius: '12px',
-        padding: '20px 24px',
-        margin: '0 auto 36px',
-        maxWidth: '1260px',
-        display: 'flex',
-        flexWrap: 'wrap',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        gap: '16px'
-      }}>
-        <div>
-          <div style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', color: '#6B4D66' }}>
-            ENTERPRISE &amp; FREELANCER SAVINGS CALCULATOR
-          </div>
-          <div style={{ fontSize: '18px', fontWeight: 800, color: '#3A0F34', marginTop: '4px' }}>
-            Switching from Adobe CC, Postman &amp; Notion saves ₹45,000–₹1,80,000 / seat / year
-          </div>
-          <p style={{ margin: '4px 0 0', fontSize: '13px', color: '#3A0F34' }}>
-            Filter below by <strong>Commercial-Safe Licenses</strong> (MIT, Apache-2.0, BSD) for unrestricted company and commercial usage.
-          </p>
-        </div>
-        <a className="button" href={href('/alternatives/')}>
-          View Proprietary Alternatives Hub ↗
-        </a>
-      </section>
-    )}
+    {isSoftware && <SavingsCalculator defaultSelected={['adobe', 'postman', 'notion', 'figma']} />}
 
     <section aria-label="Tool directory" className="directory">
       <div className="directory-bar">

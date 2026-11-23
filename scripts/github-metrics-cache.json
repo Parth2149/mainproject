@@ -6,7 +6,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "blender/blender": {
     "stars": 22357,
@@ -15,7 +17,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "gnome/gimp": {
     "stars": 6617,
@@ -24,7 +28,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "x64dbg/x64dbg": {
     "stars": 50373,
@@ -33,7 +39,9 @@
     "status": "Active",
     "latestRelease": "development",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-22",
+    "maintenance_status": "Active"
   },
   "bitwarden/clients": {
     "stars": 14308,
@@ -42,7 +50,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "frida/frida": {
     "stars": 22911,
@@ -51,7 +61,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-20",
+    "maintenance_status": "Active"
   },
   "ip7z/7zip": {
     "stars": 4583,
@@ -60,7 +72,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-07",
+    "maintenance_status": "Active"
   },
   "ollama/ollama": {
     "stars": 187923,
@@ -69,7 +83,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-22",
+    "maintenance_status": "Active"
   },
   "libreoffice/core": {
     "stars": 4681,
@@ -78,7 +94,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "audacity/audacity": {
     "stars": 19146,
@@ -87,7 +105,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "inkscape/inkscape": {
     "stars": 4151,
@@ -96,7 +116,9 @@
     "status": "Stable",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2022-03-03",
+    "maintenance_status": "Stable"
   },
   "skylot/jadx": {
     "stars": 51967,
@@ -105,7 +127,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-20",
+    "maintenance_status": "Active"
   },
   "kde/kdenlive": {
     "stars": 6179,
@@ -114,7 +138,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "rayventura/shortgpt": {
     "stars": 8196,
@@ -123,7 +149,9 @@
     "status": "Stable",
     "latestRelease": "stable",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2025-02-10",
+    "maintenance_status": "Stable"
   },
   "radareorg/radare2": {
     "stars": 25495,
@@ -132,7 +160,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "rizinorg/cutter": {
     "stars": 20254,
@@ -141,7 +171,9 @@
     "status": "Active",
     "latestRelease": "dev",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-13",
+    "maintenance_status": "Active"
   },
   "penpot/penpot": {
     "stars": 62659,
@@ -150,7 +182,9 @@
     "status": "Active",
     "latestRelease": "develop",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "hoppscotch/hoppscotch": {
     "stars": 80897,
@@ -159,7 +193,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "usebruno/bruno": {
     "stars": 48516,
@@ -168,7 +204,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "rustdesk/rustdesk": {
     "stars": 130946,
@@ -177,7 +215,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "tailscale/tailscale": {
     "stars": 39520,
@@ -186,7 +226,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "wireguard/wireguard-tools": {
     "stars": 746,
@@ -195,7 +237,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-10",
+    "maintenance_status": "Active"
   },
   "appflowy-io/appflowy": {
     "stars": 79418,
@@ -204,7 +248,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-15",
+    "maintenance_status": "Active"
   },
   "immich-app/immich": {
     "stars": 119926,
@@ -213,7 +259,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "nextcloud/server": {
     "stars": 37614,
@@ -222,7 +270,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "icsharpcode/ilspy": {
     "stars": 27137,
@@ -231,7 +281,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "ibotpeaches/apktool": {
     "stars": 27347,
@@ -240,7 +292,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "kde/krita": {
     "stars": 10790,
@@ -249,7 +303,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "bleachbit/bleachbit": {
     "stars": 7576,
@@ -258,7 +314,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-19",
+    "maintenance_status": "Active"
   },
   "ventoy/ventoy": {
     "stars": 81160,
@@ -267,7 +325,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "n8n-io/n8n": {
     "stars": 211906,
@@ -276,7 +336,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "metabase/metabase": {
     "stars": 50488,
@@ -285,7 +347,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "louislam/uptime-kuma": {
     "stars": 94785,
@@ -294,7 +358,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "capsoftware/cap": {
     "stars": 25475,
@@ -303,7 +369,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "calcom/cal.com": {
     "stars": 50338,
@@ -312,7 +380,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-13",
+    "maintenance_status": "Active"
   },
   "chatwoot/chatwoot": {
     "stars": 40412,
@@ -321,7 +391,9 @@
     "status": "Active",
     "latestRelease": "develop",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "opf/openproject": {
     "stars": 17655,
@@ -330,7 +402,9 @@
     "status": "Active",
     "latestRelease": "dev",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "winsiderss/systeminformer": {
     "stars": 16556,
@@ -339,7 +413,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-22",
+    "maintenance_status": "Active"
   },
   "hasherezade/pe-bear": {
     "stars": 3899,
@@ -348,7 +424,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-08",
+    "maintenance_status": "Active"
   },
   "angr/angr": {
     "stars": 9409,
@@ -357,7 +435,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "horsicq/detect-it-easy": {
     "stars": 11994,
@@ -366,7 +446,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-22",
+    "maintenance_status": "Active"
   },
   "konloch/bytecode-viewer": {
     "stars": 15729,
@@ -375,7 +457,9 @@
     "status": "Active",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-10-30",
+    "maintenance_status": "Active"
   },
   "mitmproxy/mitmproxy": {
     "stars": 47152,
@@ -384,7 +468,9 @@
     "status": "Active",
     "latestRelease": "main",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2026-11-23",
+    "maintenance_status": "Active"
   },
   "0xd4d/de4dot": {
     "stars": 7425,
@@ -393,7 +479,9 @@
     "status": "Archived",
     "latestRelease": "master",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2020-08-29",
+    "maintenance_status": "Archived"
   },
   "pxb1988/dex2jar": {
     "stars": 13151,
@@ -402,6 +490,8 @@
     "status": "Stable",
     "latestRelease": "2.x",
     "verified": true,
-    "synthetic": false
+    "synthetic": false,
+    "last_commit_date": "2024-07-21",
+    "maintenance_status": "Stable"
   }
 }

@@ -56,11 +56,16 @@ async function fetchRepoMetrics(repoKey) {
     const pushed = data.pushed_at ? new Date(data.pushed_at) : null;
     const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / (1000 * 60 * 60 * 24)) : 365;
     
+    const lastCommitDate = pushed ? pushed.toISOString().split('T')[0] : '2026-01-01';
+    const maintenanceStatus = data.archived ? 'Archived' : (daysSincePush <= 365 ? 'Active' : (daysSincePush <= 730 ? 'Stable' : 'Archived'));
+
     return {
       stars: data.stargazers_count,
-      lastCommit: pushed ? pushed.toISOString().split('T')[0] : '2026-01-01',
+      lastCommit: lastCommitDate,
+      last_commit_date: lastCommitDate,
       issues: data.open_issues_count || 0,
-      status: data.archived ? 'Archived' : (daysSincePush < 90 ? 'Active' : 'Stable'),
+      status: maintenanceStatus,
+      maintenance_status: maintenanceStatus,
       latestRelease: data.default_branch || 'main',
       verified: true,
       synthetic: false

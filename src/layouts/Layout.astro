@@ -34,7 +34,7 @@ const script = page.kind === 'directory' ? 'directory.js' : page.kind === 'submi
     <meta name="rating" content="General" />
     <meta name="target" content="all" />
     <link rel="help" type="text/plain" href={href('/llms.txt')} title="LLM Context for AI Search Engines" />
-    <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'} />
+    <meta name="robots" content={page.kind === '404' ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1'} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={`${page.title} | RevKit`} />
     <meta property="og:description" content={description} />

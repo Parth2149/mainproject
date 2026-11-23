@@ -13,6 +13,27 @@ Allow: /category/
 Allow: /llms.txt
 Allow: /llms-full.txt
 
+# Googlebot & Bingbot (Primary Search Engines)
+User-agent: Googlebot
+Allow: /
+Allow: /alternatives/
+Allow: /stacks/
+Allow: /compare/
+Allow: /tools/
+Allow: /category/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Bingbot
+Allow: /
+Allow: /alternatives/
+Allow: /stacks/
+Allow: /compare/
+Allow: /tools/
+Allow: /category/
+Allow: /llms.txt
+Allow: /llms-full.txt
+
 # OpenAI / ChatGPT / SearchGPT (Citations & Direct Answers)
 User-agent: GPTBot
 Allow: /

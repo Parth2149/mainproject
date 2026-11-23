@@ -1,5 +1,5 @@
 import React from 'react';
-import { pairs, pairRoute, href, seed } from '../lib/catalog';
+import { pairs, pairRoute, href, seed, withArticle } from '../lib/catalog';
 
 export default function Comparisons({ pair }) {
   if (!pair) {
@@ -54,6 +54,11 @@ export default function Comparisons({ pair }) {
     ['License', a.license, b.license],
     ['Supported Platforms', a.platforms.join(', '), b.platforms.join(', ')],
     [
+      'Popularity & Freshness',
+      a.stars ? `★ ${a.stars.toLocaleString()} stars (${a.status || 'Active'}${a.lastCommitFormatted ? `, ${a.lastCommitFormatted}` : ''})` : 'Freeware / Standalone',
+      b.stars ? `★ ${b.stars.toLocaleString()} stars (${b.status || 'Active'}${b.lastCommitFormatted ? `, ${b.lastCommitFormatted}` : ''})` : 'Freeware / Standalone'
+    ],
+    [
       'Replacement Target',
       a.replaces ? `Direct alternative to ${a.replaces}` : 'Independent open architecture',
       b.replaces ? `Direct alternative to ${b.replaces}` : 'Independent open architecture'
@@ -93,10 +98,10 @@ export default function Comparisons({ pair }) {
             ⚡ TL;DR DIRECT ANSWER (2026 VERDICT)
           </div>
           <p style={{ margin: 0 }}>
-            <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer a {a.license} license on {a.platforms.join(', ')} ({a.pricing === 'Free' ? '100% Free' : a.pricing}).
+            <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer {withArticle(a.license)} license on {a.platforms.join(', ')} ({a.pricing === 'Free' ? '100% Free' : a.pricing}).
           </p>
           <p style={{ margin: '8px 0 0' }}>
-            <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer a {b.license} license on {b.platforms.join(', ')} ({b.pricing === 'Free' ? '100% Free' : b.pricing}).
+            <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer {withArticle(b.license)} license on {b.platforms.join(', ')} ({b.pricing === 'Free' ? '100% Free' : b.pricing}).
           </p>
         </div>
       </section>
@@ -159,13 +164,13 @@ export default function Comparisons({ pair }) {
           <div className="verdict-card">
             <h4>When to choose {a.name}:</h4>
             <p>
-              <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer a <strong>{a.license}</strong> license on <strong>{a.platforms.join(', ')}</strong> with {a.pricing.toLowerCase()} access.
+              <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer {withArticle(a.license)} license on <strong>{a.platforms.join(', ')}</strong> with {a.pricing.toLowerCase()} access.
             </p>
           </div>
           <div className="verdict-card">
             <h4>When to choose {b.name}:</h4>
             <p>
-              <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer a <strong>{b.license}</strong> license on <strong>{b.platforms.join(', ')}</strong> with {b.pricing.toLowerCase()} access.
+              <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer {withArticle(b.license)} license on <strong>{b.platforms.join(', ')}</strong> with {b.pricing.toLowerCase()} access.
             </p>
           </div>
         </div>
