@@ -6,106 +6,134 @@ const SEED_FILE = path.resolve('revkit-seed-data.json');
 
 const seed = JSON.parse(fs.readFileSync(SEED_FILE, 'utf8'));
 
+// Closed-source and freeware tools that must NEVER have stars
+const CLOSED_SOURCE_OR_FREEWARE = new Set([
+  'obsidian', 'davinci-resolve', 'ida-free', 'burp-suite', 'photopea',
+  'binary-ninja', 'charles-proxy', 'fiddler', 'pdf24-creator', 'cerbero-suite',
+  'pdf-stream-dumper', 'cff-explorer', 'dotpeek', 'gda', 'hopper-disassembler',
+  'ida-pro', 'intel-pin', 'jeb-decompiler', 'ollydbg', 'pestudio',
+  'process-explorer', 'trid', 'windbg', 'procmon'
+]);
+
+const CLOSED_LICENSES = new Set(['Proprietary', 'Freeware', 'Commercial', 'Closed Source']);
+
 let cache = {};
 if (fs.existsSync(CACHE_FILE)) {
   try {
-    cache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    const raw = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
+    // Purge any closed-source / synthetic entries from previous runs
+    for (const [key, val] of Object.entries(raw)) {
+      if (val && typeof val.stars === 'number' && !val.synthetic && val.verified) {
+        cache[key.toLowerCase()] = val;
+      }
+    }
   } catch (err) {
     cache = {};
   }
 }
 
-// Known top tier anchors for realism & accuracy
-const KNOWN_STARS = {
-  'ollama/ollama': 118000,
-  'nationalsecurityagency/ghidra': 53800,
-  'x64dbg/x64dbg': 44200,
-  'skylot/jadx': 42800,
-  'cheat-engine/cheat-engine': 27500,
-  'blender/blender': 14200,
-  'gnome/gimp': 6400,
-  'frida/frida': 17900,
-  'wireshark/wireshark': 8100,
-  'radareorg/radare2': 21400,
-  'radareorg/cutter': 13500,
-  'angr/angr': 8300,
-  'mandiant/capa': 4900,
-  'hasherezade/pe-sieve': 3800,
-  'crytic/slither': 5200,
-  'consensys/mythril': 4100,
-  'pr0v3rbs/firmae': 2100,
-  'volatilityfoundation/volatility3': 4300,
-  'icsharpcode/ilspy': 23900,
-  'ibotpeaches/apktool': 20100,
-  'bitwarden/clients': 36500,
-  'audacity/audacity': 13200,
-  'kdenlive/kdenlive': 5400,
-  'syncthing/syncthing': 67000,
-  'immich-app/immich': 59000,
-  'n8n-io/n8n': 54000,
-  'usebruno/bruno': 32000,
-  'hoppscotch/hoppscotch': 66000,
-  'penpot/penpot': 34000,
-  'obsidianmd/obsidian-releases': 105000,
-  'rustdesk/rustdesk': 78000,
-  'wireguard/wireguard-tools': 3800,
-  'tailscale/tailscale': 19500,
-  'appflowy-io/appflowy': 56000,
-  'nextcloud/server': 27000,
-  'zed-industries/zed': 52000,
-  'ghostty-org/ghostty': 28000,
-  'torvalds/linux': 185000
+const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
+const headers = {
+  'User-Agent': 'RevKit-Metrics-Engine/2.0',
+  'Accept': 'application/vnd.github.v3+json'
 };
-
-// Deterministic hash-based metric generator for repositories not in known list
-function generateFallbackMetrics(repoKey, tool) {
-  let hash = 0;
-  for (let i = 0; i < repoKey.length; i++) hash = (hash * 31 + repoKey.charCodeAt(i)) & 0xffffff;
-  const absHash = Math.abs(hash);
-
-  const starTier = absHash % 100;
-  let stars = 500;
-  if (starTier > 95) stars = 25000 + (absHash % 25000);
-  else if (starTier > 80) stars = 8000 + (absHash % 17000);
-  else if (starTier > 50) stars = 2000 + (absHash % 6000);
-  else stars = 400 + (absHash % 1600);
-
-  const daysAgo = 2 + (absHash % 90);
-  const commitDate = new Date(Date.now() - daysAgo * 86400000).toISOString().split('T')[0];
-  const issues = 5 + (absHash % 120);
-
-  return {
-    stars,
-    lastCommit: commitDate,
-    issues,
-    status: daysAgo < 60 ? 'Active' : 'Stable',
-    latestRelease: `v${1 + (absHash % 5)}.${absHash % 9}.${absHash % 9}`
-  };
+if (token) {
+  headers['Authorization'] = `token ${token}`;
 }
 
-let enrichedCount = 0;
-for (const tool of seed.tools) {
-  if (!tool.github) continue;
+async function fetchRepoMetrics(repoKey) {
   try {
-    const url = new URL(tool.github);
-    const repoKey = url.pathname.slice(1).toLowerCase().replace(/\/$/, '');
-    if (!cache[repoKey]) {
-      if (KNOWN_STARS[repoKey]) {
-        const stars = KNOWN_STARS[repoKey];
-        cache[repoKey] = {
-          stars,
-          lastCommit: '2026-02-15',
-          issues: 12 + (stars % 80),
-          status: 'Active',
-          latestRelease: 'v2026.1'
-        };
-      } else {
-        cache[repoKey] = generateFallbackMetrics(repoKey, tool);
-      }
-      enrichedCount++;
+    const res = await fetch(`https://api.github.com/repos/${repoKey}`, { headers });
+    if (res.status === 403 || res.status === 429) {
+      console.warn(`GitHub API Rate limit reached when requesting ${repoKey}. Stopping batch.`);
+      return { rateLimited: true };
     }
-  } catch (e) {}
+    if (!res.ok) {
+      console.warn(`Repo ${repoKey} returned status ${res.status}. Skipping.`);
+      return null;
+    }
+    const data = await res.json();
+    const pushed = data.pushed_at ? new Date(data.pushed_at) : null;
+    const daysSincePush = pushed ? Math.floor((Date.now() - pushed.getTime()) / (1000 * 60 * 60 * 24)) : 365;
+    
+    return {
+      stars: data.stargazers_count,
+      lastCommit: pushed ? pushed.toISOString().split('T')[0] : '2026-01-01',
+      issues: data.open_issues_count || 0,
+      status: data.archived ? 'Archived' : (daysSincePush < 90 ? 'Active' : 'Stable'),
+      latestRelease: data.default_branch || 'main',
+      verified: true,
+      synthetic: false
+    };
+  } catch (err) {
+    console.error(`Error fetching ${repoKey}:`, err.message);
+    return null;
+  }
 }
 
-fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2) + '\n', 'utf8');
-console.log(`GitHub Metrics Cache updated: ${Object.keys(cache).length} repos cached (${enrichedCount} new).`);
+async function main() {
+  const toolsToFetch = [];
+  
+  for (const tool of seed.tools) {
+    if (tool.category === 'Comparisons') continue;
+    const slug = tool.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (CLOSED_SOURCE_OR_FREEWARE.has(slug) || CLOSED_LICENSES.has(tool.license) || tool.pricing === 'Paid') {
+      continue;
+    }
+    if (!tool.github || !tool.github.startsWith('https://github.com/')) continue;
+    
+    try {
+      const url = new URL(tool.github);
+      const parts = url.pathname.slice(1).split('/').filter(Boolean);
+      if (parts.length >= 2 && !['orgs', 'topics', 'features'].includes(parts[0].toLowerCase())) {
+        const repoKey = `${parts[0]}/${parts[1]}`.toLowerCase();
+        if (!cache[repoKey]) {
+          toolsToFetch.push(repoKey);
+        }
+      }
+    } catch (e) {}
+  }
+
+  console.log(`Tools available to fetch from GitHub API: ${toolsToFetch.length}. Cached valid repos: ${Object.keys(cache).length}`);
+
+  // Fetch as many as permitted without blowing unauthenticated rate limits
+  let fetchedCount = 0;
+  for (const repoKey of toolsToFetch) {
+    if (!token && fetchedCount >= 45) {
+      console.log('Stopping unauthenticated batch at 45 requests to preserve API quota.');
+      break;
+    }
+    console.log(`Fetching real GitHub metrics for [${repoKey}]...`);
+    const metrics = await fetchRepoMetrics(repoKey);
+    if (metrics && metrics.rateLimited) {
+      break;
+    }
+    if (metrics && typeof metrics.stars === 'number') {
+      cache[repoKey] = metrics;
+      fetchedCount++;
+    }
+    // Small delay to be courteous to GitHub API
+    await new Promise(r => setTimeout(r, 200));
+  }
+
+  // Ensure no closed-source entries survived in cache
+  for (const tool of seed.tools) {
+    const slug = tool.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    if (CLOSED_SOURCE_OR_FREEWARE.has(slug) || CLOSED_LICENSES.has(tool.license) || tool.pricing === 'Paid') {
+      if (tool.github) {
+        try {
+          const url = new URL(tool.github);
+          const parts = url.pathname.slice(1).split('/').filter(Boolean);
+          if (parts.length >= 2) {
+            delete cache[`${parts[0]}/${parts[1]}`.toLowerCase()];
+          }
+        } catch (e) {}
+      }
+    }
+  }
+
+  fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2) + '\n', 'utf8');
+  console.log(`GitHub Metrics Cache updated with REAL data: ${Object.keys(cache).length} repos cached (${fetchedCount} newly fetched).`);
+}
+
+main();

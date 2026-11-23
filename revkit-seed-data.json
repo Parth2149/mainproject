@@ -3769,16 +3769,6 @@
       "replaces": "Zapier"
     },
     {
-      "name": "Ghidra vs IDA",
-      "category": "Comparisons",
-      "url": "",
-      "github": "",
-      "license": "",
-      "pricing": "",
-      "platforms": [],
-      "description": "Compares Ghidra against IDA Pro on decompilation, pricing, and plugin ecosystems."
-    },
-    {
       "name": "Podman",
       "category": "Software",
       "url": "https://podman.io",

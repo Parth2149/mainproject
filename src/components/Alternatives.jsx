@@ -110,7 +110,7 @@ export default function Alternatives({ target }) {
                     <span className="comparison-pill">{tool.license}</span>
                   </td>
                   <td>{tool.platforms.join(', ')}</td>
-                  <td>★ {(tool.stars || 1000).toLocaleString()} stars</td>
+                  <td>{tool.stars ? `★ ${tool.stars.toLocaleString()} stars` : 'Freeware / Standalone'}</td>
                   <td>{tool.description}</td>
                 </tr>
               ))}

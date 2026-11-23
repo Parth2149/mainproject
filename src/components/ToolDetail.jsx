@@ -46,7 +46,7 @@ export default function ToolDetail({ tool }) {
         <div className="tool-title-row">
           <img className="tool-hero-logo" src={href(`/assets/tools/${tool.slug}.png`)} alt={`${tool.name} logo`} width="52" height="52" />
           <div>
-            <div className="eyebrow">{tool.category} · ★ {(tool.stars || 1000).toLocaleString()} STARS</div>
+            <div className="eyebrow">{tool.category}{tool.stars ? ` · ★ ${tool.stars.toLocaleString()} STARS` : ''}</div>
             <h1>{h1Title}</h1>
           </div>
         </div>
@@ -71,29 +71,31 @@ export default function ToolDetail({ tool }) {
             Official binaries, release archives, and source code for {tool.name} are available for <strong>{platforms}</strong> under the <strong>{tool.license}</strong> license. Download or install via verified channels:
           </p>
 
-          {/* Quick Install Snippet */}
-          <div className="install-snippet-box" style={{
-            background: '#2D1228',
-            color: '#E8DFF2',
-            borderRadius: '10px',
-            padding: '14px 20px',
-            margin: '16px 0',
-            fontFamily: 'monospace',
-            fontSize: '13.5px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '12px',
-            boxShadow: '0 2px 10px rgba(45,18,40,0.15)'
-          }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', overflowX: 'auto' }}>
-              <span style={{ color: '#EAAA00', userSelect: 'none' }}>$</span>
-              <code>{installCmds[0].cmd}</code>
+          {/* Quick Install Snippet - ONLY rendered if verified install command exists */}
+          {installCmds && installCmds.length > 0 && (
+            <div className="install-snippet-box" style={{
+              background: '#2D1228',
+              color: '#E8DFF2',
+              borderRadius: '10px',
+              padding: '14px 20px',
+              margin: '16px 0',
+              fontFamily: 'monospace',
+              fontSize: '13.5px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '12px',
+              boxShadow: '0 2px 10px rgba(45,18,40,0.15)'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', overflowX: 'auto' }}>
+                <span style={{ color: '#EAAA00', userSelect: 'none' }}>$</span>
+                <code>{installCmds[0].cmd}</code>
+              </div>
+              <span style={{ fontSize: '11px', color: '#EAAA00', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', flexShrink: 0 }}>
+                {installCmds[0].manager}
+              </span>
             </div>
-            <span style={{ fontSize: '11px', color: '#EAAA00', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', flexShrink: 0 }}>
-              {installCmds[0].manager}
-            </span>
-          </div>
+          )}
 
           <div className="download-cta-box">
             <div className="download-cta-details">
@@ -131,10 +133,17 @@ export default function ToolDetail({ tool }) {
               </>
             ) : (
               <>
-                <div className="highlight-card">
-                  <h4>Open standards &amp; file compatibility</h4>
-                  <p>Works natively with {specs.formats} with zero vendor lock-in or proprietary paywalls.</p>
-                </div>
+                {specs.formats ? (
+                  <div className="highlight-card">
+                    <h4>Open standards &amp; file compatibility</h4>
+                    <p>Works natively with {specs.formats} with zero vendor lock-in or proprietary paywalls.</p>
+                  </div>
+                ) : (
+                  <div className="highlight-card">
+                    <h4>Open standards &amp; data privacy</h4>
+                    <p>Works natively with open industry standards with complete local control and zero vendor lock-in.</p>
+                  </div>
+                )}
                 <div className="highlight-card">
                   <h4>Local-first privacy</h4>
                   <p>Runs natively on {platforms} with zero telemetry, tracking scripts, or compulsory cloud accounts.</p>
@@ -320,7 +329,9 @@ export default function ToolDetail({ tool }) {
             <dt>License</dt><dd>{tool.license}</dd>
             <dt>Pricing</dt><dd>{tool.pricing}</dd>
             <dt>Platforms</dt><dd>{platforms}</dd>
-            <dt>GitHub Stars</dt><dd>★ {(tool.stars || 1000).toLocaleString()}</dd>
+            {tool.stars ? <>
+              <dt>GitHub Stars</dt><dd style={{ color: '#EAAA00', fontWeight: 700 }}>★ {tool.stars.toLocaleString()}</dd>
+            </> : null}
             <dt>Repository</dt><dd>{tool.github ? <a href={tool.github} target="_blank" rel="noopener noreferrer">{new URL(tool.github).pathname.slice(1)} ↗</a> : 'Not listed'}</dd>
             <dt>Dataset date</dt><dd>{seed.generated}</dd>
           </dl>

@@ -37,8 +37,40 @@ export default function Submission() {
         </ul>
       </section>
 
+      {/* Quick Submission CTA Buttons (GitHub Issue & Mailto) */}
+      <div style={{
+        maxWidth: '760px',
+        margin: '0 auto 28px',
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '14px',
+        justifyContent: 'center'
+      }}>
+        <a
+          className="button"
+          href="https://github.com/Parth2149/mainproject/issues/new?title=%5BNew+Tool+Submission%5D+&body=Tool+Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Submit via GitHub Issue ↗
+        </a>
+        <a
+          className="button secondary"
+          href="mailto:parthghoghari00@gmail.com?subject=RevKit%20Tool%20Submission&body=Tool%20Name%3A%0AWebsite%3A%0AGitHub%3A%0ACategory%3A%0APlatforms%3A%0ALicense%3A%0ADescription%3A"
+        >
+          Email Submission Directly ✉
+        </a>
+      </div>
+
       <div className="submit-layout">
-        <form id="submit-tool" className="submission" aria-label="Tool submission form">
+        <form
+          id="submit-tool"
+          className="submission"
+          action="mailto:parthghoghari00@gmail.com"
+          method="GET"
+          encType="text/plain"
+          aria-label="Tool submission form"
+        >
           <label>
             Tool name *
             <input name="name" required maxLength="100" placeholder="e.g. Your favorite decompiler, debugger or utility" />

@@ -8,15 +8,34 @@ export const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 export const href = route => base + route;
 export const canonical = route => config.url.replace(/\/$/, '') + href(route);
 
+// Closed-source and freeware tools that must never display stars
+const CLOSED_SOURCE_OR_FREEWARE = new Set([
+  'obsidian', 'davinci-resolve', 'ida-free', 'burp-suite', 'photopea',
+  'binary-ninja', 'charles-proxy', 'fiddler', 'pdf24-creator', 'cerbero-suite',
+  'pdf-stream-dumper', 'cff-explorer', 'dotpeek', 'gda', 'hopper-disassembler',
+  'ida-pro', 'intel-pin', 'jeb-decompiler', 'ollydbg', 'pestudio',
+  'process-explorer', 'trid', 'windbg', 'procmon'
+]);
+const CLOSED_LICENSES = new Set(['Proprietary', 'Freeware', 'Commercial', 'Closed Source']);
+
 export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').map(tool => {
   const toolSlug = slug(tool.name);
+  const isClosed = CLOSED_SOURCE_OR_FREEWARE.has(toolSlug) || CLOSED_LICENSES.has(tool.license) || tool.pricing === 'Paid';
+
   let repoKey = null;
-  if (tool.github) {
+  if (tool.github && !isClosed) {
     try {
-      repoKey = new URL(tool.github).pathname.slice(1).toLowerCase().replace(/\/$/, '');
+      const parsed = new URL(tool.github);
+      if (parsed.hostname.toLowerCase() === 'github.com') {
+        const parts = parsed.pathname.slice(1).split('/').filter(Boolean);
+        if (parts.length >= 2 && !['orgs', 'topics', 'features'].includes(parts[0].toLowerCase())) {
+          repoKey = `${parts[0].toLowerCase()}/${parts[1].toLowerCase()}`;
+        }
+      }
     } catch (e) {}
   }
-  const metrics = repoKey && metricsCache[repoKey] ? metricsCache[repoKey] : null;
+  const metrics = repoKey && metricsCache[repoKey] && !metricsCache[repoKey].synthetic ? metricsCache[repoKey] : null;
+  const realStars = metrics && typeof metrics.stars === 'number' && metrics.stars > 0 ? metrics.stars : null;
 
   // Determine CLI and MCP capabilities based on category and tool traits
   const isCliNative = ['Debuggers', 'Analysis Utilities', 'Binary Analysis Frameworks', 'Firmware & Embedded', 'Network'].includes(tool.category) ||
@@ -27,10 +46,10 @@ export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').
     ...tool,
     slug: toolSlug,
     categorySlug: slug(tool.category),
-    stars: metrics?.stars || 1200,
-    status: metrics?.status || 'Active',
-    lastCommit: metrics?.lastCommit || '2026-02-15',
-    release: metrics?.latestRelease || 'v2026.1',
+    stars: realStars,
+    status: metrics?.status || (isClosed ? 'Stable' : 'Active'),
+    lastCommit: metrics?.lastCommit || null,
+    release: metrics?.latestRelease || null,
     has_cli: tool.has_cli ?? isCliNative,
     has_mcp: tool.has_mcp ?? hasMcpNative
   };
@@ -205,9 +224,42 @@ export function getCategorySpecs(tool) {
     };
   }
   if (cat === 'Software') {
+    if (tool.formats) {
+      return {
+        architectures: 'Native 64-bit & ARM64 execution',
+        formats: tool.formats,
+        focus: 'Productivity and creative workflows with zero licensing fees',
+        isRE: false
+      };
+    }
+    const tSlug = tool.slug || '';
+    const desc = (tool.description || '').toLowerCase();
+    const replaces = (tool.replaces || '').toLowerCase();
+
+    let formats = null;
+    if (tSlug.includes('blender') || desc.includes('3d') || desc.includes('mesh') || replaces.includes('maya') || replaces.includes('3ds') || replaces.includes('autocad')) {
+      formats = '3D models, OBJ, FBX, glTF, STL, and .blend scenes';
+    } else if (desc.includes('video') || replaces.includes('premiere') || replaces.includes('after-effects') || tSlug.includes('kdenlive') || tSlug.includes('shotcut') || tSlug.includes('davinci')) {
+      formats = 'MP4, MKV, MOV, WebM, and ProRes video streams';
+    } else if (desc.includes('photo') || desc.includes('raster') || replaces.includes('photoshop') || replaces.includes('lightroom') || tSlug.includes('gimp') || tSlug.includes('krita') || tSlug.includes('photopea')) {
+      formats = 'PNG, JPEG, WebP, TIFF, PSD, and XCF raster images';
+    } else if (desc.includes('vector') || replaces.includes('illustrator') || replaces.includes('figma') || replaces.includes('sketch') || replaces.includes('canva') || tSlug.includes('inkscape') || tSlug.includes('penpot')) {
+      formats = 'SVG, PDF, EPS, and open vector standards';
+    } else if (desc.includes('office') || desc.includes('document') || desc.includes('spreadsheet') || replaces.includes('office') || replaces.includes('excel') || replaces.includes('google-workspace') || tSlug.includes('libreoffice') || tSlug.includes('onlyoffice')) {
+      formats = 'ODT, DOCX, ODS, XLSX, and PDF documents';
+    } else if (desc.includes('note') || desc.includes('markdown') || replaces.includes('notion') || replaces.includes('evernote') || tSlug.includes('obsidian') || tSlug.includes('logseq')) {
+      formats = 'Markdown, Canvas, Plain Text, and JSON';
+    } else if (desc.includes('api') || replaces.includes('postman') || replaces.includes('insomnia') || tSlug.includes('bruno') || tSlug.includes('hoppscotch')) {
+      formats = 'JSON, YAML, REST, and GraphQL collections';
+    } else if (desc.includes('archive') || desc.includes('zip') || replaces.includes('winrar')) {
+      formats = '7Z, ZIP, TAR, GZ, and RAR archives';
+    } else if (desc.includes('password') || replaces.includes('1password') || replaces.includes('bitwarden') || tSlug.includes('bitwarden') || tSlug.includes('keepass')) {
+      formats = 'Encrypted vaults, KDBX, and JSON exports';
+    }
+
     return {
       architectures: 'Native 64-bit & ARM64 execution',
-      formats: 'Native open file formats, PDF, SVG, DOCX, XLSX, MP4, PNG, WebP',
+      formats,
       focus: 'Desktop productivity, creative workflows, complete offline privacy, and zero licensing fees',
       isRE: false
     };
@@ -400,28 +452,15 @@ export function getQuickStartSteps(tool) {
   ];
 }
 
-// Generate Package Manager / CLI Installation Commands
+// Generate Package Manager / CLI Installation Commands (ONLY if explicitly verified)
 export function getInstallCommands(tool) {
-  const pkg = tool.slug;
-  const cmds = [];
-
-  if (tool.platforms.includes('Windows')) {
-    cmds.push({ manager: 'winget', cmd: `winget install ${pkg}` });
-    cmds.push({ manager: 'choco', cmd: `choco install ${pkg}` });
+  if (tool.install_command && typeof tool.install_command === 'string' && tool.install_command.trim().length > 0) {
+    return [{
+      manager: tool.install_manager || 'cli',
+      cmd: tool.install_command.trim()
+    }];
   }
-  if (tool.platforms.includes('macOS')) {
-    cmds.push({ manager: 'brew', cmd: `brew install ${pkg}` });
-  }
-  if (tool.platforms.includes('Linux')) {
-    if (tool.description && (tool.description.toLowerCase().includes('python') || tool.category === 'Binary Analysis Frameworks')) {
-      cmds.push({ manager: 'pip', cmd: `pip install ${pkg}` });
-    }
-    cmds.push({ manager: 'apt', cmd: `sudo apt install ${pkg}` });
-  }
-  if (cmds.length === 0) {
-    cmds.push({ manager: 'curl', cmd: `curl -fsSL https://revkit.online/tools/${pkg}/` });
-  }
-  return cmds;
+  return [];
 }
 
 export function toolTitle(tool) {
@@ -879,13 +918,15 @@ export function schemaFor(page) {
       softwareVersion: tool.release || '2026.1',
       mainEntityOfPage: { '@id': url + '#webpage' },
       ...(tool.github ? { sameAs: tool.github, codeRepository: tool.github } : {}),
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.8',
-        ratingCount: Math.max(25, Math.min(1250, Math.round((tool.stars || 1000) / 100))),
-        bestRating: '5',
-        worstRating: '1'
-      }
+      ...(tool.stars ? {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4.8',
+          ratingCount: Math.max(25, Math.min(1250, Math.round(tool.stars / 100))),
+          bestRating: '5',
+          worstRating: '1'
+        }
+      } : {})
     };
     if (brand) {
       software.isSimilarTo = {
@@ -965,7 +1006,7 @@ export function schemaFor(page) {
           name: `What are the key differences between ${toolA.name} and ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `${toolA.name} (${toolA.license}, ${toolA.pricing}) excels at ${getWorkflowUseCase(toolA)}, while ${toolB.name} (${toolB.license}, ${toolB.pricing}) specializes in ${getWorkflowUseCase(toolB)}. Both offer native execution on ${toolA.platforms.join(', ')}.`
+            text: `${toolA.name} — ${toolA.description.replace(/\.$/, '')}. Ideal if you prefer a ${toolA.license} license on ${toolA.platforms.join(', ')}. In comparison, ${toolB.name} — ${toolB.description.replace(/\.$/, '')}. Ideal if you prefer a ${toolB.license} license on ${toolB.platforms.join(', ')}.`
           }
         },
         {
@@ -973,7 +1014,7 @@ export function schemaFor(page) {
           name: `Which tool is better: ${toolA.name} or ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Choose ${toolA.name} when your primary workflow requires ${getWorkflowUseCase(toolA)}. Choose ${toolB.name} if you require ${getWorkflowUseCase(toolB)}.`
+            text: `Choose ${toolA.name} if you prefer ${toolA.license} licensing and native support for ${toolA.platforms.join(', ')}. Choose ${toolB.name} if you require ${toolB.license} licensing on ${toolB.platforms.join(', ')}.`
           }
         },
         {

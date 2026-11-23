@@ -1,5 +1,5 @@
 import React from 'react';
-import { pairs, pairRoute, href, seed, getWorkflowUseCase } from '../lib/catalog';
+import { pairs, pairRoute, href, seed } from '../lib/catalog';
 
 export default function Comparisons({ pair }) {
   if (!pair) {
@@ -93,7 +93,10 @@ export default function Comparisons({ pair }) {
             ⚡ TL;DR DIRECT ANSWER (2026 VERDICT)
           </div>
           <p style={{ margin: 0 }}>
-            <strong>{a.name}</strong> is best when your primary requirement is {getWorkflowUseCase(a)} ({a.pricing === 'Free' ? '100% Free' : a.pricing}, {a.license}), supporting {a.platforms.join(', ')}. In contrast, <strong>{b.name}</strong> specializes in {getWorkflowUseCase(b)} ({b.pricing === 'Free' ? '100% Free' : b.pricing}, {b.license}) across {b.platforms.join(', ')}.
+            <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer a {a.license} license on {a.platforms.join(', ')} ({a.pricing === 'Free' ? '100% Free' : a.pricing}).
+          </p>
+          <p style={{ margin: '8px 0 0' }}>
+            <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer a {b.license} license on {b.platforms.join(', ')} ({b.pricing === 'Free' ? '100% Free' : b.pricing}).
           </p>
         </div>
       </section>
@@ -156,13 +159,13 @@ export default function Comparisons({ pair }) {
           <div className="verdict-card">
             <h4>When to choose {a.name}:</h4>
             <p>
-              Choose <strong>{a.name}</strong> when your primary workflow requires {getWorkflowUseCase(a)}. It is published under the <strong>{a.license}</strong> license and runs natively on <strong>{a.platforms.join(', ')}</strong> with {a.pricing.toLowerCase()} access.
+              <strong>{a.name}</strong> — {a.description.replace(/\.$/, '')}. Ideal if you prefer a <strong>{a.license}</strong> license on <strong>{a.platforms.join(', ')}</strong> with {a.pricing.toLowerCase()} access.
             </p>
           </div>
           <div className="verdict-card">
             <h4>When to choose {b.name}:</h4>
             <p>
-              Choose <strong>{b.name}</strong> when your primary workflow requires {getWorkflowUseCase(b)}. It is published under the <strong>{b.license}</strong> license and runs natively on <strong>{b.platforms.join(', ')}</strong> with {b.pricing.toLowerCase()} access.
+              <strong>{b.name}</strong> — {b.description.replace(/\.$/, '')}. Ideal if you prefer a <strong>{b.license}</strong> license on <strong>{b.platforms.join(', ')}</strong> with {b.pricing.toLowerCase()} access.
             </p>
           </div>
         </div>
