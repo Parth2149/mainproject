@@ -1879,17 +1879,17 @@
       "replaces": "Commercial IoT Firmware Scanners"
     },
     {
-      "name": "emulating firmware: FirmAE",
+      "name": "FirmAE",
       "category": "Firmware & Embedded",
       "url": "https://github.com/pr0v3rbs/FirmAE",
       "github": "https://github.com/pr0v3rbs/FirmAE",
-      "license": "GPL-2.0",
+      "license": "GPL-3.0",
       "pricing": "Free",
       "platforms": [
         "Linux"
       ],
-      "description": "Emulates Linux IoT firmware images automatically in virtual execution environments.",
-      "replaces": "Physical Hardware Testbeds"
+      "description": "Large-scale automated firmware emulation framework for dynamic analysis of IoT device images.",
+      "replaces": "Firmadyne"
     },
     {
       "name": "ExtremeDumper",
@@ -2594,19 +2594,19 @@
       "replaces": "ASPack / PECompact"
     },
     {
-      "name": "Volatility",
-      "category": "Analysis Utilities",
+      "name": "Volatility 3",
+      "category": "Distros & Environments",
       "url": "https://www.volatilityfoundation.org",
       "github": "https://github.com/volatilityfoundation/volatility3",
-      "license": "BSD-3-Clause",
+      "license": "VFL-1.0",
       "pricing": "Free",
       "platforms": [
         "Windows",
         "Linux",
         "macOS"
       ],
-      "description": "Extracts process lists, passwords, and network sockets from memory dumps.",
-      "replaces": "Rekall Memory Forensics"
+      "description": "Advanced memory forensics framework for extracting artifacts and malware from volatile RAM.",
+      "replaces": "Rekall"
     },
     {
       "name": "Voltron",
@@ -3383,20 +3383,19 @@
       "replaces": "Asana / Jira"
     },
     {
-      "name": "Plane.so",
+      "name": "Plane",
       "category": "Software",
       "url": "https://plane.so",
       "github": "https://github.com/makeplane/plane",
       "license": "Apache-2.0",
       "pricing": "Free",
       "platforms": [
+        "Windows",
         "Linux",
-        "macOS",
-        "Windows"
+        "macOS"
       ],
-      "description": "Tracks engineering issues, sprint cycles, product modules, and project roadmaps.",
-      "tag": "Jira Replacement",
-      "replaces": "Jira Software"
+      "description": "Open-source project management platform to track issues, epics, cycles, and product roadmaps.",
+      "replaces": "Jira Software / Linear"
     },
     {
       "name": "Formbricks",
@@ -3431,11 +3430,11 @@
       "replaces": "Typeform"
     },
     {
-      "name": "Matrix Element",
+      "name": "Element",
       "category": "Software",
       "url": "https://element.io",
       "github": "https://github.com/element-hq/element-web",
-      "license": "AGPL-3.0",
+      "license": "Apache-2.0",
       "pricing": "Free",
       "platforms": [
         "Windows",
@@ -3444,9 +3443,8 @@
         "Android",
         "iOS"
       ],
-      "description": "Connects decentralized, end-to-end encrypted messaging rooms and voice calls.",
-      "tag": "Discord Replacement",
-      "replaces": "Discord / WhatsApp"
+      "description": "Secure, decentralized collaboration client powered by the Matrix communications protocol.",
+      "replaces": "Slack / Microsoft Teams"
     },
     {
       "name": "Listmonk",
@@ -5553,19 +5551,19 @@
       "replaces": "Cobalt Strike"
     },
     {
-      "name": "Havoc C2",
-      "category": "Binary Analysis Frameworks",
+      "name": "Havoc",
+      "category": "Network",
       "url": "https://havocframework.com",
       "github": "https://github.com/HavocFramework/Havoc",
       "license": "GPL-3.0",
       "pricing": "Free",
       "platforms": [
         "Linux",
-        "Windows"
+        "Windows",
+        "macOS"
       ],
-      "description": "Modern and malleable post-exploitation C2 framework featuring a sleek Qt UI and flexible payloads written in C and Go.",
-      "tag": "Cobalt Strike Replacement",
-      "replaces": "Cobalt Strike"
+      "description": "Modern, malleable post-exploitation command and control (C2) framework for adversary simulation.",
+      "replaces": "Cobalt Strike / Core Impact"
     },
     {
       "name": "Mythic",
@@ -8093,20 +8091,20 @@
       "replaces": "ZynAddSubFX Commercial"
     },
     {
-      "name": "Hydrogen Drum Machine",
-      "category": "Software",
-      "url": "https://hydrogen-music.org",
-      "github": "https://github.com/hydrogen-music/hydrogen",
-      "license": "GPL-2.0",
+      "name": "Hydrogen Drums",
+      "category": "Audio",
       "pricing": "Free",
+      "license": "GPL-2.0",
       "platforms": [
         "Windows",
-        "macOS",
-        "Linux"
+        "Linux",
+        "macOS"
       ],
-      "description": "Advanced drum machine and pattern sequencer with humanize functions, multi-layer drum kits, and Jack audio sync.",
-      "tag": "Toontrack EZdrummer Replacement",
-      "replaces": "Toontrack EZdrummer / Addictive Drums"
+      "description": "Advanced drum machine and pattern-based step sequencer for Linux, macOS, and Windows.",
+      "url": "https://hydrogen-music.org/",
+      "github": "https://github.com/hydrogen-music/hydrogen",
+      "replaces": "FL Studio",
+      "tag": "Drum Sequencer"
     },
     {
       "name": "Speedrum Lite",
@@ -9058,20 +9056,20 @@
       "replaces": "Jira / Bugzilla"
     },
     {
-      "name": "Draw.io (diagrams.net)",
+      "name": "Draw.io Desktop",
       "category": "Software",
-      "url": "https://www.diagrams.net",
-      "github": "https://github.com/jgraph/drawio-desktop",
-      "license": "Apache-2.0",
       "pricing": "Free",
+      "license": "Apache-2.0",
       "platforms": [
         "Windows",
-        "macOS",
-        "Linux"
+        "Linux",
+        "macOS"
       ],
-      "description": "Security-first diagramming software for technical teams to create flowcharts, network architectures, and UML diagrams offline.",
-      "tag": "Microsoft Visio Replacement",
-      "replaces": "Microsoft Visio / Lucidchart"
+      "description": "Security-first diagramming application for architecture diagrams, flowcharts, and mind maps.",
+      "url": "https://www.drawio.com/",
+      "github": "https://github.com/jgraph/drawio-desktop",
+      "replaces": "Microsoft Visio",
+      "tag": "Visio Replacement"
     },
     {
       "name": "PlantUML",
@@ -11807,22 +11805,6 @@
       "tag": "IDA Pro Replacement"
     },
     {
-      "name": "Snowman Decompiler",
-      "category": "Disassemblers & Decompilers",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Standalone native C/C++ decompiler for x86, x64, and ARM architectures with x64dbg integration.",
-      "url": "https://derevenets.com/",
-      "github": "https://github.com/yegord/snowman",
-      "replaces": "Hex-Rays Decompiler",
-      "tag": "Hex-Rays Replacement"
-    },
-    {
       "name": "Reko Decompiler",
       "category": "Disassemblers & Decompilers",
       "pricing": "Free",
@@ -12008,21 +11990,6 @@
       "tag": "Hopper Replacement"
     },
     {
-      "name": "BAP Decompiler",
-      "category": "Disassemblers & Decompilers",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Linux",
-        "macOS"
-      ],
-      "description": "Binary Analysis Platform micro-execution decompiler translating binary instructions into BIL IR.",
-      "url": "https://github.com/BinaryAnalysisPlatform/bap",
-      "github": "https://github.com/BinaryAnalysisPlatform/bap",
-      "replaces": "Hex-Rays Decompiler",
-      "tag": "Hex-Rays Replacement"
-    },
-    {
       "name": "Ovd Decompiler",
       "category": "Disassemblers & Decompilers",
       "pricing": "Free",
@@ -12171,20 +12138,6 @@
       "tag": "Debugger"
     },
     {
-      "name": "Evans Debugger",
-      "category": "Debuggers",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Linux binary debugger designed to provide an OllyDbg-like user interface and disassembly view.",
-      "url": "https://codef00.com/projects#debugger",
-      "github": "https://github.com/eteran/edb-debugger",
-      "replaces": "OllyDbg",
-      "tag": "OllyDbg Replacement"
-    },
-    {
       "name": "WinDbgX Extension",
       "category": "Debuggers",
       "pricing": "Free",
@@ -12199,20 +12152,6 @@
       "tag": "Kernel Analysis"
     },
     {
-      "name": "Scylla Dumper",
-      "category": "Debuggers",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Standalone memory section dumper and Import Address Table (IAT) reconstruction tool for Windows PE.",
-      "url": "https://github.com/NtQuery/Scylla",
-      "github": "https://github.com/NtQuery/Scylla",
-      "replaces": "LordPE",
-      "tag": "LordPE Replacement"
-    },
-    {
       "name": "Peda-ARM",
       "category": "Debuggers",
       "pricing": "Free",
@@ -12225,21 +12164,6 @@
       "github": "https://github.com/alset0326/peda-arm",
       "replaces": "WinDbg",
       "tag": "ARM Exploit Dev"
-    },
-    {
-      "name": "Voltron Debugger",
-      "category": "Debuggers",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Linux",
-        "macOS"
-      ],
-      "description": "Hackable UI toolkit for debuggers like GDB, LLDB, VDB, and WinDbg using synchronized terminal panes.",
-      "url": "https://github.com/snare/voltron",
-      "github": "https://github.com/snare/voltron",
-      "replaces": "WinDbg GUI",
-      "tag": "Debugger UI"
     },
     {
       "name": "Pykd",
@@ -12413,22 +12337,6 @@
       "tag": "Runtime Security"
     },
     {
-      "name": "Objection Mobile",
-      "category": "Android",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Runtime mobile exploration toolkit powered by Frida to bypass SSL pinning and jailbreak checks.",
-      "url": "https://github.com/sensepost/objection",
-      "github": "https://github.com/sensepost/objection",
-      "replaces": "NowSecure",
-      "tag": "Frida Toolkit"
-    },
-    {
       "name": "Inspeckage",
       "category": "Android",
       "pricing": "Free",
@@ -12442,37 +12350,6 @@
       "github": "https://github.com/ac-pm/Inspeckage",
       "replaces": "Corellium",
       "tag": "API Hooking"
-    },
-    {
-      "name": "House Mobile",
-      "category": "Android",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "macOS",
-        "Linux"
-      ],
-      "description": "Interactive mobile runtime analysis and Frida script manager for Android security researchers.",
-      "url": "https://github.com/nccgroup/house",
-      "github": "https://github.com/nccgroup/house",
-      "replaces": "Corellium",
-      "tag": "Frida Manager"
-    },
-    {
-      "name": "Apktool-CLI",
-      "category": "Android",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Command-line utility to reverse engineer 3rd party, closed, binary Android apps into smali code.",
-      "url": "https://apktool.org/",
-      "github": "https://github.com/iBotPeaches/Apktool",
-      "replaces": "JEB Decompiler",
-      "tag": "Smali Reverser"
     },
     {
       "name": "Smali Idea",
@@ -12536,22 +12413,6 @@
       "tag": "Android Logcat"
     },
     {
-      "name": "Triton Symbolic",
-      "category": "Binary Analysis Frameworks",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Dynamic binary analysis framework providing symbolic execution, taint analysis, and AST lifting.",
-      "url": "https://triton-library.github.io/",
-      "github": "https://github.com/JonathanSalwan/Triton",
-      "replaces": "IDA Pro",
-      "tag": "Symbolic Engine"
-    },
-    {
       "name": "Miasm Framework",
       "category": "Binary Analysis Frameworks",
       "pricing": "Free",
@@ -12608,22 +12469,6 @@
       "github": "https://github.com/lifting-bits/anvill",
       "replaces": "Hex-Rays Decompiler",
       "tag": "LLVM Lifter"
-    },
-    {
-      "name": "Semgrep Engine",
-      "category": "Binary Analysis Frameworks",
-      "pricing": "Free",
-      "license": "LGPL-2.1",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Fast, lightweight, polyglot static analysis engine for finding bugs and enforcing code standards.",
-      "url": "https://semgrep.dev/",
-      "github": "https://github.com/semgrep/semgrep",
-      "replaces": "SonarQube Commercial",
-      "tag": "Static Analysis"
     },
     {
       "name": "Ghidra-Bridge",
@@ -12793,21 +12638,6 @@
       "tag": "Network Fuzzer"
     },
     {
-      "name": "BAP BIL Lifter",
-      "category": "Binary Analysis Frameworks",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Linux",
-        "macOS"
-      ],
-      "description": "Binary analysis platform intermediate language translating native semantics into verified BIL.",
-      "url": "https://github.com/BinaryAnalysisPlatform/bap",
-      "github": "https://github.com/BinaryAnalysisPlatform/bap",
-      "replaces": "Hex-Rays",
-      "tag": "BIL Lifter"
-    },
-    {
       "name": "Mayhem Symbolic",
       "category": "Binary Analysis Frameworks",
       "pricing": "Free",
@@ -12836,22 +12666,6 @@
       "tag": "Hybrid Fuzzer"
     },
     {
-      "name": "DIE Detect It Easy",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Program for determining types of files, packers, compilers, and cryptographic signatures in PE/ELF.",
-      "url": "https://github.com/horsicq/Detect-It-Easy",
-      "github": "https://github.com/horsicq/Detect-It-Easy",
-      "replaces": "PEiD",
-      "tag": "PEiD Replacement"
-    },
-    {
       "name": "ExifTool CLI",
       "category": "Analysis Utilities",
       "pricing": "Free",
@@ -12868,38 +12682,6 @@
       "tag": "Adobe Replacement"
     },
     {
-      "name": "YARA Scanner",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "BSD-3-Clause",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Pattern matching swiss knife for malware researchers to identify and classify malware samples.",
-      "url": "https://virustotal.github.io/yara/",
-      "github": "https://github.com/VirusTotal/yara",
-      "replaces": "Mandiant IOC",
-      "tag": "Malware Scanner"
-    },
-    {
-      "name": "Binwalk Carver",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Fast, easy-to-use tool for analyzing, reverse engineering, and extracting firmware images and ROMs.",
-      "url": "https://github.com/ReFirmLabs/binwalk",
-      "github": "https://github.com/ReFirmLabs/binwalk",
-      "replaces": "IDA Pro",
-      "tag": "Firmware Carver"
-    },
-    {
       "name": "ClamAV Engine",
       "category": "Analysis Utilities",
       "pricing": "Free",
@@ -12914,22 +12696,6 @@
       "github": "https://github.com/Cisco-Talos/clamav",
       "replaces": "McAfee VirusScan",
       "tag": "McAfee Replacement"
-    },
-    {
-      "name": "FLOSS Mandiant",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "FireEye Labs Obfuscated String Solver extracting obfuscated strings from malware binaries.",
-      "url": "https://github.com/mandiant/flare-floss",
-      "github": "https://github.com/mandiant/flare-floss",
-      "replaces": "IDA Pro",
-      "tag": "String Deobfuscator"
     },
     {
       "name": "Manalyze PE",
@@ -12961,18 +12727,18 @@
       "tag": "Executable Scanner"
     },
     {
-      "name": "CAPEv2 Sandbox",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Automated malware analysis system extending Cuckoo Sandbox with unpacking and payload extraction.",
-      "url": "https://github.com/kevoreilly/CAPEv2",
+      "name": "CAPE Sandbox",
+      "category": "Distros & Environments",
+      "url": "https://capesandbox.com",
       "github": "https://github.com/kevoreilly/CAPEv2",
-      "replaces": "Joe Sandbox",
-      "tag": "Joe Sandbox Replacement"
+      "license": "GPL-3.0",
+      "pricing": "Free",
+      "platforms": [
+        "Linux",
+        "Windows"
+      ],
+      "description": "Automated malware analysis sandbox featuring dynamic unpacking, payload and config extraction.",
+      "replaces": "Cuckoo Sandbox"
     },
     {
       "name": "Cuckoo Sandbox",
@@ -12987,22 +12753,6 @@
       "github": "https://github.com/cuckoosandbox/cuckoo",
       "replaces": "Any.Run",
       "tag": "Any.Run Replacement"
-    },
-    {
-      "name": "Volatility Forensics",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Advanced memory forensics framework for incident response and digital forensics artifact triage.",
-      "url": "https://www.volatilityfoundation.org/",
-      "github": "https://github.com/volatilityfoundation/volatility3",
-      "replaces": "FTK Imager",
-      "tag": "Memory Forensics"
     },
     {
       "name": "Rekall Forensics",
@@ -13050,22 +12800,6 @@
       "tag": "ELF Inspector"
     },
     {
-      "name": "LIEF Library",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Library to Instrument Executable Formats: parse, modify, and abstract ELF, PE, and Mach-O binaries.",
-      "url": "https://lief-project.github.io/",
-      "github": "https://github.com/lief-project/LIEF",
-      "replaces": "010 Editor",
-      "tag": "Binary Parser"
-    },
-    {
       "name": "MachOView",
       "category": "Analysis Utilities",
       "pricing": "Free",
@@ -13093,22 +12827,6 @@
       "github": "https://github.com/bwall/HashPump",
       "replaces": "Burp Extender",
       "tag": "Crypto Exploit"
-    },
-    {
-      "name": "CyberChef Recipe",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Web app for encryption, encoding, compression, and data analysis nicknamed the Cyber Swiss Knife.",
-      "url": "https://gchq.github.io/CyberChef/",
-      "github": "https://github.com/gchq/CyberChef",
-      "replaces": "010 Editor",
-      "tag": "Cyber Swiss Knife"
     },
     {
       "name": "ImHex Hex Editor",
@@ -13153,21 +12871,6 @@
       "github": "https://github.com/HexFiend/HexFiend",
       "replaces": "010 Editor",
       "tag": "010 Editor Replacement"
-    },
-    {
-      "name": "PE-bear Reverser",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Modular PE file viewer, section headers analyzer, and import table rebuilder for malware research.",
-      "url": "https://hshrzd.wordpress.com/pe-bear/",
-      "github": "https://github.com/hasherezade/pe-bear",
-      "replaces": "PEStudio",
-      "tag": "PEStudio Replacement"
     },
     {
       "name": "Signsrch Engine",
@@ -13323,37 +13026,6 @@
       "tag": "Packet Crafter"
     },
     {
-      "name": "Zeek Network Monitor",
-      "category": "Network",
-      "pricing": "Free",
-      "license": "BSD-3-Clause",
-      "platforms": [
-        "Linux",
-        "macOS"
-      ],
-      "description": "Powerful network security monitoring platform for deep transaction logging and protocol parsing.",
-      "url": "https://zeek.org/",
-      "github": "https://github.com/zeek/zeek",
-      "replaces": "SolarWinds NPM",
-      "tag": "SolarWinds Replacement"
-    },
-    {
-      "name": "Suricata IDS",
-      "category": "Network",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "High-performance Network IDS, IPS, and Network Security Monitoring engine with multi-threading.",
-      "url": "https://suricata.io/",
-      "github": "https://github.com/OISF/suricata",
-      "replaces": "Cisco Snort Pro",
-      "tag": "Cisco Replacement"
-    },
-    {
       "name": "Ettercap Suite",
       "category": "Network",
       "pricing": "Free",
@@ -13434,22 +13106,6 @@
       "tag": "Protocol Dissector"
     },
     {
-      "name": "Masscan Scanner",
-      "category": "Network",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "TCP port scanner capable of scanning the entire Internet in under 6 minutes using custom SYN packets.",
-      "url": "https://github.com/robertdavidgraham/masscan",
-      "github": "https://github.com/robertdavidgraham/masscan",
-      "replaces": "Nessus",
-      "tag": "Port Scanner"
-    },
-    {
       "name": "Hping3 Packet Generator",
       "category": "Network",
       "pricing": "Free",
@@ -13508,20 +13164,6 @@
       "github": "https://github.com/snort3/snort3",
       "replaces": "Cisco IPS",
       "tag": "Cisco Replacement"
-    },
-    {
-      "name": "Arkime Moloch",
-      "category": "Network",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Large-scale, full packet capturing, indexing, and database exploration tool for network forensics.",
-      "url": "https://arkime.com/",
-      "github": "https://github.com/arkime/arkime",
-      "replaces": "RSA NetWitness",
-      "tag": "NetWitness Replacement"
     },
     {
       "name": "YAF Flow Meter",
@@ -13624,22 +13266,6 @@
       "tag": "Poisoner Tool"
     },
     {
-      "name": "Mitmproxy HTTPS",
-      "category": "Network",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Interactive TLS-capable intercepting HTTP proxy for reverse engineers, pentesters, and app coders.",
-      "url": "https://mitmproxy.org/",
-      "github": "https://github.com/mitmproxy/mitmproxy",
-      "replaces": "Fiddler Everywhere",
-      "tag": "Fiddler Replacement"
-    },
-    {
       "name": "Charles-Proxy OSS",
       "category": "Network",
       "pricing": "Free",
@@ -13685,20 +13311,6 @@
       "tag": "Firmware Emulator"
     },
     {
-      "name": "FACT Firmware",
-      "category": "Firmware & Embedded",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Firmware Analysis and Comparison Tool automating security audits and unpacking of IoT images.",
-      "url": "https://fkie-cad.github.io/FACT_core/",
-      "github": "https://github.com/fkie-cad/FACT_core",
-      "replaces": "OneKey IoT",
-      "tag": "Firmware Auditor"
-    },
-    {
       "name": "Router-Analysis",
       "category": "Firmware & Embedded",
       "pricing": "Free",
@@ -13711,36 +13323,6 @@
       "github": "https://github.com/praetorian-inc/routetool",
       "replaces": "OneKey IoT",
       "tag": "Router Auditor"
-    },
-    {
-      "name": "OpenWrt Buildroot",
-      "category": "Firmware & Embedded",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Extensible Linux distribution and cross-compilation environment for embedded routers and devices.",
-      "url": "https://openwrt.org/",
-      "github": "https://github.com/openwrt/openwrt",
-      "replaces": "Cisco IOS",
-      "tag": "Embedded OS"
-    },
-    {
-      "name": "QEMU-Firmware",
-      "category": "Firmware & Embedded",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Processor emulator enabling full-system emulation of ARM, MIPS, and RISC-V embedded target systems.",
-      "url": "https://www.qemu.org/",
-      "github": "https://github.com/qemu/qemu",
-      "replaces": "VMware Workstation",
-      "tag": "System Emulator"
     },
     {
       "name": "ChipWhisperer HW",
@@ -13868,20 +13450,6 @@
       "tag": "Bootloader Tools"
     },
     {
-      "name": "Sasquatch Unpacker",
-      "category": "Firmware & Embedded",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Patched SquashFS unpacker capable of extracting non-standard and corrupted vendor firmware blobs.",
-      "url": "https://github.com/devttys0/sasquatch",
-      "github": "https://github.com/devttys0/sasquatch",
-      "replaces": "Binwalk Pro",
-      "tag": "SquashFS Unpacker"
-    },
-    {
       "name": "Jefferson JFFS2",
       "category": "Firmware & Embedded",
       "pricing": "Free",
@@ -13958,20 +13526,6 @@
       "tag": "Bytecode Engine"
     },
     {
-      "name": "JustDecompile OSS",
-      "category": ".NET",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Open-source high-performance .NET decompiler engine supporting modern C# and assembly trees.",
-      "url": "https://github.com/telerik/justdecompileengine",
-      "github": "https://github.com/telerik/justdecompileengine",
-      "replaces": "JetBrains dotPeek",
-      "tag": "dotPeek Replacement"
-    },
-    {
       "name": "DotNetId Scanner",
       "category": ".NET",
       "pricing": "Free",
@@ -14028,22 +13582,6 @@
       "tag": "Deobfuscator"
     },
     {
-      "name": "CSharpDecompiler",
-      "category": ".NET",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Core C# decompilation pipeline powering ILSpy with support for modern async/await expressions.",
-      "url": "https://ilspy.net/",
-      "github": "https://github.com/icsharpcode/ILSpy",
-      "replaces": "Redgate Reflector",
-      "tag": "C# Decompiler"
-    },
-    {
       "name": "ILVerify Tool",
       "category": ".NET",
       "pricing": "Free",
@@ -14088,22 +13626,6 @@
       "github": "https://github.com/dotnetguidump/tool",
       "replaces": "OLEView",
       "tag": "COM Inspector"
-    },
-    {
-      "name": "ICSharpCode.Decompiler",
-      "category": ".NET",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Industrial-strength C# decompiler library with support for pattern matching and decompilation.",
-      "url": "https://www.nuget.org/packages/ICSharpCode.Decompiler",
-      "github": "https://github.com/icsharpcode/ILSpy",
-      "replaces": "Redgate Reflector",
-      "tag": "Decompiler Core"
     },
     {
       "name": "Fody Weaving",
@@ -14296,22 +13818,6 @@
       "tag": "Decompiler Engine"
     },
     {
-      "name": "Fernflower Java",
-      "category": "Java",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Analytical decompiler integrated into IntelliJ IDEA providing structured Java reconstruction.",
-      "url": "https://github.com/JetBrains/intellij-community/tree/master/plugins/java-decompiler/engine",
-      "github": "https://github.com/fesh0r/fernflower",
-      "replaces": "JEB Decompiler",
-      "tag": "Decompiler Core"
-    },
-    {
       "name": "Luyten Decompiler",
       "category": "Java",
       "pricing": "Free",
@@ -14342,22 +13848,6 @@
       "github": "https://github.com/albs/bytecode-outline",
       "replaces": "JEB Decompiler",
       "tag": "Bytecode Viewer"
-    },
-    {
-      "name": "Dex2jar Toolchain",
-      "category": "Java",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Tools to work with Android .dex and Java .class files including translation and smali dumping.",
-      "url": "https://github.com/pxb1988/dex2jar",
-      "github": "https://github.com/pxb1988/dex2jar",
-      "replaces": "JEB Decompiler",
-      "tag": "DEX Toolchain"
     },
     {
       "name": "AssetStudio Unity",
@@ -14491,22 +13981,6 @@
       "tag": "Plugin Framework"
     },
     {
-      "name": "Frida Game Hook",
-      "category": "Game RE",
-      "pricing": "Free",
-      "license": "wxWindows",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Dynamic instrumentation toolchain used for injecting logic, detouring functions, and logging.",
-      "url": "https://frida.re/",
-      "github": "https://github.com/frida/frida",
-      "replaces": "Cheat Engine",
-      "tag": "Function Hook"
-    },
-    {
       "name": "Cheat-Engine-DB",
       "category": "Game RE",
       "pricing": "Free",
@@ -14564,20 +14038,6 @@
       "tag": "Linux Cheat Engine"
     },
     {
-      "name": "Scanmem Engine",
-      "category": "Game RE",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Interactive debugging utility to locate and modify variables in an executing application on Linux.",
-      "url": "https://github.com/scanmem/scanmem",
-      "github": "https://github.com/scanmem/scanmem",
-      "replaces": "Cheat Engine",
-      "tag": "Memory Editor"
-    },
-    {
       "name": "REMnux Distro",
       "category": "Distros & Environments",
       "pricing": "Free",
@@ -14590,20 +14050,6 @@
       "github": "https://github.com/REMnux/remnux-cli",
       "replaces": "FireEye Helix",
       "tag": "Malware Distro"
-    },
-    {
-      "name": "Flare-VM Distro",
-      "category": "Distros & Environments",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows"
-      ],
-      "description": "Fully customizable, Windows-based security distribution for malware analysis and reverse engineering.",
-      "url": "https://github.com/mandiant/flare-vm",
-      "github": "https://github.com/mandiant/flare-vm",
-      "replaces": "Cuckoo Cloud",
-      "tag": "Windows Malware Lab"
     },
     {
       "name": "Santoku Linux",
@@ -14648,54 +14094,6 @@
       "tag": "Pen-Testing Distro"
     },
     {
-      "name": "Tenacity Audio",
-      "category": "Audio",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Privacy-focused open-source audio editor and recorder for multi-track mixing without telemetry.",
-      "url": "https://tenacityaudio.org/",
-      "github": "https://github.com/tenacityteam/tenacity",
-      "replaces": "Adobe Audition",
-      "tag": "Adobe Replacement"
-    },
-    {
-      "name": "Ardour DAW",
-      "category": "Audio",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Complete digital audio workstation for recording, editing, mixing, and mastering sound on Linux/Mac.",
-      "url": "https://ardour.org/",
-      "github": "https://github.com/Ardour/ardour",
-      "replaces": "Pro Tools",
-      "tag": "Pro Tools Replacement"
-    },
-    {
-      "name": "MuseScore Suite",
-      "category": "Audio",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Free professional music notation and sheet music engraving software with realistic playback.",
-      "url": "https://musescore.org/",
-      "github": "https://github.com/musescore/MuseScore",
-      "replaces": "Sibelius",
-      "tag": "Sibelius Replacement"
-    },
-    {
       "name": "Rosegarden Audio",
       "category": "Audio",
       "pricing": "Free",
@@ -14708,70 +14106,6 @@
       "github": "https://github.com/tedfelix/rosegarden-git",
       "replaces": "Cubase",
       "tag": "Cubase Replacement"
-    },
-    {
-      "name": "Hydrogen Drums",
-      "category": "Audio",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Advanced drum machine and pattern-based step sequencer for Linux, macOS, and Windows.",
-      "url": "https://hydrogen-music.org/",
-      "github": "https://github.com/hydrogen-music/hydrogen",
-      "replaces": "FL Studio",
-      "tag": "Drum Sequencer"
-    },
-    {
-      "name": "Zrythm DAW",
-      "category": "Audio",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Highly automated and intuitive digital audio workstation designed for rapid musical workflow.",
-      "url": "https://www.zrythm.org/",
-      "github": "https://github.com/zrythm/zrythm",
-      "replaces": "FL Studio",
-      "tag": "FL Studio Replacement"
-    },
-    {
-      "name": "FreeCAD 3D",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "LGPL-2.1",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Open-source parametric 3D modeler for mechanical engineering, product design, and architectural BIM.",
-      "url": "https://www.freecad.org/",
-      "github": "https://github.com/FreeCAD/FreeCAD",
-      "replaces": "AutoCAD",
-      "tag": "AutoCAD Replacement"
-    },
-    {
-      "name": "OpenSCAD Code",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Programmers solid 3D CAD modeler for creating 3D CAD objects via declarative script language.",
-      "url": "https://openscad.org/",
-      "github": "https://github.com/openscad/openscad",
-      "replaces": "SolidWorks",
-      "tag": "SolidWorks Replacement"
     },
     {
       "name": "KiCad EDA",
@@ -14788,54 +14122,6 @@
       "github": "https://github.com/KiCad/kicad-source-mirror",
       "replaces": "Altium Designer",
       "tag": "Altium Replacement"
-    },
-    {
-      "name": "LibreCAD 2D",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Fully-featured 2D computer-aided design system for blueprints, engineering schematics, and layouts.",
-      "url": "https://librecad.org/",
-      "github": "https://github.com/LibreCAD/LibreCAD",
-      "replaces": "AutoCAD LT",
-      "tag": "AutoCAD Replacement"
-    },
-    {
-      "name": "Natron Compositor",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Node-based open-source digital compositing software for VFX and motion graphics workflows.",
-      "url": "https://natrongithub.github.io/",
-      "github": "https://github.com/NatronGitHub/Natron",
-      "replaces": "Adobe After Effects",
-      "tag": "Adobe Replacement"
-    },
-    {
-      "name": "OpenToonz 2D",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "BSD-3-Clause",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux"
-      ],
-      "description": "Production-grade 2D animation software used by Studio Ghibli for digital cel painting and effects.",
-      "url": "https://opentoonz.github.io/e/",
-      "github": "https://github.com/opentoonz/opentoonz",
-      "replaces": "Adobe Animate",
-      "tag": "Adobe Replacement"
     },
     {
       "name": "Olive Video",
@@ -14870,22 +14156,6 @@
       "tag": "Boxcryptor Replacement"
     },
     {
-      "name": "KeePassXC Suite",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Community-driven desktop password manager storing passwords in offline encrypted AES databases.",
-      "url": "https://keepassxc.org/",
-      "github": "https://github.com/keepassxreboot/keepassxc",
-      "replaces": "1Password",
-      "tag": "1Password Replacement"
-    },
-    {
       "name": "Mattermost Team",
       "category": "Software",
       "pricing": "Free",
@@ -14900,38 +14170,6 @@
       "github": "https://github.com/mattermost/mattermost-server",
       "replaces": "Slack",
       "tag": "Slack Replacement"
-    },
-    {
-      "name": "Zulip Chat",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Real-time team chat with unique topic-based email-like threading for organized conversations.",
-      "url": "https://zulip.com/",
-      "github": "https://github.com/zulip/zulip",
-      "replaces": "Slack / Teams",
-      "tag": "Slack Replacement"
-    },
-    {
-      "name": "Joplin Notes",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Secure note taking and to-do application with end-to-end encryption and Markdown synchronization.",
-      "url": "https://joplinapp.org/",
-      "github": "https://github.com/laurent22/joplin",
-      "replaces": "Evernote",
-      "tag": "Evernote Replacement"
     },
     {
       "name": "Lunacy Editor",
@@ -14950,22 +14188,6 @@
       "tag": "Sketch Replacement"
     },
     {
-      "name": "Draw.io Desktop",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Security-first diagramming application for architecture diagrams, flowcharts, and mind maps.",
-      "url": "https://www.drawio.com/",
-      "github": "https://github.com/jgraph/drawio-desktop",
-      "replaces": "Microsoft Visio",
-      "tag": "Visio Replacement"
-    },
-    {
       "name": "Taiga Agile",
       "category": "Software",
       "pricing": "Free",
@@ -14980,54 +14202,6 @@
       "github": "https://github.com/taigaio/taiga-front",
       "replaces": "Jira",
       "tag": "Jira Replacement"
-    },
-    {
-      "name": "Focalboard Boards",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Self-hosted alternative to Trello, Notion, and Asana for tracking tasks, projects, and roadmaps.",
-      "url": "https://www.focalboard.com/",
-      "github": "https://github.com/mattermost/focalboard",
-      "replaces": "Trello",
-      "tag": "Trello Replacement"
-    },
-    {
-      "name": "Planka Kanban",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Elegant open-source kanban board for teams and personal task organization with real-time updates.",
-      "url": "https://planka.app/",
-      "github": "https://github.com/plankanban/planka",
-      "replaces": "Trello",
-      "tag": "Trello Replacement"
-    },
-    {
-      "name": "Wekan Board",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "BSD-3-Clause",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Collaborative open-source kanban board application built with Meteor and accessible from any browser.",
-      "url": "https://wekan.github.io/",
-      "github": "https://github.com/wekan/wekan",
-      "replaces": "Trello",
-      "tag": "Trello Replacement"
     },
     {
       "name": "Grist Relational",
@@ -15046,54 +14220,6 @@
       "tag": "Airtable Replacement"
     },
     {
-      "name": "Baserow Database",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Open-source no-code database platform built with Django and Vue to build databases visually.",
-      "url": "https://baserow.io/",
-      "github": "https://github.com/baserow/baserow",
-      "replaces": "Airtable",
-      "tag": "Airtable Replacement"
-    },
-    {
-      "name": "NocoDB Smart",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Smart spreadsheet that turns any existing MySQL, PostgreSQL, or SQL Server into a smart spreadsheet.",
-      "url": "https://nocodb.com/",
-      "github": "https://github.com/nocodb/nocodb",
-      "replaces": "Airtable",
-      "tag": "Airtable Replacement"
-    },
-    {
-      "name": "Vikunja Tasks",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "The to-do app to organize your life: manage tasks, priorities, reminders, and lists across devices.",
-      "url": "https://vikunja.io/",
-      "github": "https://github.com/go-vikunja/vikunja",
-      "replaces": "Todoist",
-      "tag": "Todoist Replacement"
-    },
-    {
       "name": "ActivityWatch App",
       "category": "Software",
       "pricing": "Free",
@@ -15108,70 +14234,6 @@
       "github": "https://github.com/ActivityWatch/activitywatch",
       "replaces": "RescueTime",
       "tag": "RescueTime Replacement"
-    },
-    {
-      "name": "Standard Notes App",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "End-to-end encrypted note-taking application for digital privacy, journaling, and code snippets.",
-      "url": "https://standardnotes.com/",
-      "github": "https://github.com/standardnotes/app",
-      "replaces": "Evernote",
-      "tag": "Evernote Replacement"
-    },
-    {
-      "name": "Trilium Notes App",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Hierarchical note taking application with focus on building large personal knowledge bases.",
-      "url": "https://github.com/zadam/trilium",
-      "github": "https://github.com/zadam/trilium",
-      "replaces": "OneNote",
-      "tag": "OneNote Replacement"
-    },
-    {
-      "name": "Zettlr Markdown",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Supercharged Markdown editor designed for researchers, journalists, and academics using Zettelkasten.",
-      "url": "https://zettlr.com/",
-      "github": "https://github.com/Zettlr/Zettlr",
-      "replaces": "Ulysses",
-      "tag": "Ulysses Replacement"
-    },
-    {
-      "name": "MarkText Editor",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "MIT",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Simple and elegant open-source Markdown editor focused on speed, distraction-free writing, and math.",
-      "url": "https://www.marktext.cc/",
-      "github": "https://github.com/marktext/marktext",
-      "replaces": "Typora",
-      "tag": "Typora Replacement"
     },
     {
       "name": "Ghostwriter MD",
@@ -15237,22 +14299,6 @@
       "tag": "Scrivener Replacement"
     },
     {
-      "name": "Scribus Publishing",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Professional desktop page layout application for publishing books, magazines, and vector flyers.",
-      "url": "https://www.scribus.net/",
-      "github": "https://github.com/scribusproject/scribus",
-      "replaces": "Adobe InDesign",
-      "tag": "Adobe Replacement"
-    },
-    {
       "name": "Marp Slides",
       "category": "Software",
       "pricing": "Free",
@@ -15301,102 +14347,6 @@
       "tag": "PowerPoint Replacement"
     },
     {
-      "name": "Kopia Backup",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "Apache-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Fast and secure open-source backup tool for Windows, macOS, and Linux with snapshot deduplication.",
-      "url": "https://kopia.io/",
-      "github": "https://github.com/kopia/kopia",
-      "replaces": "CrashPlan",
-      "tag": "Backup Tool"
-    },
-    {
-      "name": "Duplicati Backup",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "LGPL-2.1",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Free backup client that securely stores encrypted, incremental, compressed backups on local cloud.",
-      "url": "https://www.duplicati.com/",
-      "github": "https://github.com/duplicati/duplicati",
-      "replaces": "Backblaze",
-      "tag": "Backup Tool"
-    },
-    {
-      "name": "BorgBackup Tool",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "BSD-3-Clause",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Deduplicating archiver with compression and authenticated encryption for high-security backups.",
-      "url": "https://www.borgbackup.org/",
-      "github": "https://github.com/borgbackup/borg",
-      "replaces": "Acronis",
-      "tag": "Acronis Replacement"
-    },
-    {
-      "name": "Restic Backup",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "BSD-2-Clause",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Fast, secure, and efficient backup program using cryptographic signatures to protect repositories.",
-      "url": "https://restic.net/",
-      "github": "https://github.com/restic/restic",
-      "replaces": "Acronis",
-      "tag": "Acronis Replacement"
-    },
-    {
-      "name": "Syncthing Sync",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "MPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Continuous file synchronization program syncing files across multiple devices without third-parties.",
-      "url": "https://syncthing.net/",
-      "github": "https://github.com/syncthing/syncthing",
-      "replaces": "Dropbox",
-      "tag": "Dropbox Replacement"
-    },
-    {
-      "name": "Nextcloud Desktop",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Official desktop sync client for Nextcloud self-hosted productivity suite and cloud files.",
-      "url": "https://nextcloud.com/",
-      "github": "https://github.com/nextcloud/desktop",
-      "replaces": "Google Drive Desktop",
-      "tag": "Google Replacement"
-    },
-    {
       "name": "Seafile Client",
       "category": "Software",
       "pricing": "Free",
@@ -15411,38 +14361,6 @@
       "github": "https://github.com/haiwen/seafile",
       "replaces": "Box",
       "tag": "Box Replacement"
-    },
-    {
-      "name": "OwnCloud Infinite",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Open-source content collaboration platform providing secure file access from any device.",
-      "url": "https://owncloud.com/",
-      "github": "https://github.com/owncloud/core",
-      "replaces": "Dropbox",
-      "tag": "Dropbox Replacement"
-    },
-    {
-      "name": "Immich Photos",
-      "category": "Software",
-      "pricing": "Free",
-      "license": "AGPL-3.0",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "High-performance self-hosted photo and video management solution with mobile auto-backup and AI search.",
-      "url": "https://immich.app/",
-      "github": "https://github.com/immich-app/immich",
-      "replaces": "Google Photos",
-      "tag": "Google Replacement"
     },
     {
       "name": "Photoprism App",
@@ -15605,22 +14523,6 @@
       "tag": "IDA Pro Replacement"
     },
     {
-      "name": "Angr Shell",
-      "category": "Binary Analysis Frameworks",
-      "pricing": "Free",
-      "license": "BSD-2-Clause",
-      "platforms": [
-        "Linux",
-        "macOS",
-        "Windows"
-      ],
-      "description": "Interactive Python environment for symbolic execution, path exploration, and binary analysis in angr.",
-      "url": "https://angr.io/",
-      "github": "https://github.com/angr/angr",
-      "replaces": "IDA Pro",
-      "tag": "Symbolic Engine"
-    },
-    {
       "name": "x64dbg Plugin Manager",
       "category": "Debuggers",
       "pricing": "Free",
@@ -15649,21 +14551,6 @@
       "github": "https://github.com/hluwa/FRIDA-DEXDump",
       "replaces": "JEB Decompiler",
       "tag": "DEX Dumper"
-    },
-    {
-      "name": "PE-bear GUI",
-      "category": "Analysis Utilities",
-      "pricing": "Free",
-      "license": "GPL-2.0",
-      "platforms": [
-        "Windows",
-        "Linux"
-      ],
-      "description": "Visual portable executable analysis utility for inspecting import address tables, sections, and headers.",
-      "url": "https://hshrzd.wordpress.com/pe-bear/",
-      "github": "https://github.com/hasherezade/pe-bear",
-      "replaces": "PEStudio",
-      "tag": "PE Analyzer"
     },
     {
       "name": "Suricata-Update",
@@ -15726,22 +14613,6 @@
       "github": "https://github.com/Col-E/Recaf",
       "replaces": "JEB Decompiler",
       "tag": "Bytecode Editor"
-    },
-    {
-      "name": "Cheat-Engine-Server",
-      "category": "Game RE",
-      "pricing": "Free",
-      "license": "GPL-3.0",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "Android"
-      ],
-      "description": "Network server module for Cheat Engine allowing remote debugging and memory scanning across devices.",
-      "url": "https://cheatengine.org/",
-      "github": "https://github.com/cheat-engine/cheat-engine",
-      "replaces": "Wemod",
-      "tag": "Remote Debugger"
     },
     {
       "name": "Crawlee",
@@ -15894,21 +14765,6 @@
       "replaces": "Warp / iTerm2 / MobaXterm"
     },
     {
-      "name": "Plane",
-      "category": "Software",
-      "url": "https://plane.so",
-      "github": "https://github.com/makeplane/plane",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Open-source project management platform to track issues, epics, cycles, and product roadmaps.",
-      "replaces": "Jira Software / Linear"
-    },
-    {
       "name": "Podman Desktop",
       "category": "Software",
       "url": "https://podman-desktop.io",
@@ -15939,21 +14795,6 @@
       "replaces": "Ngrok / Cloudflare Tunnel"
     },
     {
-      "name": "Havoc",
-      "category": "Network",
-      "url": "https://havocframework.com",
-      "github": "https://github.com/HavocFramework/Havoc",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows",
-        "macOS"
-      ],
-      "description": "Modern, malleable post-exploitation command and control (C2) framework for adversary simulation.",
-      "replaces": "Cobalt Strike / Core Impact"
-    },
-    {
       "name": "Zitadel",
       "category": "Software",
       "url": "https://zitadel.com",
@@ -15982,23 +14823,6 @@
       ],
       "description": "Low-code application platform to build internal admin panels, CRUD dashboards, and workflows.",
       "replaces": "Retool / Microsoft PowerApps"
-    },
-    {
-      "name": "Element",
-      "category": "Software",
-      "url": "https://element.io",
-      "github": "https://github.com/element-hq/element-web",
-      "license": "Apache-2.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "macOS",
-        "Linux",
-        "Android",
-        "iOS"
-      ],
-      "description": "Secure, decentralized collaboration client powered by the Matrix communications protocol.",
-      "replaces": "Slack / Microsoft Teams"
     },
     {
       "name": "Rathole",
@@ -16132,48 +14956,6 @@
       ],
       "description": "Security analysis tool for EVM bytecode using concolic analysis and taint analysis.",
       "replaces": "Slither"
-    },
-    {
-      "name": "FirmAE",
-      "category": "Firmware & Embedded",
-      "url": "https://github.com/pr0v3rbs/FirmAE",
-      "github": "https://github.com/pr0v3rbs/FirmAE",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux"
-      ],
-      "description": "Large-scale automated firmware emulation framework for dynamic analysis of IoT device images.",
-      "replaces": "Firmadyne"
-    },
-    {
-      "name": "CAPE Sandbox",
-      "category": "Distros & Environments",
-      "url": "https://capesandbox.com",
-      "github": "https://github.com/kevoreilly/CAPEv2",
-      "license": "GPL-3.0",
-      "pricing": "Free",
-      "platforms": [
-        "Linux",
-        "Windows"
-      ],
-      "description": "Automated malware analysis sandbox featuring dynamic unpacking, payload and config extraction.",
-      "replaces": "Cuckoo Sandbox"
-    },
-    {
-      "name": "Volatility 3",
-      "category": "Distros & Environments",
-      "url": "https://www.volatilityfoundation.org",
-      "github": "https://github.com/volatilityfoundation/volatility3",
-      "license": "VFL-1.0",
-      "pricing": "Free",
-      "platforms": [
-        "Windows",
-        "Linux",
-        "macOS"
-      ],
-      "description": "Advanced memory forensics framework for extracting artifacts and malware from volatile RAM.",
-      "replaces": "Rekall"
     },
     {
       "name": "DWARF Explorer",

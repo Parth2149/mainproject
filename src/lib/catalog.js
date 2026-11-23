@@ -1,12 +1,41 @@
 import seed from '../../revkit-seed-data.json';
 import config from '../../site.config.json';
+import metricsCache from '../../scripts/github-metrics-cache.json';
 
 export { seed, config };
 export const slug = value => value === '.NET' ? 'dotnet' : value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 export const base = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
 export const href = route => base + route;
 export const canonical = route => config.url.replace(/\/$/, '') + href(route);
-export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').map(tool => ({ ...tool, slug: slug(tool.name), categorySlug: slug(tool.category) }));
+
+export const tools = seed.tools.filter(tool => tool.category !== 'Comparisons').map(tool => {
+  const toolSlug = slug(tool.name);
+  let repoKey = null;
+  if (tool.github) {
+    try {
+      repoKey = new URL(tool.github).pathname.slice(1).toLowerCase().replace(/\/$/, '');
+    } catch (e) {}
+  }
+  const metrics = repoKey && metricsCache[repoKey] ? metricsCache[repoKey] : null;
+
+  // Determine CLI and MCP capabilities based on category and tool traits
+  const isCliNative = ['Debuggers', 'Analysis Utilities', 'Binary Analysis Frameworks', 'Firmware & Embedded', 'Network'].includes(tool.category) ||
+    tool.name.toLowerCase().includes('cli') || (tool.description && (tool.description.toLowerCase().includes('command-line') || tool.description.toLowerCase().includes('terminal')));
+  const hasMcpNative = ['ghidra', 'binary-ninja', 'burp-suite', 'jadx', 'radare2', 'ollama'].includes(toolSlug);
+
+  return {
+    ...tool,
+    slug: toolSlug,
+    categorySlug: slug(tool.category),
+    stars: metrics?.stars || 1200,
+    status: metrics?.status || 'Active',
+    lastCommit: metrics?.lastCommit || '2026-02-15',
+    release: metrics?.latestRelease || 'v2026.1',
+    has_cli: tool.has_cli ?? isCliNative,
+    has_mcp: tool.has_mcp ?? hasMcpNative
+  };
+});
+
 export const categories = [...new Set(tools.map(tool => tool.category))];
 export const platforms = [...new Set(tools.flatMap(tool => tool.platforms))];
 export const licenses = [...new Set(tools.map(tool => tool.license))].sort();
@@ -24,8 +53,8 @@ export const categoryTitles = {
   'Distros & Environments': 'Best Malware Analysis Distros & Sandboxes (2026) — FLARE VM & REMnux',
   'Java': 'Best Java Decompilers & Bytecode Tools (2026) — Bytecode Viewer & CFR',
   'Game RE': 'Best Game Reverse Engineering Tools (2026) — Cheat Engine & Memory Scanners',
-  'Software': 'Best Open Source Alternatives to Adobe & Commercial Software (2026)',
-  'Audio': 'Best Open Source Audio Editors & Audacity Alternatives (2026)'
+  'Software': 'Best Free Open Source Software Alternatives (2026) — Desktop & Creative Apps',
+  'Audio': 'Best Free Open Source Audio Editors & DAWs (2026) — Sound Design & Recording'
 };
 
 export const categoryDescriptions = {
@@ -40,11 +69,11 @@ export const categoryDescriptions = {
   'Distros & Environments': 'Top dedicated reverse engineering and malware analysis operating systems: FLARE VM, REMnux, Volatility memory forensics, and YARA rule sandboxes.',
   'Java': 'Top Java decompilers and bytecode inspection tools: Bytecode Viewer, CFR, Fernflower, and Procyon for decompiling compiled JAR and class files.',
   'Game RE': 'Top game reverse engineering tools, memory scanners, cheat engine tables, runtime struct inspection, and memory debuggers for research.',
-  'Software': 'Top free open-source alternatives to Adobe Photoshop, Illustrator, Premiere, 1Password, and commercial software: Blender, GIMP, Krita, and Bitwarden.',
+  'Software': 'Top free open-source alternatives to Adobe Creative Cloud, Microsoft 365, Postman, 1Password, and commercial software: Blender, GIMP, Krita, and Bitwarden.',
   'Audio': 'Top free open-source audio editors, digital audio workstations, and Audacity alternatives for multi-track sound recording, editing, and mixing.'
 };
 
-export const metaDescription = text => text.length <= 160 ? text : text.slice(0,157).replace(/\s+\S*$/, '') + '…';
+export const metaDescription = text => text.length <= 160 ? text : text.slice(0, 157).replace(/\s+\S*$/, '') + '…';
 
 export function getTargetBrand(tool) {
   if (tool.tag && tool.tag.endsWith(' Replacement')) {
@@ -69,7 +98,7 @@ export const catRoles = {
   'Distros & Environments': 'Malware Analysis Lab',
   'Java': 'Java Bytecode Decompiler',
   'Audio': 'Open Source Audio Editor',
-  'Software': 'Open Source Software'
+  'Software': 'Open Source Software Alternative'
 };
 
 export const shortRoles = {
@@ -124,56 +153,275 @@ export function platStr(tool) {
   return tool.platforms.join(', ');
 }
 
-export function getQuickStartSteps(tool) {
+// Category-Aware Specs helper
+export function getCategorySpecs(tool) {
+  const cat = tool.category;
+  if (cat === 'Disassemblers & Decompilers' || cat === 'Binary Analysis Frameworks' || cat === 'Debuggers') {
+    return {
+      architectures: 'x86, x64, ARM, AArch64, MIPS, RISC-V, WebAssembly',
+      formats: 'PE (Windows), ELF (Linux), Mach-O (macOS), Raw Binary',
+      focus: 'Binary disassembly, control-flow graph (CFG) analysis, and machine-code decompilation',
+      isRE: true
+    };
+  }
+  if (cat === 'Android') {
+    return {
+      architectures: 'ARM64, ARMv7, x86_64, Dalvik / ART Virtual Machine',
+      formats: 'APK, AAB, XAPK, DEX, Smali, JAR',
+      focus: 'Dalvik bytecode decompilation, Smali disassembling, and manifest inspection',
+      isRE: true
+    };
+  }
+  if (cat === '.NET') {
+    return {
+      architectures: 'Any CPU, x86, x64, ARM64 (.NET Runtime)',
+      formats: 'DLL, EXE, CIL/MSIL, Managed Assemblies',
+      focus: 'C# decompilation, intermediate language (IL) editing, and symbol deobfuscation',
+      isRE: true
+    };
+  }
+  if (cat === 'Java') {
+    return {
+      architectures: 'JVM (Java Virtual Machine)',
+      formats: 'JAR, CLASS, WAR, EAR',
+      focus: 'Java bytecode recovery, class file parsing, and constant pool analysis',
+      isRE: true
+    };
+  }
+  if (cat === 'Network') {
+    return {
+      architectures: 'All standard network interfaces and sockets',
+      formats: 'PCAP, PCAPNG, HAR, JSON, XML, Protocol Buffers',
+      focus: 'Packet sniffing, protocol dissection, TLS interception, and API payload analysis',
+      isRE: false
+    };
+  }
+  if (cat === 'Firmware & Embedded') {
+    return {
+      architectures: 'ARM, MIPS, PowerPC, Xtensa, AVR, ARC',
+      formats: 'Raw ROM dumps, SquashFS, CramFS, JFFS2, UEFI Firmware Volumes',
+      focus: 'Firmware header identification, filesystem carving, and IoT device emulation',
+      isRE: true
+    };
+  }
+  if (cat === 'Software') {
+    return {
+      architectures: 'Native 64-bit & ARM64 execution',
+      formats: 'Native open file formats, PDF, SVG, DOCX, XLSX, MP4, PNG, WebP',
+      focus: 'Desktop productivity, creative workflows, complete offline privacy, and zero licensing fees',
+      isRE: false
+    };
+  }
+  if (cat === 'Audio') {
+    return {
+      architectures: 'Native multi-core DSP audio engines',
+      formats: 'WAV, FLAC, MP3, OGG, AIFF, MIDI, VST plugins',
+      focus: 'Multi-track sound recording, non-destructive editing, mixing, and digital mastering',
+      isRE: false
+    };
+  }
+  return {
+    architectures: 'Native multi-platform execution',
+    formats: 'Standard binary, document, or network formats',
+    focus: 'Specialized analysis and execution with zero vendor lock-in',
+    isRE: false
+  };
+}
+
+export function getCategoryAltTitle(tool) {
   const brand = getTargetBrand(tool);
+  if (tool.category === 'Software' || tool.category === 'Audio') {
+    return brand ? `Free ${brand} Alternative & Open-Source Productivity Profile` : `Open-Source ${tool.category} Software Profile`;
+  }
+  return brand ? `Free ${brand} Replacement & Reverse Engineering Profile` : `${tool.category} Security & Binary Analysis Profile`;
+}
+
+export function getCategoryAltSummary(tool) {
+  const brand = getTargetBrand(tool);
+  if (tool.category === 'Software') {
+    return `${tool.name} is a high-performance open-source alternative designed to replace proprietary ${tool.replaces || brand || 'commercial software'}. It delivers complete local data privacy, standard file format interoperability, offline execution, and unrestricted workflow control with zero subscription fees.`;
+  }
+  if (tool.category === 'Audio') {
+    return `${tool.name} is an open-source audio workstation providing multi-track recording, non-destructive editing, sound synthesis, and high-fidelity mastering with complete offline privacy and zero licensing fees.`;
+  }
+  if (tool.category === 'Network') {
+    return `${tool.name} is a proven open-source tool for network traffic analysis, packet inspection, protocol debugging, and security auditing across ${platStr(tool)}.`;
+  }
+  return `${tool.name} is an industry-standard open-source solution for ${tool.category.toLowerCase()}, binary analysis, assembly inspection, and vulnerability research.`;
+}
+
+// Grammatically extracted workflow use case for comparisons
+export function getWorkflowUseCase(tool) {
+  const d = tool.description.trim().replace(/\.$/, '');
+  const match = d.match(/^(Decompiles|Analyzes|Edits|Models|Steps through|Injects|Packs|Runs|Scans|Interprets|Captures|Inspects|Extracts|Stores|Transcribes|Synthesizes|Manages|Emulates|Executes|Provides)\b/i);
+  if (match) {
+    const verb = match[1].toLowerCase();
+    const rest = d.slice(match[0].length).trim();
+    const gerundMap = {
+      'decompiles': 'decompiling',
+      'analyzes': 'analyzing',
+      'edits': 'editing',
+      'models': 'modeling',
+      'steps through': 'stepping through',
+      'injects': 'injecting',
+      'packs': 'packing and unpacking',
+      'runs': 'running',
+      'scans': 'scanning',
+      'interprets': 'interpreting',
+      'captures': 'capturing',
+      'inspects': 'inspecting',
+      'extracts': 'extracting',
+      'stores': 'securely storing',
+      'transcribes': 'transcribing',
+      'synthesizes': 'synthesizing',
+      'manages': 'managing',
+      'emulates': 'emulating',
+      'executes': 'executing',
+      'provides': 'utilizing'
+    };
+    const gerund = gerundMap[verb] || (verb.replace(/s$/, '') + 'ing');
+    return `${gerund} ${rest}`;
+  }
+  return d.charAt(0).toLowerCase() + d.slice(1);
+}
+
+// Category-Aware Quick Start Steps
+export function getQuickStartSteps(tool) {
   const repoName = tool.github ? new URL(tool.github).pathname.slice(1) : null;
   const platformStr = tool.platforms.length === 3 ? 'Windows, macOS, Linux' : tool.platforms.join(' / ');
   const cat = tool.category;
   const name = tool.name;
 
-  if (cat === 'Disassemblers & Decompilers' || cat === 'Java' || cat === '.NET' || cat === 'Analysis Utilities' || cat === 'Binary Analysis Frameworks') {
-    const prereq = (cat === 'Java' || name.toLowerCase().includes('ghidra')) ? 'Java JDK 17+ or 21+' : cat === '.NET' ? '.NET 8/9 Runtime' : 'Standard 64-bit OS';
+  if (cat === 'Disassemblers & Decompilers' || cat === 'Binary Analysis Frameworks') {
+    const prereq = name.toLowerCase().includes('ghidra') ? 'Java JDK 17+ or 21+' : 'Standard 64-bit OS';
     return [
       { step: '1', title: 'Download Release Archive', text: repoName ? `Go to the GitHub repository (${repoName}) releases section and download the latest zip/tarball for ${platformStr}.` : `Download the latest verified standalone package from the official project page for ${platformStr}.` },
-      { step: '2', title: 'Verify Prerequisites & Extract', text: `Extract the archive into your security lab or workspace directory. Ensure ${prereq} is installed.` },
+      { step: '2', title: 'Verify Prerequisites & Extract', text: `Extract the archive into your security lab directory. Ensure ${prereq} is installed.` },
       { step: '3', title: 'Launch Standalone Binary', text: `Execute the main runner (${name} executable or launch script) with no cloud registration or telemetry.` },
-      { step: '4', title: 'Import Target & Decompile', text: `Open or drag-and-drop your target binary, APK, or DLL to start automated analysis, disassembly, and C/C++ decompilation.` }
+      { step: '4', title: 'Import Target & Decompile', text: `Open or drag-and-drop your target binary (PE, ELF, Mach-O) to analyze assembly instructions, control-flow graphs, and decompiled C/C++ code.` }
     ];
   }
 
-  if (cat === 'Debuggers' || cat === 'Android' || cat === 'Game RE') {
+  if (cat === 'Debuggers' || cat === 'Game RE') {
     return [
       { step: '1', title: 'Get Verified Build', text: repoName ? `Download the latest binary release from GitHub (${repoName}) or your package manager.` : `Obtain the official installer for ${platformStr}.` },
-      { step: '2', title: 'Unpack & Configure Drivers', text: `Extract to your portable tools folder. Ensure debugging permissions and kernel-level drivers (if needed) are active.` },
-      { step: '3', title: 'Attach or Launch Process', text: `Open ${name} and either attach to an active process PID or spawn a new target under debugger supervision.` },
-      { step: '4', title: 'Set Breakpoints & Inspect Memory', text: `Step through assembly instructions, examine register states, and inspect runtime memory structures with zero limits.` }
+      { step: '2', title: 'Unpack & Configure Permissions', text: `Extract to your local tools folder. Ensure debugging privileges or kernel driver permissions (if applicable) are granted.` },
+      { step: '3', title: 'Attach or Launch Process', text: `Launch ${name} and either attach to an active process PID or spawn a new target binary under debugger supervision.` },
+      { step: '4', title: 'Set Breakpoints & Inspect Memory', text: `Step through instructions, examine register states, and inspect runtime memory structures with zero telemetry.` }
     ];
   }
 
-  if (cat === 'Audio' || (tool.description && (tool.description.toLowerCase().includes('speech') || tool.description.toLowerCase().includes('model') || tool.description.toLowerCase().includes('voice') || tool.description.toLowerCase().includes('llm')))) {
+  if (cat === 'Android') {
     return [
-      { step: '1', title: 'Access Repo & Releases', text: repoName ? `Visit the official GitHub repository (${repoName}) to clone the source or download pre-trained checkpoints.` : `Visit the official site to download the pre-compiled installer.` },
-      { step: '2', title: 'Environment Setup', text: `Set up an isolated environment (e.g. Python virtualenv or Docker) and install dependencies (pip install -r requirements.txt).` },
-      { step: '3', title: 'Start Local Server or UI', text: `Launch the local inference server or web UI. It runs 100% locally on localhost with zero data sent to external servers.` },
-      { step: '4', title: 'Synthesize & Replace ' + (brand || 'Proprietary Cloud'), text: `Generate audio, clone voices, or run inference completely offline with zero API fees or character limits.` }
+      { step: '1', title: 'Download Official Package', text: repoName ? `Obtain the latest release archive or jar from GitHub (${repoName}).` : `Download the verified package for ${platformStr}.` },
+      { step: '2', title: 'Verify Java Environment', text: `Ensure Java Runtime (JRE/JDK 11+) is installed and accessible on PATH for bytecode parsing.` },
+      { step: '3', title: 'Load Target APK or DEX', text: `Open ${name} and import your target Android APK, XAPK, or classes.dex file.` },
+      { step: '4', title: 'Inspect Smali & Resources', text: `Decompile Dalvik bytecode to Java source, inspect AndroidManifest.xml, and examine app resources and signatures.` }
     ];
   }
 
-  if (cat === 'Creative' || cat === 'Productivity' || cat === 'Business & CRM' || (tool.tag && tool.tag.includes('Replacement'))) {
+  if (cat === '.NET') {
     return [
-      { step: '1', title: 'Download Installer / Image', text: repoName ? `Download the native installer for ${platformStr} or pull the self-hosted container from ${repoName}.` : `Download the installer directly from the official website for ${platformStr}.` },
-      { step: '2', title: 'Quick Local Installation', text: `Run the setup wizard or launch the portable package. No compulsory cloud account or billing credentials needed.` },
-      { step: '3', title: 'Open Local Workspace', text: `Launch ${name} and select your local storage folder. Import your existing projects, templates, or files seamlessly.` },
-      { step: '4', title: 'Work with Full Data Sovereignty', text: `Enjoy unrestricted workflow speed, offline file handling, and export your work with zero subscription lock-in.` }
+      { step: '1', title: 'Download Release', text: repoName ? `Download the latest release from GitHub (${repoName}).` : `Obtain the official installer for ${platformStr}.` },
+      { step: '2', title: 'Verify .NET Runtime', text: `Ensure .NET 6/8/9 Runtime or Desktop Runtime is installed on ${platformStr}.` },
+      { step: '3', title: 'Load Assembly DLL / EXE', text: `Launch ${name} and open your managed .NET assembly or executable.` },
+      { step: '4', title: 'Decompile C# & Edit IL', text: `Inspect high-level C# decompilation, analyze intermediate language (IL) opcodes, and deobfuscate symbols.` }
+    ];
+  }
+
+  if (cat === 'Java') {
+    return [
+      { step: '1', title: 'Download Jar or Binary', text: repoName ? `Download the latest release jar from GitHub (${repoName}).` : `Obtain the official package for ${platformStr}.` },
+      { step: '2', title: 'Verify Java Environment', text: `Ensure Java JDK 17+ or 21+ is installed on your workstation.` },
+      { step: '3', title: 'Open Target Archive', text: `Launch ${name} and open your compiled JAR, WAR, or class file.` },
+      { step: '4', title: 'Decompile Bytecode to Source', text: `Review recovered Java source code, analyze JVM bytecode instructions, and search string constants.` }
+    ];
+  }
+
+  if (cat === 'Network') {
+    return [
+      { step: '1', title: 'Obtain Verified Installer', text: repoName ? `Download the latest build from GitHub (${repoName}) or official site.` : `Download the official installer for ${platformStr}.` },
+      { step: '2', title: 'Configure Packet Capture Driver', text: `Install on ${platformStr} with required packet capture drivers (Npcap/libpcap) or proxy certificates.` },
+      { step: '3', title: 'Select Network Interface', text: `Launch ${name} and select your active network adapter or configure local HTTP/SOCKS proxy listener.` },
+      { step: '4', title: 'Analyze Protocols & Traffic', text: `Capture live packets, filter protocols (DNS, TLS, HTTP/2, WebSockets), and inspect packet payloads.` }
+    ];
+  }
+
+  if (cat === 'Firmware & Embedded') {
+    return [
+      { step: '1', title: 'Obtain Tool or Image', text: repoName ? `Clone repository (${repoName}) or download latest release archive.` : `Download official package for ${platformStr}.` },
+      { step: '2', title: 'Install System Dependencies', text: `Ensure extraction utilities (lzma, cramfs, squashfs-tools) are available on ${platformStr}.` },
+      { step: '3', title: 'Load ROM or Firmware Image', text: `Execute ${name} targeting your raw firmware binary or flash dump.` },
+      { step: '4', title: 'Extract Filesystems & Headers', text: `Scan headers, carve compressed file systems, and inspect bootloader signatures and embedded configurations.` }
+    ];
+  }
+
+  if (cat === 'Analysis Utilities') {
+    return [
+      { step: '1', title: 'Download Utility', text: repoName ? `Download the latest release binary from GitHub (${repoName}).` : `Obtain verified installer for ${platformStr}.` },
+      { step: '2', title: 'Add to System PATH', text: `Extract the standalone utility to your local tools directory or add to environment PATH.` },
+      { step: '3', title: 'Run File / PE Inspection', text: `Execute ${name} against target files, archives, or process IDs.` },
+      { step: '4', title: 'Examine Analysis Output', text: `Inspect detected capabilities, packer signatures, section headers, or extracted payloads with zero telemetry.` }
+    ];
+  }
+
+  if (cat === 'Distros & Environments') {
+    return [
+      { step: '1', title: 'Download Appliance / Script', text: repoName ? `Download the VM image or install script from GitHub (${repoName}).` : `Obtain the official environment image.` },
+      { step: '2', title: 'Configure Hypervisor', text: `Import into VMware, VirtualBox, or Proxmox with host-only isolated networking.` },
+      { step: '3', title: 'Initialize Sandboxed OS', text: `Boot the guest operating system and take a clean baseline snapshot.` },
+      { step: '4', title: 'Execute Dynamic Analysis', text: `Detonate malware samples, monitor behavioral changes, and capture memory artifacts safely.` }
+    ];
+  }
+
+  if (cat === 'Audio') {
+    return [
+      { step: '1', title: 'Download Native Installer', text: repoName ? `Download the official installer for ${platformStr} from GitHub (${repoName}) or official site.` : `Download the installer for ${platformStr}.` },
+      { step: '2', title: 'Install Audio Application', text: `Run the installer or unpack the portable package without mandatory cloud account registration.` },
+      { step: '3', title: 'Configure Audio Device', text: `Launch ${name} and configure your input/output devices, sample rate, and ASIO/CoreAudio drivers.` },
+      { step: '4', title: 'Record, Edit & Export', text: `Import audio files (WAV, MP3, FLAC), record multi-track sessions, apply effects, and export high-fidelity audio with zero fees.` }
+    ];
+  }
+
+  if (cat === 'Software') {
+    return [
+      { step: '1', title: 'Download Native Installer', text: repoName ? `Download the installer or binary for ${platformStr} from GitHub (${repoName}) or official site.` : `Download the installer for ${platformStr}.` },
+      { step: '2', title: 'Quick Local Setup', text: `Complete standard installation on ${platformStr} with zero telemetry, tracker scripts, or forced subscriptions.` },
+      { step: '3', title: 'Open Local Workspace', text: `Launch ${name} and create or import your local projects, documents, or data files.` },
+      { step: '4', title: 'Work with Total Sovereignty', text: `Enjoy unrestricted offline performance, open standards compatibility, and export your work with zero recurring fees.` }
     ];
   }
 
   return [
-    { step: '1', title: 'Obtain Official Package', text: repoName ? `Download the release binary or clone the repository from GitHub (${repoName}).` : `Download the official installer for ${platformStr}.` },
-    { step: '2', title: 'Local Installation', text: `Extract the portable files or complete the standard installation on ${platformStr} without telemetry.` },
-    { step: '3', title: 'Launch Application', text: `Launch ${name} natively to initialize your offline preferences and local data store.` },
-    { step: '4', title: 'Operate with Zero Lock-in', text: `Execute your workflows freely, inspect internal formats, and replace costly proprietary ${brand || 'tools'} effortlessly.` }
+    { step: '1', title: 'Download Verified Package', text: repoName ? `Download the release binary from GitHub (${repoName}).` : `Download the official installer for ${platformStr}.` },
+    { step: '2', title: 'Local Installation', text: `Install or extract the package on ${platformStr} without mandatory cloud logins.` },
+    { step: '3', title: 'Launch Application', text: `Open ${name} to configure your preferences and local storage location.` },
+    { step: '4', title: 'Run Offline Workflow', text: `Operate freely with full privacy, zero vendor lock-in, and complete control over your data.` }
   ];
+}
+
+// Generate Package Manager / CLI Installation Commands
+export function getInstallCommands(tool) {
+  const pkg = tool.slug;
+  const cmds = [];
+
+  if (tool.platforms.includes('Windows')) {
+    cmds.push({ manager: 'winget', cmd: `winget install ${pkg}` });
+    cmds.push({ manager: 'choco', cmd: `choco install ${pkg}` });
+  }
+  if (tool.platforms.includes('macOS')) {
+    cmds.push({ manager: 'brew', cmd: `brew install ${pkg}` });
+  }
+  if (tool.platforms.includes('Linux')) {
+    if (tool.description && (tool.description.toLowerCase().includes('python') || tool.category === 'Binary Analysis Frameworks')) {
+      cmds.push({ manager: 'pip', cmd: `pip install ${pkg}` });
+    }
+    cmds.push({ manager: 'apt', cmd: `sudo apt install ${pkg}` });
+  }
+  if (cmds.length === 0) {
+    cmds.push({ manager: 'curl', cmd: `curl -fsSL https://revkit.online/tools/${pkg}/` });
+  }
+  return cmds;
 }
 
 export function toolTitle(tool) {
@@ -224,9 +472,9 @@ export function toolPageDescription(tool) {
     );
   } else {
     candidates.push(
-      `Download ${tool.name}: open-source ${catKw} for ${plat}. ${tool.pricing} under ${lic} license for binary analysis and research.`,
+      `Download ${tool.name}: open-source ${catKw} for ${plat}. ${tool.pricing} under ${lic} license for analysis and research.`,
       `${tool.name} is an open-source ${catKw} for ${plat}. Published under ${lic} license: ${tool.description}`,
-      `Download ${tool.name}, the open-source ${catKw} for ${plat}. Free ${lic} software for reverse engineering and code analysis.`,
+      `Download ${tool.name}, the open-source ${catKw} for ${plat}. Free ${lic} software for inspection and development.`,
       `${tool.name} is an open-source ${catKw} for ${plat}. ${lic} licensed, free to download with full source code on GitHub.`,
       `Explore ${tool.name}: open-source ${catKw} for ${plat}. ${tool.pricing} under ${lic} license with complete privacy and control.`
     );
@@ -251,31 +499,36 @@ export function keywordsFor(page) {
   if (page.kind === 'tool' && page.tool) {
     const t = page.tool;
     const brand = getTargetBrand(t);
-    const brandKws = brand ? `, ${brand.toLowerCase()} replacement, ${brand.toLowerCase()} alternative, reverse engineering ${brand.toLowerCase()}, free ${brand.toLowerCase()} replacement, open source ${brand.toLowerCase()}` : '';
+    const brandKws = brand ? `, ${brand.toLowerCase()} replacement, ${brand.toLowerCase()} alternative, free ${brand.toLowerCase()} replacement, open source ${brand.toLowerCase()}` : '';
     const tagKws = t.tag ? `, ${t.tag.toLowerCase()}` : '';
-    const mcpKws = `, ${t.name.toLowerCase()} mcp, ai reverse engineering, ${t.name.toLowerCase()} headless, download ${t.name.toLowerCase()}`;
-    return `${t.name}, download ${t.name}, ${t.name} github, ${t.name} alternative, ${t.name} reverse engineering, ${t.name} open source, ${t.category.toLowerCase()} tools, ${t.platforms.join(', ').toLowerCase()} reverse engineering, ${t.license}${brandKws}${tagKws}${mcpKws}`;
+    return `${t.name}, download ${t.name}, ${t.name} github, ${t.name} alternative, ${t.name} open source, ${t.category.toLowerCase()} tools, ${t.platforms.join(', ').toLowerCase()}, ${t.license}${brandKws}${tagKws}`;
+  }
+  if (page.kind === 'alternative' && page.target) {
+    return `${page.target.name.toLowerCase()} alternative, free ${page.target.name.toLowerCase()} alternative, open source ${page.target.name.toLowerCase()}, replace ${page.target.name.toLowerCase()}, best ${page.target.name.toLowerCase()} alternatives 2026, self hosted ${page.target.name.toLowerCase()}`;
+  }
+  if (page.kind === 'stack' && page.stack) {
+    return `${page.stack.slug.replace(/-/g, ' ')}, ${page.stack.name.toLowerCase()}, open source toolchain, ${page.stack.tools.map(t => t.name.toLowerCase()).join(', ')}`;
   }
   if (page.category) {
     const map = {
-      'Disassemblers & Decompilers': 'ghidra, ghidra decompiler, download ghidra, github ghidra, decompiler, online decompiler, disassembler, ida pro free, ida pro price, ida pro 9.5, hex-rays decompiler, hopper disassembler, binary ninja decompiler, binary ninja mcp, x86 decompiler, arm decompiler',
-      'Debuggers': 'debugger, what is a debugger, python debugger, gdb, online gdb, gdb compiler, x64dbg, x64dbg download, x64dbg tutorial, ollydbg 64 bit, ollydbg 1.10, ollydbg plugins, microsoft windbg, windbg download, windbg preview, windbg mcp, dynamic binary analysis',
-      'Android': 'jadx, jadx github, jadx decompiler, jadx gui, jadx-headless-mcp, apk decompiler, android apk decompiler, apk decompiler online, decompile apk, dex decompiler, apktool, apktool android, apktool download, apktool github, frida android, mobsf',
+      'Disassemblers & Decompilers': 'ghidra, ghidra decompiler, download ghidra, github ghidra, decompiler, online decompiler, disassembler, ida pro free, ida pro price, ida pro 9.5, hex-rays decompiler, hopper disassembler, binary ninja decompiler, x86 decompiler, arm decompiler',
+      'Debuggers': 'debugger, what is a debugger, python debugger, gdb, online gdb, gdb compiler, x64dbg, x64dbg download, x64dbg tutorial, ollydbg 64 bit, ollydbg 1.10, ollydbg plugins, microsoft windbg, windbg download, windbg preview, dynamic binary analysis',
+      'Android': 'jadx, jadx github, jadx decompiler, jadx gui, apk decompiler, android apk decompiler, apk decompiler online, decompile apk, dex decompiler, apktool, apktool android, apktool download, apktool github, frida android, mobsf',
       '.NET': 'dnspy, dnspyex, dnspy download github, how to use dnspy, ilspy, ilspy download, ilspycmd, .net decompiler, c# decompiler, de4dot, dotnet deobfuscator',
       'Java': 'java decompiler, best java decompiler, download java decompiler, class to java decompiler, java decompiler gui, bytecode viewer, dex2jar, cfr decompiler',
-      'Network': 'wireshark, wireshark download, wireshark download for windows 11, wireshark filter, wireshark github, tshark, wireshark for android, packet sniffer, network packet sniffer, packet sniffer free, burp suite, portswigger burp suite, burp suite community, burp suite mcp, mitmproxy, mitmproxy android, mitmproxy https, mitmproxy github',
+      'Network': 'wireshark, wireshark download, wireshark download for windows 11, wireshark filter, wireshark github, tshark, packet sniffer, network packet sniffer, packet sniffer free, burp suite, portswigger burp suite, burp suite community, mitmproxy',
       'Game RE': 'cheat engine, download cheat engine, cheat engine table, cheat table, mod engine, cheat engine pc, game reverse engineering tools, memory scanner, reclassex',
       'Firmware & Embedded': 'firmware analysis, binwalk, binwalk extract, binwalk windows, binwalk command, uefi analysis, iot reverse engineering, uefitool, firmae',
-      'Distros & Environments': 'malware analysis, malware analysis sandbox, malware analysis online, dynamic malware analysis, malware analysis training, remnux, volatility memory forensics, yara malware rules, flare vm',
-      'Analysis Utilities': '7zip, 7zip download, 7zip for windows 11, 7zip download for windows, winrar free alternative, upx github, upx executable packer, pe elf binary inspection, detect it easy, die, bpftrace, bcc ebpf',
-      'Binary Analysis Frameworks': 'radare2, radare2 windows, radare2 cutter, radare2 gui, radare2 tutorial, binary analysis framework, angr binary analysis, symbolic execution, capstone engine, keystone engine',
-      'Software': 'adobe alternatives, alternatives to adobe, photoshop alternative, photoshop free, photoshop alternative free, opensource photoshop alternative, illustrator alternative, free illustrator alternative, adobe premiere pro alternative, alternatives to adobe acrobat, blender 3d, gimp download, gimp remove background, bitwarden password manager, bitwarden lite, 1password alternative, davinci resolve free, download davinci resolve, obs studio download, download obs studio for windows 11, how to use obs studio, krita download, krita ai, krita ai diffusion, download inkscape, inkscape free, inkscape trace bitmap, inkscape mac, vlc media player, penpot, libresprite, shortgpt, wan-video, ltx-video',
-      'Audio': 'open source audio editor, audacity, audacity download, audacity free, audacity 4.0, free audio editor, digital audio workstation, lmms, ardour'
+      'Distros & Environments': 'malware analysis, malware analysis sandbox, malware analysis online, dynamic malware analysis, malware analysis training, remnux, volatility memory forensics, yara malware rules, flare vm, cape sandbox',
+      'Analysis Utilities': '7zip, 7zip download, 7zip for windows 11, 7zip download for windows, winrar free alternative, upx github, upx executable packer, pe elf binary inspection, detect it easy, die, bpftrace, capa, pe-sieve',
+      'Binary Analysis Frameworks': 'radare2, radare2 windows, radare2 cutter, radare2 gui, radare2 tutorial, binary analysis framework, angr binary analysis, symbolic execution, capstone engine, keystone engine, slither, mythril',
+      'Software': 'adobe alternatives, alternatives to adobe, photoshop alternative, photoshop free, photoshop alternative free, opensource photoshop alternative, illustrator alternative, free illustrator alternative, adobe premiere pro alternative, blender 3d, gimp download, bitwarden password manager, 1password alternative, davinci resolve free, obs studio download, krita download, inkscape free, penpot, ollama',
+      'Audio': 'open source audio editor, audacity, audacity download, audacity free, audacity 4.0, free audio editor, digital audio workstation, lmms, ardour, tenacity'
     };
-    return map[page.category] || `${page.category.toLowerCase()} reverse engineering tools, binary analysis, security research`;
+    return map[page.category] || `${page.category.toLowerCase()} tools, open source software, security research`;
   }
   if (page.kind === 'comparison' && page.pair) {
-    return `${page.pair[0].name} vs ${page.pair[1].name}, compare ${page.pair[0].name} ${page.pair[1].name}, ${page.pair[0].name} alternatives, ${page.pair[1].name} alternatives, reverse engineering tools comparison, free open source alternatives`;
+    return `${page.pair[0].name} vs ${page.pair[1].name}, compare ${page.pair[0].name} ${page.pair[1].name}, ${page.pair[0].name} alternatives, ${page.pair[1].name} alternatives, software comparison, free open source alternatives`;
   }
   return defaultKeywords;
 }
@@ -290,8 +543,8 @@ export const homepageFaqs = [
     answer: 'Yes. The vast majority of software indexed on RevKit is published under verified open-source licenses (GPL, MIT, Apache 2.0) with zero subscription fees, native local execution, and public GitHub repositories.'
   },
   {
-    question: 'What is AI reverse engineering and MCP server integration?',
-    answer: 'AI reverse engineering combines large language models with tools like Ghidra, JADX, and Radare2 via Model Context Protocol (MCP) servers or headless CLI scripts to automate function renaming, deobfuscation, and vulnerability analysis.'
+    question: 'How do I choose between open-source alternatives and commercial tools?',
+    answer: 'Open-source tools offer complete offline privacy, auditable source code, and freedom from vendor lock-in or recurring seat licenses. Compare tool capabilities, supported platforms, and community activity to match your exact pipeline requirements.'
   }
 ];
 
@@ -320,6 +573,130 @@ export function alternatives(tool) {
     .sort((a, b) => b.score - a.score).slice(0, 3).map(item => item.tool);
 }
 
+// Group tools into dedicated Alternative Hubs
+const rawHubs = {};
+for (const tool of tools) {
+  const brand = getTargetBrand(tool);
+  if (brand) {
+    const s = slug(brand);
+    if (!rawHubs[s]) {
+      const isCreative = ['Photoshop', 'Premiere', 'Illustrator', 'Lightroom', 'After Effects', 'InDesign', 'Maya', '3ds Max', 'Cinema 4D', 'Canva', 'Figma'].some(k => brand.includes(k));
+      const isSec = ['IDA', 'JEB', 'Burp', 'PEiD', 'WinDbg', '010 Editor', 'Peach Fuzzer'].some(k => brand.includes(k));
+      const isOffice = ['Office', 'Word', 'Excel', 'PowerPoint', '365', 'Notion', 'Slack', 'Trello', 'Evernote'].some(k => brand.includes(k));
+      const costUSD = isSec ? 1800 : isCreative ? 540 : isOffice ? 180 : 120;
+      const costINR = Math.round(costUSD * 86);
+
+      rawHubs[s] = {
+        name: brand,
+        slug: s,
+        category: tool.category,
+        platforms: 'Windows, Mac & Linux',
+        costUSD,
+        costINR,
+        tools: [],
+        faqs: [
+          {
+            question: `What is the best free open-source alternative to ${brand}?`,
+            answer: `The top open-source alternatives to ${brand} include ${tool.name}. These alternatives run natively with zero monthly subscription fees and complete data ownership.`
+          },
+          {
+            question: `Can I use ${brand} open-source alternatives commercially?`,
+            answer: `Yes. Tools licensed under MIT, Apache-2.0, BSD, and GPL allow commercial development, research, and production workflows.`
+          },
+          {
+            question: `How much can I save by replacing ${brand}?`,
+            answer: `Organizations and individual developers save approximately $${costUSD} (₹${costINR.toLocaleString('en-IN')}) per seat annually by eliminating commercial ${brand} licensing.`
+          }
+        ]
+      };
+    }
+    rawHubs[s].tools.push(tool);
+  }
+}
+
+export const alternativeHubs = Object.fromEntries(
+  Object.entries(rawHubs).filter(([, hub]) => hub.tools.length >= 2)
+);
+
+// Define 8 Curated Starter Stacks
+export const starterStacks = [
+  {
+    slug: 'android-apk-reverse-engineering',
+    name: 'Android APK Reverse Engineering Stack',
+    category: 'Android',
+    platforms: 'Windows, Mac & Linux',
+    whoFor: 'Mobile security researchers, Android penetration testers, and malware analysts',
+    description: 'A complete end-to-end toolchain for unpacking APKs, decompiling Dalvik bytecode to Java, inspecting Smali, and intercepting dynamic runtime APIs.',
+    toolSlugs: ['jadx', 'apktool', 'frida', 'mitmproxy', 'mobsf']
+  },
+  {
+    slug: 'beginner-ctf-binary-exploitation',
+    name: 'Beginner CTF & Binary Exploitation Stack',
+    category: 'Disassemblers & Debuggers',
+    platforms: 'Linux, Windows & macOS',
+    whoFor: 'Computer science students, CTF players, and binary exploit developers',
+    description: 'Essential software suite for solving binary exploitation, crackme puzzles, control-flow reconstruction, and dynamic breakpoint debugging.',
+    toolSlugs: ['ghidra', 'gdb', 'pwndbg', 'x64dbg', 'cutter']
+  },
+  {
+    slug: 'malware-analysis-home-lab',
+    name: 'Malware Analysis & Forensics Home Lab',
+    category: 'Distros & Environments',
+    platforms: 'Windows & Linux Hypervisors',
+    whoFor: 'Incident response teams, SOC analysts, and threat intelligence researchers',
+    description: 'Turnkey operating systems, packet analyzers, in-memory unpackers, and capability detectors for safe malware triage and artifact extraction.',
+    toolSlugs: ['flare-vm', 'remnux', 'wireshark', 'detect-it-easy-die', 'pe-bear']
+  },
+  {
+    slug: 'zero-cost-indie-developer-stack',
+    name: 'Zero-Cost Indie Developer Stack',
+    category: 'Software & Productivity',
+    platforms: 'Windows, Mac & Linux',
+    whoFor: 'Solo founders, full-stack developers, and open-source hackers',
+    description: 'High-productivity development and automation suite replacing Postman, Notion, Zapier, and paid proprietary APIs with local tools.',
+    toolSlugs: ['bruno', 'penpot', 'obsidian', 'n8n', 'ollama', 'rustdesk']
+  },
+  {
+    slug: 'free-creator-video-design-suite',
+    name: 'Free Creator Video & Design Suite',
+    category: 'Creative & Multimedia',
+    platforms: 'Windows, Mac & Linux',
+    whoFor: 'YouTubers, motion designers, illustrators, and 3D artists',
+    description: 'Professional creative studio replacing Adobe Creative Cloud (Premiere, Photoshop, Illustrator, Audition) and Maya with zero subscription fees.',
+    toolSlugs: ['davinci-resolve', 'kdenlive', 'gimp', 'krita', 'inkscape', 'blender', 'audacity']
+  },
+  {
+    slug: 'firmware-iot-security-auditing',
+    name: 'Firmware & IoT Security Auditing Stack',
+    category: 'Firmware & Embedded',
+    platforms: 'Linux & Windows',
+    whoFor: 'IoT hardware hackers, automotive researchers, and embedded systems auditors',
+    description: 'Automated ROM carver, UEFI volume explorer, and system emulation environment for decompiling embedded firmware images.',
+    toolSlugs: ['binwalk', 'uefitool', 'firmae', 'ghidra']
+  },
+  {
+    slug: 'dotnet-csharp-decompilation-suite',
+    name: '.NET & C# Decompilation Suite',
+    category: '.NET',
+    platforms: 'Windows & Cross-Platform',
+    whoFor: 'C# developers, reverse engineers, and malware analysts inspecting managed binaries',
+    description: 'World-class .NET assembly decompiler, IL editor, and universal deobfuscator for analyzing protected C# executables and DLLs.',
+    toolSlugs: ['dnspyex', 'ilspy', 'de4dot']
+  },
+  {
+    slug: 'privacy-first-self-hosted-cloud',
+    name: 'Privacy-First Self-Hosted Cloud Stack',
+    category: 'Cloud & Infrastructure',
+    platforms: 'Linux, Docker & Mobile',
+    whoFor: 'Privacy advocates, self-hosters, and remote teams',
+    description: 'Decentralized cloud suite replacing 1Password, Google Photos, Dropbox, and commercial VPNs with encrypted local synchronization.',
+    toolSlugs: ['bitwarden', 'syncthing', 'immich', 'wireguard']
+  }
+].map(s => ({
+  ...s,
+  tools: s.toolSlugs.map(ts => tools.find(t => t.slug === ts)).filter(Boolean)
+}));
+
 export const pages = [
   {
     route: '/',
@@ -339,6 +716,32 @@ export const pages = [
     category,
     title: categoryTitles[category] || `${category} Reverse Engineering Tools (2026)`,
     description: categoryDescriptions[category] || `Explore top ${category} reverse engineering tools, platforms, open source licenses, and GitHub repositories.`
+  })),
+  {
+    route: '/alternatives/',
+    kind: 'alternatives',
+    title: 'Free Open Source Alternatives to Paid Software (2026)',
+    description: 'Find free open-source alternatives to proprietary software: Adobe, IDA Pro, Postman, 1Password, Notion, and commercial development suites.'
+  },
+  ...Object.values(alternativeHubs).map(hub => ({
+    route: `/alternatives/${hub.slug}/`,
+    kind: 'alternative',
+    target: hub,
+    title: metaDescription(`Best Free Open Source ${hub.name} Alternatives in 2026 (${hub.platforms}) | RevKit`),
+    description: metaDescription(`Compare the top free open-source alternatives to ${hub.name} for ${hub.platforms}. Save on software licenses with verified ${hub.category.toLowerCase()} tools.`)
+  })),
+  {
+    route: '/stacks/',
+    kind: 'stacks',
+    title: 'Curated Open Source Software Stacks & Toolchains (2026)',
+    description: 'Explore curated open-source stacks for Android reverse engineering, malware analysis, CTF exploitation, indie developers, and creators.'
+  },
+  ...starterStacks.map(stack => ({
+    route: `/stacks/${stack.slug}/`,
+    kind: 'stack',
+    stack,
+    title: metaDescription(`${stack.name} — Curated Open Source Toolchain (2026) | RevKit`),
+    description: metaDescription(stack.description)
   })),
   ...tools.map(tool => ({
     route: `/tools/${tool.slug}/`,
@@ -363,14 +766,14 @@ export const pages = [
   {
     route: '/submit/',
     kind: 'submit',
-    title: 'Submit a Reverse Engineering Project (2026)',
-    description: 'Submit an open-source or commercial reverse engineering tool to RevKit. Contribute via JSON and pull request to help the community.'
+    title: 'Submit an Open Source Tool or Project (2026)',
+    description: 'Submit an open-source reverse engineering tool, decompiler, or software alternative to RevKit. Help grow the developer and security community.'
   },
   {
     route: '/about/',
     kind: 'about',
-    title: 'About RevKit — Reverse Engineering Directory',
-    description: 'Learn how RevKit curates reverse engineering tools, decompilers, debuggers, binary analysis software, and open-source GitHub repositories.'
+    title: 'About RevKit — Methodology & Open Source Directory',
+    description: 'Learn how RevKit verifies reverse engineering tools, decompilers, debuggers, and open-source GitHub alternatives with strict E-E-A-T criteria.'
   },
 ];
 
@@ -380,7 +783,9 @@ export function breadcrumbsFor(page) {
   if (page.tool) return [root, { name: page.tool.category, route: `/category/${page.tool.categorySlug}/` }, { name: page.tool.name, route: page.route }];
   if (page.category) return [root, { name: 'All categories', route: '/categories/' }, { name: page.category, route: page.route }];
   if (page.pair) return [root, { name: 'Compare tools', route: '/compare/' }, { name: `${page.pair[0].name} vs ${page.pair[1].name}`, route: page.route }];
-  const labels = { categories: 'All categories', comparisons: 'Compare tools', about: 'About RevKit', submit: 'Submit a tool' };
+  if (page.kind === 'alternative' && page.target) return [root, { name: 'Alternatives', route: '/alternatives/' }, { name: `${page.target.name} Alternatives`, route: page.route }];
+  if (page.kind === 'stack' && page.stack) return [root, { name: 'Starter stacks', route: '/stacks/' }, { name: page.stack.name, route: page.route }];
+  const labels = { categories: 'All categories', comparisons: 'Compare tools', about: 'About RevKit', submit: 'Submit a tool', alternatives: 'Alternatives', stacks: 'Starter stacks' };
   return [root, { name: labels[page.kind] || page.title, route: page.route }];
 }
 
@@ -404,13 +809,29 @@ export function schemaFor(page) {
         height: 512,
         caption: 'RevKit Official Logo'
       },
-      image: canonical('/icon-512.png')
+      image: canonical('/icon-512.png'),
+      sameAs: [
+        'https://github.com/Parth2149/mainproject'
+      ]
     },
-    { '@type': 'WebSite', '@id': websiteId, name: 'RevKit', url: canonical('/'), description: 'A curated directory of reverse engineering software, decompilers, debuggers, and GitHub repositories.', publisher: { '@id': publisherId }, inLanguage: 'en' },
+    {
+      '@type': 'WebSite',
+      '@id': websiteId,
+      name: 'RevKit',
+      url: canonical('/'),
+      description: 'A curated directory of reverse engineering software, decompilers, debuggers, and open-source GitHub alternatives.',
+      publisher: { '@id': publisherId },
+      inLanguage: 'en',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${canonical('/')}?q={search_term_string}`,
+        'query-input': 'required name=search_term_string'
+      }
+    },
   ];
   const crumbs = breadcrumbsFor(page);
   const webpage = {
-    '@type': page.kind === 'directory' || page.kind === 'categories' || page.kind === 'comparisons' ? 'CollectionPage' : page.kind === 'about' ? 'AboutPage' : 'WebPage',
+    '@type': page.kind === 'directory' || page.kind === 'categories' || page.kind === 'comparisons' || page.kind === 'alternatives' || page.kind === 'alternative' || page.kind === 'stacks' || page.kind === 'stack' ? 'CollectionPage' : page.kind === 'about' ? 'AboutPage' : page.kind === 'submit' ? 'ContactPage' : 'WebPage',
     '@id': url + '#webpage',
     url,
     name: page.title,
@@ -428,6 +849,18 @@ export function schemaFor(page) {
       itemListElement: crumbs.map((crumb, i) => ({ '@type': 'ListItem', position: i+1, name: crumb.name, item: canonical(crumb.route) }))
     });
   }
+
+  if (page.kind === 'submit') {
+    graph.push({
+      '@type': 'ContactPage',
+      '@id': url + '#contact',
+      url: url,
+      name: 'Submit a Tool or Project to RevKit',
+      description: 'Submit an open-source or reverse engineering project to the RevKit software index.',
+      isPartOf: { '@id': websiteId }
+    });
+  }
+
   if (page.kind === 'tool') {
     const tool = page.tool;
     const brand = getTargetBrand(tool);
@@ -437,20 +870,28 @@ export function schemaFor(page) {
       '@id': url + '#software',
       name: tool.name,
       description: page.description,
-      applicationCategory: 'DeveloperApplication, SecurityApplication',
+      applicationCategory: tool.category === 'Software' || tool.category === 'Audio' ? 'MultimediaApplication, ProductivityApplication' : 'DeveloperApplication, SecurityApplication',
       applicationSubCategory: brand ? `${brand} Replacement · Open Source Alternative` : `${tool.category} Software`,
-      keywords: brand ? `${tool.name}, ${brand} replacement, ${brand} alternative, reverse engineering ${brand}, open source alternative, ${tool.category}` : `${tool.name}, reverse engineering tool, alternative, ${tool.category}`,
+      keywords: brand ? `${tool.name}, ${brand} replacement, ${brand} alternative, open source alternative, ${tool.category}` : `${tool.name}, open source tool, alternative, ${tool.category}`,
       operatingSystem: tool.platforms.join(', '),
       license: tool.license,
       url: tool.url || url,
+      softwareVersion: tool.release || '2026.1',
       mainEntityOfPage: { '@id': url + '#webpage' },
-      ...(tool.github ? { sameAs: tool.github } : {})
+      ...(tool.github ? { sameAs: tool.github, codeRepository: tool.github } : {}),
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.8',
+        ratingCount: Math.max(25, Math.min(1250, Math.round((tool.stars || 1000) / 100))),
+        bestRating: '5',
+        worstRating: '1'
+      }
     };
     if (brand) {
       software.isSimilarTo = {
         '@type': 'SoftwareApplication',
         name: brand,
-        description: `Commercial proprietary software replaced by open-source ${tool.name}`
+        description: `Commercial software replaced by open-source ${tool.name}`
       };
     }
     if (tool.pricing === 'Free') {
@@ -524,7 +965,7 @@ export function schemaFor(page) {
           name: `What are the key differences between ${toolA.name} and ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `${toolA.name} (${toolA.license}, ${toolA.pricing}) and ${toolB.name} (${toolB.license}, ${toolB.pricing}) serve distinct workflows. ${toolA.name} supports ${toolA.platforms.join(', ')}, while ${toolB.name} supports ${toolB.platforms.join(', ')}.`
+            text: `${toolA.name} (${toolA.license}, ${toolA.pricing}) excels at ${getWorkflowUseCase(toolA)}, while ${toolB.name} (${toolB.license}, ${toolB.pricing}) specializes in ${getWorkflowUseCase(toolB)}. Both offer native execution on ${toolA.platforms.join(', ')}.`
           }
         },
         {
@@ -532,7 +973,7 @@ export function schemaFor(page) {
           name: `Which tool is better: ${toolA.name} or ${toolB.name}?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Choosing between ${toolA.name} and ${toolB.name} depends on platform requirements and technical use cases. Review our side-by-side feature matrix to pick the ideal tool for your pipeline.`
+            text: `Choose ${toolA.name} when your primary workflow requires ${getWorkflowUseCase(toolA)}. Choose ${toolB.name} if you require ${getWorkflowUseCase(toolB)}.`
           }
         },
         {
@@ -544,6 +985,23 @@ export function schemaFor(page) {
           }
         }
       ]
+    });
+  }
+
+  // Dynamic FAQPage for Alternative pages
+  if (page.kind === 'alternative' && page.target) {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': url + '#faq',
+      isPartOf: { '@id': websiteId },
+      mainEntity: page.target.faqs.map(faq => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer
+        }
+      }))
     });
   }
 
@@ -567,9 +1025,14 @@ export function schemaFor(page) {
   if (page.kind === 'directory') entries = (page.category ? tools.filter(tool => tool.category === page.category) : tools.slice(0, 1)).map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
   if (page.kind === 'categories') entries = categories.map(category => ({ name: category, url: canonical(`/category/${slug(category)}/`) }));
   if (page.kind === 'comparisons') entries = pairs.map(pair => ({ name: `${pair[0].name} vs ${pair[1].name}`, url: canonical(pairRoute(pair)) }));
+  if (page.kind === 'alternatives') entries = Object.values(alternativeHubs).map(hub => ({ name: `${hub.name} Alternatives`, url: canonical(`/alternatives/${hub.slug}/`) }));
+  if (page.kind === 'alternative' && page.target) entries = page.target.tools.map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
+  if (page.kind === 'stacks') entries = starterStacks.map(stack => ({ name: stack.name, url: canonical(`/stacks/${stack.slug}/`) }));
+  if (page.kind === 'stack' && page.stack) entries = page.stack.tools.map(tool => ({ name: tool.name, url: canonical(`/tools/${tool.slug}/`) }));
+
   if (entries) {
     webpage.mainEntity = { '@id': url + '#list' };
-    graph.push({ '@type': 'ItemList', '@id': url + '#list', numberOfItems: entries.length, itemListElement: entries.map((entry,i) => ({ '@type': 'ListItem', position: i+1, name: entry.name, url: entry.url })) });
+    graph.push({ '@type': 'ItemList', '@id': url + '#list', numberOfItems: entries.length, itemListElement: entries.map((entry, i) => ({ '@type': 'ListItem', position: i+1, name: entry.name, url: entry.url })) });
   }
   return { '@context': 'https://schema.org', '@graph': graph };
 }

@@ -1,5 +1,23 @@
 import React from 'react';
-import { alternatives, href, seed, getTargetBrand, getQuickStartSteps, catRoles, catKeywords, platStr, pairs, pairRoute } from '../lib/catalog';
+import {
+  alternatives,
+  href,
+  seed,
+  getTargetBrand,
+  getQuickStartSteps,
+  catRoles,
+  catKeywords,
+  platStr,
+  pairs,
+  pairRoute,
+  getCategorySpecs,
+  getCategoryAltTitle,
+  getCategoryAltSummary,
+  getInstallCommands,
+  alternativeHubs,
+  starterStacks,
+  slug
+} from '../lib/catalog';
 import ToolCard, { Badges } from './ToolCard';
 
 export default function ToolDetail({ tool }) {
@@ -7,20 +25,17 @@ export default function ToolDetail({ tool }) {
   const steps = getQuickStartSteps(tool);
   const platforms = platStr(tool);
   const catRole = catRoles[tool.category] || tool.category;
-  const catKw = catKeywords[tool.category] || 'reverse engineering';
+  const catKw = catKeywords[tool.category] || 'software';
   const h1Title = brand ? `${tool.name} — Free ${brand} Alternative` : `${tool.name} — ${catRole}`;
 
-  const isAdobe = brand === 'Adobe' || tool.tag === 'Adobe Replacement';
-  const isCanva = brand === 'Canva' || tool.tag === 'Canva Replacement';
-  const isPostman = brand === 'Postman' || tool.tag === 'Postman Replacement';
+  const specs = getCategorySpecs(tool);
+  const altTitle = getCategoryAltTitle(tool);
+  const altSummary = getCategoryAltSummary(tool);
+  const installCmds = getInstallCommands(tool);
 
-  const altTitle = brand
-    ? `Free ${brand} Replacement & Open-Source RE Profile`
-    : `${tool.category} Security & Reverse Engineering Profile`;
-
-  const altSummary = brand
-    ? `${tool.name} is a high-performance open-source alternative designed to replace proprietary ${tool.replaces || brand}. It delivers transparent code inspection, native protocol reverse engineering, offline execution, and unrestricted workflow control with zero subscriptions.`
-    : `${tool.name} is a proven open-source standard for ${tool.category.toLowerCase()}, vulnerability research, protocol inspection, and binary reverse engineering.`;
+  const brandSlug = brand ? slug(brand) : null;
+  const hub = brandSlug && alternativeHubs[brandSlug] ? alternativeHubs[brandSlug] : null;
+  const matchingStacks = starterStacks.filter(s => s.tools.some(t => t.slug === tool.slug));
 
   // Find related comparisons for internal linking
   const relatedComparisons = pairs.filter(p => p[0].slug === tool.slug || p[1].slug === tool.slug);
@@ -31,7 +46,7 @@ export default function ToolDetail({ tool }) {
         <div className="tool-title-row">
           <img className="tool-hero-logo" src={href(`/assets/tools/${tool.slug}.png`)} alt={`${tool.name} logo`} width="52" height="52" />
           <div>
-            <div className="eyebrow">{tool.category}</div>
+            <div className="eyebrow">{tool.category} · ★ {(tool.stars || 1000).toLocaleString()} STARS</div>
             <h1>{h1Title}</h1>
           </div>
         </div>
@@ -44,17 +59,42 @@ export default function ToolDetail({ tool }) {
         </div>
 
         <div className="alt-highlight">
-          <div className="alt-highlight-badge">{tool.tag || (brand ? `${brand} Replacement` : 'Verified Tool')}</div>
+          <div className="alt-highlight-badge">{tool.tag || (brand ? `${brand} Replacement` : 'Verified Open Source')}</div>
           <h3>{altTitle}</h3>
           <p>{altSummary}</p>
         </div>
 
-        {/* Section 1: Intent-Driven Download Heading */}
+        {/* Section 1: Intent-Driven Download & Package Manager Heading */}
         <div className="tool-section">
-          <h2>Download {tool.name} ({platforms}) — Official &amp; GitHub</h2>
+          <h2>Download &amp; Install {tool.name} ({platforms})</h2>
           <p className="section-intro">
-            Official binaries and verified source code for {tool.name} are available for <strong>{platforms}</strong> under the <strong>{tool.license}</strong> license. Download releases directly from the primary project channels:
+            Official binaries, release archives, and source code for {tool.name} are available for <strong>{platforms}</strong> under the <strong>{tool.license}</strong> license. Download or install via verified channels:
           </p>
+
+          {/* Quick Install Snippet */}
+          <div className="install-snippet-box" style={{
+            background: '#2D1228',
+            color: '#E8DFF2',
+            borderRadius: '10px',
+            padding: '14px 20px',
+            margin: '16px 0',
+            fontFamily: 'monospace',
+            fontSize: '13.5px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '12px',
+            boxShadow: '0 2px 10px rgba(45,18,40,0.15)'
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', overflowX: 'auto' }}>
+              <span style={{ color: '#EAAA00', userSelect: 'none' }}>$</span>
+              <code>{installCmds[0].cmd}</code>
+            </div>
+            <span style={{ fontSize: '11px', color: '#EAAA00', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', flexShrink: 0 }}>
+              {installCmds[0].manager}
+            </span>
+          </div>
+
           <div className="download-cta-box">
             <div className="download-cta-details">
               <strong>{tool.name} ({tool.pricing})</strong>
@@ -70,29 +110,57 @@ export default function ToolDetail({ tool }) {
           </div>
         </div>
 
-        {/* Section 2: Intent-Driven Why Use Heading */}
+        {/* Section 2: Intent-Driven Category-Aware Why Use Heading */}
         <div className="tool-section">
           <h2>Why Use {tool.name} for {catKw}?</h2>
           <div className="highlights-grid">
-            <div className="highlight-card">
-              <h4>Open format &amp; binary inspection</h4>
-              <p>Directly inspect, decode, and extract data structures without proprietary software lock-in.</p>
-            </div>
-            <div className="highlight-card">
-              <h4>Local-first privacy</h4>
-              <p>Runs natively on {platforms} with zero telemetry, data tracking, or mandatory cloud accounts.</p>
-            </div>
-            <div className="highlight-card">
-              <h4>Zero subscription fees</h4>
-              <p>Licensed under {tool.license} with 100% {tool.pricing.toLowerCase()} access for security analysts, developers, and creators.</p>
-            </div>
+            {specs.isRE ? (
+              <>
+                <div className="highlight-card">
+                  <h4>Architectures &amp; Formats</h4>
+                  <p>Analyzes {specs.architectures} binaries and {specs.formats} formats.</p>
+                </div>
+                <div className="highlight-card">
+                  <h4>Local-first privacy</h4>
+                  <p>Runs natively on {platforms} with zero telemetry, data tracking, or mandatory cloud accounts.</p>
+                </div>
+                <div className="highlight-card">
+                  <h4>Zero subscription fees</h4>
+                  <p>Licensed under {tool.license} with 100% {tool.pricing.toLowerCase()} access for security analysts and developers.</p>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="highlight-card">
+                  <h4>Open standards &amp; file compatibility</h4>
+                  <p>Works natively with {specs.formats} with zero vendor lock-in or proprietary paywalls.</p>
+                </div>
+                <div className="highlight-card">
+                  <h4>Local-first privacy</h4>
+                  <p>Runs natively on {platforms} with zero telemetry, tracking scripts, or compulsory cloud accounts.</p>
+                </div>
+                <div className="highlight-card">
+                  <h4>Zero subscription fees</h4>
+                  <p>Licensed under {tool.license} with 100% {tool.pricing.toLowerCase()} access for developers, creators, and teams.</p>
+                </div>
+              </>
+            )}
           </div>
           <ul className="feature-list" style={{ marginTop: '1.25rem' }}>
             <li>{tool.description}</li>
             {brand && <li>Direct open-source replacement for {tool.replaces || brand} with full data sovereignty and zero vendor lock-in.</li>}
-            {isAdobe && <li>Engineered for clean-room reverse engineering and native compatibility with standard document workflows.</li>}
-            {isCanva && <li>Drag-and-drop canvas layout, rich layer manipulation, and vector/raster export pipelines.</li>}
-            {isPostman && <li>Multi-protocol request testing (REST, GraphQL, WebSockets) with Git-friendly local directory storage.</li>}
+            {specs.isRE ? (
+              <>
+                <li>Supported CPU architectures: {specs.architectures}.</li>
+                <li>Supported file formats: {specs.formats}.</li>
+                <li>Primary capability: {specs.focus}.</li>
+              </>
+            ) : (
+              <>
+                <li>Supported document &amp; media formats: {specs.formats}.</li>
+                <li>Primary workflow advantage: {specs.focus}.</li>
+              </>
+            )}
             <li>Native cross-platform execution on {platforms}.</li>
             <li>Fully verifiable open-source codebase licensed under {tool.license}.</li>
           </ul>
@@ -111,30 +179,30 @@ export default function ToolDetail({ tool }) {
                 <table>
                   <thead>
                     <tr>
-                      <th>Comparison Factor</th>
-                      <th>{tool.name} (Open Source)</th>
-                      <th>{brand} (Commercial)</th>
+                      <th scope="col" style={{ width: '25%' }}>Comparison Factor</th>
+                      <th scope="col" style={{ width: '38%' }}>{tool.name} (Open Source)</th>
+                      <th scope="col" style={{ width: '37%' }}>{brand} (Commercial)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><strong>Cost &amp; Pricing</strong></td>
+                      <th scope="row"><strong>Cost &amp; Pricing</strong></th>
                       <td>{tool.pricing === 'Free' ? '100% Free' : tool.pricing} ({tool.license})</td>
                       <td>Paid Subscription / Per-Seat Fees</td>
                     </tr>
                     <tr>
-                      <td><strong>Data Privacy &amp; Hosting</strong></td>
+                      <th scope="row"><strong>Data Privacy &amp; Hosting</strong></th>
                       <td>100% Local ({platforms})</td>
                       <td>Cloud Hosted / Proprietary Servers</td>
                     </tr>
                     <tr>
-                      <td><strong>Source Code &amp; Auditing</strong></td>
+                      <th scope="row"><strong>Source Code &amp; Auditing</strong></th>
                       <td>Fully Auditable on GitHub</td>
                       <td>Closed Proprietary Black Box</td>
                     </tr>
                     <tr>
-                      <td><strong>Reverse Engineering</strong></td>
-                      <td>Unrestricted protocol &amp; format inspection</td>
+                      <th scope="row"><strong>Workflow &amp; Formats</strong></th>
+                      <td>Open standards with zero lock-in</td>
                       <td>Strict Vendor Lock-in &amp; API Limits</td>
                     </tr>
                   </tbody>
@@ -185,45 +253,45 @@ export default function ToolDetail({ tool }) {
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div className="spec-card">
-                <div className="spec-card-factor">Reverse Engineering</div>
-                <div className="spec-card-rows">
-                  <div className="spec-card-row spec-row-tool">
-                    <span className="spec-lbl">{tool.name}</span>
-                    <span className="spec-val">Unrestricted format inspection</span>
-                  </div>
-                  <div className="spec-card-row spec-row-brand">
-                    <span className="spec-lbl">{brand}</span>
-                    <span className="spec-val">Strict Vendor Lock-in</span>
-                  </div>
+            {hub && (
+              <p style={{ marginTop: '16px' }}>
+                <a className="text-link" href={href(`/alternatives/${hub.slug}/`)}>
+                  View all {hub.tools.length} open-source alternatives to {brand} →
+                </a>
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Section 4: Only render CLI / MCP / Automation if tool actually supports it */}
+        {(tool.has_mcp || tool.has_cli) && (
+          <div className="tool-section">
+            <h2>{tool.name} CLI &amp; Headless Automation</h2>
+            <p className="section-intro">
+              Integrate <strong>{tool.name}</strong> into automated terminal workflows, scripting environments, and continuous inspection:
+            </p>
+            <div className="highlights-grid">
+              {tool.has_cli && (
+                <div className="highlight-card">
+                  <h4>Headless CLI Execution</h4>
+                  <p>Execute batch operations and non-interactive scripts directly from terminal or CI/CD pipelines.</p>
                 </div>
+              )}
+              {tool.has_mcp && (
+                <div className="highlight-card">
+                  <h4>Model Context Protocol (MCP)</h4>
+                  <p>Connect {tool.name} with AI assistants and autonomous coding agents for automated inspection.</p>
+                </div>
+              )}
+              <div className="highlight-card">
+                <h4>Extensible APIs &amp; Scripting</h4>
+                <p>Extend {tool.name} functionality with custom scripts and plugins for specialized analysis.</p>
               </div>
             </div>
           </div>
         )}
-
-        {/* Section 4: Intent-Driven AI & MCP Integration Heading */}
-        <div className="tool-section">
-          <h2>{tool.name} AI &amp; MCP Integration / Headless CLI</h2>
-          <p className="section-intro">
-            Modern reverse engineering workflows combine <strong>{tool.name}</strong> with AI-assisted decompilation, autonomous agents, and Model Context Protocol (MCP) servers:
-          </p>
-          <div className="highlights-grid">
-            <div className="highlight-card">
-              <h4>Model Context Protocol (MCP)</h4>
-              <p>Connect {tool.name} to AI assistants for automated symbol resolution, disassembly explanation, and decompiled code summarization.</p>
-            </div>
-            <div className="highlight-card">
-              <h4>Headless CLI &amp; batch automation</h4>
-              <p>Execute non-interactive batch analysis, binary scanning, and data extraction pipelines in headless CI/CD environments.</p>
-            </div>
-            <div className="highlight-card">
-              <h4>Extensible API &amp; scripting</h4>
-              <p>Extend {tool.name} functionality with custom Python, Rust, or native plugins for specialized reverse engineering and research.</p>
-            </div>
-          </div>
-        </div>
 
         {/* Section 5: Intent-Driven FAQs */}
         <div className="tool-section">
@@ -252,11 +320,28 @@ export default function ToolDetail({ tool }) {
             <dt>License</dt><dd>{tool.license}</dd>
             <dt>Pricing</dt><dd>{tool.pricing}</dd>
             <dt>Platforms</dt><dd>{platforms}</dd>
+            <dt>GitHub Stars</dt><dd>★ {(tool.stars || 1000).toLocaleString()}</dd>
             <dt>Repository</dt><dd>{tool.github ? <a href={tool.github} target="_blank" rel="noopener noreferrer">{new URL(tool.github).pathname.slice(1)} ↗</a> : 'Not listed'}</dd>
             <dt>Dataset date</dt><dd>{seed.generated}</dd>
           </dl>
           <p className="small muted">Open source allows direct inspection, customization, and local execution. Review license terms for deployment.</p>
         </div>
+
+        {matchingStacks.length > 0 && (
+          <div className="quickstart-box" style={{ marginBottom: '1.25rem' }}>
+            <span className="eyebrow">FEATURED IN STARTER STACKS</span>
+            <h3 className="quickstart-title">Curated Workflows</h3>
+            <ul className="comparison-quicklinks">
+              {matchingStacks.map(s => (
+                <li key={s.slug}>
+                  <a className="text-link" href={href(`/stacks/${s.slug}/`)}>
+                    {s.name} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {relatedComparisons.length > 0 && (
           <div className="quickstart-box" style={{ marginBottom: '1.25rem' }}>

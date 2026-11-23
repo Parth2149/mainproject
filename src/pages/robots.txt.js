@@ -53,6 +53,7 @@ Allow: /
 Allow: /llms.txt
 Allow: /llms-full.txt
 
+Sitemap: ${canonical('/sitemap-index.xml')}
 Sitemap: ${canonical('/sitemap.xml')}
 `;
 

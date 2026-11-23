@@ -1,18 +1,18 @@
 import React from 'react';
-import { pairs, pairRoute, href, seed } from '../lib/catalog';
+import { pairs, pairRoute, href, seed, getWorkflowUseCase } from '../lib/catalog';
 
 export default function Comparisons({ pair }) {
   if (!pair) {
     return (
       <>
         <section className="page-intro">
-          <div className="eyebrow">HEAD-TO-HEAD COMPARISONS</div>
+          <div className="eyebrow">HEAD-TO-HEAD COMPARISONS (2026)</div>
           <h1>
             Compare reverse engineering tools &amp; software.<br />
             <span className="text-gradient">Find your perfect fit.</span>
           </h1>
           <p className="lead">
-            In-depth side-by-side comparisons of 64+ top reverse engineering frameworks, decompilers, debuggers, local AI engines, and open-source software replacements. Compare features, platform compatibility, pricing, and open licenses.
+            In-depth side-by-side comparisons of 150+ top reverse engineering frameworks, decompilers, debuggers, local AI engines, and open-source software replacements. Compare features, platform compatibility, pricing, and open licenses.
           </p>
         </section>
 
@@ -60,8 +60,8 @@ export default function Comparisons({ pair }) {
     ],
     [
       'Official Repository',
-      a.repository ? a.repository : 'Official Project Site',
-      b.repository ? b.repository : 'Official Project Site'
+      a.github ? a.github.replace('https://github.com/', '') : 'Official Project Site',
+      b.github ? b.github.replace('https://github.com/', '') : 'Official Project Site'
     ],
     ['Core Capabilities', a.description, b.description]
   ];
@@ -77,6 +77,25 @@ export default function Comparisons({ pair }) {
         <p className="lead">
           Side-by-side software comparison: evaluate {a.name} and {b.name} across architectural capabilities, platform support, licensing, and workflow fit.
         </p>
+
+        {/* TL;DR Direct Answer box for Google AI Overviews & Featured Snippets */}
+        <div className="tldr-box" style={{
+          background: '#D5C8E6',
+          border: '1.5px solid #3A0F34',
+          borderRadius: '12px',
+          padding: '18px 22px',
+          margin: '22px 0 24px',
+          fontSize: '14px',
+          lineHeight: '1.65',
+          color: '#2D1228'
+        }}>
+          <div style={{ fontSize: '11px', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', color: '#6B4D66', marginBottom: '4px' }}>
+            ⚡ TL;DR DIRECT ANSWER (2026 VERDICT)
+          </div>
+          <p style={{ margin: 0 }}>
+            <strong>{a.name}</strong> is best when your primary requirement is {getWorkflowUseCase(a)} ({a.pricing === 'Free' ? '100% Free' : a.pricing}, {a.license}), supporting {a.platforms.join(', ')}. In contrast, <strong>{b.name}</strong> specializes in {getWorkflowUseCase(b)} ({b.pricing === 'Free' ? '100% Free' : b.pricing}, {b.license}) across {b.platforms.join(', ')}.
+          </p>
+        </div>
       </section>
 
       <div className="table-header-row">
@@ -137,13 +156,13 @@ export default function Comparisons({ pair }) {
           <div className="verdict-card">
             <h4>When to choose {a.name}:</h4>
             <p>
-              Choose <strong>{a.name}</strong> if you need {a.description.toLowerCase().replace(/\.$/, '')}. It is published under the <strong>{a.license}</strong> license and runs on <strong>{a.platforms.join(', ')}</strong>.
+              Choose <strong>{a.name}</strong> when your primary workflow requires {getWorkflowUseCase(a)}. It is published under the <strong>{a.license}</strong> license and runs natively on <strong>{a.platforms.join(', ')}</strong> with {a.pricing.toLowerCase()} access.
             </p>
           </div>
           <div className="verdict-card">
             <h4>When to choose {b.name}:</h4>
             <p>
-              Choose <strong>{b.name}</strong> if you need {b.description.toLowerCase().replace(/\.$/, '')}. It is published under the <strong>{b.license}</strong> license and runs on <strong>{b.platforms.join(', ')}</strong>.
+              Choose <strong>{b.name}</strong> when your primary workflow requires {getWorkflowUseCase(b)}. It is published under the <strong>{b.license}</strong> license and runs natively on <strong>{b.platforms.join(', ')}</strong> with {b.pricing.toLowerCase()} access.
             </p>
           </div>
         </div>

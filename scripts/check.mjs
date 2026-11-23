@@ -39,7 +39,7 @@ for(const file of pages){
  }
  for(const asset of assets)bytes+=(await stat(asset)).size;
  // The full catalog retains readable descriptions; smaller routes keep the original budget.
- const isListing=file===path.join(root,'index.html')||file.includes(path.sep+'category'+path.sep)||file===path.join(root,'compare','index.html');const budget=isListing?850000:100000;
+ const isListing=file===path.join(root,'index.html')||file.includes(path.sep+'category'+path.sep)||file.includes(path.sep+'alternatives'+path.sep)||file.includes(path.sep+'stacks'+path.sep)||file===path.join(root,'compare','index.html');const budget=isListing?850000:100000;
  assert.ok(bytes<budget,`${file}: ${bytes} bytes exceeds ${budget/1000}KB budget`);
  if(bytes>largest.bytes)largest={bytes,file:path.relative(root,file)};
  for(const [,s] of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)){
@@ -47,7 +47,7 @@ for(const file of pages){
   assert.equal(schema['@context'],'https://schema.org');
   const graph=schema['@graph'];
   assert.ok(Array.isArray(graph),`Missing schema graph: ${file}`);
-  const webpage=graph.find(node=>['WebPage','CollectionPage','AboutPage'].includes(node['@type']));
+  const webpage=graph.find(node=>['WebPage','CollectionPage','AboutPage','ContactPage'].includes(node['@type']));
   assert.equal(webpage.url,canonical,`Schema URL differs from canonical: ${file}`);
   const breadcrumb=graph.find(node=>node['@type']==='BreadcrumbList');
   if(breadcrumb){

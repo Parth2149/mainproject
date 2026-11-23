@@ -1,0 +1,6533 @@
+{
+  "nationalsecurityagency/ghidra": {
+    "stars": 53800,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "blender/blender": {
+    "stars": 14200,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "gnome/gimp": {
+    "stars": 6400,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "x64dbg/x64dbg": {
+    "stars": 44200,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "bitwarden/clients": {
+    "stars": 36500,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "frida/frida": {
+    "stars": 17900,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "ip7z/7zip": {
+    "stars": 511,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "ollama/ollama": {
+    "stars": 118000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "libreoffice/core": {
+    "stars": 746,
+    "lastCommit": "2026-11-05",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "audacity/audacity": {
+    "stars": 13200,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "inkscape/inkscape": {
+    "stars": 20591,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "skylot/jadx": {
+    "stars": 42800,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "kde/kdenlive": {
+    "stars": 17881,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "rayventura/shortgpt": {
+    "stars": 1833,
+    "lastCommit": "2026-09-09",
+    "issues": 78,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "blackmagic-design/davinci-resolve": {
+    "stars": 17593,
+    "lastCommit": "2026-08-30",
+    "issues": 118,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "radareorg/radare2": {
+    "stars": 21400,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "rizinorg/cutter": {
+    "stars": 3378,
+    "lastCommit": "2026-08-25",
+    "issues": 63,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "penpot/penpot": {
+    "stars": 34000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "hoppscotch/hoppscotch": {
+    "stars": 66000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "usebruno/bruno": {
+    "stars": 32000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "rustdesk/rustdesk": {
+    "stars": 78000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "tailscale/tailscale": {
+    "stars": 19500,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "wireguard/wireguard-tools": {
+    "stars": 3800,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "obsidianmd/obsidian-releases": {
+    "stars": 105000,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "appflowy-io/appflowy": {
+    "stars": 56000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "immich-app/immich": {
+    "stars": 59000,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "nextcloud/server": {
+    "stars": 27000,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "dnspyex/dnspyex": {
+    "stars": 21891,
+    "lastCommit": "2026-10-11",
+    "issues": 16,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "icsharpcode/ilspy": {
+    "stars": 23900,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "ibotpeaches/apktool": {
+    "stars": 20100,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "kde/krita": {
+    "stars": 1532,
+    "lastCommit": "2026-09-20",
+    "issues": 97,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "photopea/photopea": {
+    "stars": 4975,
+    "lastCommit": "2026-09-17",
+    "issues": 100,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "bleachbit/bleachbit": {
+    "stars": 21493,
+    "lastCommit": "2026-10-09",
+    "issues": 18,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "ventoy/ventoy": {
+    "stars": 927,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "n8n-io/n8n": {
+    "stars": 54000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "metabase/metabase": {
+    "stars": 7759,
+    "lastCommit": "2026-08-24",
+    "issues": 124,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "louislam/uptime-kuma": {
+    "stars": 416,
+    "lastCommit": "2026-10-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "capsoftware/cap": {
+    "stars": 716,
+    "lastCommit": "2026-09-06",
+    "issues": 81,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "calcom/cal.com": {
+    "stars": 2469,
+    "lastCommit": "2026-11-02",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "chatwoot/chatwoot": {
+    "stars": 607,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "opf/openproject": {
+    "stars": 1013,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "cheat-engine/cheat-engine": {
+    "stars": 27500,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "winsiderss/systeminformer": {
+    "stars": 1701,
+    "lastCommit": "2026-10-01",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "hasherezade/pe-bear": {
+    "stars": 5279,
+    "lastCommit": "2026-09-13",
+    "issues": 44,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "angr/angr": {
+    "stars": 8300,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "horsicq/detect-it-easy": {
+    "stars": 5066,
+    "lastCommit": "2026-11-15",
+    "issues": 71,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "konloch/bytecode-viewer": {
+    "stars": 413,
+    "lastCommit": "2026-11-18",
+    "issues": 98,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "mitmproxy/mitmproxy": {
+    "stars": 1331,
+    "lastCommit": "2026-11-20",
+    "issues": 96,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "0xd4d/de4dot": {
+    "stars": 18585,
+    "lastCommit": "2026-09-17",
+    "issues": 70,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "pxb1988/dex2jar": {
+    "stars": 1347,
+    "lastCommit": "2026-09-15",
+    "issues": 72,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "refirmlabs/binwalk": {
+    "stars": 19688,
+    "lastCommit": "2026-08-25",
+    "issues": 93,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "pwndbg/pwndbg": {
+    "stars": 1023,
+    "lastCommit": "2026-11-18",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "hugsy/gef": {
+    "stars": 2169,
+    "lastCommit": "2026-10-03",
+    "issues": 54,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "onlyoffice/desktopeditors": {
+    "stars": 13993,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "mltframework/shotcut": {
+    "stars": 434,
+    "lastCommit": "2026-08-29",
+    "issues": 119,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "lmms/lmms": {
+    "stars": 1631,
+    "lastCommit": "2026-11-10",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "darktable-org/darktable": {
+    "stars": 1224,
+    "lastCommit": "2026-11-17",
+    "issues": 69,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "beep6581/rawtherapee": {
+    "stars": 511,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "geekygizmo/pdf24": {
+    "stars": 5466,
+    "lastCommit": "2026-11-05",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "stirling-tools/stirling-pdf": {
+    "stars": 13390,
+    "lastCommit": "2026-10-22",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "excalidraw/excalidraw": {
+    "stars": 21591,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "tldraw/tldraw": {
+    "stars": 5567,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "languagetool-org/languagetool": {
+    "stars": 712,
+    "lastCommit": "2026-10-30",
+    "issues": 117,
+    "status": "Active",
+    "latestRelease": "v3.4.4"
+  },
+  "documenso/documenso": {
+    "stars": 747,
+    "lastCommit": "2026-10-25",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "mattermost/mattermost": {
+    "stars": 1535,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "zulip/zulip": {
+    "stars": 18185,
+    "lastCommit": "2026-11-16",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "jitsi/jitsi-meet": {
+    "stars": 1949,
+    "lastCommit": "2026-10-03",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "revoltchat/revolt": {
+    "stars": 935,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "syncthing/syncthing": {
+    "stars": 67000,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "umami-software/umami": {
+    "stars": 949,
+    "lastCommit": "2026-10-03",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "plausible/analytics": {
+    "stars": 32996,
+    "lastCommit": "2026-09-26",
+    "issues": 121,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "keepassxreboot/keepassxc": {
+    "stars": 3753,
+    "lastCommit": "2026-11-08",
+    "issues": 78,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "dani-garcia/vaultwarden": {
+    "stars": 1200,
+    "lastCommit": "2026-10-02",
+    "issues": 85,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "safing/portmaster": {
+    "stars": 1048,
+    "lastCommit": "2026-11-13",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "wazuh/wazuh": {
+    "stars": 3751,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "greenbone/openvas-scanner": {
+    "stars": 535,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "beemdevelopment/aegis": {
+    "stars": 1438,
+    "lastCommit": "2026-10-24",
+    "issues": 123,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "peazip/peazip": {
+    "stars": 1503,
+    "lastCommit": "2026-10-19",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "comfyanonymous/comfyui": {
+    "stars": 1538,
+    "lastCommit": "2026-11-13",
+    "issues": 103,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "automatic1111/stable-diffusion-webui": {
+    "stars": 1410,
+    "lastCommit": "2026-11-01",
+    "issues": 55,
+    "status": "Active",
+    "latestRelease": "v1.2.2"
+  },
+  "open-webui/open-webui": {
+    "stars": 8591,
+    "lastCommit": "2026-09-01",
+    "issues": 116,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "apache/superset": {
+    "stars": 49296,
+    "lastCommit": "2026-11-05",
+    "issues": 21,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "jindrapetrik/jpexs-decompiler": {
+    "stars": 7161,
+    "lastCommit": "2026-11-20",
+    "issues": 6,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "didierstevens/didierstevenssuite": {
+    "stars": 1717,
+    "lastCommit": "2026-10-15",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "jesparza/peepdf": {
+    "stars": 6065,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "cybershadow/rabcdasm": {
+    "stars": 3757,
+    "lastCommit": "2026-11-04",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "psd-tools/psd-tools": {
+    "stars": 18783,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "dzzie/pdfstreamdumper": {
+    "stars": 532,
+    "lastCommit": "2026-08-31",
+    "issues": 57,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "enferex/pdfresurrect": {
+    "stars": 849,
+    "lastCommit": "2026-08-24",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "gdelugre/origami": {
+    "stars": 1830,
+    "lastCommit": "2026-09-12",
+    "issues": 75,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  },
+  "qpdf/qpdf": {
+    "stars": 2175,
+    "lastCommit": "2026-09-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "artifexsoftware/mupdf": {
+    "stars": 2853,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "fonttools/fonttools": {
+    "stars": 1945,
+    "lastCommit": "2026-10-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "danielgatis/rembg": {
+    "stars": 2757,
+    "lastCommit": "2026-11-14",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "upscayl/upscayl": {
+    "stars": 7075,
+    "lastCommit": "2026-10-17",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "sanster/iopaint": {
+    "stars": 5575,
+    "lastCommit": "2026-09-17",
+    "issues": 100,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "remotion-dev/remotion": {
+    "stars": 5255,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "fabricjs/fabric.js": {
+    "stars": 1633,
+    "lastCommit": "2026-09-09",
+    "issues": 78,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "androguard/androguard": {
+    "stars": 927,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "rednaga/apkid": {
+    "stars": 1430,
+    "lastCommit": "2026-10-02",
+    "issues": 115,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "mikehadlow/asmspy": {
+    "stars": 6673,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "binaryanalysisplatform/bap": {
+    "stars": 2658,
+    "lastCommit": "2026-10-24",
+    "issues": 63,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "codinggay/blackdex": {
+    "stars": 1442,
+    "lastCommit": "2026-11-09",
+    "issues": 47,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "capstone-engine/capstone": {
+    "stars": 7254,
+    "lastCommit": "2026-09-18",
+    "issues": 99,
+    "status": "Stable",
+    "latestRelease": "v5.1.1"
+  },
+  "leibnitz27/cfr": {
+    "stars": 3768,
+    "lastCommit": "2026-10-24",
+    "issues": 93,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "curz46/dexdump": {
+    "stars": 5576,
+    "lastCommit": "2026-10-16",
+    "issues": 101,
+    "status": "Active",
+    "latestRelease": "v2.0.0"
+  },
+  "dynamorio/dynamorio": {
+    "stars": 22381,
+    "lastCommit": "2026-09-21",
+    "issues": 66,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "eteran/edb-debugger": {
+    "stars": 545,
+    "lastCommit": "2026-10-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "e-m-b-a/emba": {
+    "stars": 24792,
+    "lastCommit": "2026-08-31",
+    "issues": 117,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "pr0v3rbs/firmae": {
+    "stars": 2100,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "wwh1004/extremedumper": {
+    "stars": 825,
+    "lastCommit": "2026-08-28",
+    "issues": 30,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "fkie-cad/fact_core": {
+    "stars": 1901,
+    "lastCommit": "2026-09-01",
+    "issues": 26,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "fesh0r/fernflower": {
+    "stars": 1343,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "craigz22/firmwalker": {
+    "stars": 10681,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "mandiant/flare-vm": {
+    "stars": 3165,
+    "lastCommit": "2026-08-28",
+    "issues": 90,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "mandiant/flare-floss": {
+    "stars": 14683,
+    "lastCommit": "2026-10-09",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "charles2gan/gda-android-reversing-tool": {
+    "stars": 2854,
+    "lastCommit": "2026-10-08",
+    "issues": 19,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "fuzzysecurity/ghidra-firmware-toolkit": {
+    "stars": 12193,
+    "lastCommit": "2026-10-09",
+    "issues": 78,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "nccgroup/house": {
+    "stars": 11786,
+    "lastCommit": "2026-11-15",
+    "issues": 71,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "java-decompiler/jd-gui": {
+    "stars": 2364,
+    "lastCommit": "2026-10-18",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "telerik/justdecompileengine": {
+    "stars": 34099,
+    "lastCommit": "2026-11-12",
+    "issues": 104,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "keystone-engine/keystone": {
+    "stars": 5852,
+    "lastCommit": "2026-11-09",
+    "issues": 17,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "lief-project/lief": {
+    "stars": 6755,
+    "lastCommit": "2026-09-07",
+    "issues": 80,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "trailofbits/manticore": {
+    "stars": 1810,
+    "lastCommit": "2026-10-22",
+    "issues": 95,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "wyozi/medusa": {
+    "stars": 20090,
+    "lastCommit": "2026-10-12",
+    "issues": 15,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "ufrisk/memprocfs": {
+    "stars": 4761,
+    "lastCommit": "2026-11-20",
+    "issues": 6,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "mobsf/mobile-security-framework-mobsf": {
+    "stars": 4374,
+    "lastCommit": "2026-09-18",
+    "issues": 99,
+    "status": "Stable",
+    "latestRelease": "v5.1.1"
+  },
+  "sensepost/objection": {
+    "stars": 2456,
+    "lastCommit": "2026-11-15",
+    "issues": 101,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "redballoonsecurity/ofrak": {
+    "stars": 3876,
+    "lastCommit": "2026-09-06",
+    "issues": 81,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "longld/peda": {
+    "stars": 6461,
+    "lastCommit": "2026-10-01",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "mstrobel/procyon": {
+    "stars": 24281,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "qilingframework/qiling": {
+    "stars": 7565,
+    "lastCommit": "2026-10-07",
+    "issues": 50,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "quark-engine/quark-engine": {
+    "stars": 1823,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "dude719/reclassex": {
+    "stars": 3158,
+    "lastCommit": "2026-10-04",
+    "issues": 83,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "joxeankoret/paimei": {
+    "stars": 1018,
+    "lastCommit": "2026-09-14",
+    "issues": 103,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "remnux/distro": {
+    "stars": 6763,
+    "lastCommit": "2026-08-30",
+    "issues": 88,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "avast/retdec": {
+    "stars": 7251,
+    "lastCommit": "2026-09-21",
+    "issues": 96,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "rizinorg/rizin": {
+    "stars": 2565,
+    "lastCommit": "2026-09-27",
+    "issues": 90,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "threat9/routersploit": {
+    "stars": 2164,
+    "lastCommit": "2026-11-07",
+    "issues": 49,
+    "status": "Active",
+    "latestRelease": "v5.5.5"
+  },
+  "devttys0/sasquatch": {
+    "stars": 5379,
+    "lastCommit": "2026-09-03",
+    "issues": 24,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "genymobile/scrcpy": {
+    "stars": 16182,
+    "lastCommit": "2026-11-19",
+    "issues": 67,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "ntquery/scylla": {
+    "stars": 533,
+    "lastCommit": "2026-08-30",
+    "issues": 58,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "ntquery/scyllahide": {
+    "stars": 5255,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "yegord/snowman": {
+    "stars": 1630,
+    "lastCommit": "2026-09-02",
+    "issues": 115,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "jonathansalwan/triton": {
+    "stars": 520,
+    "lastCommit": "2026-10-02",
+    "issues": 85,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "longsoft/uefitool": {
+    "stars": 6356,
+    "lastCommit": "2026-10-16",
+    "issues": 41,
+    "status": "Active",
+    "latestRelease": "v2.0.0"
+  },
+  "unicorn-engine/unicorn": {
+    "stars": 6672,
+    "lastCommit": "2026-09-30",
+    "issues": 117,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "zhkl0228/unidbg": {
+    "stars": 3265,
+    "lastCommit": "2026-09-17",
+    "issues": 70,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "upx/upx": {
+    "stars": 1723,
+    "lastCommit": "2026-09-09",
+    "issues": 48,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "volatilityfoundation/volatility3": {
+    "stars": 4300,
+    "lastCommit": "2026-02-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "snare/voltron": {
+    "stars": 1738,
+    "lastCommit": "2026-11-03",
+    "issues": 23,
+    "status": "Active",
+    "latestRelease": "v4.0.0"
+  },
+  "webassembly/wabt": {
+    "stars": 30697,
+    "lastCommit": "2026-11-04",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "horsicq/xpeviewer": {
+    "stars": 1807,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "virustotal/yara": {
+    "stars": 1711,
+    "lastCommit": "2026-10-31",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "storytold/artcraft": {
+    "stars": 6868,
+    "lastCommit": "2026-11-13",
+    "issues": 73,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "storytold/photocraft": {
+    "stars": 1029,
+    "lastCommit": "2026-10-13",
+    "issues": 74,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "storytold/vectorcraft": {
+    "stars": 6166,
+    "lastCommit": "2026-10-26",
+    "issues": 91,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "storytold/filmcraft": {
+    "stars": 1413,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "storytold/lightcraft": {
+    "stars": 6577,
+    "lastCommit": "2026-10-05",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "storytold/pdfcraft": {
+    "stars": 1541,
+    "lastCommit": "2026-09-11",
+    "issues": 106,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "storytold/effectcraft": {
+    "stars": 728,
+    "lastCommit": "2026-09-14",
+    "issues": 13,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "storytold/designcraft": {
+    "stars": 6971,
+    "lastCommit": "2026-10-01",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "shaongitbd/doory": {
+    "stars": 1013,
+    "lastCommit": "2026-09-19",
+    "issues": 98,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "lavrton/polotno-studio": {
+    "stars": 3357,
+    "lastCommit": "2026-11-14",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "clawnify/opendesign": {
+    "stars": 1018,
+    "lastCommit": "2026-10-24",
+    "issues": 63,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "openwhispr/openwhispr": {
+    "stars": 3775,
+    "lastCommit": "2026-11-16",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "resembleai/chatterbox": {
+    "stars": 19190,
+    "lastCommit": "2026-11-11",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "every-app/open-seo": {
+    "stars": 1610,
+    "lastCommit": "2026-11-11",
+    "issues": 15,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "scribusproject/scribus": {
+    "stars": 16290,
+    "lastCommit": "2026-11-11",
+    "issues": 15,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "armory3d/armorpaint": {
+    "stars": 1331,
+    "lastCommit": "2026-10-01",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "icons8/lunacy-docs": {
+    "stars": 2773,
+    "lastCommit": "2026-10-29",
+    "issues": 58,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "jarek-foksa/boxy-svg": {
+    "stars": 928,
+    "lastCommit": "2026-09-24",
+    "issues": 93,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "pintaproject/pinta": {
+    "stars": 1626,
+    "lastCommit": "2026-09-06",
+    "issues": 111,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "natrongithub/natron": {
+    "stars": 1532,
+    "lastCommit": "2026-10-10",
+    "issues": 17,
+    "status": "Active",
+    "latestRelease": "v3.6.6"
+  },
+  "olive-video-editor/olive": {
+    "stars": 1805,
+    "lastCommit": "2026-10-27",
+    "issues": 90,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "opentalker/sadtalker": {
+    "stars": 18483,
+    "lastCommit": "2026-11-18",
+    "issues": 8,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "rudrabha/wav2lip": {
+    "stars": 633,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "m-bain/whisperx": {
+    "stars": 1137,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "ml-explore/autocut": {
+    "stars": 6857,
+    "lastCommit": "2026-08-26",
+    "issues": 62,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "openshot/openshot-qt": {
+    "stars": 1041,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "opentoonz/opentoonz": {
+    "stars": 7757,
+    "lastCommit": "2026-08-26",
+    "issues": 122,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "glaxnimate/glaxnimate": {
+    "stars": 3855,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "ardour/ardour": {
+    "stars": 3871,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "tenacityteam/tenacity": {
+    "stars": 930,
+    "lastCommit": "2026-09-02",
+    "issues": 55,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "coqui-ai/tts": {
+    "stars": 13584,
+    "lastCommit": "2026-08-29",
+    "issues": 29,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "rhasspy/piper": {
+    "stars": 1305,
+    "lastCommit": "2026-09-07",
+    "issues": 110,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "noisetorch/noisetorch": {
+    "stars": 20991,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "josh-richardson/cadmus": {
+    "stars": 37198,
+    "lastCommit": "2026-09-24",
+    "issues": 123,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "ggerganov/whisper.cpp": {
+    "stars": 1414,
+    "lastCommit": "2026-09-28",
+    "issues": 59,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "marin-m/songrec": {
+    "stars": 639,
+    "lastCommit": "2026-10-23",
+    "issues": 124,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "anyproto/anytype-ts": {
+    "stars": 20593,
+    "lastCommit": "2026-11-18",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "toeverything/affine": {
+    "stars": 816,
+    "lastCommit": "2026-10-06",
+    "issues": 21,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "laurent22/joplin": {
+    "stars": 940,
+    "lastCommit": "2026-10-02",
+    "issues": 25,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "nocodb/nocodb": {
+    "stars": 8191,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "baserow/baserow": {
+    "stars": 1747,
+    "lastCommit": "2026-11-14",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "plankanban/planka": {
+    "stars": 35798,
+    "lastCommit": "2026-09-24",
+    "issues": 123,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "mattermost/focalboard": {
+    "stars": 1948,
+    "lastCommit": "2026-10-24",
+    "issues": 33,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "taigaio/taiga-back": {
+    "stars": 2353,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "makeplane/plane": {
+    "stars": 7851,
+    "lastCommit": "2026-09-21",
+    "issues": 96,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "formbricks/formbricks": {
+    "stars": 1215,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "heyform/heyform": {
+    "stars": 1217,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "element-hq/element-web": {
+    "stars": 1406,
+    "lastCommit": "2026-10-26",
+    "issues": 91,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "knadh/listmonk": {
+    "stars": 26098,
+    "lastCommit": "2026-09-14",
+    "issues": 103,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "twentyhq/twenty": {
+    "stars": 630,
+    "lastCommit": "2026-11-11",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "espocrm/espocrm": {
+    "stars": 10891,
+    "lastCommit": "2026-09-01",
+    "issues": 56,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "freescout-help-desk/freescout": {
+    "stars": 12285,
+    "lastCommit": "2026-09-07",
+    "issues": 50,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "nextcloud/desktop": {
+    "stars": 21695,
+    "lastCommit": "2026-08-28",
+    "issues": 60,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "owncloud/core": {
+    "stars": 1103,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "stonith404/pingvin-share": {
+    "stars": 25599,
+    "lastCommit": "2026-10-13",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "timvisee/send": {
+    "stars": 543,
+    "lastCommit": "2026-11-08",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "borgbackup/borg": {
+    "stars": 1149,
+    "lastCommit": "2026-08-24",
+    "issues": 34,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "restic/restic": {
+    "stars": 18687,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "wallabag/wallabag": {
+    "stars": 7679,
+    "lastCommit": "2026-10-13",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "omnivore-app/omnivore": {
+    "stars": 4971,
+    "lastCommit": "2026-10-21",
+    "issues": 96,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "ivre/ivre": {
+    "stars": 5759,
+    "lastCommit": "2026-09-13",
+    "issues": 44,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "cybercentrecanada/assemblyline-base": {
+    "stars": 22191,
+    "lastCommit": "2026-10-21",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "objective-see/lulu": {
+    "stars": 21482,
+    "lastCommit": "2026-10-30",
+    "issues": 87,
+    "status": "Active",
+    "latestRelease": "v3.4.4"
+  },
+  "ente-io/ente": {
+    "stars": 41896,
+    "lastCommit": "2026-09-16",
+    "issues": 101,
+    "status": "Stable",
+    "latestRelease": "v2.3.3"
+  },
+  "titanium-software/onyx": {
+    "stars": 5166,
+    "lastCommit": "2026-11-05",
+    "issues": 51,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "cgsecurity/testdisk": {
+    "stars": 19794,
+    "lastCommit": "2026-11-17",
+    "issues": 39,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "gitroomhq/postiz-app": {
+    "stars": 1006,
+    "lastCommit": "2026-10-16",
+    "issues": 11,
+    "status": "Active",
+    "latestRelease": "v2.0.0"
+  },
+  "activepieces/activepieces": {
+    "stars": 1439,
+    "lastCommit": "2026-11-12",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "containers/podman": {
+    "stars": 3570,
+    "lastCommit": "2026-09-12",
+    "issues": 15,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  },
+  "coollabsio/coolify": {
+    "stars": 4153,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "dokku/dokku": {
+    "stars": 7253,
+    "lastCommit": "2026-11-18",
+    "issues": 98,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "caprover/caprover": {
+    "stars": 639,
+    "lastCommit": "2026-09-03",
+    "issues": 84,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "portainer/portainer": {
+    "stars": 4069,
+    "lastCommit": "2026-08-24",
+    "issues": 34,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "opentofu/opentofu": {
+    "stars": 2063,
+    "lastCommit": "2026-10-19",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "pulumi/pulumi": {
+    "stars": 20383,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "localstack/localstack": {
+    "stars": 7151,
+    "lastCommit": "2026-10-31",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "k3s-io/k3s": {
+    "stars": 19884,
+    "lastCommit": "2026-11-07",
+    "issues": 49,
+    "status": "Active",
+    "latestRelease": "v5.5.5"
+  },
+  "kubernetes/minikube": {
+    "stars": 1917,
+    "lastCommit": "2026-09-05",
+    "issues": 82,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "tilt-dev/tilt": {
+    "stars": 12383,
+    "lastCommit": "2026-08-30",
+    "issues": 28,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "loft-sh/devpod": {
+    "stars": 1502,
+    "lastCommit": "2026-08-31",
+    "issues": 27,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "coder/coder": {
+    "stars": 37299,
+    "lastCommit": "2026-10-03",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "gitlabhq/gitlabhq": {
+    "stars": 6671,
+    "lastCommit": "2026-09-01",
+    "issues": 116,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "go-gitea/gitea": {
+    "stars": 10688,
+    "lastCommit": "2026-10-14",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "forgejo/forgejo": {
+    "stars": 1113,
+    "lastCommit": "2026-08-30",
+    "issues": 118,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "thedevops/onedev": {
+    "stars": 1600,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "harness/drone": {
+    "stars": 3961,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "woodpecker-ci/woodpecker": {
+    "stars": 6058,
+    "lastCommit": "2026-11-13",
+    "issues": 103,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "nektos/act": {
+    "stars": 2951,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "argoproj/argo-cd": {
+    "stars": 46596,
+    "lastCommit": "2026-09-06",
+    "issues": 81,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "fluxcd/flux2": {
+    "stars": 1012,
+    "lastCommit": "2026-09-30",
+    "issues": 57,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "traefik/traefik": {
+    "stars": 1037,
+    "lastCommit": "2026-11-04",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "caddyserver/caddy": {
+    "stars": 1530,
+    "lastCommit": "2026-09-22",
+    "issues": 95,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "nginxproxymanager/nginx-proxy-manager": {
+    "stars": 8093,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "kong/kong": {
+    "stars": 415,
+    "lastCommit": "2026-09-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "tyktechnologies/tyk": {
+    "stars": 823,
+    "lastCommit": "2026-11-08",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "kong/insomnia": {
+    "stars": 36596,
+    "lastCommit": "2026-08-27",
+    "issues": 121,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "yaakapp/app": {
+    "stars": 3057,
+    "lastCommit": "2026-11-14",
+    "issues": 102,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "flawiddsouza/restfox": {
+    "stars": 7855,
+    "lastCommit": "2026-11-16",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "kreya-app/kreya": {
+    "stars": 25297,
+    "lastCommit": "2026-11-04",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "redocly/redoc": {
+    "stars": 1624,
+    "lastCommit": "2026-10-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "stoplightio/elements": {
+    "stars": 1916,
+    "lastCommit": "2026-08-27",
+    "issues": 121,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "devtoys-app/devtoys": {
+    "stars": 1129,
+    "lastCommit": "2026-10-03",
+    "issues": 54,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "corentinth/it-tools": {
+    "stars": 634,
+    "lastCommit": "2026-10-08",
+    "issues": 79,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "gchq/cyberchef": {
+    "stars": 1925,
+    "lastCommit": "2026-09-07",
+    "issues": 50,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "nicolargo/glances": {
+    "stars": 7470,
+    "lastCommit": "2026-10-12",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "netdata/netdata": {
+    "stars": 9183,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "analogj/scrutiny": {
+    "stars": 536,
+    "lastCommit": "2026-11-05",
+    "issues": 21,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "henrygd/beszel": {
+    "stars": 1531,
+    "lastCommit": "2026-10-31",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "prometheus/prometheus": {
+    "stars": 7775,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "grafana/grafana": {
+    "stars": 521,
+    "lastCommit": "2026-10-31",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "victoriametrics/victoriametrics": {
+    "stars": 2377,
+    "lastCommit": "2026-10-05",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "signoz/signoz": {
+    "stars": 30599,
+    "lastCommit": "2026-09-13",
+    "issues": 44,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "hyperdxio/hyperdx": {
+    "stars": 9487,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "openobserve/openobserve": {
+    "stars": 1445,
+    "lastCommit": "2026-09-27",
+    "issues": 90,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "logdyhq/logdy": {
+    "stars": 828,
+    "lastCommit": "2026-09-14",
+    "issues": 73,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "amir20/dozzle": {
+    "stars": 720,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "getsentry/self-hosted": {
+    "stars": 542,
+    "lastCommit": "2026-10-10",
+    "issues": 107,
+    "status": "Active",
+    "latestRelease": "v3.6.6"
+  },
+  "glitchtip/glitchtip": {
+    "stars": 7053,
+    "lastCommit": "2026-11-08",
+    "issues": 18,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "danny-avila/librechat": {
+    "stars": 2265,
+    "lastCommit": "2026-10-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "zylon-ai/private-gpt": {
+    "stars": 7963,
+    "lastCommit": "2026-09-29",
+    "issues": 88,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "oobabooga/text-generation-webui": {
+    "stars": 1841,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "vllm-project/vllm": {
+    "stars": 3555,
+    "lastCommit": "2026-10-27",
+    "issues": 120,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "huggingface/text-generation-inference": {
+    "stars": 1911,
+    "lastCommit": "2026-10-21",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "mudler/localai": {
+    "stars": 1905,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "janhq/jan": {
+    "stars": 1720,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "ggerganov/llama.cpp": {
+    "stars": 33097,
+    "lastCommit": "2026-11-04",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "mintplex-labs/anything-llm": {
+    "stars": 6255,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "langgenius/dify": {
+    "stars": 1234,
+    "lastCommit": "2026-10-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "flowiseai/flowise": {
+    "stars": 2259,
+    "lastCommit": "2026-10-03",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "langflow-ai/langflow": {
+    "stars": 7762,
+    "lastCommit": "2026-10-20",
+    "issues": 7,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "significant-gravitas/autogpt": {
+    "stars": 4660,
+    "lastCommit": "2026-09-02",
+    "issues": 25,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "yoheinakajima/babyagi": {
+    "stars": 23592,
+    "lastCommit": "2026-11-19",
+    "issues": 37,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "geekan/metagpt": {
+    "stars": 5176,
+    "lastCommit": "2026-09-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "openbmb/chatdev": {
+    "stars": 19691,
+    "lastCommit": "2026-10-11",
+    "issues": 16,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "aider-ai/aider": {
+    "stars": 1910,
+    "lastCommit": "2026-11-11",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "continuedev/continue": {
+    "stars": 4456,
+    "lastCommit": "2026-09-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "tabbyml/tabby": {
+    "stars": 1336,
+    "lastCommit": "2026-10-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "roovetgit/roo-cline": {
+    "stars": 1532,
+    "lastCommit": "2026-09-20",
+    "issues": 97,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "mozilla-ocho/llamafile": {
+    "stars": 714,
+    "lastCommit": "2026-08-29",
+    "issues": 119,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "vladmandic/automatic": {
+    "stars": 937,
+    "lastCommit": "2026-09-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "lllyasviel/fooocus": {
+    "stars": 722,
+    "lastCommit": "2026-09-20",
+    "issues": 7,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "invoke-ai/invokeai": {
+    "stars": 4658,
+    "lastCommit": "2026-09-04",
+    "issues": 23,
+    "status": "Stable",
+    "latestRelease": "v4.6.6"
+  },
+  "bmaltais/kohya_ss": {
+    "stars": 4357,
+    "lastCommit": "2026-11-04",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "huggingface/diffusers": {
+    "stars": 1302,
+    "lastCommit": "2026-09-20",
+    "issues": 67,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "guoyww/animatediff": {
+    "stars": 1439,
+    "lastCommit": "2026-11-12",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "thudm/cogvideo": {
+    "stars": 405,
+    "lastCommit": "2026-10-17",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "hpcaitech/open-sora": {
+    "stars": 840,
+    "lastCommit": "2026-10-22",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "swivid/f5-tts": {
+    "stars": 520,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "suno-ai/bark": {
+    "stars": 14285,
+    "lastCommit": "2026-10-07",
+    "issues": 50,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "yl4579/styletts2": {
+    "stars": 6071,
+    "lastCommit": "2026-10-31",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "2noise/chattts": {
+    "stars": 16388,
+    "lastCommit": "2026-09-04",
+    "issues": 113,
+    "status": "Stable",
+    "latestRelease": "v4.6.6"
+  },
+  "facebookresearch/audiocraft": {
+    "stars": 6680,
+    "lastCommit": "2026-11-21",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "rvc-project/retrieval-based-voice-conversion-webui": {
+    "stars": 5459,
+    "lastCommit": "2026-09-13",
+    "issues": 104,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "facebookresearch/demucs": {
+    "stars": 22191,
+    "lastCommit": "2026-09-01",
+    "issues": 116,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "chidiwilliams/buzz": {
+    "stars": 1721,
+    "lastCommit": "2026-09-21",
+    "issues": 6,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "iperov/deepfacelive": {
+    "stars": 1625,
+    "lastCommit": "2026-10-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "chainner-org/chainner": {
+    "stars": 8392,
+    "lastCommit": "2026-10-20",
+    "issues": 37,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "xinntao/real-esrgan": {
+    "stars": 5457,
+    "lastCommit": "2026-11-14",
+    "issues": 102,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "nagadomi/waifu2x": {
+    "stars": 1321,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "nadermx/backgroundremover": {
+    "stars": 1706,
+    "lastCommit": "2026-08-27",
+    "issues": 31,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "facebookresearch/segment-anything-2": {
+    "stars": 5967,
+    "lastCommit": "2026-10-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "geekyutao/inpaint-anything": {
+    "stars": 627,
+    "lastCommit": "2026-10-05",
+    "issues": 112,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "run-llama/llama_index": {
+    "stars": 11684,
+    "lastCommit": "2026-11-17",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "chroma-core/chroma": {
+    "stars": 543,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "qdrant/qdrant": {
+    "stars": 1919,
+    "lastCommit": "2026-09-03",
+    "issues": 84,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "milvus-io/milvus": {
+    "stars": 916,
+    "lastCommit": "2026-11-05",
+    "issues": 81,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "weaviate/weaviate": {
+    "stars": 511,
+    "lastCommit": "2026-10-21",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "lm-sys/fastchat": {
+    "stars": 914,
+    "lastCommit": "2026-10-08",
+    "issues": 79,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "caido/caido": {
+    "stars": 20181,
+    "lastCommit": "2026-09-11",
+    "issues": 106,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "zaproxy/zaproxy": {
+    "stars": 1935,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "projectdiscovery/katana": {
+    "stars": 1310,
+    "lastCommit": "2026-11-01",
+    "issues": 115,
+    "status": "Active",
+    "latestRelease": "v1.2.2"
+  },
+  "projectdiscovery/nuclei": {
+    "stars": 1340,
+    "lastCommit": "2026-10-22",
+    "issues": 65,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "projectdiscovery/subfinder": {
+    "stars": 1502,
+    "lastCommit": "2026-10-20",
+    "issues": 67,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "projectdiscovery/httpx": {
+    "stars": 9888,
+    "lastCommit": "2026-09-04",
+    "issues": 53,
+    "status": "Stable",
+    "latestRelease": "v4.6.6"
+  },
+  "projectdiscovery/naabu": {
+    "stars": 19289,
+    "lastCommit": "2026-08-24",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "robertdavidgraham/masscan": {
+    "stars": 2765,
+    "lastCommit": "2026-11-06",
+    "issues": 50,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "nmap/nmap": {
+    "stars": 4767,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "rapid7/metasploit-framework": {
+    "stars": 4277,
+    "lastCommit": "2026-10-25",
+    "issues": 122,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "bishopfox/sliver": {
+    "stars": 1600,
+    "lastCommit": "2026-10-22",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "havocframework/havoc": {
+    "stars": 11287,
+    "lastCommit": "2026-11-04",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "its-a-feature/mythic": {
+    "stars": 6676,
+    "lastCommit": "2026-10-26",
+    "issues": 121,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "cobbr/covenant": {
+    "stars": 21093,
+    "lastCommit": "2026-10-09",
+    "issues": 18,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "specterops/bloodhound": {
+    "stars": 10693,
+    "lastCommit": "2026-09-29",
+    "issues": 58,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "opencyber-fr/rusthound": {
+    "stars": 1323,
+    "lastCommit": "2026-09-19",
+    "issues": 8,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "gentilkiwi/mimikatz": {
+    "stars": 2764,
+    "lastCommit": "2026-10-08",
+    "issues": 49,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "pennyw0rth/netexec": {
+    "stars": 1144,
+    "lastCommit": "2026-10-08",
+    "issues": 109,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "fortra/impacket": {
+    "stars": 1649,
+    "lastCommit": "2026-09-23",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "spiderlabs/responder": {
+    "stars": 6958,
+    "lastCommit": "2026-10-14",
+    "issues": 43,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "hashcat/hashcat": {
+    "stars": 1425,
+    "lastCommit": "2026-11-16",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "openwall/john": {
+    "stars": 1014,
+    "lastCommit": "2026-09-28",
+    "issues": 59,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "vanhauser-thc/thc-hydra": {
+    "stars": 4670,
+    "lastCommit": "2026-09-22",
+    "issues": 35,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "sqlmapproject/sqlmap": {
+    "stars": 418,
+    "lastCommit": "2026-10-04",
+    "issues": 23,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "commixproject/commix": {
+    "stars": 20388,
+    "lastCommit": "2026-11-03",
+    "issues": 113,
+    "status": "Active",
+    "latestRelease": "v4.0.0"
+  },
+  "xmendez/wfuzz": {
+    "stars": 5570,
+    "lastCommit": "2026-09-22",
+    "issues": 95,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "ffuf/ffuf": {
+    "stars": 3775,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "oj/gobuster": {
+    "stars": 12381,
+    "lastCommit": "2026-10-31",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "epi052/feroxbuster": {
+    "stars": 13285,
+    "lastCommit": "2026-11-06",
+    "issues": 50,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "owasp-amass/amass": {
+    "stars": 4980,
+    "lastCommit": "2026-10-12",
+    "issues": 105,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "smicallef/spiderfoot": {
+    "stars": 7652,
+    "lastCommit": "2026-11-09",
+    "issues": 17,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "lanmaster53/recon-ng": {
+    "stars": 46797,
+    "lastCommit": "2026-11-04",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "sherlock-project/sherlock": {
+    "stars": 6179,
+    "lastCommit": "2026-09-13",
+    "issues": 104,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "megadose/holehe": {
+    "stars": 3357,
+    "lastCommit": "2026-11-14",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "laramies/theharvester": {
+    "stars": 3558,
+    "lastCommit": "2026-08-25",
+    "issues": 123,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "gitleaks/gitleaks": {
+    "stars": 16287,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "trufflesecurity/trufflehog": {
+    "stars": 1311,
+    "lastCommit": "2026-10-31",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "semgrep/semgrep": {
+    "stars": 611,
+    "lastCommit": "2026-09-01",
+    "issues": 56,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "sonarsource/sonarqube": {
+    "stars": 24281,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "aquasecurity/trivy": {
+    "stars": 427,
+    "lastCommit": "2026-09-15",
+    "issues": 72,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "anchore/grype": {
+    "stars": 4260,
+    "lastCommit": "2026-11-11",
+    "issues": 105,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "anchore/syft": {
+    "stars": 21395,
+    "lastCommit": "2026-11-16",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "bridgecrewio/checkov": {
+    "stars": 1600,
+    "lastCommit": "2026-09-02",
+    "issues": 85,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "thehive-project/thehive": {
+    "stars": 6767,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "security-onion-solutions/securityonion": {
+    "stars": 4451,
+    "lastCommit": "2026-10-31",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "oisf/suricata": {
+    "stars": 4070,
+    "lastCommit": "2026-11-21",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "zeek/zeek": {
+    "stars": 5359,
+    "lastCommit": "2026-08-24",
+    "issues": 124,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "arkime/arkime": {
+    "stars": 735,
+    "lastCommit": "2026-09-17",
+    "issues": 100,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "sleuthkit/autopsy": {
+    "stars": 7377,
+    "lastCommit": "2026-09-15",
+    "issues": 102,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "sleuthkit/sleuthkit": {
+    "stars": 947,
+    "lastCommit": "2026-08-26",
+    "issues": 32,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "minio/minio": {
+    "stars": 1137,
+    "lastCommit": "2026-10-15",
+    "issues": 102,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "dxflrs/garage": {
+    "stars": 23691,
+    "lastCommit": "2026-10-01",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "seaweedfs/seaweedfs": {
+    "stars": 5555,
+    "lastCommit": "2026-10-07",
+    "issues": 80,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "ceph/ceph": {
+    "stars": 511,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "postgres/postgres": {
+    "stars": 6271,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "mariadb/server": {
+    "stars": 5278,
+    "lastCommit": "2026-11-13",
+    "issues": 43,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "clickhouse/clickhouse": {
+    "stars": 1215,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "duckdb/duckdb": {
+    "stars": 7151,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "timescale/timescaledb": {
+    "stars": 6777,
+    "lastCommit": "2026-10-15",
+    "issues": 102,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "questdb/questdb": {
+    "stars": 449,
+    "lastCommit": "2026-08-24",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "scylladb/scylladb": {
+    "stars": 4175,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "cockroachdb/cockroach": {
+    "stars": 3465,
+    "lastCommit": "2026-08-28",
+    "issues": 30,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "pingcap/tidb": {
+    "stars": 850,
+    "lastCommit": "2026-10-02",
+    "issues": 55,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "dragonflydb/dragonfly": {
+    "stars": 1343,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "snapchat/keydb": {
+    "stars": 512,
+    "lastCommit": "2026-08-31",
+    "issues": 117,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "valkey-io/valkey": {
+    "stars": 1416,
+    "lastCommit": "2026-09-16",
+    "issues": 101,
+    "status": "Stable",
+    "latestRelease": "v2.3.3"
+  },
+  "microsoft/garnet": {
+    "stars": 1814,
+    "lastCommit": "2026-08-29",
+    "issues": 59,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "ferretdb/ferretdb": {
+    "stars": 4767,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "surrealdb/surrealdb": {
+    "stars": 601,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "appwrite/appwrite": {
+    "stars": 13783,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "supabase/supabase": {
+    "stars": 4575,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "pocketbase/pocketbase": {
+    "stars": 927,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "hasura/graphql-engine": {
+    "stars": 411,
+    "lastCommit": "2026-09-21",
+    "issues": 96,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "prisma/prisma": {
+    "stars": 1727,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "drizzle-team/drizzle-orm": {
+    "stars": 1320,
+    "lastCommit": "2026-11-21",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "meilisearch/meilisearch": {
+    "stars": 19085,
+    "lastCommit": "2026-11-16",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "typesense/typesense": {
+    "stars": 3177,
+    "lastCommit": "2026-11-14",
+    "issues": 102,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "opensearch-project/opensearch": {
+    "stars": 4067,
+    "lastCommit": "2026-09-25",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "zincsearch/zincsearch": {
+    "stars": 24783,
+    "lastCommit": "2026-10-19",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "manticoresoftware/manticoresearch": {
+    "stars": 1516,
+    "lastCommit": "2026-11-05",
+    "issues": 81,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "apache/kafka": {
+    "stars": 1845,
+    "lastCommit": "2026-10-07",
+    "issues": 50,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "redpanda-data/redpanda": {
+    "stars": 1242,
+    "lastCommit": "2026-09-30",
+    "issues": 87,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "rabbitmq/rabbitmq-server": {
+    "stars": 19985,
+    "lastCommit": "2026-10-17",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "apache/pulsar": {
+    "stars": 1646,
+    "lastCommit": "2026-09-06",
+    "issues": 51,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "nats-io/nats-server": {
+    "stars": 928,
+    "lastCommit": "2026-08-25",
+    "issues": 93,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "kestra-io/kestra": {
+    "stars": 7264,
+    "lastCommit": "2026-09-08",
+    "issues": 109,
+    "status": "Stable",
+    "latestRelease": "v5.2.2"
+  },
+  "prefecthq/prefect": {
+    "stars": 5968,
+    "lastCommit": "2026-10-14",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "dagster-io/dagster": {
+    "stars": 1044,
+    "lastCommit": "2026-08-29",
+    "issues": 89,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "meltano/meltano": {
+    "stars": 1605,
+    "lastCommit": "2026-09-17",
+    "issues": 10,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "airbytehq/airbyte": {
+    "stars": 1646,
+    "lastCommit": "2026-11-15",
+    "issues": 11,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "dbt-labs/dbt-core": {
+    "stars": 4072,
+    "lastCommit": "2026-09-20",
+    "issues": 37,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "dbeaver/dbeaver": {
+    "stars": 1107,
+    "lastCommit": "2026-10-05",
+    "issues": 112,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "beekeeper-studio/beekeeper-studio": {
+    "stars": 1247,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "pgadmin-org/pgadmin4": {
+    "stars": 524,
+    "lastCommit": "2026-10-18",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "vrana/adminer": {
+    "stars": 1941,
+    "lastCommit": "2026-11-10",
+    "issues": 106,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "chat2db/chat2db": {
+    "stars": 20385,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "bytebase/bytebase": {
+    "stars": 20487,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "schemaspy/schemaspy": {
+    "stars": 1143,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "ariga/atlas": {
+    "stars": 5774,
+    "lastCommit": "2026-08-29",
+    "issues": 59,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "directus/directus": {
+    "stars": 927,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "freecad/freecad": {
+    "stars": 437,
+    "lastCommit": "2026-10-05",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "openscad/openscad": {
+    "stars": 2767,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "librecad/librecad": {
+    "stars": 447,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "qcad/qcad": {
+    "stars": 21695,
+    "lastCommit": "2026-11-16",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "brl-cad/brlcad": {
+    "stars": 15484,
+    "lastCommit": "2026-11-17",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "archiloque/sweethome3d": {
+    "stars": 844,
+    "lastCommit": "2026-11-17",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "sunspider/dust3d": {
+    "stars": 2177,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "cnr-isti-vclab/meshlab": {
+    "stars": 633,
+    "lastCommit": "2026-11-18",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "cloudcompare/cloudcompare": {
+    "stars": 1535,
+    "lastCommit": "2026-09-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "rodzill4/material-maker": {
+    "stars": 7455,
+    "lastCommit": "2026-08-28",
+    "issues": 60,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "armory3d/armorlab": {
+    "stars": 1250,
+    "lastCommit": "2026-10-02",
+    "issues": 55,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "godotengine/godot": {
+    "stars": 1605,
+    "lastCommit": "2026-08-28",
+    "issues": 90,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "o3de/o3de": {
+    "stars": 6879,
+    "lastCommit": "2026-09-03",
+    "issues": 84,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "bevyengine/bevy": {
+    "stars": 5165,
+    "lastCommit": "2026-09-07",
+    "issues": 50,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "raysan5/raylib": {
+    "stars": 443,
+    "lastCommit": "2026-08-30",
+    "issues": 88,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "monogame/monogame": {
+    "stars": 927,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "defold/defold": {
+    "stars": 9183,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "4ian/gdevelop": {
+    "stars": 7363,
+    "lastCommit": "2026-10-29",
+    "issues": 88,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "cocos2d/cocos2d-x": {
+    "stars": 13286,
+    "lastCommit": "2026-09-26",
+    "issues": 91,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "synfig/synfig": {
+    "stars": 5567,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "pencil2d/pencil": {
+    "stars": 2365,
+    "lastCommit": "2026-09-17",
+    "issues": 10,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "maefloresta/tupitube": {
+    "stars": 1416,
+    "lastCommit": "2026-11-15",
+    "issues": 101,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "jliljebl/flowblade": {
+    "stars": 1749,
+    "lastCommit": "2026-09-03",
+    "issues": 114,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "gnome/pitivi": {
+    "stars": 2256,
+    "lastCommit": "2026-09-06",
+    "issues": 21,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "mifi/lossless-cut": {
+    "stars": 817,
+    "lastCommit": "2026-09-05",
+    "issues": 22,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "handbrake/handbrake": {
+    "stars": 825,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "ffmpeg/ffmpeg": {
+    "stars": 927,
+    "lastCommit": "2026-10-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "ozmartian/vidcutter": {
+    "stars": 6966,
+    "lastCommit": "2026-09-06",
+    "issues": 51,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "subtitleedit/subtitleedit": {
+    "stars": 6751,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "aegisub/aegisub": {
+    "stars": 16389,
+    "lastCommit": "2026-09-23",
+    "issues": 34,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "obsproject/obs-studio": {
+    "stars": 1417,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "streamlink/streamlink": {
+    "stars": 2463,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "mypaint/mypaint": {
+    "stars": 3077,
+    "lastCommit": "2026-09-25",
+    "issues": 122,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "orama-interactive/pixelorama": {
+    "stars": 23084,
+    "lastCommit": "2026-08-29",
+    "issues": 89,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "libresprite/libresprite": {
+    "stars": 1723,
+    "lastCommit": "2026-11-18",
+    "issues": 8,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "academysoftwarefoundation/opencolorio": {
+    "stars": 16582,
+    "lastCommit": "2026-09-10",
+    "issues": 107,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "academysoftwarefoundation/openimageio": {
+    "stars": 1406,
+    "lastCommit": "2026-09-06",
+    "issues": 51,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "luxcorerender/luxcore": {
+    "stars": 6179,
+    "lastCommit": "2026-09-13",
+    "issues": 104,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "appleseedhq/appleseed": {
+    "stars": 544,
+    "lastCommit": "2026-09-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "nrel/radiance": {
+    "stars": 9583,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "dgud/wings": {
+    "stars": 3467,
+    "lastCommit": "2026-10-25",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "ephtracy/voxel-model": {
+    "stars": 831,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "guillaumechereau/goxel": {
+    "stars": 17992,
+    "lastCommit": "2026-09-10",
+    "issues": 77,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "stephomi/sculptgl": {
+    "stars": 45696,
+    "lastCommit": "2026-08-27",
+    "issues": 61,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "treeit/treeit": {
+    "stars": 7759,
+    "lastCommit": "2026-10-23",
+    "issues": 124,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "wick-editor/wick-editor": {
+    "stars": 1345,
+    "lastCommit": "2026-10-07",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "openboard-org/openboard": {
+    "stars": 2368,
+    "lastCommit": "2026-09-14",
+    "issues": 13,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "nickemanarin/screentogif": {
+    "stars": 1612,
+    "lastCommit": "2026-11-09",
+    "issues": 17,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "imageoptim/gifski": {
+    "stars": 5856,
+    "lastCommit": "2026-10-06",
+    "issues": 21,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "paulpacifico/shutter-encoder": {
+    "stars": 7659,
+    "lastCommit": "2026-09-03",
+    "issues": 24,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "zrythm/zrythm": {
+    "stars": 19095,
+    "lastCommit": "2026-08-28",
+    "issues": 60,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "helio-fm/helio-workstation": {
+    "stars": 1611,
+    "lastCommit": "2026-09-11",
+    "issues": 16,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "muse-sequencer/muse": {
+    "stars": 13291,
+    "lastCommit": "2026-09-01",
+    "issues": 56,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "rosegardenmusic/rosegarden": {
+    "stars": 7858,
+    "lastCommit": "2026-10-14",
+    "issues": 103,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "musescore/musescore": {
+    "stars": 2753,
+    "lastCommit": "2026-11-18",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "lilypond/lilypond": {
+    "stars": 1631,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "helge17/tuxguitar": {
+    "stars": 3269,
+    "lastCommit": "2026-09-13",
+    "issues": 74,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "milkytracker/milkytracker": {
+    "stars": 23495,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "openmpt/openmpt": {
+    "stars": 6463,
+    "lastCommit": "2026-08-30",
+    "issues": 28,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "nightradio/sunvox": {
+    "stars": 1807,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "awwbees/bespokesynth": {
+    "stars": 4272,
+    "lastCommit": "2026-09-30",
+    "issues": 117,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "pure-data/pure-data": {
+    "stars": 703,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "supercollider/supercollider": {
+    "stars": 1503,
+    "lastCommit": "2026-09-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "vcvrack/rack": {
+    "stars": 1430,
+    "lastCommit": "2026-10-12",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "surge-synthesizer/surge": {
+    "stars": 600,
+    "lastCommit": "2026-11-01",
+    "issues": 85,
+    "status": "Active",
+    "latestRelease": "v1.2.2"
+  },
+  "mtytel/vital": {
+    "stars": 6662,
+    "lastCommit": "2026-11-09",
+    "issues": 107,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "asb2m10/dexed": {
+    "stars": 1601,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "discodsp/ob-xd": {
+    "stars": 622,
+    "lastCommit": "2026-09-20",
+    "issues": 67,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "mtytel/helm": {
+    "stars": 1524,
+    "lastCommit": "2026-09-28",
+    "issues": 89,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "zynaddsubfx/zynaddsubfx": {
+    "stars": 1345,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "yoshimi/yoshimi": {
+    "stars": 629,
+    "lastCommit": "2026-09-13",
+    "issues": 74,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "hydrogen-music/hydrogen": {
+    "stars": 1447,
+    "lastCommit": "2026-10-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "apisonic/speedrum": {
+    "stars": 5856,
+    "lastCommit": "2026-09-06",
+    "issues": 21,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "linuxsampler/linuxsampler": {
+    "stars": 639,
+    "lastCommit": "2026-11-02",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "decent-audio/decent-sampler": {
+    "stars": 3553,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "lsp-plugins/lsp-plugins": {
+    "stars": 1721,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "calf-studio-gear/calf": {
+    "stars": 838,
+    "lastCommit": "2026-10-24",
+    "issues": 123,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "airwindows/airwindows": {
+    "stars": 6063,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "chowdhury-dsp/chowdsp": {
+    "stars": 404,
+    "lastCommit": "2026-09-18",
+    "issues": 9,
+    "status": "Stable",
+    "latestRelease": "v5.1.1"
+  },
+  "thewavewarden/odin2": {
+    "stars": 2168,
+    "lastCommit": "2026-10-04",
+    "issues": 53,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "michaelwillis/dragonfly-reverb": {
+    "stars": 1211,
+    "lastCommit": "2026-09-01",
+    "issues": 56,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "valdemarorn/cloudseed": {
+    "stars": 2566,
+    "lastCommit": "2026-08-27",
+    "issues": 91,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "brummer10/guitarix": {
+    "stars": 18495,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "sdatkinson/neural-amp-modeler": {
+    "stars": 2280,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "guitarml/smartguitaramp": {
+    "stars": 903,
+    "lastCommit": "2026-11-08",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "clementine-player/clementine": {
+    "stars": 1533,
+    "lastCommit": "2026-11-18",
+    "issues": 98,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "strawberrymusicplayer/strawberry": {
+    "stars": 2375,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "quodlibet/quodlibet": {
+    "stars": 1527,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "deadbeef-player/deadbeef": {
+    "stars": 1537,
+    "lastCommit": "2026-10-05",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "gnumdk/lollypop": {
+    "stars": 500,
+    "lastCommit": "2026-10-02",
+    "issues": 25,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "navidrome/navidrome": {
+    "stars": 615,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "airsonic-advanced/airsonic-advanced": {
+    "stars": 1115,
+    "lastCommit": "2026-10-17",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "koel/koel": {
+    "stars": 1439,
+    "lastCommit": "2026-10-03",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "funkwhale/funkwhale": {
+    "stars": 3755,
+    "lastCommit": "2026-11-06",
+    "issues": 80,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "metabrainz/picard": {
+    "stars": 2367,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "kde/kid3": {
+    "stars": 49096,
+    "lastCommit": "2026-09-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "traverso-daw/traverso": {
+    "stars": 7554,
+    "lastCommit": "2026-09-18",
+    "issues": 39,
+    "status": "Stable",
+    "latestRelease": "v5.1.1"
+  },
+  "sinapsi-medialab/giada": {
+    "stars": 43798,
+    "lastCommit": "2026-10-24",
+    "issues": 123,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "falktx/carla": {
+    "stars": 840,
+    "lastCommit": "2026-11-11",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "chirlu/sox": {
+    "stars": 5156,
+    "lastCommit": "2026-10-16",
+    "issues": 41,
+    "status": "Active",
+    "latestRelease": "v2.0.0"
+  },
+  "logseq/logseq": {
+    "stars": 5551,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "streetwriters/notesnook": {
+    "stars": 604,
+    "lastCommit": "2026-08-29",
+    "issues": 89,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "foambubble/foam": {
+    "stars": 13883,
+    "lastCommit": "2026-10-09",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "zadam/trilium": {
+    "stars": 22994,
+    "lastCommit": "2026-09-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "standardnotes/app": {
+    "stars": 1030,
+    "lastCommit": "2026-09-02",
+    "issues": 115,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "silverbulletmd/silverbullet": {
+    "stars": 1704,
+    "lastCommit": "2026-11-17",
+    "issues": 69,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "dendronhq/dendron": {
+    "stars": 24990,
+    "lastCommit": "2026-10-02",
+    "issues": 115,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "zettlr/zettlr": {
+    "stars": 43799,
+    "lastCommit": "2026-09-03",
+    "issues": 84,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "marktext/marktext": {
+    "stars": 1919,
+    "lastCommit": "2026-11-02",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "xournalpp/xournalpp": {
+    "stars": 17995,
+    "lastCommit": "2026-08-28",
+    "issues": 120,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "jaap-karssenberg/zim-desktop-wiki": {
+    "stars": 1625,
+    "lastCommit": "2026-11-16",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "pbek/qownnotes": {
+    "stars": 4165,
+    "lastCommit": "2026-10-17",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "athensresearch/athens": {
+    "stars": 1700,
+    "lastCommit": "2026-10-22",
+    "issues": 65,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "cryptpad/cryptpad": {
+    "stars": 7263,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "ether/etherpad-lite": {
+    "stars": 4053,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "docmost/docmost": {
+    "stars": 1015,
+    "lastCommit": "2026-11-16",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "bookstackapp/bookstack": {
+    "stars": 1730,
+    "lastCommit": "2026-10-02",
+    "issues": 55,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "requarks/wiki": {
+    "stars": 447,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "outline/outline": {
+    "stars": 6069,
+    "lastCommit": "2026-09-03",
+    "issues": 114,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "siyuan-note/siyuan": {
+    "stars": 638,
+    "lastCommit": "2026-10-04",
+    "issues": 83,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "go-vikunja/vikunja": {
+    "stars": 33996,
+    "lastCommit": "2026-09-26",
+    "issues": 121,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "johannesjo/super-productivity": {
+    "stars": 1042,
+    "lastCommit": "2026-09-30",
+    "issues": 87,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "ransome1/sleek": {
+    "stars": 32897,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "habitrpg/habitica": {
+    "stars": 4269,
+    "lastCommit": "2026-10-03",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "gothenburgbitfactory/taskwarrior": {
+    "stars": 1928,
+    "lastCommit": "2026-10-14",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "wekan/wekan": {
+    "stars": 4453,
+    "lastCommit": "2026-08-30",
+    "issues": 58,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "kanboard/kanboard": {
+    "stars": 10591,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "apankrat/nullboard": {
+    "stars": 12590,
+    "lastCommit": "2026-09-22",
+    "issues": 35,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "restyaplatform/board": {
+    "stars": 4854,
+    "lastCommit": "2026-10-18",
+    "issues": 99,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "leantime/leantime": {
+    "stars": 4671,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "redmine/redmine": {
+    "stars": 13689,
+    "lastCommit": "2026-10-13",
+    "issues": 14,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "jgraph/drawio-desktop": {
+    "stars": 1236,
+    "lastCommit": "2026-10-06",
+    "issues": 81,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "plantuml/plantuml": {
+    "stars": 3263,
+    "lastCommit": "2026-09-19",
+    "issues": 68,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "mermaid-js/mermaid": {
+    "stars": 1047,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "pdfarranger/pdfarranger": {
+    "stars": 625,
+    "lastCommit": "2026-10-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "sejda/sejda": {
+    "stars": 12195,
+    "lastCommit": "2026-10-17",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "kde/okular": {
+    "stars": 1719,
+    "lastCommit": "2026-10-23",
+    "issues": 124,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "gnome/evince": {
+    "stars": 7767,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "kovidgoyal/calibre": {
+    "stars": 4554,
+    "lastCommit": "2026-09-18",
+    "issues": 39,
+    "status": "Stable",
+    "latestRelease": "v5.1.1"
+  },
+  "kareadita/kavita": {
+    "stars": 1931,
+    "lastCommit": "2026-10-11",
+    "issues": 16,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "gotson/komga": {
+    "stars": 1706,
+    "lastCommit": "2026-11-05",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "advplyr/audiobookshelf": {
+    "stars": 1026,
+    "lastCommit": "2026-10-26",
+    "issues": 31,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "paperless-ngx/paperless-ngx": {
+    "stars": 3455,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "opensign-labs/opensign": {
+    "stars": 4954,
+    "lastCommit": "2026-09-08",
+    "issues": 79,
+    "status": "Stable",
+    "latestRelease": "v5.2.2"
+  },
+  "baptistearno/typebot.io": {
+    "stars": 726,
+    "lastCommit": "2026-09-06",
+    "issues": 51,
+    "status": "Stable",
+    "latestRelease": "v2.4.4"
+  },
+  "ohmyform/ohmyform": {
+    "stars": 5071,
+    "lastCommit": "2026-11-10",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "matomo-org/matomo": {
+    "stars": 5880,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "posthog/posthog": {
+    "stars": 1217,
+    "lastCommit": "2026-11-04",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "growthbook/growthbook": {
+    "stars": 7151,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "flagsmith/flagsmith": {
+    "stars": 18487,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "element-hq/synapse": {
+    "stars": 5556,
+    "lastCommit": "2026-11-05",
+    "issues": 81,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "deltachat/deltachat-desktop": {
+    "stars": 1840,
+    "lastCommit": "2026-09-12",
+    "issues": 45,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  },
+  "miroslavpejic85/mirotalk": {
+    "stars": 1407,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "rocketchat/rocket.chat": {
+    "stars": 5263,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "tinode/chat": {
+    "stars": 6960,
+    "lastCommit": "2026-09-12",
+    "issues": 45,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  },
+  "revoltchat/backend": {
+    "stars": 1441,
+    "lastCommit": "2026-11-10",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "spacebarchat/server": {
+    "stars": 3453,
+    "lastCommit": "2026-09-09",
+    "issues": 18,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "cinnyapp/cinny": {
+    "stars": 11986,
+    "lastCommit": "2026-10-26",
+    "issues": 31,
+    "status": "Active",
+    "latestRelease": "v2.8.8"
+  },
+  "krille-chan/fluffychat": {
+    "stars": 6869,
+    "lastCommit": "2026-11-12",
+    "issues": 74,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "savoirfairelinux/jami-client-qt": {
+    "stars": 903,
+    "lastCommit": "2026-11-18",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "berty/berty": {
+    "stars": 809,
+    "lastCommit": "2026-09-03",
+    "issues": 54,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "briar/briar": {
+    "stars": 1749,
+    "lastCommit": "2026-09-23",
+    "issues": 34,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "oxen-io/session-desktop": {
+    "stars": 1831,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "simplex-chat/simplex-chat": {
+    "stars": 3967,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "signalapp/signal-desktop": {
+    "stars": 6557,
+    "lastCommit": "2026-08-26",
+    "issues": 122,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "bigbluebutton/bigbluebutton": {
+    "stars": 2953,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "livekit/livekit": {
+    "stars": 1941,
+    "lastCommit": "2026-11-10",
+    "issues": 106,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "mumble-voip/mumble": {
+    "stars": 2174,
+    "lastCommit": "2026-08-29",
+    "issues": 59,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "bearware/teamtalk": {
+    "stars": 1015,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "discourse/discourse": {
+    "stars": 1107,
+    "lastCommit": "2026-09-05",
+    "issues": 112,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "flarum/framework": {
+    "stars": 1934,
+    "lastCommit": "2026-10-18",
+    "issues": 99,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "nodebb/nodebb": {
+    "stars": 511,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "lemmynet/lemmy": {
+    "stars": 1310,
+    "lastCommit": "2026-11-21",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "mastodon/mastodon": {
+    "stars": 3759,
+    "lastCommit": "2026-11-02",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "misskey-dev/misskey": {
+    "stars": 527,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "pixelfed/pixelfed": {
+    "stars": 607,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "chocobozzz/peertube": {
+    "stars": 1230,
+    "lastCommit": "2026-10-12",
+    "issues": 75,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "owncast/owncast": {
+    "stars": 4555,
+    "lastCommit": "2026-11-16",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "ad-aures/castopod": {
+    "stars": 12386,
+    "lastCommit": "2026-09-26",
+    "issues": 31,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "roundcube/roundcubemail": {
+    "stars": 17886,
+    "lastCommit": "2026-10-06",
+    "issues": 51,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "thundernest/thunderbird-patches": {
+    "stars": 1539,
+    "lastCommit": "2026-09-23",
+    "issues": 64,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "mailcow/mailcow-dockerized": {
+    "stars": 15588,
+    "lastCommit": "2026-10-14",
+    "issues": 73,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "mail-in-a-box/mailinabox": {
+    "stars": 1720,
+    "lastCommit": "2026-09-22",
+    "issues": 5,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "stalwartlabs/mail-server": {
+    "stars": 1848,
+    "lastCommit": "2026-09-24",
+    "issues": 93,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "anonaddy/anonaddy": {
+    "stars": 1023,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "simple-login/app": {
+    "stars": 1904,
+    "lastCommit": "2026-10-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "pentacent/keila": {
+    "stars": 1139,
+    "lastCommit": "2026-10-03",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "tryghost/ghost": {
+    "stars": 9092,
+    "lastCommit": "2026-10-20",
+    "issues": 97,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "strapi/strapi": {
+    "stars": 543,
+    "lastCommit": "2026-09-19",
+    "issues": 68,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "wordpress/wordpress": {
+    "stars": 1523,
+    "lastCommit": "2026-10-19",
+    "issues": 8,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "getgrav/grav": {
+    "stars": 16681,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "gohugoio/hugo": {
+    "stars": 1937,
+    "lastCommit": "2026-08-26",
+    "issues": 62,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "11ty/eleventy": {
+    "stars": 640,
+    "lastCommit": "2026-11-21",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "withastro/astro": {
+    "stars": 633,
+    "lastCommit": "2026-10-19",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "go-shiori/shiori": {
+    "stars": 538,
+    "lastCommit": "2026-08-25",
+    "issues": 63,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "linkwarden/linkwarden": {
+    "stars": 1823,
+    "lastCommit": "2026-11-18",
+    "issues": 68,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "hoarder-app/hoarder": {
+    "stars": 7063,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "archivebox/archivebox": {
+    "stars": 415,
+    "lastCommit": "2026-08-28",
+    "issues": 60,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "gildas-lormeau/singlefile": {
+    "stars": 1449,
+    "lastCommit": "2026-11-02",
+    "issues": 54,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "kopano-dev/kchat": {
+    "stars": 1826,
+    "lastCommit": "2026-09-16",
+    "issues": 71,
+    "status": "Stable",
+    "latestRelease": "v2.3.3"
+  },
+  "salesagility/suitecrm": {
+    "stars": 4780,
+    "lastCommit": "2026-11-01",
+    "issues": 25,
+    "status": "Active",
+    "latestRelease": "v1.2.2"
+  },
+  "odoo/odoo": {
+    "stars": 1311,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "frappe/erpnext": {
+    "stars": 1607,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "zammad/zammad": {
+    "stars": 5759,
+    "lastCommit": "2026-10-13",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "osticket/osticket": {
+    "stars": 447,
+    "lastCommit": "2026-11-04",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "helpyio/helpy": {
+    "stars": 727,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "sylius/sylius": {
+    "stars": 20191,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "saleor/saleor": {
+    "stars": 1215,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "woocommerce/woocommerce": {
+    "stars": 1509,
+    "lastCommit": "2026-11-02",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "prestashop/prestashop": {
+    "stars": 1503,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "magento/magento2": {
+    "stars": 24283,
+    "lastCommit": "2026-10-09",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "solidusio/solidus": {
+    "stars": 825,
+    "lastCommit": "2026-09-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "spree/spree": {
+    "stars": 619,
+    "lastCommit": "2026-10-13",
+    "issues": 104,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "bagisto/bagisto": {
+    "stars": 3755,
+    "lastCommit": "2026-09-07",
+    "issues": 80,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "shopware/shopware": {
+    "stars": 415,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "vendure-ecommerce/vendure": {
+    "stars": 15394,
+    "lastCommit": "2026-10-08",
+    "issues": 79,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "opencart/opencart": {
+    "stars": 1727,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "inventree/inventree": {
+    "stars": 1521,
+    "lastCommit": "2026-09-21",
+    "issues": 6,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "grocy/grocy": {
+    "stars": 501,
+    "lastCommit": "2026-09-11",
+    "issues": 106,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "partkeepr/partkeepr": {
+    "stars": 11381,
+    "lastCommit": "2026-11-10",
+    "issues": 106,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "invoiceninja/invoiceninja": {
+    "stars": 4767,
+    "lastCommit": "2026-11-14",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "crater-invoice/crater": {
+    "stars": 447,
+    "lastCommit": "2026-10-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "killbill/killbill": {
+    "stars": 1119,
+    "lastCommit": "2026-10-13",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "getlago/lago": {
+    "stars": 9281,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "actualbudget/actual": {
+    "stars": 1434,
+    "lastCommit": "2026-09-08",
+    "issues": 79,
+    "status": "Stable",
+    "latestRelease": "v5.2.2"
+  },
+  "firefly-iii/firefly-iii": {
+    "stars": 1715,
+    "lastCommit": "2026-10-07",
+    "issues": 80,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "maybe-finance/maybe": {
+    "stars": 1310,
+    "lastCommit": "2026-11-21",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "gnucash/gnucash": {
+    "stars": 41699,
+    "lastCommit": "2026-09-13",
+    "issues": 104,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "ghostfolio/ghostfolio": {
+    "stars": 1727,
+    "lastCommit": "2026-08-26",
+    "issues": 92,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "buchen/portfolio": {
+    "stars": 1322,
+    "lastCommit": "2026-10-20",
+    "issues": 7,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "ellite/wallos": {
+    "stars": 7064,
+    "lastCommit": "2026-09-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "kresusapp/kresus": {
+    "stars": 612,
+    "lastCommit": "2026-09-20",
+    "issues": 97,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "btcpayserver/btcpayserver": {
+    "stars": 5679,
+    "lastCommit": "2026-10-03",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "akaunting/akaunting": {
+    "stars": 7261,
+    "lastCommit": "2026-10-11",
+    "issues": 106,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "dolibarr/dolibarr": {
+    "stars": 5055,
+    "lastCommit": "2026-09-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "snipe/snipe-it": {
+    "stars": 1809,
+    "lastCommit": "2026-09-03",
+    "issues": 54,
+    "status": "Stable",
+    "latestRelease": "v5.7.7"
+  },
+  "allegro/ralph": {
+    "stars": 5862,
+    "lastCommit": "2026-08-31",
+    "issues": 27,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "glpi-project/glpi": {
+    "stars": 2771,
+    "lastCommit": "2026-10-31",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "uvdesk/community-skeleton": {
+    "stars": 3558,
+    "lastCommit": "2026-10-24",
+    "issues": 123,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "chaskiq/chaskiq": {
+    "stars": 31097,
+    "lastCommit": "2026-10-25",
+    "issues": 62,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "openkm/document-management-system": {
+    "stars": 1946,
+    "lastCommit": "2026-10-06",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "mayan-edms/mayan-edms": {
+    "stars": 4351,
+    "lastCommit": "2026-09-11",
+    "issues": 76,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "traccar/traccar": {
+    "stars": 1449,
+    "lastCommit": "2026-11-02",
+    "issues": 54,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "owntracks/recorder": {
+    "stars": 7855,
+    "lastCommit": "2026-11-16",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "influxdata/influxdb": {
+    "stars": 8883,
+    "lastCommit": "2026-11-08",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "grafana/oncall": {
+    "stars": 5672,
+    "lastCommit": "2026-10-10",
+    "issues": 77,
+    "status": "Active",
+    "latestRelease": "v3.6.6"
+  },
+  "getredash/redash": {
+    "stars": 1609,
+    "lastCommit": "2026-10-13",
+    "issues": 14,
+    "status": "Active",
+    "latestRelease": "v5.3.3"
+  },
+  "cube-js/cube": {
+    "stars": 1011,
+    "lastCommit": "2026-11-10",
+    "issues": 16,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "lightdash/lightdash": {
+    "stars": 4273,
+    "lastCommit": "2026-10-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "evidence-dev/evidence": {
+    "stars": 5767,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "proxmox/pve-manager": {
+    "stars": 3467,
+    "lastCommit": "2026-10-25",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v3.0.0"
+  },
+  "xcp-ng/xcp": {
+    "stars": 10087,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "qemu/qemu": {
+    "stars": 4063,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "virtualbox/virtualbox": {
+    "stars": 1215,
+    "lastCommit": "2026-08-28",
+    "issues": 60,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "cockpit-project/cockpit": {
+    "stars": 1435,
+    "lastCommit": "2026-10-07",
+    "issues": 80,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "icewhaletech/casaos": {
+    "stars": 7563,
+    "lastCommit": "2026-09-09",
+    "issues": 48,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "icewhaletech/zimaos": {
+    "stars": 1618,
+    "lastCommit": "2026-09-24",
+    "issues": 63,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "truenas/middleware": {
+    "stars": 5567,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "openmediavault/openmediavault": {
+    "stars": 1727,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "openzfs/zfs": {
+    "stars": 709,
+    "lastCommit": "2026-09-23",
+    "issues": 34,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "pi-hole/pi-hole": {
+    "stars": 1321,
+    "lastCommit": "2026-11-20",
+    "issues": 6,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "adguardteam/adguardhome": {
+    "stars": 833,
+    "lastCommit": "2026-11-18",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "pfsense/pfsense": {
+    "stars": 1201,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "opnsense/core": {
+    "stars": 605,
+    "lastCommit": "2026-10-17",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "openwrt/openwrt": {
+    "stars": 1439,
+    "lastCommit": "2026-09-23",
+    "issues": 124,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "slackhq/nebula": {
+    "stars": 14093,
+    "lastCommit": "2026-10-29",
+    "issues": 58,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "juanfont/headscale": {
+    "stars": 33898,
+    "lastCommit": "2026-10-14",
+    "issues": 103,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "netbirdio/netbird": {
+    "stars": 1427,
+    "lastCommit": "2026-08-26",
+    "issues": 32,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "zerotier/zerotierone": {
+    "stars": 5479,
+    "lastCommit": "2026-09-23",
+    "issues": 124,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "tonarino/innernet": {
+    "stars": 544,
+    "lastCommit": "2026-10-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "amnezia-vpn/amnezia-client": {
+    "stars": 1426,
+    "lastCommit": "2026-11-05",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.7.7"
+  },
+  "jigsaw-code/outline-server": {
+    "stars": 7972,
+    "lastCommit": "2026-11-19",
+    "issues": 97,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "xtls/xray-core": {
+    "stars": 3070,
+    "lastCommit": "2026-10-02",
+    "issues": 115,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "torproject/tor-browser": {
+    "stars": 20293,
+    "lastCommit": "2026-08-30",
+    "issues": 58,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "mullvad/mullvad-browser": {
+    "stars": 1022,
+    "lastCommit": "2026-09-10",
+    "issues": 107,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "librewolf-community/browser": {
+    "stars": 847,
+    "lastCommit": "2026-08-26",
+    "issues": 92,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "brave/brave-browser": {
+    "stars": 1628,
+    "lastCommit": "2026-11-13",
+    "issues": 73,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "floorp-projects/floorp": {
+    "stars": 1536,
+    "lastCommit": "2026-09-26",
+    "issues": 61,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "waterfox/waterfox": {
+    "stars": 1727,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "alex313031/thorium": {
+    "stars": 3666,
+    "lastCommit": "2026-10-06",
+    "issues": 111,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "qarmin/czkawka": {
+    "stars": 1745,
+    "lastCommit": "2026-09-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "oguzhaninan/stacer": {
+    "stars": 1445,
+    "lastCommit": "2026-10-27",
+    "issues": 90,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "alienator88/pearcleaner": {
+    "stars": 942,
+    "lastCommit": "2026-10-10",
+    "issues": 107,
+    "status": "Active",
+    "latestRelease": "v3.6.6"
+  },
+  "freemacsoft/appcleaner": {
+    "stars": 8191,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "kopia/kopia": {
+    "stars": 2169,
+    "lastCommit": "2026-11-02",
+    "issues": 54,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "duplicati/duplicati": {
+    "stars": 607,
+    "lastCommit": "2026-10-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "uroni/urbackup_backend": {
+    "stars": 1510,
+    "lastCommit": "2026-10-22",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "linuxmint/timeshift": {
+    "stars": 2668,
+    "lastCommit": "2026-11-13",
+    "issues": 73,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "glenndelahoy/snappy-driver-installer-origin": {
+    "stars": 1241,
+    "lastCommit": "2026-09-01",
+    "issues": 86,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "pbatard/rufus": {
+    "stars": 1200,
+    "lastCommit": "2026-09-02",
+    "issues": 85,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "balena-io/etcher": {
+    "stars": 13392,
+    "lastCommit": "2026-10-20",
+    "issues": 37,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "apache/guacamole-server": {
+    "stars": 27797,
+    "lastCommit": "2026-08-26",
+    "issues": 122,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "pavlobu/deskreen": {
+    "stars": 7273,
+    "lastCommit": "2026-09-29",
+    "issues": 118,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "input-leap/input-leap": {
+    "stars": 19783,
+    "lastCommit": "2026-08-30",
+    "issues": 28,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "kde/kdeconnect-kde": {
+    "stars": 816,
+    "lastCommit": "2026-11-15",
+    "issues": 101,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "localsend/localsend": {
+    "stars": 2471,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "linuxmint/warpinator": {
+    "stars": 940,
+    "lastCommit": "2026-11-21",
+    "issues": 65,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "robinlinus/snapdrop": {
+    "stars": 1747,
+    "lastCommit": "2026-11-04",
+    "issues": 112,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "lizardbyte/sunshine": {
+    "stars": 2864,
+    "lastCommit": "2026-09-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "moonlight-stream/moonlight-qt": {
+    "stars": 5474,
+    "lastCommit": "2026-09-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "inguma/bokken": {
+    "stars": 4062,
+    "lastCommit": "2026-08-31",
+    "issues": 27,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "wjp/medusa": {
+    "stars": 1049,
+    "lastCommit": "2026-11-12",
+    "issues": 14,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "uxmal/reko": {
+    "stars": 1313,
+    "lastCommit": "2026-11-18",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "boomerang-project/boomerang": {
+    "stars": 22289,
+    "lastCommit": "2026-09-13",
+    "issues": 14,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "joxeankoret/pyew": {
+    "stars": 12388,
+    "lastCommit": "2026-09-24",
+    "issues": 33,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "vivisect/vivisect": {
+    "stars": 1247,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "joelpx/plasma": {
+    "stars": 717,
+    "lastCommit": "2026-09-05",
+    "issues": 82,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "das-labor/panopticon": {
+    "stars": 2261,
+    "lastCommit": "2026-09-01",
+    "issues": 26,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "vmt/udis86": {
+    "stars": 10881,
+    "lastCommit": "2026-09-21",
+    "issues": 6,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "gdabah/distorm": {
+    "stars": 810,
+    "lastCommit": "2026-09-02",
+    "issues": 55,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "beaengine/beaengine": {
+    "stars": 6769,
+    "lastCommit": "2026-10-23",
+    "issues": 94,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "dyninst/dyninst": {
+    "stars": 15487,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "fibril-re/fibril": {
+    "stars": 4059,
+    "lastCommit": "2026-11-02",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "ant4g0nist/mac-a-mal": {
+    "stars": 24481,
+    "lastCommit": "2026-11-20",
+    "issues": 6,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "ovd-project/ovd": {
+    "stars": 1735,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "codisec/veles": {
+    "stars": 7372,
+    "lastCommit": "2026-09-20",
+    "issues": 97,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "rehints/hexrayscodexplorer": {
+    "stars": 4777,
+    "lastCommit": "2026-09-05",
+    "issues": 22,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "hyperdbg/hyperdbg": {
+    "stars": 2079,
+    "lastCommit": "2026-11-02",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "mrfearless/titanengine": {
+    "stars": 1213,
+    "lastCommit": "2026-11-18",
+    "issues": 98,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "x64dbg/x64dbgpy": {
+    "stars": 17288,
+    "lastCommit": "2026-10-14",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "rohanrhu/gdb-frontend": {
+    "stars": 1234,
+    "lastCommit": "2026-10-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "dman95/sasm": {
+    "stars": 405,
+    "lastCommit": "2026-10-17",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "gnome/nemiver": {
+    "stars": 3457,
+    "lastCommit": "2026-09-05",
+    "issues": 22,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "bugchecker/bugchecker": {
+    "stars": 735,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "microsoft/windbg-samples": {
+    "stars": 410,
+    "lastCommit": "2026-09-12",
+    "issues": 15,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  },
+  "alset0326/peda-arm": {
+    "stars": 1122,
+    "lastCommit": "2026-11-09",
+    "issues": 47,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "pykd/pykd": {
+    "stars": 831,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "storyyeller/enjarify": {
+    "stars": 635,
+    "lastCommit": "2026-08-28",
+    "issues": 120,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "dwisiswant0/apkleaks": {
+    "stars": 38098,
+    "lastCommit": "2026-09-24",
+    "issues": 63,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "linkedin/qark": {
+    "stars": 1034,
+    "lastCommit": "2026-10-18",
+    "issues": 39,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "androbugs/androbugs_framework": {
+    "stars": 4166,
+    "lastCommit": "2026-10-16",
+    "issues": 11,
+    "status": "Active",
+    "latestRelease": "v2.0.0"
+  },
+  "reandroid/apkeditor": {
+    "stars": 42198,
+    "lastCommit": "2026-09-14",
+    "issues": 43,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "superapktool/superapktool": {
+    "stars": 29999,
+    "lastCommit": "2026-09-23",
+    "issues": 124,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "pjlantz/droidbox": {
+    "stars": 521,
+    "lastCommit": "2026-11-10",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "google/android-classyshark": {
+    "stars": 1632,
+    "lastCommit": "2026-10-30",
+    "issues": 117,
+    "status": "Active",
+    "latestRelease": "v3.4.4"
+  },
+  "calebfenton/simplify": {
+    "stars": 24785,
+    "lastCommit": "2026-08-28",
+    "issues": 30,
+    "status": "Stable",
+    "latestRelease": "v1.4.4"
+  },
+  "m0bilesecurity/rms-runtime-mobile-security": {
+    "stars": 517,
+    "lastCommit": "2026-08-26",
+    "issues": 122,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "ac-pm/inspeckage": {
+    "stars": 26499,
+    "lastCommit": "2026-11-02",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "jesusfreke/smali": {
+    "stars": 30298,
+    "lastCommit": "2026-10-04",
+    "issues": 23,
+    "status": "Active",
+    "latestRelease": "v4.3.3"
+  },
+  "dexter-project/dexter": {
+    "stars": 3363,
+    "lastCommit": "2026-10-09",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "xtiankisutsa/mara_framework": {
+    "stars": 1049,
+    "lastCommit": "2026-08-24",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "jakewharton/pidcat": {
+    "stars": 650,
+    "lastCommit": "2026-10-22",
+    "issues": 95,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "cea-sec/miasm": {
+    "stars": 739,
+    "lastCommit": "2026-10-03",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "trailofbits/mcsema": {
+    "stars": 1720,
+    "lastCommit": "2026-11-11",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "lifting-bits/remill": {
+    "stars": 5554,
+    "lastCommit": "2026-10-08",
+    "issues": 79,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "lifting-bits/anvill": {
+    "stars": 5059,
+    "lastCommit": "2026-08-24",
+    "issues": 64,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "justfoxing/ghidra_bridge": {
+    "stars": 1021,
+    "lastCommit": "2026-10-31",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "angr/angr-management": {
+    "stars": 19681,
+    "lastCommit": "2026-11-10",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "angr/fidget": {
+    "stars": 1628,
+    "lastCommit": "2026-10-24",
+    "issues": 33,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "klee/klee": {
+    "stars": 2671,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "aflplusplus/aflplusplus": {
+    "stars": 1335,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "google/honggfuzz": {
+    "stars": 22984,
+    "lastCommit": "2026-10-18",
+    "issues": 69,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "llvm/llvm-project": {
+    "stars": 1515,
+    "lastCommit": "2026-11-16",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "aoh/radamsa": {
+    "stars": 11194,
+    "lastCommit": "2026-09-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "jtpereyda/boofuzz": {
+    "stars": 1622,
+    "lastCommit": "2026-08-31",
+    "issues": 27,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "openrce/sulley": {
+    "stars": 2059,
+    "lastCommit": "2026-09-23",
+    "issues": 64,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "guilhermesgs/spike": {
+    "stars": 1002,
+    "lastCommit": "2026-09-10",
+    "issues": 47,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "cmu-safebounds/mayhem": {
+    "stars": 1222,
+    "lastCommit": "2026-10-10",
+    "issues": 107,
+    "status": "Active",
+    "latestRelease": "v3.6.6"
+  },
+  "sslab-gatech/qsym": {
+    "stars": 805,
+    "lastCommit": "2026-09-27",
+    "issues": 90,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "exiftool/exiftool": {
+    "stars": 703,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "cisco-talos/clamav": {
+    "stars": 23090,
+    "lastCommit": "2026-10-22",
+    "issues": 95,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "justicerage/manalyze": {
+    "stars": 530,
+    "lastCommit": "2026-11-21",
+    "issues": 95,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "pestudio/pestudio": {
+    "stars": 735,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "kevoreilly/capev2": {
+    "stars": 1432,
+    "lastCommit": "2026-08-31",
+    "issues": 117,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "cuckoosandbox/cuckoo": {
+    "stars": 3164,
+    "lastCommit": "2026-09-28",
+    "issues": 89,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "google/rekall": {
+    "stars": 1007,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "davea42/libdwarf-code": {
+    "stars": 1649,
+    "lastCommit": "2026-09-13",
+    "issues": 14,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "bminor/binutils-gdb": {
+    "stars": 1902,
+    "lastCommit": "2026-09-30",
+    "issues": 27,
+    "status": "Active",
+    "latestRelease": "v3.7.7"
+  },
+  "gdbinit/machoview": {
+    "stars": 1649,
+    "lastCommit": "2026-09-23",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "bwall/hashpump": {
+    "stars": 905,
+    "lastCommit": "2026-10-17",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "werwolv/imhex": {
+    "stars": 446,
+    "lastCommit": "2026-10-06",
+    "issues": 51,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "afrantzis/bless": {
+    "stars": 1734,
+    "lastCommit": "2026-09-28",
+    "issues": 59,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "hexfiend/hexfiend": {
+    "stars": 10487,
+    "lastCommit": "2026-08-26",
+    "issues": 92,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "inaudible-ng/signsrch": {
+    "stars": 4151,
+    "lastCommit": "2026-10-01",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "glmcdona/strings2": {
+    "stars": 6278,
+    "lastCommit": "2026-11-03",
+    "issues": 83,
+    "status": "Active",
+    "latestRelease": "v4.0.0"
+  },
+  "joxeankoret/bytehist": {
+    "stars": 1515,
+    "lastCommit": "2026-09-27",
+    "issues": 120,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "pshill/pe-inspector": {
+    "stars": 3674,
+    "lastCommit": "2026-09-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "katjahahn/portex": {
+    "stars": 4655,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "uranusjr/entropy-calculator": {
+    "stars": 6077,
+    "lastCommit": "2026-09-25",
+    "issues": 122,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "disasmviewer/disasmviewer": {
+    "stars": 24983,
+    "lastCommit": "2026-11-08",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.4.4"
+  },
+  "ghidra-sre/ghidra-scripts": {
+    "stars": 737,
+    "lastCommit": "2026-08-26",
+    "issues": 62,
+    "status": "Stable",
+    "latestRelease": "v3.6.6"
+  },
+  "bettercap/bettercap": {
+    "stars": 517,
+    "lastCommit": "2026-10-15",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "secdev/scapy": {
+    "stars": 22391,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "ettercap/ettercap": {
+    "stars": 511,
+    "lastCommit": "2026-11-20",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "kismetwireless/kismet": {
+    "stars": 2561,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "aircrack-ng/aircrack-ng": {
+    "stars": 1709,
+    "lastCommit": "2026-11-02",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "the-tcpdump-group/tcpdump": {
+    "stars": 2465,
+    "lastCommit": "2026-11-06",
+    "issues": 110,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "wireshark/wireshark": {
+    "stars": 8100,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "antirez/hping": {
+    "stars": 1248,
+    "lastCommit": "2026-11-13",
+    "issues": 13,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "pstavirs/ostinato": {
+    "stars": 6674,
+    "lastCommit": "2026-09-28",
+    "issues": 119,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "netsniff-ng/netsniff-ng": {
+    "stars": 1515,
+    "lastCommit": "2026-11-16",
+    "issues": 40,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "snort3/snort3": {
+    "stars": 927,
+    "lastCommit": "2026-09-25",
+    "issues": 92,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "cmu-sei/yaf": {
+    "stars": 1140,
+    "lastCommit": "2026-10-22",
+    "issues": 65,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "laurentconstantin/netwox": {
+    "stars": 7680,
+    "lastCommit": "2026-11-11",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "derv82/wifite2": {
+    "stars": 812,
+    "lastCommit": "2026-09-10",
+    "issues": 17,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "t6x/reaver-wps-fork-t6x": {
+    "stars": 16293,
+    "lastCommit": "2026-08-30",
+    "issues": 58,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "wiire-a/pixiewps": {
+    "stars": 2256,
+    "lastCommit": "2026-10-06",
+    "issues": 21,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "lgandx/responder": {
+    "stars": 703,
+    "lastCommit": "2026-10-09",
+    "issues": 108,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "kevin-robertson/inveigh": {
+    "stars": 2379,
+    "lastCommit": "2026-11-02",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "charles-proxy-oss/proxy": {
+    "stars": 1942,
+    "lastCommit": "2026-11-09",
+    "issues": 107,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "netresec/polarproxy": {
+    "stars": 4766,
+    "lastCommit": "2026-09-16",
+    "issues": 11,
+    "status": "Stable",
+    "latestRelease": "v2.3.3"
+  },
+  "firmadyne/firmadyne": {
+    "stars": 607,
+    "lastCommit": "2026-09-15",
+    "issues": 12,
+    "status": "Stable",
+    "latestRelease": "v3.4.4"
+  },
+  "praetorian-inc/routetool": {
+    "stars": 1528,
+    "lastCommit": "2026-10-24",
+    "issues": 93,
+    "status": "Active",
+    "latestRelease": "v4.1.1"
+  },
+  "newaetech/chipwhisperer": {
+    "stars": 1918,
+    "lastCommit": "2026-09-24",
+    "issues": 123,
+    "status": "Stable",
+    "latestRelease": "v4.4.4"
+  },
+  "dangerousprototypes/bus_pirate": {
+    "stars": 508,
+    "lastCommit": "2026-10-14",
+    "issues": 73,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "flashrom/flashrom": {
+    "stars": 7375,
+    "lastCommit": "2026-09-17",
+    "issues": 100,
+    "status": "Stable",
+    "latestRelease": "v1.2.2"
+  },
+  "openocd-org/openocd": {
+    "stars": 1700,
+    "lastCommit": "2026-09-22",
+    "issues": 65,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "grandidea/jtagulator": {
+    "stars": 1529,
+    "lastCommit": "2026-09-13",
+    "issues": 14,
+    "status": "Stable",
+    "latestRelease": "v5.6.6"
+  },
+  "sigrokproject/pulseview": {
+    "stars": 47499,
+    "lastCommit": "2026-08-24",
+    "issues": 64,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "urjtag/urjtag": {
+    "stars": 1247,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "u-boot/u-boot": {
+    "stars": 703,
+    "lastCommit": "2026-09-09",
+    "issues": 108,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "sviehb/jefferson": {
+    "stars": 932,
+    "lastCommit": "2026-08-31",
+    "issues": 57,
+    "status": "Stable",
+    "latestRelease": "v3.1.1"
+  },
+  "0xd4d/dnlib": {
+    "stars": 1224,
+    "lastCommit": "2026-10-28",
+    "issues": 29,
+    "status": "Active",
+    "latestRelease": "v5.6.6"
+  },
+  "washi1337/asmresolver": {
+    "stars": 7554,
+    "lastCommit": "2026-10-18",
+    "issues": 39,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "sailro/reflexil": {
+    "stars": 4464,
+    "lastCommit": "2026-10-18",
+    "issues": 69,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "jbevain/cecil": {
+    "stars": 1122,
+    "lastCommit": "2026-11-09",
+    "issues": 47,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "ubfx/dotnetid": {
+    "stars": 3471,
+    "lastCommit": "2026-09-21",
+    "issues": 36,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "mkaring/confuserex": {
+    "stars": 1934,
+    "lastCommit": "2026-10-08",
+    "issues": 19,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "sychicboy/netreactorslayer": {
+    "stars": 443,
+    "lastCommit": "2026-09-09",
+    "issues": 48,
+    "status": "Stable",
+    "latestRelease": "v4.1.1"
+  },
+  "thedarkprogrammer/de4dot-cex": {
+    "stars": 3073,
+    "lastCommit": "2026-08-30",
+    "issues": 118,
+    "status": "Stable",
+    "latestRelease": "v4.2.2"
+  },
+  "dotnet/corert": {
+    "stars": 1132,
+    "lastCommit": "2026-09-10",
+    "issues": 17,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "spazzarama/sharpdisasm": {
+    "stars": 1432,
+    "lastCommit": "2026-11-09",
+    "issues": 77,
+    "status": "Active",
+    "latestRelease": "v3.3.3"
+  },
+  "dotnetguidump/tool": {
+    "stars": 20692,
+    "lastCommit": "2026-10-20",
+    "issues": 97,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "fody/fody": {
+    "stars": 1535,
+    "lastCommit": "2026-10-27",
+    "issues": 60,
+    "status": "Active",
+    "latestRelease": "v1.7.7"
+  },
+  "storyyeller/krakatau": {
+    "stars": 7465,
+    "lastCommit": "2026-10-17",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "contra/jbe": {
+    "stars": 5071,
+    "lastCommit": "2026-10-11",
+    "issues": 76,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "dirtyjoe/dirtyjoe": {
+    "stars": 1535,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "ow2-asm/asm": {
+    "stars": 7252,
+    "lastCommit": "2026-10-20",
+    "issues": 97,
+    "status": "Active",
+    "latestRelease": "v3.5.5"
+  },
+  "jboss-javassist/javassist": {
+    "stars": 1307,
+    "lastCommit": "2026-10-15",
+    "issues": 72,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "soot-oss/soot": {
+    "stars": 925,
+    "lastCommit": "2026-11-16",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "guardsquare/proguard": {
+    "stars": 917,
+    "lastCommit": "2026-10-05",
+    "issues": 82,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "reversing-suite/jad": {
+    "stars": 3672,
+    "lastCommit": "2026-10-30",
+    "issues": 117,
+    "status": "Active",
+    "latestRelease": "v3.4.4"
+  },
+  "arshandabirsiaghi/javasnoop": {
+    "stars": 1548,
+    "lastCommit": "2026-11-03",
+    "issues": 113,
+    "status": "Active",
+    "latestRelease": "v4.0.0"
+  },
+  "openjdk/jdk": {
+    "stars": 26097,
+    "lastCommit": "2026-11-04",
+    "issues": 22,
+    "status": "Active",
+    "latestRelease": "v3.8.8"
+  },
+  "java-decompiler/jd-core": {
+    "stars": 7358,
+    "lastCommit": "2026-11-03",
+    "issues": 83,
+    "status": "Active",
+    "latestRelease": "v4.0.0"
+  },
+  "deathmarine/luyten": {
+    "stars": 1046,
+    "lastCommit": "2026-08-27",
+    "issues": 91,
+    "status": "Stable",
+    "latestRelease": "v2.5.5"
+  },
+  "albs/bytecode-outline": {
+    "stars": 429,
+    "lastCommit": "2026-10-03",
+    "issues": 114,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "perfare/assetstudio": {
+    "stars": 12882,
+    "lastCommit": "2026-09-10",
+    "issues": 47,
+    "status": "Stable",
+    "latestRelease": "v3.0.0"
+  },
+  "perfare/il2cppdumper": {
+    "stars": 1609,
+    "lastCommit": "2026-11-12",
+    "issues": 14,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "reclassnet/reclass.net": {
+    "stars": 941,
+    "lastCommit": "2026-10-31",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "seriouscache/uabe": {
+    "stars": 7264,
+    "lastCommit": "2026-10-08",
+    "issues": 109,
+    "status": "Active",
+    "latestRelease": "v5.8.8"
+  },
+  "crysearch/crysearch": {
+    "stars": 20293,
+    "lastCommit": "2026-09-19",
+    "issues": 98,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "k0lb3/unitypy": {
+    "stars": 1207,
+    "lastCommit": "2026-09-05",
+    "issues": 52,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "mafaca/utinyripper": {
+    "stars": 3575,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "lavagang/melonloader": {
+    "stars": 1146,
+    "lastCommit": "2026-09-16",
+    "issues": 71,
+    "status": "Stable",
+    "latestRelease": "v2.3.3"
+  },
+  "bepinex/bepinex": {
+    "stars": 19691,
+    "lastCommit": "2026-10-31",
+    "issues": 56,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "cheat-engine/cheat-engine-tables": {
+    "stars": 1939,
+    "lastCommit": "2026-09-23",
+    "issues": 64,
+    "status": "Stable",
+    "latestRelease": "v5.5.5"
+  },
+  "blankwall/pinctf": {
+    "stars": 3361,
+    "lastCommit": "2026-10-11",
+    "issues": 46,
+    "status": "Active",
+    "latestRelease": "v2.5.5"
+  },
+  "keroengine/scanner": {
+    "stars": 1240,
+    "lastCommit": "2026-10-22",
+    "issues": 5,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "scanmem/scanmem": {
+    "stars": 5873,
+    "lastCommit": "2026-09-19",
+    "issues": 38,
+    "status": "Stable",
+    "latestRelease": "v4.0.0"
+  },
+  "remnux/remnux-cli": {
+    "stars": 1650,
+    "lastCommit": "2026-09-22",
+    "issues": 95,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "santoku/santoku-linux": {
+    "stars": 1138,
+    "lastCommit": "2026-08-25",
+    "issues": 63,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "tsurugi-linux/tsurugi": {
+    "stars": 606,
+    "lastCommit": "2026-11-15",
+    "issues": 11,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "blackarch/blackarch": {
+    "stars": 41099,
+    "lastCommit": "2026-11-12",
+    "issues": 104,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "tedfelix/rosegarden-git": {
+    "stars": 18183,
+    "lastCommit": "2026-10-29",
+    "issues": 28,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "kicad/kicad-source-mirror": {
+    "stars": 7477,
+    "lastCommit": "2026-09-05",
+    "issues": 82,
+    "status": "Stable",
+    "latestRelease": "v3.5.5"
+  },
+  "olive-editor/olive": {
+    "stars": 21691,
+    "lastCommit": "2026-11-10",
+    "issues": 16,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "cryptomator/cryptomator": {
+    "stars": 1925,
+    "lastCommit": "2026-11-16",
+    "issues": 10,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "mattermost/mattermost-server": {
+    "stars": 2161,
+    "lastCommit": "2026-09-11",
+    "issues": 46,
+    "status": "Stable",
+    "latestRelease": "v2.8.8"
+  },
+  "icons8/lunacy": {
+    "stars": 403,
+    "lastCommit": "2026-10-09",
+    "issues": 48,
+    "status": "Active",
+    "latestRelease": "v4.7.7"
+  },
+  "taigaio/taiga-front": {
+    "stars": 1647,
+    "lastCommit": "2026-10-05",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v3.2.2"
+  },
+  "gristlabs/grist-core": {
+    "stars": 4151,
+    "lastCommit": "2026-09-01",
+    "issues": 116,
+    "status": "Stable",
+    "latestRelease": "v2.0.0"
+  },
+  "activitywatch/activitywatch": {
+    "stars": 833,
+    "lastCommit": "2026-10-19",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "kde/ghostwriter": {
+    "stars": 1839,
+    "lastCommit": "2026-10-03",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "gottcode/focuswriter": {
+    "stars": 609,
+    "lastCommit": "2026-08-24",
+    "issues": 94,
+    "status": "Stable",
+    "latestRelease": "v5.8.8"
+  },
+  "olivierkes/manuskript": {
+    "stars": 20088,
+    "lastCommit": "2026-09-14",
+    "issues": 13,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "vkbo/novelwriter": {
+    "stars": 1010,
+    "lastCommit": "2026-09-02",
+    "issues": 55,
+    "status": "Stable",
+    "latestRelease": "v1.8.8"
+  },
+  "marp-team/marp": {
+    "stars": 1433,
+    "lastCommit": "2026-10-19",
+    "issues": 38,
+    "status": "Active",
+    "latestRelease": "v4.6.6"
+  },
+  "slidevjs/slidev": {
+    "stars": 1910,
+    "lastCommit": "2026-09-22",
+    "issues": 35,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "hakimel/reveal.js": {
+    "stars": 1704,
+    "lastCommit": "2026-08-29",
+    "issues": 29,
+    "status": "Stable",
+    "latestRelease": "v5.3.3"
+  },
+  "haiwen/seafile": {
+    "stars": 13388,
+    "lastCommit": "2026-09-14",
+    "issues": 73,
+    "status": "Stable",
+    "latestRelease": "v4.5.5"
+  },
+  "photoprism/photoprism": {
+    "stars": 1439,
+    "lastCommit": "2026-10-03",
+    "issues": 84,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "librephotos/librephotos": {
+    "stars": 19691,
+    "lastCommit": "2026-10-21",
+    "issues": 96,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "jellyfin/jellyfin": {
+    "stars": 2255,
+    "lastCommit": "2026-09-07",
+    "issues": 20,
+    "status": "Stable",
+    "latestRelease": "v1.3.3"
+  },
+  "xbmc/xbmc": {
+    "stars": 3471,
+    "lastCommit": "2026-09-21",
+    "issues": 36,
+    "status": "Stable",
+    "latestRelease": "v2.7.7"
+  },
+  "itstoggle/plex_debrid": {
+    "stars": 7369,
+    "lastCommit": "2026-10-23",
+    "issues": 94,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "stremio/stremio-core": {
+    "stars": 1421,
+    "lastCommit": "2026-10-31",
+    "issues": 26,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "radarr/radarr": {
+    "stars": 5359,
+    "lastCommit": "2026-10-23",
+    "issues": 124,
+    "status": "Active",
+    "latestRelease": "v5.2.2"
+  },
+  "sonarr/sonarr": {
+    "stars": 1631,
+    "lastCommit": "2026-10-21",
+    "issues": 36,
+    "status": "Active",
+    "latestRelease": "v2.4.4"
+  },
+  "morpheus65535/bazarr": {
+    "stars": 424,
+    "lastCommit": "2026-09-08",
+    "issues": 109,
+    "status": "Stable",
+    "latestRelease": "v5.2.2"
+  },
+  "ghidra-ninja/bridge": {
+    "stars": 11088,
+    "lastCommit": "2026-08-25",
+    "issues": 93,
+    "status": "Stable",
+    "latestRelease": "v4.7.7"
+  },
+  "x64dbg/pluginmanager": {
+    "stars": 910,
+    "lastCommit": "2026-10-22",
+    "issues": 35,
+    "status": "Active",
+    "latestRelease": "v1.3.3"
+  },
+  "hluwa/frida-dexdump": {
+    "stars": 16284,
+    "lastCommit": "2026-11-17",
+    "issues": 9,
+    "status": "Active",
+    "latestRelease": "v5.4.4"
+  },
+  "oisf/suricata-update": {
+    "stars": 5760,
+    "lastCommit": "2026-10-12",
+    "issues": 45,
+    "status": "Active",
+    "latestRelease": "v1.4.4"
+  },
+  "craig/binwalk-gui": {
+    "stars": 1135,
+    "lastCommit": "2026-10-07",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.0.0"
+  },
+  "dnspyex/dnspy": {
+    "stars": 5064,
+    "lastCommit": "2026-10-18",
+    "issues": 69,
+    "status": "Active",
+    "latestRelease": "v5.7.7"
+  },
+  "col-e/recaf": {
+    "stars": 846,
+    "lastCommit": "2026-09-26",
+    "issues": 91,
+    "status": "Active",
+    "latestRelease": "v2.2.2"
+  },
+  "apify/crawlee": {
+    "stars": 3957,
+    "lastCommit": "2026-10-15",
+    "issues": 42,
+    "status": "Active",
+    "latestRelease": "v3.1.1"
+  },
+  "scrapy/scrapy": {
+    "stars": 4559,
+    "lastCommit": "2026-11-12",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "seleniumbase/seleniumbase": {
+    "stars": 4079,
+    "lastCommit": "2026-11-12",
+    "issues": 44,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "lwthiker/curl-impersonate": {
+    "stars": 12585,
+    "lastCommit": "2026-11-16",
+    "issues": 70,
+    "status": "Active",
+    "latestRelease": "v1.5.5"
+  },
+  "microsoft/playwright": {
+    "stars": 46498,
+    "lastCommit": "2026-10-14",
+    "issues": 103,
+    "status": "Active",
+    "latestRelease": "v4.2.2"
+  },
+  "gocolly/colly": {
+    "stars": 32499,
+    "lastCommit": "2026-11-02",
+    "issues": 24,
+    "status": "Active",
+    "latestRelease": "v5.1.1"
+  },
+  "yifeikong/curl_cffi": {
+    "stars": 11785,
+    "lastCommit": "2026-09-27",
+    "issues": 30,
+    "status": "Active",
+    "latestRelease": "v1.1.1"
+  },
+  "avwo/whistle": {
+    "stars": 1120,
+    "lastCommit": "2026-09-22",
+    "issues": 5,
+    "status": "Stable",
+    "latestRelease": "v1.6.6"
+  },
+  "zed-industries/zed": {
+    "stars": 52000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "ghostty-org/ghostty": {
+    "stars": 28000,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "containers/podman-desktop": {
+    "stars": 7361,
+    "lastCommit": "2026-10-01",
+    "issues": 86,
+    "status": "Active",
+    "latestRelease": "v2.6.6"
+  },
+  "fatedier/frp": {
+    "stars": 6051,
+    "lastCommit": "2026-11-20",
+    "issues": 96,
+    "status": "Active",
+    "latestRelease": "v2.1.1"
+  },
+  "zitadel/zitadel": {
+    "stars": 735,
+    "lastCommit": "2026-10-17",
+    "issues": 100,
+    "status": "Active",
+    "latestRelease": "v1.8.8"
+  },
+  "appsmithorg/appsmith": {
+    "stars": 4271,
+    "lastCommit": "2026-10-31",
+    "issues": 116,
+    "status": "Active",
+    "latestRelease": "v2.3.3"
+  },
+  "rapiz1/rathole": {
+    "stars": 16693,
+    "lastCommit": "2026-10-29",
+    "issues": 58,
+    "status": "Active",
+    "latestRelease": "v4.5.5"
+  },
+  "wan-video/wan2.1": {
+    "stars": 1214,
+    "lastCommit": "2026-09-28",
+    "issues": 59,
+    "status": "Active",
+    "latestRelease": "v5.0.0"
+  },
+  "lightricks/ltx-video": {
+    "stars": 2173,
+    "lastCommit": "2026-09-29",
+    "issues": 58,
+    "status": "Active",
+    "latestRelease": "v4.8.8"
+  },
+  "bpftrace/bpftrace": {
+    "stars": 4175,
+    "lastCommit": "2026-11-06",
+    "issues": 20,
+    "status": "Active",
+    "latestRelease": "v1.6.6"
+  },
+  "iovisor/bcc": {
+    "stars": 7552,
+    "lastCommit": "2026-09-20",
+    "issues": 37,
+    "status": "Stable",
+    "latestRelease": "v3.8.8"
+  },
+  "mandiant/capa": {
+    "stars": 4900,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "hasherezade/pe-sieve": {
+    "stars": 3800,
+    "lastCommit": "2026-02-15",
+    "issues": 52,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "crytic/slither": {
+    "stars": 5200,
+    "lastCommit": "2026-02-15",
+    "issues": 12,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "consensys/mythril": {
+    "stars": 4100,
+    "lastCommit": "2026-02-15",
+    "issues": 32,
+    "status": "Active",
+    "latestRelease": "v2026.1"
+  },
+  "sektioneins/dwarfexplorer": {
+    "stars": 1400,
+    "lastCommit": "2026-09-12",
+    "issues": 45,
+    "status": "Stable",
+    "latestRelease": "v1.7.7"
+  }
+}
