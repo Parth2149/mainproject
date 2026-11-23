@@ -3,14 +3,12 @@ import { href } from '../lib/catalog';
 
 export function Badges({ tool }) {
   const tagClass = tool.tag ? (tool.tag.startsWith('Canva') ? 'canva-tag' : tool.tag.startsWith('Adobe') ? 'adobe-tag' : tool.tag.startsWith('Postman') ? 'postman-tag' : 'alt-tag') : '';
-  const starsFormatted = tool.stars ? (tool.stars >= 1000 ? `${(tool.stars / 1000).toFixed(1)}k` : tool.stars.toLocaleString()) : null;
 
   return (
     <div className="bdgs">
       {tool.tag && <span className={tagClass}>{tool.tag}</span>}
       <span className={tool.pricing === 'Free' ? 'free' : 'paid'}>{tool.pricing}</span>
       <span className="plat">{tool.platforms.length === 3 ? 'Win/Mac/Linux' : tool.platforms.join('/')}</span>
-      {starsFormatted && <span className="plat" style={{ color: '#EAAA00', fontWeight: 700 }}>★ {starsFormatted}</span>}
     </div>
   );
 }
